@@ -1,0 +1,46 @@
+syntax = "proto3";
+
+// 动态综合页-响应
+message DynAllReply {
+    // 卡片列表
+    DynamicList dynamic_list = 1;
+    // 顶部up list
+    CardVideoUpList up_list = 2;
+    // 话题广场
+    TopicList topic_list = 3;
+}
+
+// 动态视频页-响应
+message DynVideoReply {
+    // 动态卡片
+    CardVideoUpList video_up_list = 2;
+}
+
+//动态卡片列表
+message DynamicList {
+    // 动态列表
+    repeated DynamicItem list = 1;
+}
+
+// 视频页-最近访问
+message CardVideoUpList {
+    // 标题展示文案
+    string title = 1;
+}
+
+// 综合页-话题广场
+message TopicList {
+    // 模块标题
+    string title = 1;
+}
+
+// 动态卡片
+message DynamicItem {
+    // 动态卡片类型
+    DynamicType card_type = 1;
+}
+
+enum DynamicType {
+    dyn_none = 0;          // 占位
+    ad = 15;               // 广告卡
+}

@@ -1,0 +1,13 @@
+syntax = "proto3";
+
+message CommandDm {
+  int64 id = 1;        //弹幕dmid
+}
+
+message DmView {
+  repeated CommandDm commandDms = 1;
+}
+
+message DmViewReply {
+  DmView dmView = 22;
+}
