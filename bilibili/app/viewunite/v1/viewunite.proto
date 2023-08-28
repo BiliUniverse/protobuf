@@ -1,0 +1,50 @@
+syntax = "proto3";
+
+package bilibili.app.viewunite.v1;
+
+import "bilibili/app/archive/middleware/v1/preload.proto";
+//import "bilibili/app/viewunite/common.proto";
+import "bilibili/pagination/pagination.proto";
+import "google/protobuf/any.proto";
+
+// 统一视频信息接口 (7.41.0+)
+service View {
+    // 
+    //rpc ArcRefresh(ArcRefreshReq) returns (ArcRefreshReply);
+    // 视频详情页下方推荐
+    //rpc RelatesFeed(RelatesFeedReq) returns (RelatesFeedReply);
+    // 视频详情页
+    //rpc View(ViewReq) returns (ViewReply);
+    // 播放进度
+   // rpc ViewProgress(ViewProgressReq) returns (ViewProgressReply);
+}
+
+// 
+message ViewReq {
+    // 
+    uint64 aid = 1 [jstype = JS_NUMBER];
+    // 
+    string bvid = 2;
+    // 
+    string from = 3;
+    // 
+    string spmid = 4;
+    // 
+    string from_spmid = 5;
+    // 
+    string session_id = 6;
+    // 
+    bilibili.app.archive.middleware.v1.PlayerArgs player_args = 7;
+    // 
+    string track_id = 8;
+    // 
+    map<string, string> extra_content = 9;
+    // 
+    string play_mode = 10;
+    // 
+    //Relate relate = 11;
+    // 
+    string biz_extra = 12;
+    // 
+    string ad_extra = 13;
+}
