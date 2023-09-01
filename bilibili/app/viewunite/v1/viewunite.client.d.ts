@@ -3,33 +3,32 @@
 // tslint:disable
 import type { RpcTransport } from "@protobuf-ts/runtime-rpc";
 import type { ServiceInfo } from "@protobuf-ts/runtime-rpc";
+import type { ViewReply } from "./viewunite";
+import type { ViewReq } from "./viewunite";
+import type { UnaryCall } from "@protobuf-ts/runtime-rpc";
+import type { RpcOptions } from "@protobuf-ts/runtime-rpc";
 /**
  * 统一视频信息接口 (7.41.0+)
- *
- *
- * rpc ArcRefresh(ArcRefreshReq) returns (ArcRefreshReply);
- * 视频详情页下方推荐
- * rpc RelatesFeed(RelatesFeedReq) returns (RelatesFeedReply);
- * 视频详情页
- * rpc View(ViewReq) returns (ViewReply);
- * 播放进度
- * rpc ViewProgress(ViewProgressReq) returns (ViewProgressReply);
  *
  * @generated from protobuf service bilibili.app.viewunite.v1.View
  */
 export interface IViewClient {
+    /**
+     *
+     * rpc ArcRefresh(ArcRefreshReq) returns (ArcRefreshReply);
+     * 视频详情页下方推荐
+     * rpc RelatesFeed(RelatesFeedReq) returns (RelatesFeedReply);
+     * 视频详情页
+     *
+     * 播放进度
+     * rpc ViewProgress(ViewProgressReq) returns (ViewProgressReply);
+     *
+     * @generated from protobuf rpc: View(bilibili.app.viewunite.v1.ViewReq) returns (bilibili.app.viewunite.v1.ViewReply);
+     */
+    view(input: ViewReq, options?: RpcOptions): UnaryCall<ViewReq, ViewReply>;
 }
 /**
  * 统一视频信息接口 (7.41.0+)
- *
- *
- * rpc ArcRefresh(ArcRefreshReq) returns (ArcRefreshReply);
- * 视频详情页下方推荐
- * rpc RelatesFeed(RelatesFeedReq) returns (RelatesFeedReply);
- * 视频详情页
- * rpc View(ViewReq) returns (ViewReply);
- * 播放进度
- * rpc ViewProgress(ViewProgressReq) returns (ViewProgressReply);
  *
  * @generated from protobuf service bilibili.app.viewunite.v1.View
  */
@@ -39,4 +38,17 @@ export declare class ViewClient implements IViewClient, ServiceInfo {
     methods: any;
     options: any;
     constructor(_transport: RpcTransport);
+    /**
+     *
+     * rpc ArcRefresh(ArcRefreshReq) returns (ArcRefreshReply);
+     * 视频详情页下方推荐
+     * rpc RelatesFeed(RelatesFeedReq) returns (RelatesFeedReply);
+     * 视频详情页
+     *
+     * 播放进度
+     * rpc ViewProgress(ViewProgressReq) returns (ViewProgressReply);
+     *
+     * @generated from protobuf rpc: View(bilibili.app.viewunite.v1.ViewReq) returns (bilibili.app.viewunite.v1.ViewReply);
+     */
+    view(input: ViewReq, options?: RpcOptions): UnaryCall<ViewReq, ViewReply>;
 }

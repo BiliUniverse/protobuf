@@ -2,7 +2,248 @@
 // @generated from protobuf file "bilibili/app/viewunite/v1/viewunite.proto" (package "bilibili.app.viewunite.v1", syntax proto3)
 // tslint:disable
 import { MessageType } from "@protobuf-ts/runtime";
-import { PlayerArgs } from "../../archive/middleware/v1/preload";
+/**
+ * 业务信息
+ *
+ * @generated from protobuf message bilibili.app.viewunite.v1.Arc
+ */
+export interface Arc {
+    /**
+     *
+     *
+     * @generated from protobuf field: int64 aid = 1 [jstype = JS_NUMBER];
+     */
+    aid: number;
+    /**
+     *
+     *
+     * @generated from protobuf field: int64 cid = 2 [jstype = JS_NUMBER];
+     */
+    cid: number;
+    /**
+     *
+     *
+     * @generated from protobuf field: int64 duration = 3 [jstype = JS_NUMBER];
+     */
+    duration: number;
+    /**
+     *
+     * bilibili.app.viewunite.common.Stat stat = 4;
+     *
+     *
+     * @generated from protobuf field: string bvid = 5;
+     */
+    bvid: string;
+    /**
+     *
+     *
+     * @generated from protobuf field: int32 copyright = 6;
+     */
+    copyright: number;
+    /**
+     *
+     *
+     * @generated from protobuf field: bilibili.app.viewunite.v1.Rights right = 7;
+     */
+    right?: Rights;
+    /**
+     *
+     *
+     * @generated from protobuf field: string cover = 8;
+     */
+    cover: string;
+    /**
+     *
+     *
+     * @generated from protobuf field: int64 type_id = 9 [jstype = JS_NUMBER];
+     */
+    typeId: number;
+    /**
+     *
+     *
+     * @generated from protobuf field: string title = 10;
+     */
+    title: string;
+}
+/**
+ * 视频介绍 Tab
+ *
+ * @generated from protobuf message bilibili.app.viewunite.v1.IntroductionTab
+ */
+export interface IntroductionTab {
+    /**
+     *
+     *
+     * @generated from protobuf field: string title = 1;
+     */
+    title: string;
+}
+/**
+ *
+ *
+ * @generated from protobuf message bilibili.app.viewunite.v1.ReplyTab
+ */
+export interface ReplyTab {
+    /**
+     *
+     * ReplyStyle reply_style = 1;
+     *
+     *
+     * @generated from protobuf field: string title = 2;
+     */
+    title: string;
+    /**
+     *
+     *
+     * @generated from protobuf field: bilibili.app.viewunite.v1.TabControl control = 3;
+     */
+    control?: TabControl;
+}
+/**
+ *
+ *
+ * @generated from protobuf message bilibili.app.viewunite.v1.Rights
+ */
+export interface Rights {
+    /**
+     *
+     *
+     * @generated from protobuf field: bool only_vip_download = 1;
+     */
+    onlyVipDownload: boolean;
+    /**
+     *
+     *
+     * @generated from protobuf field: bool no_reprint = 2;
+     */
+    noReprint: boolean;
+    /**
+     *
+     *
+     * @generated from protobuf field: bool download = 3;
+     */
+    download: boolean;
+}
+/**
+ *
+ *
+ * @generated from protobuf message bilibili.app.viewunite.v1.Tab
+ */
+export interface Tab {
+    /**
+     *
+     *
+     * @generated from protobuf field: repeated bilibili.app.viewunite.v1.TabModule tab_module = 1;
+     */
+    tabModule: TabModule[];
+    /**
+     *
+     *
+     * @generated from protobuf field: string tab_bg = 2;
+     */
+    tabBg: string;
+}
+/**
+ * 评论区/弹幕 Tab 控制
+ *
+ * @generated from protobuf message bilibili.app.viewunite.v1.TabControl
+ */
+export interface TabControl {
+    /**
+     *
+     *
+     * @generated from protobuf field: bool limit = 1;
+     */
+    limit: boolean;
+    /**
+     *
+     *
+     * @generated from protobuf field: bool disable = 2;
+     */
+    disable: boolean;
+    /**
+     *
+     *
+     * @generated from protobuf field: string disable_click_tip = 3;
+     */
+    disableClickTip: string;
+}
+/**
+ *
+ *
+ * @generated from protobuf message bilibili.app.viewunite.v1.TabModule
+ */
+export interface TabModule {
+    /**
+     *
+     *
+     * @generated from protobuf field: bilibili.app.viewunite.v1.TabType tab_type = 1;
+     */
+    tabType: TabType;
+    /**
+     * @generated from protobuf oneof: tab
+     */
+    tab: {
+        oneofKind: "introduction";
+        /**
+         *
+         *
+         * @generated from protobuf field: bilibili.app.viewunite.v1.IntroductionTab introduction = 2;
+         */
+        introduction: IntroductionTab;
+    } | {
+        oneofKind: "reply";
+        /**
+         *
+         *
+         * @generated from protobuf field: bilibili.app.viewunite.v1.ReplyTab reply = 3;
+         */
+        reply: ReplyTab;
+    } | {
+        oneofKind: undefined;
+    };
+}
+/**
+ *
+ *
+ * @generated from protobuf message bilibili.app.viewunite.v1.ViewReply
+ */
+export interface ViewReply {
+    /**
+     *
+     * ViewBase view_base = 1;
+     *
+     *
+     * @generated from protobuf field: bilibili.app.viewunite.v1.Arc arc = 2;
+     */
+    arc?: Arc;
+    /**
+     *
+     * ReqUser req_user = 3;
+     *
+     * bilibili.app.viewunite.common.Owner owner = 4;
+     *
+     *
+     * @generated from protobuf field: bilibili.app.viewunite.v1.Tab tab = 5;
+     */
+    tab?: Tab;
+    /**
+     *
+     * google.protobuf.Any supplement = 6;
+     *
+     * CM cm = 7;
+     *
+     * ECode ecode = 8;
+     *
+     * ECodeConfig ecode_config = 9;
+     *
+     *
+     * @generated from protobuf field: map<string, string> report = 10;
+     */
+    report: {
+        [key: string]: string;
+    };
+}
 /**
  *
  *
@@ -12,9 +253,9 @@ export interface ViewReq {
     /**
      *
      *
-     * @generated from protobuf field: uint64 aid = 1;
+     * @generated from protobuf field: uint64 aid = 1 [jstype = JS_NUMBER];
      */
-    aid: bigint;
+    aid: number;
     /**
      *
      *
@@ -47,11 +288,7 @@ export interface ViewReq {
     sessionId: string;
     /**
      *
-     *
-     * @generated from protobuf field: bilibili.app.archive.middleware.v1.PlayerArgs player_args = 7;
-     */
-    playerArgs?: PlayerArgs;
-    /**
+     * bilibili.app.archive.middleware.v1.PlayerArgs player_args = 7;
      *
      *
      * @generated from protobuf field: string track_id = 8;
@@ -86,6 +323,91 @@ export interface ViewReq {
      */
     adExtra: string;
 }
+/**
+ * @generated from protobuf enum bilibili.app.viewunite.v1.TabType
+ */
+export declare enum TabType {
+    /**
+     *
+     *
+     * @generated from protobuf enum value: TAB_NONE = 0;
+     */
+    TAB_NONE = 0,
+    /**
+     * 详情 Tab
+     *
+     * @generated from protobuf enum value: TAB_INTRODUCTION = 1;
+     */
+    TAB_INTRODUCTION = 1,
+    /**
+     * 评论区 Tab
+     *
+     * @generated from protobuf enum value: TAB_REPLY = 2;
+     */
+    TAB_REPLY = 2,
+    /**
+     * OGV 活动信息 Tab
+     *
+     * @generated from protobuf enum value: TAB_OGV_ACTIVITY = 3;
+     */
+    TAB_OGV_ACTIVITY = 3
+}
+declare class Arc$Type extends MessageType<Arc> {
+    constructor();
+}
+/**
+ * @generated MessageType for protobuf message bilibili.app.viewunite.v1.Arc
+ */
+export declare const Arc: Arc$Type;
+declare class IntroductionTab$Type extends MessageType<IntroductionTab> {
+    constructor();
+}
+/**
+ * @generated MessageType for protobuf message bilibili.app.viewunite.v1.IntroductionTab
+ */
+export declare const IntroductionTab: IntroductionTab$Type;
+declare class ReplyTab$Type extends MessageType<ReplyTab> {
+    constructor();
+}
+/**
+ * @generated MessageType for protobuf message bilibili.app.viewunite.v1.ReplyTab
+ */
+export declare const ReplyTab: ReplyTab$Type;
+declare class Rights$Type extends MessageType<Rights> {
+    constructor();
+}
+/**
+ * @generated MessageType for protobuf message bilibili.app.viewunite.v1.Rights
+ */
+export declare const Rights: Rights$Type;
+declare class Tab$Type extends MessageType<Tab> {
+    constructor();
+}
+/**
+ * @generated MessageType for protobuf message bilibili.app.viewunite.v1.Tab
+ */
+export declare const Tab: Tab$Type;
+declare class TabControl$Type extends MessageType<TabControl> {
+    constructor();
+}
+/**
+ * @generated MessageType for protobuf message bilibili.app.viewunite.v1.TabControl
+ */
+export declare const TabControl: TabControl$Type;
+declare class TabModule$Type extends MessageType<TabModule> {
+    constructor();
+}
+/**
+ * @generated MessageType for protobuf message bilibili.app.viewunite.v1.TabModule
+ */
+export declare const TabModule: TabModule$Type;
+declare class ViewReply$Type extends MessageType<ViewReply> {
+    constructor();
+}
+/**
+ * @generated MessageType for protobuf message bilibili.app.viewunite.v1.ViewReply
+ */
+export declare const ViewReply: ViewReply$Type;
 declare class ViewReq$Type extends MessageType<ViewReq> {
     constructor();
 }

@@ -2,10 +2,10 @@ syntax = "proto3";
 
 package bilibili.app.viewunite.v1;
 
-import "bilibili/app/archive/middleware/v1/preload.proto";
+//import "bilibili/app/archive/middleware/v1/preload.proto";
 //import "bilibili/app/viewunite/common.proto";
-import "bilibili/pagination/pagination.proto";
-import "google/protobuf/any.proto";
+//import "bilibili/pagination/pagination.proto";
+//import "google/protobuf/any.proto";
 
 // 统一视频信息接口 (7.41.0+)
 service View {
@@ -14,9 +14,131 @@ service View {
     // 视频详情页下方推荐
     //rpc RelatesFeed(RelatesFeedReq) returns (RelatesFeedReply);
     // 视频详情页
-    //rpc View(ViewReq) returns (ViewReply);
+    rpc View(ViewReq) returns (ViewReply);
     // 播放进度
-   // rpc ViewProgress(ViewProgressReq) returns (ViewProgressReply);
+    //rpc ViewProgress(ViewProgressReq) returns (ViewProgressReply);
+}
+
+// 业务信息
+message Arc {
+    // 
+    int64 aid = 1 [jstype = JS_NUMBER];
+    // 
+    int64 cid = 2 [jstype = JS_NUMBER];
+    // 
+    int64 duration = 3 [jstype = JS_NUMBER];
+    // 
+    //bilibili.app.viewunite.common.Stat stat = 4;
+    // 
+    string bvid = 5;
+    // 
+    int32 copyright = 6;
+    // 
+    Rights right = 7;
+    // 
+    string cover = 8;
+    // 
+    int64 type_id = 9 [jstype = JS_NUMBER];
+    // 
+    string title = 10;
+}
+
+// 视频介绍 Tab
+message IntroductionTab {
+    // 
+    string title = 1;
+    // 
+    //repeated bilibili.app.viewunite.common.Module modules = 2;
+}
+
+// 
+message ReplyTab {
+    // 
+    //ReplyStyle reply_style = 1;
+    // 
+    string title = 2;
+    // 
+    TabControl control = 3;
+}
+
+// 
+message Rights {
+    // 
+    bool only_vip_download = 1;
+    // 
+    bool no_reprint = 2;
+    // 
+    bool download = 3;
+}
+
+// 
+message Tab {
+    // 
+    repeated TabModule tab_module = 1;
+    // 
+    string tab_bg = 2;
+    // 
+    //TabControl danmaku_entrance = 3;
+}
+
+// 评论区/弹幕 Tab 控制
+message TabControl {
+    // 
+    bool limit = 1;
+    // 
+    bool disable = 2;
+    // 
+    string disable_click_tip = 3;
+}
+
+// 
+message TabModule {
+    // 
+    TabType tab_type = 1;
+    // 
+    oneof tab {
+        // 
+        IntroductionTab introduction = 2;
+        // 
+        ReplyTab reply = 3;
+        // 
+        //bilibili.app.viewunite.common.ActivityTab activity_tab = 4;
+    }
+}
+
+enum TabType {
+    // 
+    TAB_NONE = 0;
+    // 详情 Tab
+    TAB_INTRODUCTION = 1;
+    // 评论区 Tab
+    TAB_REPLY = 2;
+    // OGV 活动信息 Tab
+    TAB_OGV_ACTIVITY = 3;
+}
+
+// 
+message ViewReply {
+    // 
+    //ViewBase view_base = 1;
+    // 
+    Arc arc = 2;
+    // 
+    //ReqUser req_user = 3;
+    // 
+    //bilibili.app.viewunite.common.Owner owner = 4;
+    // 
+    Tab tab = 5;
+    // 
+    //google.protobuf.Any supplement = 6;
+    // 
+    //CM cm = 7;
+    // 
+    //ECode ecode = 8;
+    // 
+    //ECodeConfig ecode_config = 9;
+    // 
+    map<string, string> report = 10;
 }
 
 // 
@@ -34,7 +156,7 @@ message ViewReq {
     // 
     string session_id = 6;
     // 
-    bilibili.app.archive.middleware.v1.PlayerArgs player_args = 7;
+    //bilibili.app.archive.middleware.v1.PlayerArgs player_args = 7;
     // 
     string track_id = 8;
     // 
