@@ -170,17 +170,17 @@ message AudioInfo {
     // 
     string cover_url = 2;
     // 
-    int64 song_id = 3;
+    int64 song_id = 3 [jstype = JS_NUMBER];
     // 
-    int64 play_count = 4;
+    int64 play_count = 4 [jstype = JS_NUMBER];
     // 
-    int64 reply_count = 5;
+    int64 reply_count = 5 [jstype = JS_NUMBER];
     // 
-    int64 upper_id = 6;
+    int64 upper_id = 6 [jstype = JS_NUMBER];
     // 
     string entrance = 7;
     // 
-    int64 song_attr = 8;
+    int64 song_attr = 8 [jstype = JS_NUMBER];
 }
 
 // 
@@ -218,21 +218,21 @@ message Banner {
 // 
 message BizFavParam {
     // 
-    int64 season_id = 1;
+    int64 season_id = 1 [jstype = JS_NUMBER];
 }
 
 // 
 message BizReserveActivityParam {
     // 
-    int64 activity_id = 1;
+    int64 activity_id = 1 [jstype = JS_NUMBER];
     // 
     string from = 2;
     // 
     string type = 3;
     // 
-    int64 oid = 4;
+    int64 oid = 4 [jstype = JS_NUMBER];
     // 
-    int64 reserve_id = 5;
+    int64 reserve_id = 5 [jstype = JS_NUMBER];
 }
 
 // 
@@ -266,17 +266,17 @@ message CardBasicInfo {
     // 
     string unique_id = 6;
     // 
-    int64 from_source_type = 7;
+    int64 from_source_type = 7 [jstype = JS_NUMBER];
     // 
     string from_source_id = 8;
     // 
-    int64 material_id = 9;
+    int64 material_id = 9 [jstype = JS_NUMBER];
     // 
     string cover_gif = 10;
     // 
     Owner author = 11;
     // 
-    int64 id = 12;
+    int64 id = 12 [jstype = JS_NUMBER];
     // 
     string from = 13;
     // 
@@ -312,7 +312,7 @@ message Celebrity {
     // 
     string link = 8;
     // 
-    int64 mid = 9;
+    int64 mid = 9 [jstype = JS_NUMBER];
     // 
     int32 is_follow = 10;
     // 
@@ -435,29 +435,29 @@ message DescV2 {
     // 
     string uri = 3;
     // 
-    int64 rid = 4;
+    int64 rid = 4 [jstype = JS_NUMBER];
 }
 
 // 
 message Dimension {
     // 
-    int64 width = 1;
+    int64 width = 1 [jstype = JS_NUMBER];
     // 
-    int64 height = 2;
+    int64 height = 2 [jstype = JS_NUMBER];
     // 
-    int64 rotate = 3;
+    int64 rotate = 3 [jstype = JS_NUMBER];
 }
 
 // 
 message DislikeReasons {
     // 
-    int64 id = 1;
+    int64 id = 1 [jstype = JS_NUMBER];
     // 
-    int64 mid = 2;
+    int64 mid = 2 [jstype = JS_NUMBER];
     // 
     int32 rid = 3;
     // 
-    int64 tag_id = 4;
+    int64 tag_id = 4 [jstype = JS_NUMBER];
     // 
     string name = 5;
 }
@@ -483,11 +483,11 @@ message Headline {
 // 
 message HistoryNode {
     // 
-    int64 node_id = 1;
+    int64 node_id = 1 [jstype = JS_NUMBER];
     // 
     string title = 2;
     // 
-    int64 cid = 3;
+    int64 cid = 3 [jstype = JS_NUMBER];
 }
 
 // 荣誉 Banner
@@ -567,11 +567,11 @@ message IconFont {
 //
 message Interaction {
     // 
-    int64 ep_id = 1;
+    int64 ep_id = 1 [jstype = JS_NUMBER];
     //
     HistoryNode history_node = 2;
     //
-    int64 graph_version = 3;
+    int64 graph_version = 3 [jstype = JS_NUMBER];
     //
     string msg = 4;
     //
@@ -646,9 +646,9 @@ message Label {
     // 
     string icon_night = 4;
     // 
-    int64 icon_width = 5;
+    int64 icon_width = 5 [jstype = JS_NUMBER];
     // 
-    int64 icon_height = 6;
+    int64 icon_height = 6 [jstype = JS_NUMBER];
     // 
     string lottie = 7;
     // 
@@ -690,15 +690,15 @@ message Live {
 // 直播预约信息
 message LiveOrder {
     // 
-    int64 sid = 1;
+    int64 sid = 1 [jstype = JS_NUMBER];
     // 
     string text = 2;
     // 
-    int64 live_plan_start_time = 3;
+    int64 live_plan_start_time = 3 [jstype = JS_NUMBER];
     // 
     bool is_follow = 4;
     // 
-    int64 follow_count = 5;
+    int64 follow_count = 5 [jstype = JS_NUMBER];
 }
 
 // 
@@ -971,7 +971,7 @@ message OgvTitle {
 
 // 
 message Owner {
-    bilibili.dagw.component.avatar.v1.AvatarItem avatar = 1;
+    //bilibili.dagw.component.avatar.v1.AvatarItem avatar = 1;
     // 
     string url = 2;
     // 
@@ -987,21 +987,21 @@ message Owner {
     // 
     string pub_location = 8;
     // 
-    Vip vip = 9;
+    //Vip vip = 9;
     // 
     string title_url = 10;
     // 
     string face = 11;
     // 
-    int64 mid = 12;
+    int64 mid = 12 [jstype = JS_NUMBER];
     // 
-    OfficialVerify official_verify = 13;
+    //OfficialVerify official_verify = 13;
     // 
-    Live live = 14;
+    //Live live = 14;
     // 
-    int64 fans_num = 15;
+    int64 fans_num = 15 [jstype = JS_NUMBER];
     // 
-    repeated int64 assists = 16;
+    repeated int64 assists = 16 [jstype = JS_NUMBER];
 }
 
 // 

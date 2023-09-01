@@ -6,6 +6,8 @@
 // tslint:disable
 import { ServiceType } from "@protobuf-ts/runtime-rpc";
 import { MessageType } from "@protobuf-ts/runtime";
+import { Any } from "../../../../google/protobuf/any";
+import { Owner } from "../common";
 /**
  * @generated from protobuf enum bilibili.app.viewunite.v1.TabType
  */
@@ -141,7 +143,9 @@ class ViewReply$Type extends MessageType {
     constructor() {
         super("bilibili.app.viewunite.v1.ViewReply", [
             { no: 2, name: "arc", kind: "message", T: () => Arc },
+            { no: 4, name: "owner", kind: "message", T: () => Owner },
             { no: 5, name: "tab", kind: "message", T: () => Tab },
+            { no: 6, name: "supplement", kind: "message", T: () => Any },
             { no: 10, name: "report", kind: "map", K: 9 /*ScalarType.STRING*/, V: { kind: "scalar", T: 9 /*ScalarType.STRING*/ } }
         ]);
     }

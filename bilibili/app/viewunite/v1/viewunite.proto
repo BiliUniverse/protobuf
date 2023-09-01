@@ -2,10 +2,10 @@ syntax = "proto3";
 
 package bilibili.app.viewunite.v1;
 
-//import "bilibili/app/archive/middleware/v1/preload.proto";
-//import "bilibili/app/viewunite/common.proto";
-//import "bilibili/pagination/pagination.proto";
-//import "google/protobuf/any.proto";
+import "bilibili/app/archive/middleware/v1/preload.proto";
+import "bilibili/app/viewunite/common.proto";
+import "bilibili/pagination/pagination.proto";
+import "google/protobuf/any.proto";
 
 // 统一视频信息接口 (7.41.0+)
 service View {
@@ -126,11 +126,11 @@ message ViewReply {
     // 
     //ReqUser req_user = 3;
     // 
-    //bilibili.app.viewunite.common.Owner owner = 4;
+    bilibili.app.viewunite.common.Owner owner = 4;
     // 
     Tab tab = 5;
     // 
-    //google.protobuf.Any supplement = 6;
+    google.protobuf.Any supplement = 6;
     // 
     //CM cm = 7;
     // 

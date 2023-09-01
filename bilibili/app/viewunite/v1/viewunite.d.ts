@@ -2,6 +2,8 @@
 // @generated from protobuf file "bilibili/app/viewunite/v1/viewunite.proto" (package "bilibili.app.viewunite.v1", syntax proto3)
 // tslint:disable
 import { MessageType } from "@protobuf-ts/runtime";
+import { Any } from "../../../../google/protobuf/any";
+import { Owner } from "../common";
 /**
  * 业务信息
  *
@@ -221,7 +223,11 @@ export interface ViewReply {
      *
      * ReqUser req_user = 3;
      *
-     * bilibili.app.viewunite.common.Owner owner = 4;
+     *
+     * @generated from protobuf field: bilibili.app.viewunite.common.Owner owner = 4;
+     */
+    owner?: Owner;
+    /**
      *
      *
      * @generated from protobuf field: bilibili.app.viewunite.v1.Tab tab = 5;
@@ -229,7 +235,11 @@ export interface ViewReply {
     tab?: Tab;
     /**
      *
-     * google.protobuf.Any supplement = 6;
+     *
+     * @generated from protobuf field: google.protobuf.Any supplement = 6;
+     */
+    supplement?: Any;
+    /**
      *
      * CM cm = 7;
      *
