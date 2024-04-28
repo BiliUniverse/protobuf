@@ -5,20 +5,7 @@
 // @generated from protobuf file "bilibili/playershared/playershared.proto" (package "bilibili.playershared", syntax proto3)
 // tslint:disable
 import { MessageType } from "@protobuf-ts/runtime";
-/**
- * @generated from protobuf enum bilibili.playershared.Scheme.ActionType
- */
-export var Scheme_ActionType;
-(function (Scheme_ActionType) {
-    /**
-     * @generated from protobuf enum value: UNKNOWN = 0;
-     */
-    Scheme_ActionType[Scheme_ActionType["UNKNOWN"] = 0] = "UNKNOWN";
-    /**
-     * @generated from protobuf enum value: SHOW_TOAST = 1;
-     */
-    Scheme_ActionType[Scheme_ActionType["SHOW_TOAST"] = 1] = "SHOW_TOAST";
-})(Scheme_ActionType || (Scheme_ActionType = {}));
+import { Any } from "../../google/protobuf/any";
 /**
  * 杜比类型
  *
@@ -45,6 +32,174 @@ export var DolbyItem_Type;
      */
     DolbyItem_Type[DolbyItem_Type["ATMOS"] = 2] = "ATMOS";
 })(DolbyItem_Type || (DolbyItem_Type = {}));
+/**
+ * @generated from protobuf enum bilibili.playershared.Scheme.ActionType
+ */
+export var Scheme_ActionType;
+(function (Scheme_ActionType) {
+    /**
+     * @generated from protobuf enum value: UNKNOWN = 0;
+     */
+    Scheme_ActionType[Scheme_ActionType["UNKNOWN"] = 0] = "UNKNOWN";
+    /**
+     * @generated from protobuf enum value: SHOW_TOAST = 1;
+     */
+    Scheme_ActionType[Scheme_ActionType["SHOW_TOAST"] = 1] = "SHOW_TOAST";
+})(Scheme_ActionType || (Scheme_ActionType = {}));
+/**
+ *
+ *
+ * @generated from protobuf enum bilibili.playershared.ArcType
+ */
+export var ArcType;
+(function (ArcType) {
+    /**
+     *
+     *
+     * @generated from protobuf enum value: ARC_TYPE_NORMAL = 0;
+     */
+    ArcType[ArcType["NORMAL"] = 0] = "NORMAL";
+    /**
+     *
+     *
+     * @generated from protobuf enum value: ARC_TYPE_INTERACT = 1;
+     */
+    ArcType[ArcType["INTERACT"] = 1] = "INTERACT";
+})(ArcType || (ArcType = {}));
+/**
+ *
+ *
+ * @generated from protobuf enum bilibili.playershared.BizType
+ */
+export var BizType;
+(function (BizType) {
+    /**
+     *
+     *
+     * @generated from protobuf enum value: BIZ_TYPE_UNKNOWN = 0;
+     */
+    BizType[BizType["UNKNOWN"] = 0] = "UNKNOWN";
+    /**
+     *
+     *
+     * @generated from protobuf enum value: BIZ_TYPE_UGC = 1;
+     */
+    BizType[BizType["UGC"] = 1] = "UGC";
+    /**
+     *
+     *
+     * @generated from protobuf enum value: BIZ_TYPE_PGC = 2;
+     */
+    BizType[BizType["PGC"] = 2] = "PGC";
+    /**
+     *
+     *
+     * @generated from protobuf enum value: BIZ_TYPE_PUGV = 3;
+     */
+    BizType[BizType["PUGV"] = 3] = "PUGV";
+})(BizType || (BizType = {}));
+/**
+ * @generated from protobuf enum bilibili.playershared.ButtonAction
+ */
+export var ButtonAction;
+(function (ButtonAction) {
+    /**
+     *
+     *
+     * @generated from protobuf enum value: BUTTON_UNKNOWN = 0;
+     */
+    ButtonAction[ButtonAction["BUTTON_UNKNOWN"] = 0] = "BUTTON_UNKNOWN";
+    /**
+     *
+     *
+     * @generated from protobuf enum value: PAY = 1;
+     */
+    ButtonAction[ButtonAction["PAY"] = 1] = "PAY";
+    /**
+     *
+     *
+     * @generated from protobuf enum value: VIP = 2;
+     */
+    ButtonAction[ButtonAction["VIP"] = 2] = "VIP";
+    /**
+     *
+     *
+     * @generated from protobuf enum value: PACK = 3;
+     */
+    ButtonAction[ButtonAction["PACK"] = 3] = "PACK";
+    /**
+     *
+     *
+     * @generated from protobuf enum value: LINK = 4;
+     */
+    ButtonAction[ButtonAction["LINK"] = 4] = "LINK";
+    /**
+     *
+     *
+     * @generated from protobuf enum value: COUPON = 5;
+     */
+    ButtonAction[ButtonAction["COUPON"] = 5] = "COUPON";
+    /**
+     *
+     *
+     * @generated from protobuf enum value: DEMAND = 6;
+     */
+    ButtonAction[ButtonAction["DEMAND"] = 6] = "DEMAND";
+    /**
+     *
+     *
+     * @generated from protobuf enum value: DEMAND_PACK = 7;
+     */
+    ButtonAction[ButtonAction["DEMAND_PACK"] = 7] = "DEMAND_PACK";
+    /**
+     *
+     *
+     * @generated from protobuf enum value: FOLLOW = 8;
+     */
+    ButtonAction[ButtonAction["FOLLOW"] = 8] = "FOLLOW";
+    /**
+     *
+     *
+     * @generated from protobuf enum value: APPOINTMENT = 9;
+     */
+    ButtonAction[ButtonAction["APPOINTMENT"] = 9] = "APPOINTMENT";
+    /**
+     *
+     *
+     * @generated from protobuf enum value: VIP_FREE = 10;
+     */
+    ButtonAction[ButtonAction["VIP_FREE"] = 10] = "VIP_FREE";
+    /**
+     *
+     *
+     * @generated from protobuf enum value: TASK = 11;
+     */
+    ButtonAction[ButtonAction["TASK"] = 11] = "TASK";
+    /**
+     *
+     *
+     * @generated from protobuf enum value: CHARGINGPLUS = 12;
+     */
+    ButtonAction[ButtonAction["CHARGINGPLUS"] = 12] = "CHARGINGPLUS";
+    /**
+     *
+     *
+     * @generated from protobuf enum value: BP = 13;
+     */
+    ButtonAction[ButtonAction["BP"] = 13] = "BP";
+    /**
+     *
+     *
+     * @generated from protobuf enum value: PRE_SELL = 14;
+     */
+    ButtonAction[ButtonAction["PRE_SELL"] = 14] = "PRE_SELL";
+    /**
+     *
+     *
+     * @generated from protobuf enum value: LOGIN = 15;
+     */
+    ButtonAction[ButtonAction["LOGIN"] = 15] = "LOGIN";
+})(ButtonAction || (ButtonAction = {}));
 /**
  * 视频编码
  *
@@ -266,6 +421,158 @@ export var DrmTechType;
     DrmTechType[DrmTechType["BILI_DRM"] = 3] = "BILI_DRM";
 })(DrmTechType || (DrmTechType = {}));
 /**
+ *
+ *
+ * @generated from protobuf enum bilibili.playershared.Effects
+ */
+export var Effects;
+(function (Effects) {
+    /**
+     *
+     *
+     * @generated from protobuf enum value: EFFECTS_UNKNOWN = 0;
+     */
+    Effects[Effects["EFFECTS_UNKNOWN"] = 0] = "EFFECTS_UNKNOWN";
+    /**
+     *
+     *
+     * @generated from protobuf enum value: GAUSSIAN_BLUR = 1;
+     */
+    Effects[Effects["GAUSSIAN_BLUR"] = 1] = "GAUSSIAN_BLUR";
+    /**
+     *
+     *
+     * @generated from protobuf enum value: HALF_ALPHA = 2;
+     */
+    Effects[Effects["HALF_ALPHA"] = 2] = "HALF_ALPHA";
+})(Effects || (Effects = {}));
+/**
+ * @generated from protobuf enum bilibili.playershared.ExtDataType
+ */
+export var ExtDataType;
+(function (ExtDataType) {
+    /**
+     *
+     *
+     * @generated from protobuf enum value: EXT_DATA_TYPE_UNKNOWN = 0;
+     */
+    ExtDataType[ExtDataType["EXT_DATA_TYPE_UNKNOWN"] = 0] = "EXT_DATA_TYPE_UNKNOWN";
+    /**
+     *
+     *
+     * @generated from protobuf enum value: PLAY_LIST = 1;
+     */
+    ExtDataType[ExtDataType["PLAY_LIST"] = 1] = "PLAY_LIST";
+})(ExtDataType || (ExtDataType = {}));
+/**
+ *
+ *
+ * @generated from protobuf enum bilibili.playershared.FragmentPosition
+ */
+export var FragmentPosition;
+(function (FragmentPosition) {
+    /**
+     * @generated from protobuf enum value: INVALID = 0;
+     */
+    FragmentPosition[FragmentPosition["INVALID"] = 0] = "INVALID";
+    /**
+     * @generated from protobuf enum value: PRE = 1;
+     */
+    FragmentPosition[FragmentPosition["PRE"] = 1] = "PRE";
+    /**
+     * @generated from protobuf enum value: MIDDLE = 2;
+     */
+    FragmentPosition[FragmentPosition["MIDDLE"] = 2] = "MIDDLE";
+    /**
+     * @generated from protobuf enum value: POST = 3;
+     */
+    FragmentPosition[FragmentPosition["POST"] = 3] = "POST";
+})(FragmentPosition || (FragmentPosition = {}));
+/**
+ *
+ *
+ * @generated from protobuf enum bilibili.playershared.FragmentType
+ */
+export var FragmentType;
+(function (FragmentType) {
+    /**
+     * @generated from protobuf enum value: UNKNOWN = 0;
+     */
+    FragmentType[FragmentType["UNKNOWN"] = 0] = "UNKNOWN";
+    /**
+     * @generated from protobuf enum value: AD_FRAGMENT = 1;
+     */
+    FragmentType[FragmentType["AD_FRAGMENT"] = 1] = "AD_FRAGMENT";
+    /**
+     * @generated from protobuf enum value: OGV_FRAGMENT = 2;
+     */
+    FragmentType[FragmentType["OGV_FRAGMENT"] = 2] = "OGV_FRAGMENT";
+})(FragmentType || (FragmentType = {}));
+/**
+ *
+ *
+ * @generated from protobuf enum bilibili.playershared.GuideStyle
+ */
+export var GuideStyle;
+(function (GuideStyle) {
+    /**
+     *
+     *
+     * @generated from protobuf enum value: STYLE_UNKNOWN = 0;
+     */
+    GuideStyle[GuideStyle["STYLE_UNKNOWN"] = 0] = "STYLE_UNKNOWN";
+    /**
+     *
+     *
+     * @generated from protobuf enum value: HORIZONTAL_IMAGE = 1;
+     */
+    GuideStyle[GuideStyle["HORIZONTAL_IMAGE"] = 1] = "HORIZONTAL_IMAGE";
+    /**
+     *
+     *
+     * @generated from protobuf enum value: VERTICAL_TEXT = 2;
+     */
+    GuideStyle[GuideStyle["VERTICAL_TEXT"] = 2] = "VERTICAL_TEXT";
+    /**
+     *
+     *
+     * @generated from protobuf enum value: SIMPLE_TEXT = 3;
+     */
+    GuideStyle[GuideStyle["SIMPLE_TEXT"] = 3] = "SIMPLE_TEXT";
+    /**
+     *
+     *
+     * @generated from protobuf enum value: CHARGING_TEXT = 4;
+     */
+    GuideStyle[GuideStyle["CHARGING_TEXT"] = 4] = "CHARGING_TEXT";
+})(GuideStyle || (GuideStyle = {}));
+/**
+ *
+ *
+ * @generated from protobuf enum bilibili.playershared.LimitActionType
+ */
+export var LimitActionType;
+(function (LimitActionType) {
+    /**
+     *
+     *
+     * @generated from protobuf enum value: LAT_UNKNOWN = 0;
+     */
+    LimitActionType[LimitActionType["LAT_UNKNOWN"] = 0] = "LAT_UNKNOWN";
+    /**
+     *
+     *
+     * @generated from protobuf enum value: SHOW_LIMIT_DIALOG = 1;
+     */
+    LimitActionType[LimitActionType["SHOW_LIMIT_DIALOG"] = 1] = "SHOW_LIMIT_DIALOG";
+    /**
+     *
+     *
+     * @generated from protobuf enum value: SKIP_CURRENT_EP = 2;
+     */
+    LimitActionType[LimitActionType["SKIP_CURRENT_EP"] = 2] = "SKIP_CURRENT_EP";
+})(LimitActionType || (LimitActionType = {}));
+/**
  * 错误码
  *
  * @generated from protobuf enum bilibili.playershared.PlayErr
@@ -286,6 +593,124 @@ export var PlayErr;
 /**
  *
  *
+ * @generated from protobuf enum bilibili.playershared.PromptBarStyle
+ */
+export var PromptBarStyle;
+(function (PromptBarStyle) {
+    /**
+     * @generated from protobuf enum value: PROMPT_BAR_STYLE_UNKNOWN = 0;
+     */
+    PromptBarStyle[PromptBarStyle["PROMPT_BAR_STYLE_UNKNOWN"] = 0] = "PROMPT_BAR_STYLE_UNKNOWN";
+    /**
+     * @generated from protobuf enum value: TEXT = 1;
+     */
+    PromptBarStyle[PromptBarStyle["TEXT"] = 1] = "TEXT";
+    /**
+     * @generated from protobuf enum value: CURING_BENEFITS = 2;
+     */
+    PromptBarStyle[PromptBarStyle["CURING_BENEFITS"] = 2] = "CURING_BENEFITS";
+    /**
+     * @generated from protobuf enum value: CARD_OPENING_GIFT = 3;
+     */
+    PromptBarStyle[PromptBarStyle["CARD_OPENING_GIFT"] = 3] = "CARD_OPENING_GIFT";
+    /**
+     * @generated from protobuf enum value: COUNTDOWN = 4;
+     */
+    PromptBarStyle[PromptBarStyle["COUNTDOWN"] = 4] = "COUNTDOWN";
+})(PromptBarStyle || (PromptBarStyle = {}));
+/**
+ *
+ *
+ * @generated from protobuf enum bilibili.playershared.PromptBarType
+ */
+export var PromptBarType;
+(function (PromptBarType) {
+    /**
+     * @generated from protobuf enum value: PROMPT_BAR_TYPE_UNKNOWN = 0;
+     */
+    PromptBarType[PromptBarType["PROMPT_BAR_TYPE_UNKNOWN"] = 0] = "PROMPT_BAR_TYPE_UNKNOWN";
+    /**
+     * @generated from protobuf enum value: OPEN_PROMPT_BAR = 1;
+     */
+    PromptBarType[PromptBarType["OPEN_PROMPT_BAR"] = 1] = "OPEN_PROMPT_BAR";
+})(PromptBarType || (PromptBarType = {}));
+/**
+ *
+ *
+ * @generated from protobuf enum bilibili.playershared.ShowStyleType
+ */
+export var ShowStyleType;
+(function (ShowStyleType) {
+    /**
+     *
+     *
+     * @generated from protobuf enum value: SHOW_STYLE_TYPE_UNKNOWN = 0;
+     */
+    ShowStyleType[ShowStyleType["UNKNOWN"] = 0] = "UNKNOWN";
+    /**
+     *
+     *
+     * @generated from protobuf enum value: SHOW_STYLE_TYPE_ORDINARY = 1;
+     */
+    ShowStyleType[ShowStyleType["ORDINARY"] = 1] = "ORDINARY";
+    /**
+     *
+     *
+     * @generated from protobuf enum value: SHOW_STYLE_TYPE_RESIDENT = 2;
+     */
+    ShowStyleType[ShowStyleType["RESIDENT"] = 2] = "RESIDENT";
+})(ShowStyleType || (ShowStyleType = {}));
+/**
+ * @generated from protobuf enum bilibili.playershared.ToastType
+ */
+export var ToastType;
+(function (ToastType) {
+    /**
+     *
+     *
+     * @generated from protobuf enum value: TOAST_TYPE_UNKNOWN = 0;
+     */
+    ToastType[ToastType["TOAST_TYPE_UNKNOWN"] = 0] = "TOAST_TYPE_UNKNOWN";
+    /**
+     *
+     *
+     * @generated from protobuf enum value: VIP_CONTENT_REMIND = 1;
+     */
+    ToastType[ToastType["VIP_CONTENT_REMIND"] = 1] = "VIP_CONTENT_REMIND";
+    /**
+     *
+     *
+     * @generated from protobuf enum value: VIP_DEFINITION_REMIND = 2;
+     */
+    ToastType[ToastType["VIP_DEFINITION_REMIND"] = 2] = "VIP_DEFINITION_REMIND";
+    /**
+     *
+     *
+     * @generated from protobuf enum value: VIP_DEFINITION_GUIDE = 3;
+     */
+    ToastType[ToastType["VIP_DEFINITION_GUIDE"] = 3] = "VIP_DEFINITION_GUIDE";
+    /**
+     *
+     *
+     * @generated from protobuf enum value: OGV_VIDEO_START_TOAST = 4;
+     */
+    ToastType[ToastType["OGV_VIDEO_START_TOAST"] = 4] = "OGV_VIDEO_START_TOAST";
+    /**
+     *
+     *
+     * @generated from protobuf enum value: CHARGING_TOAST = 5;
+     */
+    ToastType[ToastType["CHARGING_TOAST"] = 5] = "CHARGING_TOAST";
+    /**
+     *
+     *
+     * @generated from protobuf enum value: VIP_SKIP_FRAGMENT_TOAST = 6;
+     */
+    ToastType[ToastType["VIP_SKIP_FRAGMENT_TOAST"] = 6] = "VIP_SKIP_FRAGMENT_TOAST";
+})(ToastType || (ToastType = {}));
+/**
+ *
+ *
  * @generated from protobuf enum bilibili.playershared.UnsupportScene
  */
 export var UnsupportScene;
@@ -303,36 +728,12 @@ export var UnsupportScene;
      */
     UnsupportScene[UnsupportScene["PREMIERE"] = 1] = "PREMIERE";
 })(UnsupportScene || (UnsupportScene = {}));
-/**
- * 视频类型
- *
- * @generated from protobuf enum bilibili.playershared.VideoType
- */
-export var VideoType;
-(function (VideoType) {
-    /**
-     * @generated from protobuf enum value: UNKNOWN = 0;
-     */
-    VideoType[VideoType["UNKNOWN"] = 0] = "UNKNOWN";
-    /**
-     * 用户生成内容
-     *
-     * @generated from protobuf enum value: UGC = 1;
-     */
-    VideoType[VideoType["UGC"] = 1] = "UGC";
-    /**
-     * 专业生产内容
-     *
-     * @generated from protobuf enum value: PGC = 2;
-     */
-    VideoType[VideoType["PGC"] = 2] = "PGC";
-})(VideoType || (VideoType = {}));
 // @generated message type with reflection information, may provide speed optimized methods
 class ArcConf$Type extends MessageType {
     constructor() {
         super("bilibili.playershared.ArcConf", [
             { no: 1, name: "is_support", kind: "scalar", T: 8 /*ScalarType.BOOL*/ },
-            { no: 2, name: "disable", kind: "scalar", T: 8 /*ScalarType.BOOL*/ },
+            { no: 2, name: "disabled", kind: "scalar", T: 8 /*ScalarType.BOOL*/ },
             { no: 3, name: "extra_content", kind: "message", T: () => ExtraContent },
             { no: 4, name: "unsupport_scene", kind: "scalar", repeat: 1 /*RepeatType.PACKED*/, T: 5 /*ScalarType.INT32*/ }
         ]);
@@ -342,6 +743,78 @@ class ArcConf$Type extends MessageType {
  * @generated MessageType for protobuf message bilibili.playershared.ArcConf
  */
 export const ArcConf = new ArcConf$Type();
+// @generated message type with reflection information, may provide speed optimized methods
+class BackgroundInfo$Type extends MessageType {
+    constructor() {
+        super("bilibili.playershared.BackgroundInfo", [
+            { no: 1, name: "drawable_color", kind: "scalar", T: 9 /*ScalarType.STRING*/ },
+            { no: 2, name: "drawable_bitmap_url", kind: "scalar", T: 9 /*ScalarType.STRING*/ },
+            { no: 3, name: "effects", kind: "scalar", T: 5 /*ScalarType.INT32*/ }
+        ]);
+    }
+}
+/**
+ * @generated MessageType for protobuf message bilibili.playershared.BackgroundInfo
+ */
+export const BackgroundInfo = new BackgroundInfo$Type();
+// @generated message type with reflection information, may provide speed optimized methods
+class BadgeInfo$Type extends MessageType {
+    constructor() {
+        super("bilibili.playershared.BadgeInfo", [
+            { no: 1, name: "text", kind: "scalar", T: 9 /*ScalarType.STRING*/ },
+            { no: 2, name: "bg_color", kind: "scalar", T: 9 /*ScalarType.STRING*/ },
+            { no: 3, name: "bg_color_night", kind: "scalar", T: 9 /*ScalarType.STRING*/ },
+            { no: 4, name: "text_color", kind: "scalar", T: 9 /*ScalarType.STRING*/ },
+            { no: 5, name: "bg_gradient_color", kind: "message", T: () => GradientColor },
+            { no: 6, name: "img", kind: "scalar", T: 9 /*ScalarType.STRING*/ }
+        ]);
+    }
+}
+/**
+ * @generated MessageType for protobuf message bilibili.playershared.BadgeInfo
+ */
+export const BadgeInfo = new BadgeInfo$Type();
+// @generated message type with reflection information, may provide speed optimized methods
+class Banner$Type extends MessageType {
+    constructor() {
+        super("bilibili.playershared.Banner", [
+            { no: 1, name: "jump_link", kind: "scalar", T: 9 /*ScalarType.STRING*/ },
+            { no: 2, name: "image_link", kind: "scalar", T: 9 /*ScalarType.STRING*/ },
+            { no: 3, name: "half_image_link", kind: "scalar", T: 9 /*ScalarType.STRING*/ },
+            { no: 4, name: "report", kind: "message", T: () => Report }
+        ]);
+    }
+}
+/**
+ * @generated MessageType for protobuf message bilibili.playershared.Banner
+ */
+export const Banner = new Banner$Type();
+// @generated message type with reflection information, may provide speed optimized methods
+class BenefitInfo$Type extends MessageType {
+    constructor() {
+        super("bilibili.playershared.BenefitInfo", [
+            { no: 1, name: "title", kind: "scalar", T: 9 /*ScalarType.STRING*/ },
+            { no: 2, name: "icon", kind: "scalar", T: 9 /*ScalarType.STRING*/ }
+        ]);
+    }
+}
+/**
+ * @generated MessageType for protobuf message bilibili.playershared.BenefitInfo
+ */
+export const BenefitInfo = new BenefitInfo$Type();
+// @generated message type with reflection information, may provide speed optimized methods
+class BottomDisplay$Type extends MessageType {
+    constructor() {
+        super("bilibili.playershared.BottomDisplay", [
+            { no: 1, name: "title", kind: "message", T: () => TextInfo },
+            { no: 2, name: "icon", kind: "scalar", T: 9 /*ScalarType.STRING*/ }
+        ]);
+    }
+}
+/**
+ * @generated MessageType for protobuf message bilibili.playershared.BottomDisplay
+ */
+export const BottomDisplay = new BottomDisplay$Type();
 // @generated message type with reflection information, may provide speed optimized methods
 class Button$Type extends MessageType {
     constructor() {
@@ -357,6 +830,53 @@ class Button$Type extends MessageType {
  */
 export const Button = new Button$Type();
 // @generated message type with reflection information, may provide speed optimized methods
+class ButtonInfo$Type extends MessageType {
+    constructor() {
+        super("bilibili.playershared.ButtonInfo", [
+            { no: 1, name: "text", kind: "scalar", T: 9 /*ScalarType.STRING*/ },
+            { no: 2, name: "text_color", kind: "scalar", T: 9 /*ScalarType.STRING*/ },
+            { no: 3, name: "text_color_night", kind: "scalar", T: 9 /*ScalarType.STRING*/ },
+            { no: 4, name: "bg_color", kind: "scalar", T: 9 /*ScalarType.STRING*/ },
+            { no: 5, name: "bg_color_night", kind: "scalar", T: 9 /*ScalarType.STRING*/ },
+            { no: 6, name: "link", kind: "scalar", T: 9 /*ScalarType.STRING*/ },
+            { no: 7, name: "action_type", kind: "enum", T: () => ["bilibili.playershared.ButtonAction", ButtonAction] },
+            { no: 8, name: "badge_info", kind: "message", T: () => BadgeInfo },
+            { no: 9, name: "report", kind: "message", T: () => Report },
+            { no: 10, name: "left_strikethrough_text", kind: "scalar", T: 9 /*ScalarType.STRING*/ },
+            { no: 11, name: "simple_text_info", kind: "message", T: () => TextInfo },
+            { no: 12, name: "simple_bg_color", kind: "scalar", T: 9 /*ScalarType.STRING*/ },
+            { no: 13, name: "simple_bg_color_night", kind: "scalar", T: 9 /*ScalarType.STRING*/ },
+            { no: 14, name: "bg_gradient_color", kind: "message", T: () => GradientColor },
+            { no: 15, name: "order_report_params", kind: "map", K: 9 /*ScalarType.STRING*/, V: { kind: "scalar", T: 9 /*ScalarType.STRING*/ } },
+            { no: 16, name: "task_param", kind: "message", T: () => TaskParam },
+            { no: 17, name: "frame_color", kind: "scalar", T: 9 /*ScalarType.STRING*/ },
+            { no: 18, name: "icon", kind: "scalar", T: 9 /*ScalarType.STRING*/ }
+        ]);
+    }
+}
+/**
+ * @generated MessageType for protobuf message bilibili.playershared.ButtonInfo
+ */
+export const ButtonInfo = new ButtonInfo$Type();
+// @generated message type with reflection information, may provide speed optimized methods
+class ComprehensiveToast$Type extends MessageType {
+    constructor() {
+        super("bilibili.playershared.ComprehensiveToast", [
+            { no: 1, name: "type", kind: "scalar", T: 5 /*ScalarType.INT32*/ },
+            { no: 2, name: "button", kind: "message", T: () => ButtonInfo },
+            { no: 3, name: "show_style_type", kind: "scalar", T: 5 /*ScalarType.INT32*/ },
+            { no: 4, name: "icon", kind: "scalar", T: 9 /*ScalarType.STRING*/ },
+            { no: 5, name: "toast_text", kind: "message", T: () => TextInfo },
+            { no: 6, name: "report", kind: "message", T: () => Report },
+            { no: 7, name: "order_report_params", kind: "map", K: 9 /*ScalarType.STRING*/, V: { kind: "scalar", T: 9 /*ScalarType.STRING*/ } }
+        ]);
+    }
+}
+/**
+ * @generated MessageType for protobuf message bilibili.playershared.ComprehensiveToast
+ */
+export const ComprehensiveToast = new ComprehensiveToast$Type();
+// @generated message type with reflection information, may provide speed optimized methods
 class ConfValue$Type extends MessageType {
     constructor() {
         super("bilibili.playershared.ConfValue", [
@@ -369,124 +889,6 @@ class ConfValue$Type extends MessageType {
  * @generated MessageType for protobuf message bilibili.playershared.ConfValue
  */
 export const ConfValue = new ConfValue$Type();
-// @generated message type with reflection information, may provide speed optimized methods
-class DeviceConf$Type extends MessageType {
-    constructor() {
-        super("bilibili.playershared.DeviceConf", [
-            { no: 1, name: "conf_value", kind: "message", T: () => ConfValue }
-        ]);
-    }
-}
-/**
- * @generated MessageType for protobuf message bilibili.playershared.DeviceConf
- */
-export const DeviceConf = new DeviceConf$Type();
-// @generated message type with reflection information, may provide speed optimized methods
-class ExtraContent$Type extends MessageType {
-    constructor() {
-        super("bilibili.playershared.ExtraContent", [
-            { no: 1, name: "disable_reason", kind: "scalar", T: 9 /*ScalarType.STRING*/ },
-            { no: 2, name: "disable_code", kind: "scalar", T: 4 /*ScalarType.UINT64*/, L: 2 /*LongType.NUMBER*/ }
-        ]);
-    }
-}
-/**
- * @generated MessageType for protobuf message bilibili.playershared.ExtraContent
- */
-export const ExtraContent = new ExtraContent$Type();
-// @generated message type with reflection information, may provide speed optimized methods
-class History$Type extends MessageType {
-    constructor() {
-        super("bilibili.playershared.History", [
-            { no: 1, name: "current_video", kind: "message", T: () => HistoryInfo },
-            { no: 2, name: "related_video", kind: "message", T: () => HistoryInfo }
-        ]);
-    }
-}
-/**
- * @generated MessageType for protobuf message bilibili.playershared.History
- */
-export const History = new History$Type();
-// @generated message type with reflection information, may provide speed optimized methods
-class HistoryInfo$Type extends MessageType {
-    constructor() {
-        super("bilibili.playershared.HistoryInfo", [
-            { no: 1, name: "progress", kind: "scalar", T: 3 /*ScalarType.INT64*/, L: 2 /*LongType.NUMBER*/ },
-            { no: 2, name: "last_play_cid", kind: "scalar", T: 3 /*ScalarType.INT64*/, L: 2 /*LongType.NUMBER*/ }
-        ]);
-    }
-}
-/**
- * @generated MessageType for protobuf message bilibili.playershared.HistoryInfo
- */
-export const HistoryInfo = new HistoryInfo$Type();
-// @generated message type with reflection information, may provide speed optimized methods
-class PlayDeviceConf$Type extends MessageType {
-    constructor() {
-        super("bilibili.playershared.PlayDeviceConf", [
-            { no: 1, name: "arc_confs", kind: "map", K: 5 /*ScalarType.INT32*/, V: { kind: "message", T: () => DeviceConf } }
-        ]);
-    }
-}
-/**
- * @generated MessageType for protobuf message bilibili.playershared.PlayDeviceConf
- */
-export const PlayDeviceConf = new PlayDeviceConf$Type();
-// @generated message type with reflection information, may provide speed optimized methods
-class Scheme$Type extends MessageType {
-    constructor() {
-        super("bilibili.playershared.Scheme", [
-            { no: 1, name: "action_type", kind: "enum", T: () => ["bilibili.playershared.Scheme.ActionType", Scheme_ActionType] },
-            { no: 2, name: "toast", kind: "scalar", T: 9 /*ScalarType.STRING*/ }
-        ]);
-    }
-}
-/**
- * @generated MessageType for protobuf message bilibili.playershared.Scheme
- */
-export const Scheme = new Scheme$Type();
-// @generated message type with reflection information, may provide speed optimized methods
-class Stream$Type extends MessageType {
-    constructor() {
-        super("bilibili.playershared.Stream", [
-            { no: 1, name: "stream_info", kind: "message", T: () => StreamInfo },
-            { no: 2, name: "dash_video", kind: "message", oneof: "content", T: () => DashVideo },
-            { no: 3, name: "segment_video", kind: "message", oneof: "content", T: () => SegmentVideo }
-        ]);
-    }
-}
-/**
- * @generated MessageType for protobuf message bilibili.playershared.Stream
- */
-export const Stream = new Stream$Type();
-// @generated message type with reflection information, may provide speed optimized methods
-class StreamInfo$Type extends MessageType {
-    constructor() {
-        super("bilibili.playershared.StreamInfo", [
-            { no: 1, name: "quality", kind: "scalar", T: 13 /*ScalarType.UINT32*/ },
-            { no: 2, name: "format", kind: "scalar", T: 9 /*ScalarType.STRING*/ },
-            { no: 3, name: "description", kind: "scalar", T: 9 /*ScalarType.STRING*/ },
-            { no: 4, name: "err_code", kind: "scalar", T: 13 /*ScalarType.UINT32*/ },
-            { no: 5, name: "limit", kind: "message", T: () => StreamLimit },
-            { no: 6, name: "need_vip", kind: "scalar", T: 8 /*ScalarType.BOOL*/ },
-            { no: 7, name: "need_login", kind: "scalar", T: 8 /*ScalarType.BOOL*/ },
-            { no: 8, name: "intact", kind: "scalar", T: 8 /*ScalarType.BOOL*/ },
-            { no: 9, name: "no_rexcode", kind: "scalar", T: 8 /*ScalarType.BOOL*/ },
-            { no: 10, name: "attribute", kind: "scalar", T: 3 /*ScalarType.INT64*/, L: 2 /*LongType.NUMBER*/ },
-            { no: 11, name: "new_description", kind: "scalar", T: 9 /*ScalarType.STRING*/ },
-            { no: 12, name: "display_desc", kind: "scalar", T: 9 /*ScalarType.STRING*/ },
-            { no: 13, name: "superscript", kind: "scalar", T: 9 /*ScalarType.STRING*/ },
-            { no: 14, name: "vip_free", kind: "scalar", T: 8 /*ScalarType.BOOL*/ },
-            { no: 15, name: "subtitle", kind: "scalar", T: 9 /*ScalarType.STRING*/ },
-            { no: 16, name: "scheme", kind: "message", T: () => Scheme },
-            { no: 17, name: "support_drm", kind: "scalar", T: 8 /*ScalarType.BOOL*/ }
-        ]);
-    }
-}
-/**
- * @generated MessageType for protobuf message bilibili.playershared.StreamInfo
- */
-export const StreamInfo = new StreamInfo$Type();
 // @generated message type with reflection information, may provide speed optimized methods
 class DashItem$Type extends MessageType {
     constructor() {
@@ -531,17 +933,433 @@ class DashVideo$Type extends MessageType {
  */
 export const DashVideo = new DashVideo$Type();
 // @generated message type with reflection information, may provide speed optimized methods
-class SegmentVideo$Type extends MessageType {
+class DeviceConf$Type extends MessageType {
     constructor() {
-        super("bilibili.playershared.SegmentVideo", [
-            { no: 1, name: "segment", kind: "message", repeat: 1 /*RepeatType.PACKED*/, T: () => ResponseUrl }
+        super("bilibili.playershared.DeviceConf", [
+            { no: 1, name: "conf_value", kind: "message", T: () => ConfValue }
         ]);
     }
 }
 /**
- * @generated MessageType for protobuf message bilibili.playershared.SegmentVideo
+ * @generated MessageType for protobuf message bilibili.playershared.DeviceConf
  */
-export const SegmentVideo = new SegmentVideo$Type();
+export const DeviceConf = new DeviceConf$Type();
+// @generated message type with reflection information, may provide speed optimized methods
+class Dialog$Type extends MessageType {
+    constructor() {
+        super("bilibili.playershared.Dialog", [
+            { no: 1, name: "style_type", kind: "enum", T: () => ["bilibili.playershared.GuideStyle", GuideStyle] },
+            { no: 2, name: "background_info", kind: "message", T: () => BackgroundInfo },
+            { no: 3, name: "title", kind: "message", T: () => TextInfo },
+            { no: 4, name: "subtitle", kind: "message", T: () => TextInfo },
+            { no: 5, name: "image", kind: "message", T: () => ImageInfo },
+            { no: 6, name: "button", kind: "message", repeat: 1 /*RepeatType.PACKED*/, T: () => ButtonInfo },
+            { no: 7, name: "bottom_desc", kind: "message", T: () => ButtonInfo },
+            { no: 8, name: "report", kind: "message", T: () => Report },
+            { no: 9, name: "count_down_sec", kind: "scalar", T: 5 /*ScalarType.INT32*/ },
+            { no: 10, name: "right_bottom_desc", kind: "message", T: () => TextInfo },
+            { no: 11, name: "bottom_display", kind: "message", repeat: 1 /*RepeatType.PACKED*/, T: () => BottomDisplay },
+            { no: 12, name: "ext_data", kind: "message", T: () => ExtData },
+            { no: 13, name: "limit_action_type", kind: "enum", T: () => ["bilibili.playershared.LimitActionType", LimitActionType] },
+            { no: 14, name: "is_hide_more_btn", kind: "scalar", T: 5 /*ScalarType.INT32*/ }
+        ]);
+    }
+}
+/**
+ * @generated MessageType for protobuf message bilibili.playershared.Dialog
+ */
+export const Dialog = new Dialog$Type();
+// @generated message type with reflection information, may provide speed optimized methods
+class Dimension$Type extends MessageType {
+    constructor() {
+        super("bilibili.playershared.Dimension", [
+            { no: 1, name: "width", kind: "scalar", T: 5 /*ScalarType.INT32*/ },
+            { no: 2, name: "height", kind: "scalar", T: 5 /*ScalarType.INT32*/ },
+            { no: 3, name: "rotate", kind: "scalar", T: 5 /*ScalarType.INT32*/ }
+        ]);
+    }
+}
+/**
+ * @generated MessageType for protobuf message bilibili.playershared.Dimension
+ */
+export const Dimension = new Dimension$Type();
+// @generated message type with reflection information, may provide speed optimized methods
+class DolbyItem$Type extends MessageType {
+    constructor() {
+        super("bilibili.playershared.DolbyItem", [
+            { no: 1, name: "type", kind: "enum", T: () => ["bilibili.playershared.DolbyItem.Type", DolbyItem_Type] },
+            { no: 2, name: "audio", kind: "message", repeat: 1 /*RepeatType.PACKED*/, T: () => DashItem }
+        ]);
+    }
+}
+/**
+ * @generated MessageType for protobuf message bilibili.playershared.DolbyItem
+ */
+export const DolbyItem = new DolbyItem$Type();
+// @generated message type with reflection information, may provide speed optimized methods
+class EpInlineVideo$Type extends MessageType {
+    constructor() {
+        super("bilibili.playershared.EpInlineVideo", [
+            { no: 1, name: "material_no", kind: "scalar", T: 3 /*ScalarType.INT64*/, L: 2 /*LongType.NUMBER*/ },
+            { no: 2, name: "aid", kind: "scalar", T: 3 /*ScalarType.INT64*/, L: 2 /*LongType.NUMBER*/ },
+            { no: 3, name: "cid", kind: "scalar", T: 3 /*ScalarType.INT64*/, L: 2 /*LongType.NUMBER*/ }
+        ]);
+    }
+}
+/**
+ * @generated MessageType for protobuf message bilibili.playershared.EpInlineVideo
+ */
+export const EpInlineVideo = new EpInlineVideo$Type();
+// @generated message type with reflection information, may provide speed optimized methods
+class EpInlineVideoInfo$Type extends MessageType {
+    constructor() {
+        super("bilibili.playershared.EpInlineVideoInfo", [
+            { no: 1, name: "ep_inline_video", kind: "message", repeat: 1 /*RepeatType.PACKED*/, T: () => EpInlineVideo }
+        ]);
+    }
+}
+/**
+ * @generated MessageType for protobuf message bilibili.playershared.EpInlineVideoInfo
+ */
+export const EpInlineVideoInfo = new EpInlineVideoInfo$Type();
+// @generated message type with reflection information, may provide speed optimized methods
+class Event$Type extends MessageType {
+    constructor() {
+        super("bilibili.playershared.Event", [
+            { no: 1, name: "shake", kind: "message", T: () => Shake }
+        ]);
+    }
+}
+/**
+ * @generated MessageType for protobuf message bilibili.playershared.Event
+ */
+export const Event = new Event$Type();
+// @generated message type with reflection information, may provide speed optimized methods
+class ExtData$Type extends MessageType {
+    constructor() {
+        super("bilibili.playershared.ExtData", [
+            { no: 1, name: "type", kind: "enum", T: () => ["bilibili.playershared.ExtDataType", ExtDataType] },
+            { no: 2, name: "play_list_info", kind: "message", oneof: "data", T: () => PlayListInfo }
+        ]);
+    }
+}
+/**
+ * @generated MessageType for protobuf message bilibili.playershared.ExtData
+ */
+export const ExtData = new ExtData$Type();
+// @generated message type with reflection information, may provide speed optimized methods
+class ExtraContent$Type extends MessageType {
+    constructor() {
+        super("bilibili.playershared.ExtraContent", [
+            { no: 1, name: "disable_reason", kind: "scalar", T: 9 /*ScalarType.STRING*/ },
+            { no: 2, name: "disable_code", kind: "scalar", T: 3 /*ScalarType.INT64*/, L: 2 /*LongType.NUMBER*/ }
+        ]);
+    }
+}
+/**
+ * @generated MessageType for protobuf message bilibili.playershared.ExtraContent
+ */
+export const ExtraContent = new ExtraContent$Type();
+// @generated message type with reflection information, may provide speed optimized methods
+class Fragment$Type extends MessageType {
+    constructor() {
+        super("bilibili.playershared.Fragment", [
+            { no: 1, name: "infos", kind: "message", repeat: 1 /*RepeatType.PACKED*/, T: () => FragmentInfo }
+        ]);
+    }
+}
+/**
+ * @generated MessageType for protobuf message bilibili.playershared.Fragment
+ */
+export const Fragment = new Fragment$Type();
+// @generated message type with reflection information, may provide speed optimized methods
+class FragmentInfo$Type extends MessageType {
+    constructor() {
+        super("bilibili.playershared.FragmentInfo", [
+            { no: 1, name: "index", kind: "scalar", T: 5 /*ScalarType.INT32*/ },
+            { no: 2, name: "fragment_position", kind: "enum", T: () => ["bilibili.playershared.FragmentPosition", FragmentPosition] },
+            { no: 3, name: "fragment_type", kind: "enum", T: () => ["bilibili.playershared.FragmentType", FragmentType] },
+            { no: 4, name: "aid", kind: "scalar", T: 3 /*ScalarType.INT64*/, L: 2 /*LongType.NUMBER*/ },
+            { no: 5, name: "cid", kind: "scalar", T: 3 /*ScalarType.INT64*/, L: 2 /*LongType.NUMBER*/ },
+            { no: 6, name: "start_time", kind: "scalar", T: 3 /*ScalarType.INT64*/, L: 2 /*LongType.NUMBER*/ },
+            { no: 7, name: "report", kind: "message", T: () => Any }
+        ]);
+    }
+}
+/**
+ * @generated MessageType for protobuf message bilibili.playershared.FragmentInfo
+ */
+export const FragmentInfo = new FragmentInfo$Type();
+// @generated message type with reflection information, may provide speed optimized methods
+class FragmentVideo$Type extends MessageType {
+    constructor() {
+        super("bilibili.playershared.FragmentVideo", [
+            { no: 1, name: "videos", kind: "message", repeat: 1 /*RepeatType.PACKED*/, T: () => FragmentVideoInfo }
+        ]);
+    }
+}
+/**
+ * @generated MessageType for protobuf message bilibili.playershared.FragmentVideo
+ */
+export const FragmentVideo = new FragmentVideo$Type();
+// @generated message type with reflection information, may provide speed optimized methods
+class FragmentVideoInfo$Type extends MessageType {
+    constructor() {
+        super("bilibili.playershared.FragmentVideoInfo", [
+            { no: 1, name: "fragment_info", kind: "message", T: () => FragmentInfo },
+            { no: 2, name: "vod_info", kind: "message", T: () => VodInfo },
+            { no: 3, name: "play_arc_conf", kind: "message", T: () => PlayArcConf },
+            { no: 4, name: "dimension", kind: "message", T: () => Dimension },
+            { no: 5, name: "timelength", kind: "scalar", T: 3 /*ScalarType.INT64*/, L: 2 /*LongType.NUMBER*/ },
+            { no: 6, name: "video_type", kind: "enum", T: () => ["bilibili.playershared.BizType", BizType, "BIZ_TYPE_"] },
+            { no: 7, name: "playable_status", kind: "scalar", T: 8 /*ScalarType.BOOL*/ }
+        ]);
+    }
+}
+/**
+ * @generated MessageType for protobuf message bilibili.playershared.FragmentVideoInfo
+ */
+export const FragmentVideoInfo = new FragmentVideoInfo$Type();
+// @generated message type with reflection information, may provide speed optimized methods
+class GradientColor$Type extends MessageType {
+    constructor() {
+        super("bilibili.playershared.GradientColor", [
+            { no: 1, name: "start_color", kind: "scalar", T: 9 /*ScalarType.STRING*/ },
+            { no: 2, name: "end_color", kind: "scalar", T: 9 /*ScalarType.STRING*/ }
+        ]);
+    }
+}
+/**
+ * @generated MessageType for protobuf message bilibili.playershared.GradientColor
+ */
+export const GradientColor = new GradientColor$Type();
+// @generated message type with reflection information, may provide speed optimized methods
+class History$Type extends MessageType {
+    constructor() {
+        super("bilibili.playershared.History", [
+            { no: 1, name: "current_video", kind: "message", T: () => HistoryInfo },
+            { no: 2, name: "related_video", kind: "message", T: () => HistoryInfo }
+        ]);
+    }
+}
+/**
+ * @generated MessageType for protobuf message bilibili.playershared.History
+ */
+export const History = new History$Type();
+// @generated message type with reflection information, may provide speed optimized methods
+class HistoryInfo$Type extends MessageType {
+    constructor() {
+        super("bilibili.playershared.HistoryInfo", [
+            { no: 1, name: "progress", kind: "scalar", T: 3 /*ScalarType.INT64*/, L: 2 /*LongType.NUMBER*/ },
+            { no: 2, name: "last_play_cid", kind: "scalar", T: 3 /*ScalarType.INT64*/, L: 2 /*LongType.NUMBER*/ },
+            { no: 3, name: "toast", kind: "message", T: () => Toast },
+            { no: 4, name: "toast_without_time", kind: "message", T: () => Toast },
+            { no: 5, name: "last_play_aid", kind: "scalar", T: 3 /*ScalarType.INT64*/, L: 2 /*LongType.NUMBER*/ }
+        ]);
+    }
+}
+/**
+ * @generated MessageType for protobuf message bilibili.playershared.HistoryInfo
+ */
+export const HistoryInfo = new HistoryInfo$Type();
+// @generated message type with reflection information, may provide speed optimized methods
+class ImageInfo$Type extends MessageType {
+    constructor() {
+        super("bilibili.playershared.ImageInfo", [
+            { no: 1, name: "url", kind: "scalar", T: 9 /*ScalarType.STRING*/ }
+        ]);
+    }
+}
+/**
+ * @generated MessageType for protobuf message bilibili.playershared.ImageInfo
+ */
+export const ImageInfo = new ImageInfo$Type();
+// @generated message type with reflection information, may provide speed optimized methods
+class Interaction$Type extends MessageType {
+    constructor() {
+        super("bilibili.playershared.Interaction", [
+            { no: 1, name: "history_node", kind: "message", T: () => Node },
+            { no: 2, name: "graph_version", kind: "scalar", T: 3 /*ScalarType.INT64*/, L: 2 /*LongType.NUMBER*/ },
+            { no: 3, name: "msg", kind: "scalar", T: 9 /*ScalarType.STRING*/ },
+            { no: 4, name: "mark", kind: "scalar", T: 3 /*ScalarType.INT64*/, L: 2 /*LongType.NUMBER*/ }
+        ]);
+    }
+}
+/**
+ * @generated MessageType for protobuf message bilibili.playershared.Interaction
+ */
+export const Interaction = new Interaction$Type();
+// @generated message type with reflection information, may provide speed optimized methods
+class LossLessItem$Type extends MessageType {
+    constructor() {
+        super("bilibili.playershared.LossLessItem", [
+            { no: 1, name: "is_lossless_audio", kind: "scalar", T: 8 /*ScalarType.BOOL*/ },
+            { no: 2, name: "audio", kind: "message", T: () => DashItem },
+            { no: 3, name: "need_vip", kind: "scalar", T: 8 /*ScalarType.BOOL*/ }
+        ]);
+    }
+}
+/**
+ * @generated MessageType for protobuf message bilibili.playershared.LossLessItem
+ */
+export const LossLessItem = new LossLessItem$Type();
+// @generated message type with reflection information, may provide speed optimized methods
+class Node$Type extends MessageType {
+    constructor() {
+        super("bilibili.playershared.Node", [
+            { no: 1, name: "node_id", kind: "scalar", T: 3 /*ScalarType.INT64*/, L: 2 /*LongType.NUMBER*/ },
+            { no: 2, name: "title", kind: "scalar", T: 9 /*ScalarType.STRING*/ },
+            { no: 3, name: "cid", kind: "scalar", T: 3 /*ScalarType.INT64*/, L: 2 /*LongType.NUMBER*/ }
+        ]);
+    }
+}
+/**
+ * @generated MessageType for protobuf message bilibili.playershared.Node
+ */
+export const Node = new Node$Type();
+// @generated message type with reflection information, may provide speed optimized methods
+class PlayArc$Type extends MessageType {
+    constructor() {
+        super("bilibili.playershared.PlayArc", [
+            { no: 1, name: "video_type", kind: "enum", T: () => ["bilibili.playershared.BizType", BizType, "BIZ_TYPE_"] },
+            { no: 2, name: "aid", kind: "scalar", T: 4 /*ScalarType.UINT64*/, L: 2 /*LongType.NUMBER*/ },
+            { no: 3, name: "cid", kind: "scalar", T: 4 /*ScalarType.UINT64*/, L: 2 /*LongType.NUMBER*/ },
+            { no: 4, name: "drm_tech_type", kind: "enum", T: () => ["bilibili.playershared.DrmTechType", DrmTechType] },
+            { no: 5, name: "arc_type", kind: "enum", T: () => ["bilibili.playershared.ArcType", ArcType, "ARC_TYPE_"] },
+            { no: 6, name: "interaction", kind: "message", T: () => Interaction },
+            { no: 7, name: "dimension", kind: "message", T: () => Dimension },
+            { no: 8, name: "duration", kind: "scalar", T: 3 /*ScalarType.INT64*/, L: 2 /*LongType.NUMBER*/ },
+            { no: 9, name: "is_preview", kind: "scalar", T: 8 /*ScalarType.BOOL*/ },
+            { no: 10, name: "watch_time_length", kind: "scalar", T: 3 /*ScalarType.INT64*/, L: 2 /*LongType.NUMBER*/ },
+            { no: 11, name: "duration_ms", kind: "scalar", T: 3 /*ScalarType.INT64*/, L: 2 /*LongType.NUMBER*/ }
+        ]);
+    }
+}
+/**
+ * @generated MessageType for protobuf message bilibili.playershared.PlayArc
+ */
+export const PlayArc = new PlayArc$Type();
+// @generated message type with reflection information, may provide speed optimized methods
+class PlayArcConf$Type extends MessageType {
+    constructor() {
+        super("bilibili.playershared.PlayArcConf", [
+            { no: 1, name: "arc_confs", kind: "map", K: 5 /*ScalarType.INT32*/, V: { kind: "message", T: () => ArcConf } }
+        ]);
+    }
+}
+/**
+ * @generated MessageType for protobuf message bilibili.playershared.PlayArcConf
+ */
+export const PlayArcConf = new PlayArcConf$Type();
+// @generated message type with reflection information, may provide speed optimized methods
+class PlayDeviceConf$Type extends MessageType {
+    constructor() {
+        super("bilibili.playershared.PlayDeviceConf", [
+            { no: 1, name: "device_confs", kind: "map", K: 5 /*ScalarType.INT32*/, V: { kind: "message", T: () => DeviceConf } }
+        ]);
+    }
+}
+/**
+ * @generated MessageType for protobuf message bilibili.playershared.PlayDeviceConf
+ */
+export const PlayDeviceConf = new PlayDeviceConf$Type();
+// @generated message type with reflection information, may provide speed optimized methods
+class PlayList$Type extends MessageType {
+    constructor() {
+        super("bilibili.playershared.PlayList", [
+            { no: 1, name: "season_id", kind: "scalar", T: 3 /*ScalarType.INT64*/, L: 2 /*LongType.NUMBER*/ },
+            { no: 2, name: "title", kind: "scalar", T: 9 /*ScalarType.STRING*/ },
+            { no: 3, name: "cover", kind: "scalar", T: 9 /*ScalarType.STRING*/ },
+            { no: 4, name: "link", kind: "scalar", T: 9 /*ScalarType.STRING*/ },
+            { no: 5, name: "badge_info", kind: "message", T: () => BadgeInfo }
+        ]);
+    }
+}
+/**
+ * @generated MessageType for protobuf message bilibili.playershared.PlayList
+ */
+export const PlayList = new PlayList$Type();
+// @generated message type with reflection information, may provide speed optimized methods
+class PlayListInfo$Type extends MessageType {
+    constructor() {
+        super("bilibili.playershared.PlayListInfo", [
+            { no: 2, name: "play_list", kind: "message", repeat: 1 /*RepeatType.PACKED*/, T: () => PlayList }
+        ]);
+    }
+}
+/**
+ * @generated MessageType for protobuf message bilibili.playershared.PlayListInfo
+ */
+export const PlayListInfo = new PlayListInfo$Type();
+// @generated message type with reflection information, may provide speed optimized methods
+class PromptBar$Type extends MessageType {
+    constructor() {
+        super("bilibili.playershared.PromptBar", [
+            { no: 1, name: "title", kind: "message", T: () => TextInfo },
+            { no: 2, name: "subtitle", kind: "message", T: () => TextInfo },
+            { no: 3, name: "sub_title_icon", kind: "scalar", T: 9 /*ScalarType.STRING*/ },
+            { no: 4, name: "bg_image", kind: "scalar", T: 9 /*ScalarType.STRING*/ },
+            { no: 5, name: "bg_gradient_color", kind: "message", T: () => GradientColor },
+            { no: 6, name: "button", kind: "message", repeat: 1 /*RepeatType.PACKED*/, T: () => ButtonInfo },
+            { no: 7, name: "report", kind: "message", T: () => Report },
+            { no: 8, name: "full_screen_ip_icon", kind: "scalar", T: 9 /*ScalarType.STRING*/ },
+            { no: 9, name: "full_screen_bg_gradient_color", kind: "message", T: () => GradientColor },
+            { no: 10, name: "prompt_bar_type", kind: "enum", T: () => ["bilibili.playershared.PromptBarType", PromptBarType] },
+            { no: 11, name: "prompt_bar_style", kind: "enum", T: () => ["bilibili.playershared.PromptBarStyle", PromptBarStyle] },
+            { no: 12, name: "benefit_infos", kind: "message", repeat: 1 /*RepeatType.PACKED*/, T: () => BenefitInfo },
+            { no: 13, name: "end_time", kind: "scalar", T: 3 /*ScalarType.INT64*/, L: 2 /*LongType.NUMBER*/ }
+        ]);
+    }
+}
+/**
+ * @generated MessageType for protobuf message bilibili.playershared.PromptBar
+ */
+export const PromptBar = new PromptBar$Type();
+// @generated message type with reflection information, may provide speed optimized methods
+class QnTrialInfo$Type extends MessageType {
+    constructor() {
+        super("bilibili.playershared.QnTrialInfo", [
+            { no: 1, name: "trial_able", kind: "scalar", T: 8 /*ScalarType.BOOL*/ },
+            { no: 2, name: "remaining_times", kind: "scalar", T: 5 /*ScalarType.INT32*/ },
+            { no: 3, name: "start", kind: "scalar", T: 5 /*ScalarType.INT32*/ },
+            { no: 4, name: "time_length", kind: "scalar", T: 5 /*ScalarType.INT32*/ },
+            { no: 5, name: "start_toast", kind: "message", T: () => Toast },
+            { no: 6, name: "end_toast", kind: "message", T: () => Toast },
+            { no: 8, name: "quality_open_tip_btn", kind: "message", T: () => Button }
+        ]);
+    }
+}
+/**
+ * @generated MessageType for protobuf message bilibili.playershared.QnTrialInfo
+ */
+export const QnTrialInfo = new QnTrialInfo$Type();
+// @generated message type with reflection information, may provide speed optimized methods
+class Report$Type extends MessageType {
+    constructor() {
+        super("bilibili.playershared.Report", [
+            { no: 1, name: "show_event_id", kind: "scalar", T: 9 /*ScalarType.STRING*/ },
+            { no: 2, name: "click_event_id", kind: "scalar", T: 9 /*ScalarType.STRING*/ },
+            { no: 3, name: "extends", kind: "scalar", T: 9 /*ScalarType.STRING*/ }
+        ]);
+    }
+}
+/**
+ * @generated MessageType for protobuf message bilibili.playershared.Report
+ */
+export const Report = new Report$Type();
+// @generated message type with reflection information, may provide speed optimized methods
+class ResponseDash$Type extends MessageType {
+    constructor() {
+        super("bilibili.playershared.ResponseDash", [
+            { no: 1, name: "video", kind: "message", repeat: 1 /*RepeatType.PACKED*/, T: () => DashItem },
+            { no: 2, name: "audio", kind: "message", repeat: 1 /*RepeatType.PACKED*/, T: () => DashItem }
+        ]);
+    }
+}
+/**
+ * @generated MessageType for protobuf message bilibili.playershared.ResponseDash
+ */
+export const ResponseDash = new ResponseDash$Type();
 // @generated message type with reflection information, may provide speed optimized methods
 class ResponseUrl$Type extends MessageType {
     constructor() {
@@ -560,18 +1378,84 @@ class ResponseUrl$Type extends MessageType {
  */
 export const ResponseUrl = new ResponseUrl$Type();
 // @generated message type with reflection information, may provide speed optimized methods
-class ResponseDash$Type extends MessageType {
+class Scheme$Type extends MessageType {
     constructor() {
-        super("bilibili.playershared.ResponseDash", [
-            { no: 1, name: "video", kind: "message", repeat: 1 /*RepeatType.PACKED*/, T: () => DashItem },
-            { no: 2, name: "audio", kind: "message", repeat: 1 /*RepeatType.PACKED*/, T: () => DashItem }
+        super("bilibili.playershared.Scheme", [
+            { no: 1, name: "action_type", kind: "enum", T: () => ["bilibili.playershared.Scheme.ActionType", Scheme_ActionType] },
+            { no: 2, name: "toast", kind: "scalar", T: 9 /*ScalarType.STRING*/ }
         ]);
     }
 }
 /**
- * @generated MessageType for protobuf message bilibili.playershared.ResponseDash
+ * @generated MessageType for protobuf message bilibili.playershared.Scheme
  */
-export const ResponseDash = new ResponseDash$Type();
+export const Scheme = new Scheme$Type();
+// @generated message type with reflection information, may provide speed optimized methods
+class SegmentVideo$Type extends MessageType {
+    constructor() {
+        super("bilibili.playershared.SegmentVideo", [
+            { no: 1, name: "segment", kind: "message", repeat: 1 /*RepeatType.PACKED*/, T: () => ResponseUrl }
+        ]);
+    }
+}
+/**
+ * @generated MessageType for protobuf message bilibili.playershared.SegmentVideo
+ */
+export const SegmentVideo = new SegmentVideo$Type();
+// @generated message type with reflection information, may provide speed optimized methods
+class Shake$Type extends MessageType {
+    constructor() {
+        super("bilibili.playershared.Shake", [
+            { no: 1, name: "file", kind: "scalar", T: 9 /*ScalarType.STRING*/ }
+        ]);
+    }
+}
+/**
+ * @generated MessageType for protobuf message bilibili.playershared.Shake
+ */
+export const Shake = new Shake$Type();
+// @generated message type with reflection information, may provide speed optimized methods
+class Stream$Type extends MessageType {
+    constructor() {
+        super("bilibili.playershared.Stream", [
+            { no: 1, name: "stream_info", kind: "message", T: () => StreamInfo },
+            { no: 2, name: "dash_video", kind: "message", oneof: "content", T: () => DashVideo },
+            { no: 3, name: "segment_video", kind: "message", oneof: "content", T: () => SegmentVideo }
+        ]);
+    }
+}
+/**
+ * @generated MessageType for protobuf message bilibili.playershared.Stream
+ */
+export const Stream = new Stream$Type();
+// @generated message type with reflection information, may provide speed optimized methods
+class StreamInfo$Type extends MessageType {
+    constructor() {
+        super("bilibili.playershared.StreamInfo", [
+            { no: 1, name: "quality", kind: "scalar", T: 13 /*ScalarType.UINT32*/ },
+            { no: 2, name: "format", kind: "scalar", T: 9 /*ScalarType.STRING*/ },
+            { no: 3, name: "description", kind: "scalar", T: 9 /*ScalarType.STRING*/ },
+            { no: 4, name: "err_code", kind: "scalar", T: 13 /*ScalarType.UINT32*/ },
+            { no: 5, name: "limit", kind: "message", T: () => StreamLimit },
+            { no: 6, name: "need_vip", kind: "scalar", T: 8 /*ScalarType.BOOL*/ },
+            { no: 7, name: "need_login", kind: "scalar", T: 8 /*ScalarType.BOOL*/ },
+            { no: 8, name: "intact", kind: "scalar", T: 8 /*ScalarType.BOOL*/ },
+            { no: 9, name: "no_rexcode", kind: "scalar", T: 8 /*ScalarType.BOOL*/ },
+            { no: 10, name: "attribute", kind: "scalar", T: 3 /*ScalarType.INT64*/, L: 2 /*LongType.NUMBER*/ },
+            { no: 11, name: "new_description", kind: "scalar", T: 9 /*ScalarType.STRING*/ },
+            { no: 12, name: "display_desc", kind: "scalar", T: 9 /*ScalarType.STRING*/ },
+            { no: 13, name: "superscript", kind: "scalar", T: 9 /*ScalarType.STRING*/ },
+            { no: 14, name: "vip_free", kind: "scalar", T: 8 /*ScalarType.BOOL*/ },
+            { no: 15, name: "subtitle", kind: "scalar", T: 9 /*ScalarType.STRING*/ },
+            { no: 16, name: "scheme", kind: "message", T: () => Scheme },
+            { no: 17, name: "support_drm", kind: "scalar", T: 8 /*ScalarType.BOOL*/ }
+        ]);
+    }
+}
+/**
+ * @generated MessageType for protobuf message bilibili.playershared.StreamInfo
+ */
+export const StreamInfo = new StreamInfo$Type();
 // @generated message type with reflection information, may provide speed optimized methods
 class StreamLimit$Type extends MessageType {
     constructor() {
@@ -586,6 +1470,47 @@ class StreamLimit$Type extends MessageType {
  * @generated MessageType for protobuf message bilibili.playershared.StreamLimit
  */
 export const StreamLimit = new StreamLimit$Type();
+// @generated message type with reflection information, may provide speed optimized methods
+class TaskParam$Type extends MessageType {
+    constructor() {
+        super("bilibili.playershared.TaskParam", [
+            { no: 1, name: "task_type", kind: "scalar", T: 9 /*ScalarType.STRING*/ },
+            { no: 2, name: "activity_id", kind: "scalar", T: 3 /*ScalarType.INT64*/, L: 2 /*LongType.NUMBER*/ },
+            { no: 3, name: "tips_id", kind: "scalar", T: 3 /*ScalarType.INT64*/, L: 2 /*LongType.NUMBER*/ }
+        ]);
+    }
+}
+/**
+ * @generated MessageType for protobuf message bilibili.playershared.TaskParam
+ */
+export const TaskParam = new TaskParam$Type();
+// @generated message type with reflection information, may provide speed optimized methods
+class TextInfo$Type extends MessageType {
+    constructor() {
+        super("bilibili.playershared.TextInfo", [
+            { no: 1, name: "text", kind: "scalar", T: 9 /*ScalarType.STRING*/ },
+            { no: 2, name: "text_color", kind: "scalar", T: 9 /*ScalarType.STRING*/ },
+            { no: 3, name: "text_color_night", kind: "scalar", T: 9 /*ScalarType.STRING*/ }
+        ]);
+    }
+}
+/**
+ * @generated MessageType for protobuf message bilibili.playershared.TextInfo
+ */
+export const TextInfo = new TextInfo$Type();
+// @generated message type with reflection information, may provide speed optimized methods
+class Toast$Type extends MessageType {
+    constructor() {
+        super("bilibili.playershared.Toast", [
+            { no: 1, name: "text", kind: "scalar", T: 9 /*ScalarType.STRING*/ },
+            { no: 2, name: "button", kind: "message", T: () => Button }
+        ]);
+    }
+}
+/**
+ * @generated MessageType for protobuf message bilibili.playershared.Toast
+ */
+export const Toast = new Toast$Type();
 // @generated message type with reflection information, may provide speed optimized methods
 class VideoVod$Type extends MessageType {
     constructor() {
@@ -608,6 +1533,20 @@ class VideoVod$Type extends MessageType {
  */
 export const VideoVod = new VideoVod$Type();
 // @generated message type with reflection information, may provide speed optimized methods
+class ViewInfo$Type extends MessageType {
+    constructor() {
+        super("bilibili.playershared.ViewInfo", [
+            { no: 1, name: "dialog_map", kind: "map", K: 9 /*ScalarType.STRING*/, V: { kind: "message", T: () => Dialog } },
+            { no: 2, name: "prompt_bar", kind: "message", T: () => PromptBar },
+            { no: 3, name: "toasts", kind: "message", repeat: 1 /*RepeatType.PACKED*/, T: () => ComprehensiveToast }
+        ]);
+    }
+}
+/**
+ * @generated MessageType for protobuf message bilibili.playershared.ViewInfo
+ */
+export const ViewInfo = new ViewInfo$Type();
+// @generated message type with reflection information, may provide speed optimized methods
 class VodInfo$Type extends MessageType {
     constructor() {
         super("bilibili.playershared.VodInfo", [
@@ -619,7 +1558,8 @@ class VodInfo$Type extends MessageType {
             { no: 6, name: "dash_audio", kind: "message", repeat: 1 /*RepeatType.PACKED*/, T: () => DashItem },
             { no: 7, name: "dolby", kind: "message", T: () => DolbyItem },
             { no: 8, name: "volume", kind: "message", T: () => VolumeInfo },
-            { no: 9, name: "loss_less_item", kind: "message", T: () => LossLessItem }
+            { no: 9, name: "loss_less_item", kind: "message", T: () => LossLessItem },
+            { no: 10, name: "support_project", kind: "scalar", T: 8 /*ScalarType.BOOL*/ }
         ]);
     }
 }
@@ -627,33 +1567,6 @@ class VodInfo$Type extends MessageType {
  * @generated MessageType for protobuf message bilibili.playershared.VodInfo
  */
 export const VodInfo = new VodInfo$Type();
-// @generated message type with reflection information, may provide speed optimized methods
-class DolbyItem$Type extends MessageType {
-    constructor() {
-        super("bilibili.playershared.DolbyItem", [
-            { no: 1, name: "type", kind: "enum", T: () => ["bilibili.playershared.DolbyItem.Type", DolbyItem_Type] },
-            { no: 2, name: "audio", kind: "message", repeat: 1 /*RepeatType.PACKED*/, T: () => DashItem }
-        ]);
-    }
-}
-/**
- * @generated MessageType for protobuf message bilibili.playershared.DolbyItem
- */
-export const DolbyItem = new DolbyItem$Type();
-// @generated message type with reflection information, may provide speed optimized methods
-class LossLessItem$Type extends MessageType {
-    constructor() {
-        super("bilibili.playershared.LossLessItem", [
-            { no: 1, name: "is_lossless_audio", kind: "scalar", T: 8 /*ScalarType.BOOL*/ },
-            { no: 2, name: "audio", kind: "message", T: () => DashItem },
-            { no: 3, name: "need_vip", kind: "scalar", T: 8 /*ScalarType.BOOL*/ }
-        ]);
-    }
-}
-/**
- * @generated MessageType for protobuf message bilibili.playershared.LossLessItem
- */
-export const LossLessItem = new LossLessItem$Type();
 // @generated message type with reflection information, may provide speed optimized methods
 class VolumeInfo$Type extends MessageType {
     constructor() {
@@ -672,85 +1585,3 @@ class VolumeInfo$Type extends MessageType {
  * @generated MessageType for protobuf message bilibili.playershared.VolumeInfo
  */
 export const VolumeInfo = new VolumeInfo$Type();
-// @generated message type with reflection information, may provide speed optimized methods
-class PlayArc$Type extends MessageType {
-    constructor() {
-        super("bilibili.playershared.PlayArc", [
-            { no: 1, name: "video_type", kind: "enum", T: () => ["bilibili.playershared.VideoType", VideoType] },
-            { no: 2, name: "aid", kind: "scalar", T: 4 /*ScalarType.UINT64*/, L: 2 /*LongType.NUMBER*/ },
-            { no: 3, name: "cid", kind: "scalar", T: 4 /*ScalarType.UINT64*/, L: 2 /*LongType.NUMBER*/ },
-            { no: 4, name: "drm_tech_type", kind: "enum", T: () => ["bilibili.playershared.DrmTechType", DrmTechType] }
-        ]);
-    }
-}
-/**
- * @generated MessageType for protobuf message bilibili.playershared.PlayArc
- */
-export const PlayArc = new PlayArc$Type();
-// @generated message type with reflection information, may provide speed optimized methods
-class PlayArcConf$Type extends MessageType {
-    constructor() {
-        super("bilibili.playershared.PlayArcConf", [
-            { no: 1, name: "arc_confs", kind: "map", K: 5 /*ScalarType.INT32*/, V: { kind: "message", T: () => ArcConf } }
-        ]);
-    }
-}
-/**
- * @generated MessageType for protobuf message bilibili.playershared.PlayArcConf
- */
-export const PlayArcConf = new PlayArcConf$Type();
-// @generated message type with reflection information, may provide speed optimized methods
-class QnTrialInfo$Type extends MessageType {
-    constructor() {
-        super("bilibili.playershared.QnTrialInfo", [
-            { no: 1, name: "trial_able", kind: "scalar", T: 8 /*ScalarType.BOOL*/ },
-            { no: 2, name: "remaining_times", kind: "scalar", T: 5 /*ScalarType.INT32*/ },
-            { no: 3, name: "start", kind: "scalar", T: 5 /*ScalarType.INT32*/ },
-            { no: 4, name: "time_length", kind: "scalar", T: 5 /*ScalarType.INT32*/ },
-            { no: 5, name: "start_toast", kind: "message", T: () => Toast },
-            { no: 6, name: "end_toast", kind: "message", T: () => Toast },
-            { no: 8, name: "quality_open_tip_btn", kind: "message", T: () => Button }
-        ]);
-    }
-}
-/**
- * @generated MessageType for protobuf message bilibili.playershared.QnTrialInfo
- */
-export const QnTrialInfo = new QnTrialInfo$Type();
-// @generated message type with reflection information, may provide speed optimized methods
-class Toast$Type extends MessageType {
-    constructor() {
-        super("bilibili.playershared.Toast", [
-            { no: 1, name: "text", kind: "scalar", T: 9 /*ScalarType.STRING*/ },
-            { no: 2, name: "button", kind: "message", T: () => Button }
-        ]);
-    }
-}
-/**
- * @generated MessageType for protobuf message bilibili.playershared.Toast
- */
-export const Toast = new Toast$Type();
-// @generated message type with reflection information, may provide speed optimized methods
-class Event$Type extends MessageType {
-    constructor() {
-        super("bilibili.playershared.Event", [
-            { no: 1, name: "shake", kind: "message", T: () => Shake }
-        ]);
-    }
-}
-/**
- * @generated MessageType for protobuf message bilibili.playershared.Event
- */
-export const Event = new Event$Type();
-// @generated message type with reflection information, may provide speed optimized methods
-class Shake$Type extends MessageType {
-    constructor() {
-        super("bilibili.playershared.Shake", [
-            { no: 1, name: "file", kind: "scalar", T: 9 /*ScalarType.STRING*/ }
-        ]);
-    }
-}
-/**
- * @generated MessageType for protobuf message bilibili.playershared.Shake
- */
-export const Shake = new Shake$Type();

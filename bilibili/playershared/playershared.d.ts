@@ -2,28 +2,174 @@
 // @generated from protobuf file "bilibili/playershared/playershared.proto" (package "bilibili.playershared", syntax proto3)
 // tslint:disable
 import { MessageType } from "@protobuf-ts/runtime";
+import { Any } from "../../google/protobuf/any";
 /**
- *
+ * ArcConf消息
  *
  * @generated from protobuf message bilibili.playershared.ArcConf
  */
 export interface ArcConf {
     /**
+     * 是否支持
+     *
      * @generated from protobuf field: bool is_support = 1;
      */
     isSupport: boolean;
     /**
-     * @generated from protobuf field: bool disable = 2;
+     * 是否禁用
+     *
+     * @generated from protobuf field: bool disabled = 2;
      */
-    disable: boolean;
+    disabled: boolean;
     /**
+     * 额外内容
+     *
      * @generated from protobuf field: bilibili.playershared.ExtraContent extra_content = 3;
      */
     extraContent?: ExtraContent;
     /**
+     * 不支持场景列表
+     *
      * @generated from protobuf field: repeated int32 unsupport_scene = 4;
      */
     unsupportScene: number[];
+}
+/**
+ *
+ *
+ * @generated from protobuf message bilibili.playershared.BackgroundInfo
+ */
+export interface BackgroundInfo {
+    /**
+     *
+     *
+     * @generated from protobuf field: string drawable_color = 1;
+     */
+    drawableColor: string;
+    /**
+     *
+     *
+     * @generated from protobuf field: string drawable_bitmap_url = 2;
+     */
+    drawableBitmapUrl: string;
+    /**
+     *
+     *
+     * @generated from protobuf field: int32 effects = 3;
+     */
+    effects: number;
+}
+/**
+ *
+ *
+ * @generated from protobuf message bilibili.playershared.BadgeInfo
+ */
+export interface BadgeInfo {
+    /**
+     *
+     *
+     * @generated from protobuf field: string text = 1;
+     */
+    text: string;
+    /**
+     *
+     *
+     * @generated from protobuf field: string bg_color = 2;
+     */
+    bgColor: string;
+    /**
+     *
+     *
+     * @generated from protobuf field: string bg_color_night = 3;
+     */
+    bgColorNight: string;
+    /**
+     *
+     *
+     * @generated from protobuf field: string text_color = 4;
+     */
+    textColor: string;
+    /**
+     *
+     *
+     * @generated from protobuf field: bilibili.playershared.GradientColor bg_gradient_color = 5;
+     */
+    bgGradientColor?: GradientColor;
+    /**
+     *
+     *
+     * @generated from protobuf field: string img = 6;
+     */
+    img: string;
+}
+/**
+ *
+ *
+ * @generated from protobuf message bilibili.playershared.Banner
+ */
+export interface Banner {
+    /**
+     *
+     *
+     * @generated from protobuf field: string jump_link = 1;
+     */
+    jumpLink: string;
+    /**
+     *
+     *
+     * @generated from protobuf field: string image_link = 2;
+     */
+    imageLink: string;
+    /**
+     *
+     *
+     * @generated from protobuf field: string half_image_link = 3;
+     */
+    halfImageLink: string;
+    /**
+     *
+     *
+     * @generated from protobuf field: bilibili.playershared.Report report = 4;
+     */
+    report?: Report;
+}
+/**
+ *
+ *
+ * @generated from protobuf message bilibili.playershared.BenefitInfo
+ */
+export interface BenefitInfo {
+    /**
+     *
+     *
+     * @generated from protobuf field: string title = 1;
+     */
+    title: string;
+    /**
+     *
+     *
+     * @generated from protobuf field: string icon = 2;
+     */
+    icon: string;
+}
+/**
+ *
+ *
+ * @generated from protobuf message bilibili.playershared.BottomDisplay
+ */
+export interface BottomDisplay {
+    /**
+     *
+     *
+     * @generated from protobuf field: bilibili.playershared.TextInfo title = 1;
+     */
+    title?: TextInfo;
+    /**
+     *
+     *
+     * @generated from protobuf field: string icon = 2;
+     */
+    icon: string;
 }
 /**
  * 按钮组件
@@ -55,6 +201,174 @@ export interface Button {
 /**
  *
  *
+ * @generated from protobuf message bilibili.playershared.ButtonInfo
+ */
+export interface ButtonInfo {
+    /**
+     *
+     *
+     * @generated from protobuf field: string text = 1;
+     */
+    text: string;
+    /**
+     *
+     *
+     * @generated from protobuf field: string text_color = 2;
+     */
+    textColor: string;
+    /**
+     *
+     *
+     * @generated from protobuf field: string text_color_night = 3;
+     */
+    textColorNight: string;
+    /**
+     *
+     *
+     * @generated from protobuf field: string bg_color = 4;
+     */
+    bgColor: string;
+    /**
+     *
+     *
+     * @generated from protobuf field: string bg_color_night = 5;
+     */
+    bgColorNight: string;
+    /**
+     *
+     *
+     * @generated from protobuf field: string link = 6;
+     */
+    link: string;
+    /**
+     *
+     *
+     * @generated from protobuf field: bilibili.playershared.ButtonAction action_type = 7;
+     */
+    actionType: ButtonAction;
+    /**
+     *
+     *
+     * @generated from protobuf field: bilibili.playershared.BadgeInfo badge_info = 8;
+     */
+    badgeInfo?: BadgeInfo;
+    /**
+     *
+     *
+     * @generated from protobuf field: bilibili.playershared.Report report = 9;
+     */
+    report?: Report;
+    /**
+     *
+     *
+     * @generated from protobuf field: string left_strikethrough_text = 10;
+     */
+    leftStrikethroughText: string;
+    /**
+     *
+     *
+     * @generated from protobuf field: bilibili.playershared.TextInfo simple_text_info = 11;
+     */
+    simpleTextInfo?: TextInfo;
+    /**
+     *
+     *
+     * @generated from protobuf field: string simple_bg_color = 12;
+     */
+    simpleBgColor: string;
+    /**
+     *
+     *
+     * @generated from protobuf field: string simple_bg_color_night = 13;
+     */
+    simpleBgColorNight: string;
+    /**
+     *
+     *
+     * @generated from protobuf field: bilibili.playershared.GradientColor bg_gradient_color = 14;
+     */
+    bgGradientColor?: GradientColor;
+    /**
+     *
+     *
+     * @generated from protobuf field: map<string, string> order_report_params = 15;
+     */
+    orderReportParams: {
+        [key: string]: string;
+    };
+    /**
+     *
+     *
+     * @generated from protobuf field: bilibili.playershared.TaskParam task_param = 16;
+     */
+    taskParam?: TaskParam;
+    /**
+     *
+     *
+     * @generated from protobuf field: string frame_color = 17;
+     */
+    frameColor: string;
+    /**
+     *
+     *
+     * @generated from protobuf field: string icon = 18;
+     */
+    icon: string;
+}
+/**
+ *
+ *
+ * @generated from protobuf message bilibili.playershared.ComprehensiveToast
+ */
+export interface ComprehensiveToast {
+    /**
+     *
+     *
+     * @generated from protobuf field: int32 type = 1;
+     */
+    type: number;
+    /**
+     *
+     *
+     * @generated from protobuf field: bilibili.playershared.ButtonInfo button = 2;
+     */
+    button?: ButtonInfo;
+    /**
+     *
+     *
+     * @generated from protobuf field: int32 show_style_type = 3;
+     */
+    showStyleType: number;
+    /**
+     *
+     *
+     * @generated from protobuf field: string icon = 4;
+     */
+    icon: string;
+    /**
+     *
+     *
+     * @generated from protobuf field: bilibili.playershared.TextInfo toast_text = 5;
+     */
+    toastText?: TextInfo;
+    /**
+     *
+     *
+     * @generated from protobuf field: bilibili.playershared.Report report = 6;
+     */
+    report?: Report;
+    /**
+     *
+     *
+     * @generated from protobuf field: map<string, string> order_report_params = 7;
+     */
+    orderReportParams: {
+        [key: string]: string;
+    };
+}
+/**
+ *
+ *
  * @generated from protobuf message bilibili.playershared.ConfValue
  */
 export interface ConfValue {
@@ -64,7 +378,7 @@ export interface ConfValue {
     value: {
         oneofKind: "switchVal";
         /**
-         * DASH流
+         *
          *
          * @generated from protobuf field: int32 switch_val = 1;
          */
@@ -72,7 +386,7 @@ export interface ConfValue {
     } | {
         oneofKind: "selectedVal";
         /**
-         * 分段流
+         *
          *
          * @generated from protobuf field: int32 selected_val = 2;
          */
@@ -80,6 +394,146 @@ export interface ConfValue {
     } | {
         oneofKind: undefined;
     };
+}
+/**
+ * Dash条目
+ *
+ * @generated from protobuf message bilibili.playershared.DashItem
+ */
+export interface DashItem {
+    /**
+     * 清晰度
+     *
+     * @generated from protobuf field: uint32 id = 1;
+     */
+    id: number;
+    /**
+     * 主线流
+     *
+     * @generated from protobuf field: string base_url = 2;
+     */
+    baseUrl: string;
+    /**
+     * 备用流
+     *
+     * @generated from protobuf field: repeated string backup_url = 3;
+     */
+    backupUrl: string[];
+    /**
+     * 带宽
+     *
+     * @generated from protobuf field: uint32 bandwidth = 4;
+     */
+    bandwidth: number;
+    /**
+     * 编码id
+     *
+     * @generated from protobuf field: uint32 codecid = 5;
+     */
+    codecid: number;
+    /**
+     * md5
+     *
+     * @generated from protobuf field: string md5 = 6;
+     */
+    md5: string;
+    /**
+     * 大小
+     *
+     * @generated from protobuf field: uint64 size = 7;
+     */
+    size: number;
+    /**
+     * 帧率
+     *
+     * @generated from protobuf field: string frame_rate = 8;
+     */
+    frameRate: string;
+    /**
+     * DRM密钥
+     *
+     * @generated from protobuf field: string widevine_pssh = 9;
+     */
+    widevinePssh: string;
+}
+/**
+ * 视频流信息: dash流
+ *
+ * @generated from protobuf message bilibili.playershared.DashVideo
+ */
+export interface DashVideo {
+    /**
+     * 主线流
+     *
+     * @generated from protobuf field: string base_url = 1;
+     */
+    baseUrl: string;
+    /**
+     * 备用流
+     *
+     * @generated from protobuf field: repeated string backup_url = 2;
+     */
+    backupUrl: string[];
+    /**
+     * 带宽
+     *
+     * @generated from protobuf field: uint32 bandwidth = 3;
+     */
+    bandwidth: number;
+    /**
+     * 编码id
+     *
+     * @generated from protobuf field: uint32 codecid = 4;
+     */
+    codecid: number;
+    /**
+     * md5
+     *
+     * @generated from protobuf field: string md5 = 5;
+     */
+    md5: string;
+    /**
+     * 大小
+     *
+     * @generated from protobuf field: uint64 size = 6;
+     */
+    size: number;
+    /**
+     * 伴音质量id
+     *
+     * @generated from protobuf field: uint32 audio_id = 7;
+     */
+    audioId: number;
+    /**
+     * 是否非全二压
+     *
+     * @generated from protobuf field: bool no_rexcode = 8;
+     */
+    noRexcode: boolean;
+    /**
+     * 帧率
+     *
+     * @generated from protobuf field: string frame_rate = 9;
+     */
+    frameRate: string;
+    /**
+     * 宽
+     *
+     * @generated from protobuf field: int32 width = 10;
+     */
+    width: number;
+    /**
+     * 高
+     *
+     * @generated from protobuf field: int32 height = 11;
+     */
+    height: number;
+    /**
+     * DRM密钥
+     *
+     * @generated from protobuf field: string widevine_pssh = 12;
+     */
+    widevinePssh: string;
 }
 /**
  *
@@ -91,6 +545,242 @@ export interface DeviceConf {
      * @generated from protobuf field: bilibili.playershared.ConfValue conf_value = 1;
      */
     confValue?: ConfValue;
+}
+/**
+ *
+ *
+ * @generated from protobuf message bilibili.playershared.Dialog
+ */
+export interface Dialog {
+    /**
+     *
+     *
+     * @generated from protobuf field: bilibili.playershared.GuideStyle style_type = 1;
+     */
+    styleType: GuideStyle;
+    /**
+     *
+     *
+     * @generated from protobuf field: bilibili.playershared.BackgroundInfo background_info = 2;
+     */
+    backgroundInfo?: BackgroundInfo;
+    /**
+     *
+     *
+     * @generated from protobuf field: bilibili.playershared.TextInfo title = 3;
+     */
+    title?: TextInfo;
+    /**
+     *
+     *
+     * @generated from protobuf field: bilibili.playershared.TextInfo subtitle = 4;
+     */
+    subtitle?: TextInfo;
+    /**
+     *
+     *
+     * @generated from protobuf field: bilibili.playershared.ImageInfo image = 5;
+     */
+    image?: ImageInfo;
+    /**
+     *
+     *
+     * @generated from protobuf field: repeated bilibili.playershared.ButtonInfo button = 6;
+     */
+    button: ButtonInfo[];
+    /**
+     *
+     *
+     * @generated from protobuf field: bilibili.playershared.ButtonInfo bottom_desc = 7;
+     */
+    bottomDesc?: ButtonInfo;
+    /**
+     *
+     *
+     * @generated from protobuf field: bilibili.playershared.Report report = 8;
+     */
+    report?: Report;
+    /**
+     *
+     *
+     * @generated from protobuf field: int32 count_down_sec = 9;
+     */
+    countDownSec: number;
+    /**
+     *
+     *
+     * @generated from protobuf field: bilibili.playershared.TextInfo right_bottom_desc = 10;
+     */
+    rightBottomDesc?: TextInfo;
+    /**
+     *
+     *
+     * @generated from protobuf field: repeated bilibili.playershared.BottomDisplay bottom_display = 11;
+     */
+    bottomDisplay: BottomDisplay[];
+    /**
+     *
+     *
+     * @generated from protobuf field: bilibili.playershared.ExtData ext_data = 12;
+     */
+    extData?: ExtData;
+    /**
+     *
+     *
+     * @generated from protobuf field: bilibili.playershared.LimitActionType limit_action_type = 13;
+     */
+    limitActionType: LimitActionType;
+    /**
+     *
+     *
+     * @generated from protobuf field: int32 is_hide_more_btn = 14;
+     */
+    isHideMoreBtn: number;
+}
+/**
+ * 当前分辨率信息
+ *
+ * @generated from protobuf message bilibili.playershared.Dimension
+ */
+export interface Dimension {
+    /**
+     * 宽
+     *
+     * @generated from protobuf field: int32 width = 1;
+     */
+    width: number;
+    /**
+     * 长
+     *
+     * @generated from protobuf field: int32 height = 2;
+     */
+    height: number;
+    /**
+     * 旋转角度
+     *
+     * @generated from protobuf field: int32 rotate = 3;
+     */
+    rotate: number;
+}
+/**
+ * 杜比伴音流信息
+ *
+ * @generated from protobuf message bilibili.playershared.DolbyItem
+ */
+export interface DolbyItem {
+    /**
+     * 杜比类型
+     *
+     * @generated from protobuf field: bilibili.playershared.DolbyItem.Type type = 1;
+     */
+    type: DolbyItem_Type;
+    /**
+     * 音频流
+     *
+     * @generated from protobuf field: repeated bilibili.playershared.DashItem audio = 2;
+     */
+    audio: DashItem[];
+}
+/**
+ * 杜比类型
+ *
+ * @generated from protobuf enum bilibili.playershared.DolbyItem.Type
+ */
+export declare enum DolbyItem_Type {
+    /**
+     * NONE
+     *
+     * @generated from protobuf enum value: NONE = 0;
+     */
+    NONE = 0,
+    /**
+     * 普通杜比音效
+     *
+     * @generated from protobuf enum value: COMMON = 1;
+     */
+    COMMON = 1,
+    /**
+     * 全景杜比音效
+     *
+     * @generated from protobuf enum value: ATMOS = 2;
+     */
+    ATMOS = 2
+}
+/**
+ *
+ *
+ * @generated from protobuf message bilibili.playershared.EpInlineVideo
+ */
+export interface EpInlineVideo {
+    /**
+     *
+     *
+     * @generated from protobuf field: int64 material_no = 1;
+     */
+    materialNo: number;
+    /**
+     *
+     *
+     * @generated from protobuf field: int64 aid = 2;
+     */
+    aid: number;
+    /**
+     *
+     *
+     * @generated from protobuf field: int64 cid = 3;
+     */
+    cid: number;
+}
+/**
+ *
+ *
+ * @generated from protobuf message bilibili.playershared.EpInlineVideoInfo
+ */
+export interface EpInlineVideoInfo {
+    /**
+     *
+     *
+     * @generated from protobuf field: repeated bilibili.playershared.EpInlineVideo ep_inline_video = 1;
+     */
+    epInlineVideo: EpInlineVideo[];
+}
+/**
+ * 事件
+ *
+ * @generated from protobuf message bilibili.playershared.Event
+ */
+export interface Event {
+    /**
+     * 震动
+     *
+     * @generated from protobuf field: bilibili.playershared.Shake shake = 1;
+     */
+    shake?: Shake;
+}
+/**
+ *
+ *
+ * @generated from protobuf message bilibili.playershared.ExtData
+ */
+export interface ExtData {
+    /**
+     *
+     *
+     * @generated from protobuf field: bilibili.playershared.ExtDataType type = 1;
+     */
+    type: ExtDataType;
+    /**
+     * @generated from protobuf oneof: data
+     */
+    data: {
+        oneofKind: "playListInfo";
+        /**
+         * @generated from protobuf field: bilibili.playershared.PlayListInfo play_list_info = 2;
+         */
+        playListInfo: PlayListInfo;
+    } | {
+        oneofKind: undefined;
+    };
 }
 /**
  * ? 错误码补充信息
@@ -107,9 +797,152 @@ export interface ExtraContent {
     /**
      *
      *
-     * @generated from protobuf field: uint64 disable_code = 2;
+     * @generated from protobuf field: int64 disable_code = 2;
      */
     disableCode: number;
+}
+/**
+ *
+ *
+ * @generated from protobuf message bilibili.playershared.Fragment
+ */
+export interface Fragment {
+    /**
+     *
+     *
+     * @generated from protobuf field: repeated bilibili.playershared.FragmentInfo infos = 1;
+     */
+    infos: FragmentInfo[];
+}
+/**
+ *
+ *
+ * @generated from protobuf message bilibili.playershared.FragmentInfo
+ */
+export interface FragmentInfo {
+    /**
+     *
+     *
+     * @generated from protobuf field: int32 index = 1;
+     */
+    index: number;
+    /**
+     *
+     *
+     * @generated from protobuf field: bilibili.playershared.FragmentPosition fragment_position = 2;
+     */
+    fragmentPosition: FragmentPosition;
+    /**
+     *
+     *
+     * @generated from protobuf field: bilibili.playershared.FragmentType fragment_type = 3;
+     */
+    fragmentType: FragmentType;
+    /**
+     *
+     *
+     * @generated from protobuf field: int64 aid = 4;
+     */
+    aid: number;
+    /**
+     *
+     *
+     * @generated from protobuf field: int64 cid = 5;
+     */
+    cid: number;
+    /**
+     *
+     *
+     * @generated from protobuf field: int64 start_time = 6;
+     */
+    startTime: number;
+    /**
+     *
+     *
+     * @generated from protobuf field: google.protobuf.Any report = 7;
+     */
+    report?: Any;
+}
+/**
+ *
+ *
+ * @generated from protobuf message bilibili.playershared.FragmentVideo
+ */
+export interface FragmentVideo {
+    /**
+     *
+     *
+     * @generated from protobuf field: repeated bilibili.playershared.FragmentVideoInfo videos = 1;
+     */
+    videos: FragmentVideoInfo[];
+}
+/**
+ *
+ *
+ * @generated from protobuf message bilibili.playershared.FragmentVideoInfo
+ */
+export interface FragmentVideoInfo {
+    /**
+     *
+     *
+     * @generated from protobuf field: bilibili.playershared.FragmentInfo fragment_info = 1;
+     */
+    fragmentInfo?: FragmentInfo;
+    /**
+     *
+     *
+     * @generated from protobuf field: bilibili.playershared.VodInfo vod_info = 2;
+     */
+    vodInfo?: VodInfo;
+    /**
+     *
+     *
+     * @generated from protobuf field: bilibili.playershared.PlayArcConf play_arc_conf = 3;
+     */
+    playArcConf?: PlayArcConf;
+    /**
+     *
+     *
+     * @generated from protobuf field: bilibili.playershared.Dimension dimension = 4;
+     */
+    dimension?: Dimension;
+    /**
+     *
+     *
+     * @generated from protobuf field: int64 timelength = 5;
+     */
+    timelength: number;
+    /**
+     *
+     *
+     * @generated from protobuf field: bilibili.playershared.BizType video_type = 6;
+     */
+    videoType: BizType;
+    /**
+     *
+     *
+     * @generated from protobuf field: bool playable_status = 7;
+     */
+    playableStatus: boolean;
+}
+/**
+ *
+ *
+ * @generated from protobuf message bilibili.playershared.GradientColor
+ */
+export interface GradientColor {
+    /**
+     *
+     *
+     * @generated from protobuf field: string start_color = 1;
+     */
+    startColor: string;
+    /**
+     *
+     *
+     * @generated from protobuf field: string end_color = 2;
+     */
+    endColor: string;
 }
 /**
  * 播放历史
@@ -131,6 +964,8 @@ export interface History {
     relatedVideo?: HistoryInfo;
 }
 /**
+ *
+ *
  * @generated from protobuf message bilibili.playershared.HistoryInfo
  */
 export interface HistoryInfo {
@@ -146,6 +981,204 @@ export interface HistoryInfo {
      * @generated from protobuf field: int64 last_play_cid = 2;
      */
     lastPlayCid: number;
+    /**
+     *
+     *
+     * @generated from protobuf field: bilibili.playershared.Toast toast = 3;
+     */
+    toast?: Toast;
+    /**
+     *
+     *
+     * @generated from protobuf field: bilibili.playershared.Toast toast_without_time = 4;
+     */
+    toastWithoutTime?: Toast;
+    /**
+     *
+     *
+     * @generated from protobuf field: int64 last_play_aid = 5;
+     */
+    lastPlayAid: number;
+}
+/**
+ *
+ *
+ * @generated from protobuf message bilibili.playershared.ImageInfo
+ */
+export interface ImageInfo {
+    /**
+     *
+     *
+     * @generated from protobuf field: string url = 1;
+     */
+    url: string;
+}
+/**
+ *
+ *
+ * @generated from protobuf message bilibili.playershared.Interaction
+ */
+export interface Interaction {
+    /**
+     *
+     *
+     * @generated from protobuf field: bilibili.playershared.Node history_node = 1;
+     */
+    historyNode?: Node;
+    /**
+     *
+     *
+     * @generated from protobuf field: int64 graph_version = 2;
+     */
+    graphVersion: number;
+    /**
+     *
+     *
+     * @generated from protobuf field: string msg = 3;
+     */
+    msg: string;
+    /**
+     *
+     *
+     * @generated from protobuf field: int64 mark = 4;
+     */
+    mark: number;
+}
+/**
+ * HIRES伴音流信息
+ *
+ * @generated from protobuf message bilibili.playershared.LossLessItem
+ */
+export interface LossLessItem {
+    /**
+     * 是否为hires
+     *
+     * @generated from protobuf field: bool is_lossless_audio = 1;
+     */
+    isLosslessAudio: boolean;
+    /**
+     * 音频流信息
+     *
+     * @generated from protobuf field: bilibili.playershared.DashItem audio = 2;
+     */
+    audio?: DashItem;
+    /**
+     * 是否需要大会员
+     *
+     * @generated from protobuf field: bool need_vip = 3;
+     */
+    needVip: boolean;
+}
+/**
+ *
+ *
+ * @generated from protobuf message bilibili.playershared.Node
+ */
+export interface Node {
+    /**
+     *
+     *
+     * @generated from protobuf field: int64 node_id = 1;
+     */
+    nodeId: number;
+    /**
+     *
+     *
+     * @generated from protobuf field: string title = 2;
+     */
+    title: string;
+    /**
+     *
+     *
+     * @generated from protobuf field: int64 cid = 3;
+     */
+    cid: number;
+}
+/**
+ *
+ *
+ * @generated from protobuf message bilibili.playershared.PlayArc
+ */
+export interface PlayArc {
+    /**
+     *
+     *
+     * @generated from protobuf field: bilibili.playershared.BizType video_type = 1;
+     */
+    videoType: BizType;
+    /**
+     *
+     *
+     * @generated from protobuf field: uint64 aid = 2;
+     */
+    aid: number;
+    /**
+     *
+     *
+     * @generated from protobuf field: uint64 cid = 3;
+     */
+    cid: number;
+    /**
+     *
+     *
+     * @generated from protobuf field: bilibili.playershared.DrmTechType drm_tech_type = 4;
+     */
+    drmTechType: DrmTechType;
+    /**
+     *
+     *
+     * @generated from protobuf field: bilibili.playershared.ArcType arc_type = 5;
+     */
+    arcType: ArcType;
+    /**
+     *
+     *
+     * @generated from protobuf field: bilibili.playershared.Interaction interaction = 6;
+     */
+    interaction?: Interaction;
+    /**
+     *
+     *
+     * @generated from protobuf field: bilibili.playershared.Dimension dimension = 7;
+     */
+    dimension?: Dimension;
+    /**
+     *
+     *
+     * @generated from protobuf field: int64 duration = 8;
+     */
+    duration: number;
+    /**
+     *
+     *
+     * @generated from protobuf field: bool is_preview = 9;
+     */
+    isPreview: boolean;
+    /**
+     *
+     *
+     * @generated from protobuf field: int64 watch_time_length = 10;
+     */
+    watchTimeLength: number;
+    /**
+     *
+     *
+     * @generated from protobuf field: int64 duration_ms = 11;
+     */
+    durationMs: number;
+}
+/**
+ * 播放页信息-响应: PlayArcConf
+ *
+ * @generated from protobuf message bilibili.playershared.PlayArcConf
+ */
+export interface PlayArcConf {
+    /**
+     * @generated from protobuf field: map<int32, bilibili.playershared.ArcConf> arc_confs = 1;
+     */
+    arcConfs: {
+        [key: number]: ArcConf;
+    };
 }
 /**
  *
@@ -156,11 +1189,268 @@ export interface PlayDeviceConf {
     /**
      *
      *
-     * @generated from protobuf field: map<int32, bilibili.playershared.DeviceConf> arc_confs = 1;
+     * @generated from protobuf field: map<int32, bilibili.playershared.DeviceConf> device_confs = 1;
      */
-    arcConfs: {
+    deviceConfs: {
         [key: number]: DeviceConf;
     };
+}
+/**
+ *
+ *
+ * @generated from protobuf message bilibili.playershared.PlayList
+ */
+export interface PlayList {
+    /**
+     *
+     *
+     * @generated from protobuf field: int64 season_id = 1;
+     */
+    seasonId: number;
+    /**
+     *
+     *
+     * @generated from protobuf field: string title = 2;
+     */
+    title: string;
+    /**
+     *
+     *
+     * @generated from protobuf field: string cover = 3;
+     */
+    cover: string;
+    /**
+     *
+     *
+     * @generated from protobuf field: string link = 4;
+     */
+    link: string;
+    /**
+     *
+     *
+     * @generated from protobuf field: bilibili.playershared.BadgeInfo badge_info = 5;
+     */
+    badgeInfo?: BadgeInfo;
+}
+/**
+ *
+ *
+ * @generated from protobuf message bilibili.playershared.PlayListInfo
+ */
+export interface PlayListInfo {
+    /**
+     *
+     *
+     * @generated from protobuf field: repeated bilibili.playershared.PlayList play_list = 2;
+     */
+    playList: PlayList[];
+}
+/**
+ * 视频下方广告 Banner
+ *
+ * @generated from protobuf message bilibili.playershared.PromptBar
+ */
+export interface PromptBar {
+    /**
+     *
+     *
+     * @generated from protobuf field: bilibili.playershared.TextInfo title = 1;
+     */
+    title?: TextInfo;
+    /**
+     *
+     *
+     * @generated from protobuf field: bilibili.playershared.TextInfo subtitle = 2;
+     */
+    subtitle?: TextInfo;
+    /**
+     *
+     *
+     * @generated from protobuf field: string sub_title_icon = 3;
+     */
+    subTitleIcon: string;
+    /**
+     *
+     *
+     * @generated from protobuf field: string bg_image = 4;
+     */
+    bgImage: string;
+    /**
+     *
+     *
+     * @generated from protobuf field: bilibili.playershared.GradientColor bg_gradient_color = 5;
+     */
+    bgGradientColor?: GradientColor;
+    /**
+     *
+     *
+     * @generated from protobuf field: repeated bilibili.playershared.ButtonInfo button = 6;
+     */
+    button: ButtonInfo[];
+    /**
+     *
+     *
+     * @generated from protobuf field: bilibili.playershared.Report report = 7;
+     */
+    report?: Report;
+    /**
+     *
+     *
+     * @generated from protobuf field: string full_screen_ip_icon = 8;
+     */
+    fullScreenIpIcon: string;
+    /**
+     *
+     *
+     * @generated from protobuf field: bilibili.playershared.GradientColor full_screen_bg_gradient_color = 9;
+     */
+    fullScreenBgGradientColor?: GradientColor;
+    /**
+     *
+     *
+     * @generated from protobuf field: bilibili.playershared.PromptBarType prompt_bar_type = 10;
+     */
+    promptBarType: PromptBarType;
+    /**
+     *
+     *
+     * @generated from protobuf field: bilibili.playershared.PromptBarStyle prompt_bar_style = 11;
+     */
+    promptBarStyle: PromptBarStyle;
+    /**
+     *
+     *
+     * @generated from protobuf field: repeated bilibili.playershared.BenefitInfo benefit_infos = 12;
+     */
+    benefitInfos: BenefitInfo[];
+    /**
+     *
+     *
+     * @generated from protobuf field: int64 end_time = 13;
+     */
+    endTime: number;
+}
+/**
+ * 播放页信息-响应: 高画质试看信息
+ *
+ * @generated from protobuf message bilibili.playershared.QnTrialInfo
+ */
+export interface QnTrialInfo {
+    /**
+     * 能否试看高画质
+     *
+     * @generated from protobuf field: bool trial_able = 1;
+     */
+    trialAble: boolean;
+    /**
+     *
+     *
+     * @generated from protobuf field: int32 remaining_times = 2;
+     */
+    remainingTimes: number;
+    /**
+     * @generated from protobuf field: int32 start = 3;
+     */
+    start: number;
+    /**
+     * @generated from protobuf field: int32 time_length = 4;
+     */
+    timeLength: number;
+    /**
+     * @generated from protobuf field: bilibili.playershared.Toast start_toast = 5;
+     */
+    startToast?: Toast;
+    /**
+     * @generated from protobuf field: bilibili.playershared.Toast end_toast = 6;
+     */
+    endToast?: Toast;
+    /**
+     * @generated from protobuf field: bilibili.playershared.Button quality_open_tip_btn = 8;
+     */
+    qualityOpenTipBtn?: Button;
+}
+/**
+ *
+ *
+ * @generated from protobuf message bilibili.playershared.Report
+ */
+export interface Report {
+    /**
+     *
+     *
+     * @generated from protobuf field: string show_event_id = 1;
+     */
+    showEventId: string;
+    /**
+     *
+     *
+     * @generated from protobuf field: string click_event_id = 2;
+     */
+    clickEventId: string;
+    /**
+     *
+     *
+     * @generated from protobuf field: string extends = 3;
+     */
+    extends: string;
+}
+/**
+ * Dash Response, 未使用
+ *
+ * @generated from protobuf message bilibili.playershared.ResponseDash
+ */
+export interface ResponseDash {
+    /**
+     * @generated from protobuf field: repeated bilibili.playershared.DashItem video = 1;
+     */
+    video: DashItem[];
+    /**
+     * @generated from protobuf field: repeated bilibili.playershared.DashItem audio = 2;
+     */
+    audio: DashItem[];
+}
+/**
+ * 分段流条目
+ *
+ * @generated from protobuf message bilibili.playershared.ResponseUrl
+ */
+export interface ResponseUrl {
+    /**
+     * 分段序号
+     *
+     * @generated from protobuf field: uint32 order = 1;
+     */
+    order: number;
+    /**
+     * 分段时长
+     *
+     * @generated from protobuf field: uint64 length = 2;
+     */
+    length: number;
+    /**
+     * 分段大小
+     *
+     * @generated from protobuf field: uint64 size = 3;
+     */
+    size: number;
+    /**
+     * 主线流
+     *
+     * @generated from protobuf field: string url = 4;
+     */
+    url: string;
+    /**
+     * 备用流
+     *
+     * @generated from protobuf field: repeated string backup_url = 5;
+     */
+    backupUrl: string[];
+    /**
+     * md5
+     *
+     * @generated from protobuf field: string md5 = 6;
+     */
+    md5: string;
 }
 /**
  * 方案
@@ -193,6 +1483,30 @@ export declare enum Scheme_ActionType {
      * @generated from protobuf enum value: SHOW_TOAST = 1;
      */
     SHOW_TOAST = 1
+}
+/**
+ * 视频流信息: 分段流
+ *
+ * @generated from protobuf message bilibili.playershared.SegmentVideo
+ */
+export interface SegmentVideo {
+    /**
+     * @generated from protobuf field: repeated bilibili.playershared.ResponseUrl segment = 1;
+     */
+    segment: ResponseUrl[];
+}
+/**
+ * 震动
+ *
+ * @generated from protobuf message bilibili.playershared.Shake
+ */
+export interface Shake {
+    /**
+     *
+     *
+     * @generated from protobuf field: string file = 1;
+     */
+    file: string;
 }
 /**
  * 视频流信息
@@ -339,215 +1653,6 @@ export interface StreamInfo {
     supportDrm: boolean;
 }
 /**
- * Dash条目
- *
- * @generated from protobuf message bilibili.playershared.DashItem
- */
-export interface DashItem {
-    /**
-     * 清晰度
-     *
-     * @generated from protobuf field: uint32 id = 1;
-     */
-    id: number;
-    /**
-     * 主线流
-     *
-     * @generated from protobuf field: string base_url = 2;
-     */
-    baseUrl: string;
-    /**
-     * 备用流
-     *
-     * @generated from protobuf field: repeated string backup_url = 3;
-     */
-    backupUrl: string[];
-    /**
-     * 带宽
-     *
-     * @generated from protobuf field: uint32 bandwidth = 4;
-     */
-    bandwidth: number;
-    /**
-     * 编码id
-     *
-     * @generated from protobuf field: uint32 codecid = 5;
-     */
-    codecid: number;
-    /**
-     * md5
-     *
-     * @generated from protobuf field: string md5 = 6;
-     */
-    md5: string;
-    /**
-     * 大小
-     *
-     * @generated from protobuf field: uint64 size = 7;
-     */
-    size: number;
-    /**
-     * 帧率
-     *
-     * @generated from protobuf field: string frame_rate = 8;
-     */
-    frameRate: string;
-    /**
-     * DRM密钥
-     *
-     * @generated from protobuf field: string widevine_pssh = 9;
-     */
-    widevinePssh: string;
-}
-/**
- * 视频流信息: dash流
- *
- * @generated from protobuf message bilibili.playershared.DashVideo
- */
-export interface DashVideo {
-    /**
-     * 主线流
-     *
-     * @generated from protobuf field: string base_url = 1;
-     */
-    baseUrl: string;
-    /**
-     * 备用流
-     *
-     * @generated from protobuf field: repeated string backup_url = 2;
-     */
-    backupUrl: string[];
-    /**
-     * 带宽
-     *
-     * @generated from protobuf field: uint32 bandwidth = 3;
-     */
-    bandwidth: number;
-    /**
-     * 编码id
-     *
-     * @generated from protobuf field: uint32 codecid = 4;
-     */
-    codecid: number;
-    /**
-     * md5
-     *
-     * @generated from protobuf field: string md5 = 5;
-     */
-    md5: string;
-    /**
-     * 大小
-     *
-     * @generated from protobuf field: uint64 size = 6;
-     */
-    size: number;
-    /**
-     * 伴音质量id
-     *
-     * @generated from protobuf field: uint32 audio_id = 7;
-     */
-    audioId: number;
-    /**
-     * 是否非全二压
-     *
-     * @generated from protobuf field: bool no_rexcode = 8;
-     */
-    noRexcode: boolean;
-    /**
-     * 帧率
-     *
-     * @generated from protobuf field: string frame_rate = 9;
-     */
-    frameRate: string;
-    /**
-     * 宽
-     *
-     * @generated from protobuf field: int32 width = 10;
-     */
-    width: number;
-    /**
-     * 高
-     *
-     * @generated from protobuf field: int32 height = 11;
-     */
-    height: number;
-    /**
-     * DRM密钥
-     *
-     * @generated from protobuf field: string widevine_pssh = 12;
-     */
-    widevinePssh: string;
-}
-/**
- * 视频流信息: 分段流
- *
- * @generated from protobuf message bilibili.playershared.SegmentVideo
- */
-export interface SegmentVideo {
-    /**
-     * @generated from protobuf field: repeated bilibili.playershared.ResponseUrl segment = 1;
-     */
-    segment: ResponseUrl[];
-}
-/**
- * 分段流条目
- *
- * @generated from protobuf message bilibili.playershared.ResponseUrl
- */
-export interface ResponseUrl {
-    /**
-     * 分段序号
-     *
-     * @generated from protobuf field: uint32 order = 1;
-     */
-    order: number;
-    /**
-     * 分段时长
-     *
-     * @generated from protobuf field: uint64 length = 2;
-     */
-    length: number;
-    /**
-     * 分段大小
-     *
-     * @generated from protobuf field: uint64 size = 3;
-     */
-    size: number;
-    /**
-     * 主线流
-     *
-     * @generated from protobuf field: string url = 4;
-     */
-    url: string;
-    /**
-     * 备用流
-     *
-     * @generated from protobuf field: repeated string backup_url = 5;
-     */
-    backupUrl: string[];
-    /**
-     * md5
-     *
-     * @generated from protobuf field: string md5 = 6;
-     */
-    md5: string;
-}
-/**
- * Dash Response, 未使用
- *
- * @generated from protobuf message bilibili.playershared.ResponseDash
- */
-export interface ResponseDash {
-    /**
-     * @generated from protobuf field: repeated bilibili.playershared.DashItem video = 1;
-     */
-    video: DashItem[];
-    /**
-     * @generated from protobuf field: repeated bilibili.playershared.DashItem audio = 2;
-     */
-    audio: DashItem[];
-}
-/**
  * 视频流信息: 流媒体元数据: 清晰度不满足条件信息
  *
  * @generated from protobuf message bilibili.playershared.StreamLimit
@@ -573,6 +1678,75 @@ export interface StreamLimit {
     msg: string;
 }
 /**
+ *
+ *
+ * @generated from protobuf message bilibili.playershared.TaskParam
+ */
+export interface TaskParam {
+    /**
+     *
+     *
+     * @generated from protobuf field: string task_type = 1;
+     */
+    taskType: string;
+    /**
+     *
+     *
+     * @generated from protobuf field: int64 activity_id = 2;
+     */
+    activityId: number;
+    /**
+     *
+     *
+     * @generated from protobuf field: int64 tips_id = 3;
+     */
+    tipsId: number;
+}
+/**
+ *
+ *
+ * @generated from protobuf message bilibili.playershared.TextInfo
+ */
+export interface TextInfo {
+    /**
+     *
+     *
+     * @generated from protobuf field: string text = 1;
+     */
+    text: string;
+    /**
+     *
+     *
+     * @generated from protobuf field: string text_color = 2;
+     */
+    textColor: string;
+    /**
+     *
+     *
+     * @generated from protobuf field: string text_color_night = 3;
+     */
+    textColorNight: string;
+}
+/**
+ * Toast信息
+ *
+ * @generated from protobuf message bilibili.playershared.Toast
+ */
+export interface Toast {
+    /**
+     * toast文案
+     *
+     * @generated from protobuf field: string text = 1;
+     */
+    text: string;
+    /**
+     * toast按钮
+     *
+     * @generated from protobuf field: bilibili.playershared.Button button = 2;
+     */
+    button?: Button;
+}
+/**
  * 播放页信息-请求: 音视频VOD
  *
  * @generated from protobuf message bilibili.playershared.VideoVod
@@ -593,7 +1767,7 @@ export interface VideoVod {
     /**
      * 清晰度
      *
-     * @generated from protobuf field: uint64 qn = 3 [jstype = JS_NUMBER];
+     * @generated from protobuf field: uint64 qn = 3;
      */
     qn: number;
     /**
@@ -637,9 +1811,36 @@ export interface VideoVod {
     /**
      * 响度均衡
      *
-     * @generated from protobuf field: uint64 voice_balance = 10 [jstype = JS_NUMBER];
+     * @generated from protobuf field: uint64 voice_balance = 10;
      */
     voiceBalance: number;
+}
+/**
+ *
+ *
+ * @generated from protobuf message bilibili.playershared.ViewInfo
+ */
+export interface ViewInfo {
+    /**
+     *
+     *
+     * @generated from protobuf field: map<string, bilibili.playershared.Dialog> dialog_map = 1;
+     */
+    dialogMap: {
+        [key: string]: Dialog;
+    };
+    /**
+     *
+     *
+     * @generated from protobuf field: bilibili.playershared.PromptBar prompt_bar = 2;
+     */
+    promptBar?: PromptBar;
+    /**
+     *
+     *
+     * @generated from protobuf field: repeated bilibili.playershared.ComprehensiveToast toasts = 3;
+     */
+    toasts: ComprehensiveToast[];
 }
 /**
  * 播放页信息-响应: VOD音视频信息
@@ -662,7 +1863,7 @@ export interface VodInfo {
     /**
      * 视频时长
      *
-     * @generated from protobuf field: uint64 timelength = 3 [jstype = JS_NUMBER];
+     * @generated from protobuf field: uint64 timelength = 3;
      */
     timelength: number;
     /**
@@ -701,75 +1902,12 @@ export interface VodInfo {
      * @generated from protobuf field: bilibili.playershared.LossLessItem loss_less_item = 9;
      */
     lossLessItem?: LossLessItem;
-}
-/**
- * 杜比伴音流信息
- *
- * @generated from protobuf message bilibili.playershared.DolbyItem
- */
-export interface DolbyItem {
     /**
-     * 杜比类型
+     * 是否支持投屏
      *
-     * @generated from protobuf field: bilibili.playershared.DolbyItem.Type type = 1;
+     * @generated from protobuf field: bool support_project = 10;
      */
-    type: DolbyItem_Type;
-    /**
-     * 音频流
-     *
-     * @generated from protobuf field: repeated bilibili.playershared.DashItem audio = 2;
-     */
-    audio: DashItem[];
-}
-/**
- * 杜比类型
- *
- * @generated from protobuf enum bilibili.playershared.DolbyItem.Type
- */
-export declare enum DolbyItem_Type {
-    /**
-     * NONE
-     *
-     * @generated from protobuf enum value: NONE = 0;
-     */
-    NONE = 0,
-    /**
-     * 普通杜比音效
-     *
-     * @generated from protobuf enum value: COMMON = 1;
-     */
-    COMMON = 1,
-    /**
-     * 全景杜比音效
-     *
-     * @generated from protobuf enum value: ATMOS = 2;
-     */
-    ATMOS = 2
-}
-/**
- * HIRES伴音流信息
- *
- * @generated from protobuf message bilibili.playershared.LossLessItem
- */
-export interface LossLessItem {
-    /**
-     * 是否为hires
-     *
-     * @generated from protobuf field: bool is_lossless_audio = 1;
-     */
-    isLosslessAudio: boolean;
-    /**
-     * 音频流信息
-     *
-     * @generated from protobuf field: bilibili.playershared.DashItem audio = 2;
-     */
-    audio?: DashItem;
-    /**
-     * 是否需要大会员
-     *
-     * @generated from protobuf field: bool need_vip = 3;
-     */
-    needVip: boolean;
+    supportProject: boolean;
 }
 /**
  * 响度均衡操作信息
@@ -823,130 +1961,153 @@ export interface VolumeInfo {
 /**
  *
  *
- * @generated from protobuf message bilibili.playershared.PlayArc
+ * @generated from protobuf enum bilibili.playershared.ArcType
  */
-export interface PlayArc {
+export declare enum ArcType {
     /**
      *
      *
-     * @generated from protobuf field: bilibili.playershared.VideoType video_type = 1;
+     * @generated from protobuf enum value: ARC_TYPE_NORMAL = 0;
      */
-    videoType: VideoType;
+    NORMAL = 0,
     /**
      *
      *
-     * @generated from protobuf field: uint64 aid = 2;
+     * @generated from protobuf enum value: ARC_TYPE_INTERACT = 1;
      */
-    aid: number;
-    /**
-     *
-     *
-     * @generated from protobuf field: uint64 cid = 3;
-     */
-    cid: number;
-    /**
-     *
-     *
-     * @generated from protobuf field: bilibili.playershared.DrmTechType drm_tech_type = 4;
-     */
-    drmTechType: DrmTechType;
+    INTERACT = 1
 }
 /**
- * 播放页信息-响应: PlayArcConf
  *
- * @generated from protobuf message bilibili.playershared.PlayArcConf
+ *
+ * @generated from protobuf enum bilibili.playershared.BizType
  */
-export interface PlayArcConf {
+export declare enum BizType {
     /**
-     * @generated from protobuf field: map<int32, bilibili.playershared.ArcConf> arc_confs = 1;
+     *
+     *
+     * @generated from protobuf enum value: BIZ_TYPE_UNKNOWN = 0;
      */
-    arcConfs: {
-        [key: number]: ArcConf;
-    };
+    UNKNOWN = 0,
+    /**
+     *
+     *
+     * @generated from protobuf enum value: BIZ_TYPE_UGC = 1;
+     */
+    UGC = 1,
+    /**
+     *
+     *
+     * @generated from protobuf enum value: BIZ_TYPE_PGC = 2;
+     */
+    PGC = 2,
+    /**
+     *
+     *
+     * @generated from protobuf enum value: BIZ_TYPE_PUGV = 3;
+     */
+    PUGV = 3
 }
 /**
- * 播放页信息-响应: 高画质试看信息
- *
- * @generated from protobuf message bilibili.playershared.QnTrialInfo
+ * @generated from protobuf enum bilibili.playershared.ButtonAction
  */
-export interface QnTrialInfo {
-    /**
-     * 能否试看高画质
-     *
-     * @generated from protobuf field: bool trial_able = 1;
-     */
-    trialAble: boolean;
+export declare enum ButtonAction {
     /**
      *
      *
-     * @generated from protobuf field: int32 remaining_times = 2;
+     * @generated from protobuf enum value: BUTTON_UNKNOWN = 0;
      */
-    remainingTimes: number;
-    /**
-     * @generated from protobuf field: int32 start = 3;
-     */
-    start: number;
-    /**
-     * @generated from protobuf field: int32 time_length = 4;
-     */
-    timeLength: number;
-    /**
-     * @generated from protobuf field: bilibili.playershared.Toast start_toast = 5;
-     */
-    startToast?: Toast;
-    /**
-     * @generated from protobuf field: bilibili.playershared.Toast end_toast = 6;
-     */
-    endToast?: Toast;
-    /**
-     * @generated from protobuf field: bilibili.playershared.Button quality_open_tip_btn = 8;
-     */
-    qualityOpenTipBtn?: Button;
-}
-/**
- * Toast信息
- *
- * @generated from protobuf message bilibili.playershared.Toast
- */
-export interface Toast {
-    /**
-     * toast文案
-     *
-     * @generated from protobuf field: string text = 1;
-     */
-    text: string;
-    /**
-     * toast按钮
-     *
-     * @generated from protobuf field: bilibili.playershared.Button button = 2;
-     */
-    button?: Button;
-}
-/**
- * 事件
- *
- * @generated from protobuf message bilibili.playershared.Event
- */
-export interface Event {
-    /**
-     * 震动
-     *
-     * @generated from protobuf field: bilibili.playershared.Shake shake = 1;
-     */
-    shake?: Shake;
-}
-/**
- * 震动
- *
- * @generated from protobuf message bilibili.playershared.Shake
- */
-export interface Shake {
+    BUTTON_UNKNOWN = 0,
     /**
      *
      *
-     * @generated from protobuf field: string file = 1;
+     * @generated from protobuf enum value: PAY = 1;
      */
-    file: string;
+    PAY = 1,
+    /**
+     *
+     *
+     * @generated from protobuf enum value: VIP = 2;
+     */
+    VIP = 2,
+    /**
+     *
+     *
+     * @generated from protobuf enum value: PACK = 3;
+     */
+    PACK = 3,
+    /**
+     *
+     *
+     * @generated from protobuf enum value: LINK = 4;
+     */
+    LINK = 4,
+    /**
+     *
+     *
+     * @generated from protobuf enum value: COUPON = 5;
+     */
+    COUPON = 5,
+    /**
+     *
+     *
+     * @generated from protobuf enum value: DEMAND = 6;
+     */
+    DEMAND = 6,
+    /**
+     *
+     *
+     * @generated from protobuf enum value: DEMAND_PACK = 7;
+     */
+    DEMAND_PACK = 7,
+    /**
+     *
+     *
+     * @generated from protobuf enum value: FOLLOW = 8;
+     */
+    FOLLOW = 8,
+    /**
+     *
+     *
+     * @generated from protobuf enum value: APPOINTMENT = 9;
+     */
+    APPOINTMENT = 9,
+    /**
+     *
+     *
+     * @generated from protobuf enum value: VIP_FREE = 10;
+     */
+    VIP_FREE = 10,
+    /**
+     *
+     *
+     * @generated from protobuf enum value: TASK = 11;
+     */
+    TASK = 11,
+    /**
+     *
+     *
+     * @generated from protobuf enum value: CHARGINGPLUS = 12;
+     */
+    CHARGINGPLUS = 12,
+    /**
+     *
+     *
+     * @generated from protobuf enum value: BP = 13;
+     */
+    BP = 13,
+    /**
+     *
+     *
+     * @generated from protobuf enum value: PRE_SELL = 14;
+     */
+    PRE_SELL = 14,
+    /**
+     *
+     *
+     * @generated from protobuf enum value: LOGIN = 15;
+     */
+    LOGIN = 15
 }
 /**
  * 视频编码
@@ -1166,6 +2327,152 @@ export declare enum DrmTechType {
     BILI_DRM = 3
 }
 /**
+ *
+ *
+ * @generated from protobuf enum bilibili.playershared.Effects
+ */
+export declare enum Effects {
+    /**
+     *
+     *
+     * @generated from protobuf enum value: EFFECTS_UNKNOWN = 0;
+     */
+    EFFECTS_UNKNOWN = 0,
+    /**
+     *
+     *
+     * @generated from protobuf enum value: GAUSSIAN_BLUR = 1;
+     */
+    GAUSSIAN_BLUR = 1,
+    /**
+     *
+     *
+     * @generated from protobuf enum value: HALF_ALPHA = 2;
+     */
+    HALF_ALPHA = 2
+}
+/**
+ * @generated from protobuf enum bilibili.playershared.ExtDataType
+ */
+export declare enum ExtDataType {
+    /**
+     *
+     *
+     * @generated from protobuf enum value: EXT_DATA_TYPE_UNKNOWN = 0;
+     */
+    EXT_DATA_TYPE_UNKNOWN = 0,
+    /**
+     *
+     *
+     * @generated from protobuf enum value: PLAY_LIST = 1;
+     */
+    PLAY_LIST = 1
+}
+/**
+ *
+ *
+ * @generated from protobuf enum bilibili.playershared.FragmentPosition
+ */
+export declare enum FragmentPosition {
+    /**
+     * @generated from protobuf enum value: INVALID = 0;
+     */
+    INVALID = 0,
+    /**
+     * @generated from protobuf enum value: PRE = 1;
+     */
+    PRE = 1,
+    /**
+     * @generated from protobuf enum value: MIDDLE = 2;
+     */
+    MIDDLE = 2,
+    /**
+     * @generated from protobuf enum value: POST = 3;
+     */
+    POST = 3
+}
+/**
+ *
+ *
+ * @generated from protobuf enum bilibili.playershared.FragmentType
+ */
+export declare enum FragmentType {
+    /**
+     * @generated from protobuf enum value: UNKNOWN = 0;
+     */
+    UNKNOWN = 0,
+    /**
+     * @generated from protobuf enum value: AD_FRAGMENT = 1;
+     */
+    AD_FRAGMENT = 1,
+    /**
+     * @generated from protobuf enum value: OGV_FRAGMENT = 2;
+     */
+    OGV_FRAGMENT = 2
+}
+/**
+ *
+ *
+ * @generated from protobuf enum bilibili.playershared.GuideStyle
+ */
+export declare enum GuideStyle {
+    /**
+     *
+     *
+     * @generated from protobuf enum value: STYLE_UNKNOWN = 0;
+     */
+    STYLE_UNKNOWN = 0,
+    /**
+     *
+     *
+     * @generated from protobuf enum value: HORIZONTAL_IMAGE = 1;
+     */
+    HORIZONTAL_IMAGE = 1,
+    /**
+     *
+     *
+     * @generated from protobuf enum value: VERTICAL_TEXT = 2;
+     */
+    VERTICAL_TEXT = 2,
+    /**
+     *
+     *
+     * @generated from protobuf enum value: SIMPLE_TEXT = 3;
+     */
+    SIMPLE_TEXT = 3,
+    /**
+     *
+     *
+     * @generated from protobuf enum value: CHARGING_TEXT = 4;
+     */
+    CHARGING_TEXT = 4
+}
+/**
+ *
+ *
+ * @generated from protobuf enum bilibili.playershared.LimitActionType
+ */
+export declare enum LimitActionType {
+    /**
+     *
+     *
+     * @generated from protobuf enum value: LAT_UNKNOWN = 0;
+     */
+    LAT_UNKNOWN = 0,
+    /**
+     *
+     *
+     * @generated from protobuf enum value: SHOW_LIMIT_DIALOG = 1;
+     */
+    SHOW_LIMIT_DIALOG = 1,
+    /**
+     *
+     *
+     * @generated from protobuf enum value: SKIP_CURRENT_EP = 2;
+     */
+    SKIP_CURRENT_EP = 2
+}
+/**
  * 错误码
  *
  * @generated from protobuf enum bilibili.playershared.PlayErr
@@ -1181,6 +2488,120 @@ export declare enum PlayErr {
      * @generated from protobuf enum value: WithMultiDeviceLoginErr = 1;
      */
     WithMultiDeviceLoginErr = 1
+}
+/**
+ *
+ *
+ * @generated from protobuf enum bilibili.playershared.PromptBarStyle
+ */
+export declare enum PromptBarStyle {
+    /**
+     * @generated from protobuf enum value: PROMPT_BAR_STYLE_UNKNOWN = 0;
+     */
+    PROMPT_BAR_STYLE_UNKNOWN = 0,
+    /**
+     * @generated from protobuf enum value: TEXT = 1;
+     */
+    TEXT = 1,
+    /**
+     * @generated from protobuf enum value: CURING_BENEFITS = 2;
+     */
+    CURING_BENEFITS = 2,
+    /**
+     * @generated from protobuf enum value: CARD_OPENING_GIFT = 3;
+     */
+    CARD_OPENING_GIFT = 3,
+    /**
+     * @generated from protobuf enum value: COUNTDOWN = 4;
+     */
+    COUNTDOWN = 4
+}
+/**
+ *
+ *
+ * @generated from protobuf enum bilibili.playershared.PromptBarType
+ */
+export declare enum PromptBarType {
+    /**
+     * @generated from protobuf enum value: PROMPT_BAR_TYPE_UNKNOWN = 0;
+     */
+    PROMPT_BAR_TYPE_UNKNOWN = 0,
+    /**
+     * @generated from protobuf enum value: OPEN_PROMPT_BAR = 1;
+     */
+    OPEN_PROMPT_BAR = 1
+}
+/**
+ *
+ *
+ * @generated from protobuf enum bilibili.playershared.ShowStyleType
+ */
+export declare enum ShowStyleType {
+    /**
+     *
+     *
+     * @generated from protobuf enum value: SHOW_STYLE_TYPE_UNKNOWN = 0;
+     */
+    UNKNOWN = 0,
+    /**
+     *
+     *
+     * @generated from protobuf enum value: SHOW_STYLE_TYPE_ORDINARY = 1;
+     */
+    ORDINARY = 1,
+    /**
+     *
+     *
+     * @generated from protobuf enum value: SHOW_STYLE_TYPE_RESIDENT = 2;
+     */
+    RESIDENT = 2
+}
+/**
+ * @generated from protobuf enum bilibili.playershared.ToastType
+ */
+export declare enum ToastType {
+    /**
+     *
+     *
+     * @generated from protobuf enum value: TOAST_TYPE_UNKNOWN = 0;
+     */
+    TOAST_TYPE_UNKNOWN = 0,
+    /**
+     *
+     *
+     * @generated from protobuf enum value: VIP_CONTENT_REMIND = 1;
+     */
+    VIP_CONTENT_REMIND = 1,
+    /**
+     *
+     *
+     * @generated from protobuf enum value: VIP_DEFINITION_REMIND = 2;
+     */
+    VIP_DEFINITION_REMIND = 2,
+    /**
+     *
+     *
+     * @generated from protobuf enum value: VIP_DEFINITION_GUIDE = 3;
+     */
+    VIP_DEFINITION_GUIDE = 3,
+    /**
+     *
+     *
+     * @generated from protobuf enum value: OGV_VIDEO_START_TOAST = 4;
+     */
+    OGV_VIDEO_START_TOAST = 4,
+    /**
+     *
+     *
+     * @generated from protobuf enum value: CHARGING_TOAST = 5;
+     */
+    CHARGING_TOAST = 5,
+    /**
+     *
+     *
+     * @generated from protobuf enum value: VIP_SKIP_FRAGMENT_TOAST = 6;
+     */
+    VIP_SKIP_FRAGMENT_TOAST = 6
 }
 /**
  *
@@ -1201,29 +2622,6 @@ export declare enum UnsupportScene {
      */
     PREMIERE = 1
 }
-/**
- * 视频类型
- *
- * @generated from protobuf enum bilibili.playershared.VideoType
- */
-export declare enum VideoType {
-    /**
-     * @generated from protobuf enum value: UNKNOWN = 0;
-     */
-    UNKNOWN = 0,
-    /**
-     * 用户生成内容
-     *
-     * @generated from protobuf enum value: UGC = 1;
-     */
-    UGC = 1,
-    /**
-     * 专业生产内容
-     *
-     * @generated from protobuf enum value: PGC = 2;
-     */
-    PGC = 2
-}
 declare class ArcConf$Type extends MessageType<ArcConf> {
     constructor();
 }
@@ -1231,6 +2629,41 @@ declare class ArcConf$Type extends MessageType<ArcConf> {
  * @generated MessageType for protobuf message bilibili.playershared.ArcConf
  */
 export declare const ArcConf: ArcConf$Type;
+declare class BackgroundInfo$Type extends MessageType<BackgroundInfo> {
+    constructor();
+}
+/**
+ * @generated MessageType for protobuf message bilibili.playershared.BackgroundInfo
+ */
+export declare const BackgroundInfo: BackgroundInfo$Type;
+declare class BadgeInfo$Type extends MessageType<BadgeInfo> {
+    constructor();
+}
+/**
+ * @generated MessageType for protobuf message bilibili.playershared.BadgeInfo
+ */
+export declare const BadgeInfo: BadgeInfo$Type;
+declare class Banner$Type extends MessageType<Banner> {
+    constructor();
+}
+/**
+ * @generated MessageType for protobuf message bilibili.playershared.Banner
+ */
+export declare const Banner: Banner$Type;
+declare class BenefitInfo$Type extends MessageType<BenefitInfo> {
+    constructor();
+}
+/**
+ * @generated MessageType for protobuf message bilibili.playershared.BenefitInfo
+ */
+export declare const BenefitInfo: BenefitInfo$Type;
+declare class BottomDisplay$Type extends MessageType<BottomDisplay> {
+    constructor();
+}
+/**
+ * @generated MessageType for protobuf message bilibili.playershared.BottomDisplay
+ */
+export declare const BottomDisplay: BottomDisplay$Type;
 declare class Button$Type extends MessageType<Button> {
     constructor();
 }
@@ -1238,6 +2671,20 @@ declare class Button$Type extends MessageType<Button> {
  * @generated MessageType for protobuf message bilibili.playershared.Button
  */
 export declare const Button: Button$Type;
+declare class ButtonInfo$Type extends MessageType<ButtonInfo> {
+    constructor();
+}
+/**
+ * @generated MessageType for protobuf message bilibili.playershared.ButtonInfo
+ */
+export declare const ButtonInfo: ButtonInfo$Type;
+declare class ComprehensiveToast$Type extends MessageType<ComprehensiveToast> {
+    constructor();
+}
+/**
+ * @generated MessageType for protobuf message bilibili.playershared.ComprehensiveToast
+ */
+export declare const ComprehensiveToast: ComprehensiveToast$Type;
 declare class ConfValue$Type extends MessageType<ConfValue> {
     constructor();
 }
@@ -1245,62 +2692,6 @@ declare class ConfValue$Type extends MessageType<ConfValue> {
  * @generated MessageType for protobuf message bilibili.playershared.ConfValue
  */
 export declare const ConfValue: ConfValue$Type;
-declare class DeviceConf$Type extends MessageType<DeviceConf> {
-    constructor();
-}
-/**
- * @generated MessageType for protobuf message bilibili.playershared.DeviceConf
- */
-export declare const DeviceConf: DeviceConf$Type;
-declare class ExtraContent$Type extends MessageType<ExtraContent> {
-    constructor();
-}
-/**
- * @generated MessageType for protobuf message bilibili.playershared.ExtraContent
- */
-export declare const ExtraContent: ExtraContent$Type;
-declare class History$Type extends MessageType<History> {
-    constructor();
-}
-/**
- * @generated MessageType for protobuf message bilibili.playershared.History
- */
-export declare const History: History$Type;
-declare class HistoryInfo$Type extends MessageType<HistoryInfo> {
-    constructor();
-}
-/**
- * @generated MessageType for protobuf message bilibili.playershared.HistoryInfo
- */
-export declare const HistoryInfo: HistoryInfo$Type;
-declare class PlayDeviceConf$Type extends MessageType<PlayDeviceConf> {
-    constructor();
-}
-/**
- * @generated MessageType for protobuf message bilibili.playershared.PlayDeviceConf
- */
-export declare const PlayDeviceConf: PlayDeviceConf$Type;
-declare class Scheme$Type extends MessageType<Scheme> {
-    constructor();
-}
-/**
- * @generated MessageType for protobuf message bilibili.playershared.Scheme
- */
-export declare const Scheme: Scheme$Type;
-declare class Stream$Type extends MessageType<Stream> {
-    constructor();
-}
-/**
- * @generated MessageType for protobuf message bilibili.playershared.Stream
- */
-export declare const Stream: Stream$Type;
-declare class StreamInfo$Type extends MessageType<StreamInfo> {
-    constructor();
-}
-/**
- * @generated MessageType for protobuf message bilibili.playershared.StreamInfo
- */
-export declare const StreamInfo: StreamInfo$Type;
 declare class DashItem$Type extends MessageType<DashItem> {
     constructor();
 }
@@ -1315,48 +2706,27 @@ declare class DashVideo$Type extends MessageType<DashVideo> {
  * @generated MessageType for protobuf message bilibili.playershared.DashVideo
  */
 export declare const DashVideo: DashVideo$Type;
-declare class SegmentVideo$Type extends MessageType<SegmentVideo> {
+declare class DeviceConf$Type extends MessageType<DeviceConf> {
     constructor();
 }
 /**
- * @generated MessageType for protobuf message bilibili.playershared.SegmentVideo
+ * @generated MessageType for protobuf message bilibili.playershared.DeviceConf
  */
-export declare const SegmentVideo: SegmentVideo$Type;
-declare class ResponseUrl$Type extends MessageType<ResponseUrl> {
+export declare const DeviceConf: DeviceConf$Type;
+declare class Dialog$Type extends MessageType<Dialog> {
     constructor();
 }
 /**
- * @generated MessageType for protobuf message bilibili.playershared.ResponseUrl
+ * @generated MessageType for protobuf message bilibili.playershared.Dialog
  */
-export declare const ResponseUrl: ResponseUrl$Type;
-declare class ResponseDash$Type extends MessageType<ResponseDash> {
+export declare const Dialog: Dialog$Type;
+declare class Dimension$Type extends MessageType<Dimension> {
     constructor();
 }
 /**
- * @generated MessageType for protobuf message bilibili.playershared.ResponseDash
+ * @generated MessageType for protobuf message bilibili.playershared.Dimension
  */
-export declare const ResponseDash: ResponseDash$Type;
-declare class StreamLimit$Type extends MessageType<StreamLimit> {
-    constructor();
-}
-/**
- * @generated MessageType for protobuf message bilibili.playershared.StreamLimit
- */
-export declare const StreamLimit: StreamLimit$Type;
-declare class VideoVod$Type extends MessageType<VideoVod> {
-    constructor();
-}
-/**
- * @generated MessageType for protobuf message bilibili.playershared.VideoVod
- */
-export declare const VideoVod: VideoVod$Type;
-declare class VodInfo$Type extends MessageType<VodInfo> {
-    constructor();
-}
-/**
- * @generated MessageType for protobuf message bilibili.playershared.VodInfo
- */
-export declare const VodInfo: VodInfo$Type;
+export declare const Dimension: Dimension$Type;
 declare class DolbyItem$Type extends MessageType<DolbyItem> {
     constructor();
 }
@@ -1364,6 +2734,104 @@ declare class DolbyItem$Type extends MessageType<DolbyItem> {
  * @generated MessageType for protobuf message bilibili.playershared.DolbyItem
  */
 export declare const DolbyItem: DolbyItem$Type;
+declare class EpInlineVideo$Type extends MessageType<EpInlineVideo> {
+    constructor();
+}
+/**
+ * @generated MessageType for protobuf message bilibili.playershared.EpInlineVideo
+ */
+export declare const EpInlineVideo: EpInlineVideo$Type;
+declare class EpInlineVideoInfo$Type extends MessageType<EpInlineVideoInfo> {
+    constructor();
+}
+/**
+ * @generated MessageType for protobuf message bilibili.playershared.EpInlineVideoInfo
+ */
+export declare const EpInlineVideoInfo: EpInlineVideoInfo$Type;
+declare class Event$Type extends MessageType<Event> {
+    constructor();
+}
+/**
+ * @generated MessageType for protobuf message bilibili.playershared.Event
+ */
+export declare const Event: Event$Type;
+declare class ExtData$Type extends MessageType<ExtData> {
+    constructor();
+}
+/**
+ * @generated MessageType for protobuf message bilibili.playershared.ExtData
+ */
+export declare const ExtData: ExtData$Type;
+declare class ExtraContent$Type extends MessageType<ExtraContent> {
+    constructor();
+}
+/**
+ * @generated MessageType for protobuf message bilibili.playershared.ExtraContent
+ */
+export declare const ExtraContent: ExtraContent$Type;
+declare class Fragment$Type extends MessageType<Fragment> {
+    constructor();
+}
+/**
+ * @generated MessageType for protobuf message bilibili.playershared.Fragment
+ */
+export declare const Fragment: Fragment$Type;
+declare class FragmentInfo$Type extends MessageType<FragmentInfo> {
+    constructor();
+}
+/**
+ * @generated MessageType for protobuf message bilibili.playershared.FragmentInfo
+ */
+export declare const FragmentInfo: FragmentInfo$Type;
+declare class FragmentVideo$Type extends MessageType<FragmentVideo> {
+    constructor();
+}
+/**
+ * @generated MessageType for protobuf message bilibili.playershared.FragmentVideo
+ */
+export declare const FragmentVideo: FragmentVideo$Type;
+declare class FragmentVideoInfo$Type extends MessageType<FragmentVideoInfo> {
+    constructor();
+}
+/**
+ * @generated MessageType for protobuf message bilibili.playershared.FragmentVideoInfo
+ */
+export declare const FragmentVideoInfo: FragmentVideoInfo$Type;
+declare class GradientColor$Type extends MessageType<GradientColor> {
+    constructor();
+}
+/**
+ * @generated MessageType for protobuf message bilibili.playershared.GradientColor
+ */
+export declare const GradientColor: GradientColor$Type;
+declare class History$Type extends MessageType<History> {
+    constructor();
+}
+/**
+ * @generated MessageType for protobuf message bilibili.playershared.History
+ */
+export declare const History: History$Type;
+declare class HistoryInfo$Type extends MessageType<HistoryInfo> {
+    constructor();
+}
+/**
+ * @generated MessageType for protobuf message bilibili.playershared.HistoryInfo
+ */
+export declare const HistoryInfo: HistoryInfo$Type;
+declare class ImageInfo$Type extends MessageType<ImageInfo> {
+    constructor();
+}
+/**
+ * @generated MessageType for protobuf message bilibili.playershared.ImageInfo
+ */
+export declare const ImageInfo: ImageInfo$Type;
+declare class Interaction$Type extends MessageType<Interaction> {
+    constructor();
+}
+/**
+ * @generated MessageType for protobuf message bilibili.playershared.Interaction
+ */
+export declare const Interaction: Interaction$Type;
 declare class LossLessItem$Type extends MessageType<LossLessItem> {
     constructor();
 }
@@ -1371,13 +2839,13 @@ declare class LossLessItem$Type extends MessageType<LossLessItem> {
  * @generated MessageType for protobuf message bilibili.playershared.LossLessItem
  */
 export declare const LossLessItem: LossLessItem$Type;
-declare class VolumeInfo$Type extends MessageType<VolumeInfo> {
+declare class Node$Type extends MessageType<Node> {
     constructor();
 }
 /**
- * @generated MessageType for protobuf message bilibili.playershared.VolumeInfo
+ * @generated MessageType for protobuf message bilibili.playershared.Node
  */
-export declare const VolumeInfo: VolumeInfo$Type;
+export declare const Node: Node$Type;
 declare class PlayArc$Type extends MessageType<PlayArc> {
     constructor();
 }
@@ -1392,6 +2860,34 @@ declare class PlayArcConf$Type extends MessageType<PlayArcConf> {
  * @generated MessageType for protobuf message bilibili.playershared.PlayArcConf
  */
 export declare const PlayArcConf: PlayArcConf$Type;
+declare class PlayDeviceConf$Type extends MessageType<PlayDeviceConf> {
+    constructor();
+}
+/**
+ * @generated MessageType for protobuf message bilibili.playershared.PlayDeviceConf
+ */
+export declare const PlayDeviceConf: PlayDeviceConf$Type;
+declare class PlayList$Type extends MessageType<PlayList> {
+    constructor();
+}
+/**
+ * @generated MessageType for protobuf message bilibili.playershared.PlayList
+ */
+export declare const PlayList: PlayList$Type;
+declare class PlayListInfo$Type extends MessageType<PlayListInfo> {
+    constructor();
+}
+/**
+ * @generated MessageType for protobuf message bilibili.playershared.PlayListInfo
+ */
+export declare const PlayListInfo: PlayListInfo$Type;
+declare class PromptBar$Type extends MessageType<PromptBar> {
+    constructor();
+}
+/**
+ * @generated MessageType for protobuf message bilibili.playershared.PromptBar
+ */
+export declare const PromptBar: PromptBar$Type;
 declare class QnTrialInfo$Type extends MessageType<QnTrialInfo> {
     constructor();
 }
@@ -1399,20 +2895,41 @@ declare class QnTrialInfo$Type extends MessageType<QnTrialInfo> {
  * @generated MessageType for protobuf message bilibili.playershared.QnTrialInfo
  */
 export declare const QnTrialInfo: QnTrialInfo$Type;
-declare class Toast$Type extends MessageType<Toast> {
+declare class Report$Type extends MessageType<Report> {
     constructor();
 }
 /**
- * @generated MessageType for protobuf message bilibili.playershared.Toast
+ * @generated MessageType for protobuf message bilibili.playershared.Report
  */
-export declare const Toast: Toast$Type;
-declare class Event$Type extends MessageType<Event> {
+export declare const Report: Report$Type;
+declare class ResponseDash$Type extends MessageType<ResponseDash> {
     constructor();
 }
 /**
- * @generated MessageType for protobuf message bilibili.playershared.Event
+ * @generated MessageType for protobuf message bilibili.playershared.ResponseDash
  */
-export declare const Event: Event$Type;
+export declare const ResponseDash: ResponseDash$Type;
+declare class ResponseUrl$Type extends MessageType<ResponseUrl> {
+    constructor();
+}
+/**
+ * @generated MessageType for protobuf message bilibili.playershared.ResponseUrl
+ */
+export declare const ResponseUrl: ResponseUrl$Type;
+declare class Scheme$Type extends MessageType<Scheme> {
+    constructor();
+}
+/**
+ * @generated MessageType for protobuf message bilibili.playershared.Scheme
+ */
+export declare const Scheme: Scheme$Type;
+declare class SegmentVideo$Type extends MessageType<SegmentVideo> {
+    constructor();
+}
+/**
+ * @generated MessageType for protobuf message bilibili.playershared.SegmentVideo
+ */
+export declare const SegmentVideo: SegmentVideo$Type;
 declare class Shake$Type extends MessageType<Shake> {
     constructor();
 }
@@ -1420,4 +2937,74 @@ declare class Shake$Type extends MessageType<Shake> {
  * @generated MessageType for protobuf message bilibili.playershared.Shake
  */
 export declare const Shake: Shake$Type;
+declare class Stream$Type extends MessageType<Stream> {
+    constructor();
+}
+/**
+ * @generated MessageType for protobuf message bilibili.playershared.Stream
+ */
+export declare const Stream: Stream$Type;
+declare class StreamInfo$Type extends MessageType<StreamInfo> {
+    constructor();
+}
+/**
+ * @generated MessageType for protobuf message bilibili.playershared.StreamInfo
+ */
+export declare const StreamInfo: StreamInfo$Type;
+declare class StreamLimit$Type extends MessageType<StreamLimit> {
+    constructor();
+}
+/**
+ * @generated MessageType for protobuf message bilibili.playershared.StreamLimit
+ */
+export declare const StreamLimit: StreamLimit$Type;
+declare class TaskParam$Type extends MessageType<TaskParam> {
+    constructor();
+}
+/**
+ * @generated MessageType for protobuf message bilibili.playershared.TaskParam
+ */
+export declare const TaskParam: TaskParam$Type;
+declare class TextInfo$Type extends MessageType<TextInfo> {
+    constructor();
+}
+/**
+ * @generated MessageType for protobuf message bilibili.playershared.TextInfo
+ */
+export declare const TextInfo: TextInfo$Type;
+declare class Toast$Type extends MessageType<Toast> {
+    constructor();
+}
+/**
+ * @generated MessageType for protobuf message bilibili.playershared.Toast
+ */
+export declare const Toast: Toast$Type;
+declare class VideoVod$Type extends MessageType<VideoVod> {
+    constructor();
+}
+/**
+ * @generated MessageType for protobuf message bilibili.playershared.VideoVod
+ */
+export declare const VideoVod: VideoVod$Type;
+declare class ViewInfo$Type extends MessageType<ViewInfo> {
+    constructor();
+}
+/**
+ * @generated MessageType for protobuf message bilibili.playershared.ViewInfo
+ */
+export declare const ViewInfo: ViewInfo$Type;
+declare class VodInfo$Type extends MessageType<VodInfo> {
+    constructor();
+}
+/**
+ * @generated MessageType for protobuf message bilibili.playershared.VodInfo
+ */
+export declare const VodInfo: VodInfo$Type;
+declare class VolumeInfo$Type extends MessageType<VolumeInfo> {
+    constructor();
+}
+/**
+ * @generated MessageType for protobuf message bilibili.playershared.VolumeInfo
+ */
+export declare const VolumeInfo: VolumeInfo$Type;
 export {};

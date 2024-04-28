@@ -2,6 +2,10 @@
 // @generated from protobuf file "bilibili/app/playerunite/v1/playerunite.proto" (package "bilibili.app.playerunite.v1", syntax proto3)
 // tslint:disable
 import { MessageType } from "@protobuf-ts/runtime";
+import { Fragment } from "../../../playershared/playershared";
+import { VideoVod } from "../../../playershared/playershared";
+import { FragmentVideo } from "../../../playershared/playershared";
+import { ViewInfo } from "../../../playershared/playershared";
 import { History } from "../../../playershared/playershared";
 import { QnTrialInfo } from "../../../playershared/playershared";
 import { PlayArc } from "../../../playershared/playershared";
@@ -10,40 +14,6 @@ import { Event } from "../../../playershared/playershared";
 import { PlayDeviceConf } from "../../../playershared/playershared";
 import { PlayArcConf } from "../../../playershared/playershared";
 import { VodInfo } from "../../../playershared/playershared";
-import { VideoVod } from "../../../playershared/playershared";
-/**
- *
- *
- * @generated from protobuf message bilibili.app.playerunite.v1.PlayViewUniteReq
- */
-export interface PlayViewUniteReq {
-    /**
-     * 请求资源VOD信息
-     *
-     * @generated from protobuf field: bilibili.playershared.VideoVod vod = 1;
-     */
-    vod?: VideoVod;
-    /**
-     *
-     *
-     * @generated from protobuf field: string spmid = 2;
-     */
-    spmid: string;
-    /**
-     *
-     *
-     * @generated from protobuf field: string from_spmid = 3;
-     */
-    fromSpmid: string;
-    /**
-     * 补充信息, 如ep_id等
-     *
-     * @generated from protobuf field: map<string, string> extra_content = 4;
-     */
-    extraContent: {
-        [key: string]: string;
-    };
-}
 /**
  *
  *
@@ -98,14 +68,76 @@ export interface PlayViewUniteReply {
      * @generated from protobuf field: bilibili.playershared.History history = 8;
      */
     history?: History;
-}
-declare class PlayViewUniteReq$Type extends MessageType<PlayViewUniteReq> {
-    constructor();
+    /**
+     *
+     *
+     * @generated from protobuf field: bilibili.playershared.ViewInfo view_info = 9;
+     */
+    viewInfo?: ViewInfo;
+    /**
+     *
+     *
+     * @generated from protobuf field: bilibili.playershared.FragmentVideo fragment_video = 10;
+     */
+    fragmentVideo?: FragmentVideo;
 }
 /**
- * @generated MessageType for protobuf message bilibili.app.playerunite.v1.PlayViewUniteReq
+ *
+ *
+ * @generated from protobuf message bilibili.app.playerunite.v1.PlayViewUniteReq
  */
-export declare const PlayViewUniteReq: PlayViewUniteReq$Type;
+export interface PlayViewUniteReq {
+    /**
+     * 请求资源VOD信息
+     *
+     * @generated from protobuf field: bilibili.playershared.VideoVod vod = 1;
+     */
+    vod?: VideoVod;
+    /**
+     *
+     *
+     * @generated from protobuf field: string spmid = 2;
+     */
+    spmid: string;
+    /**
+     *
+     *
+     * @generated from protobuf field: string from_spmid = 3;
+     */
+    fromSpmid: string;
+    /**
+     * 补充信息, 如ep_id等
+     *
+     * @generated from protobuf field: map<string, string> extra_content = 4;
+     */
+    extraContent: {
+        [key: string]: string;
+    };
+    /**
+     *
+     *
+     * @generated from protobuf field: string bvid = 5;
+     */
+    bvid: string;
+    /**
+     *
+     *
+     * @generated from protobuf field: string ad_extra = 6;
+     */
+    adExtra: string;
+    /**
+     *
+     *
+     * @generated from protobuf field: bilibili.playershared.Fragment fragment = 7;
+     */
+    fragment?: Fragment;
+    /**
+     *
+     *
+     * @generated from protobuf field: string from_scene = 8;
+     */
+    fromScene: string;
+}
 declare class PlayViewUniteReply$Type extends MessageType<PlayViewUniteReply> {
     constructor();
 }
@@ -113,6 +145,13 @@ declare class PlayViewUniteReply$Type extends MessageType<PlayViewUniteReply> {
  * @generated MessageType for protobuf message bilibili.app.playerunite.v1.PlayViewUniteReply
  */
 export declare const PlayViewUniteReply: PlayViewUniteReply$Type;
+declare class PlayViewUniteReq$Type extends MessageType<PlayViewUniteReq> {
+    constructor();
+}
+/**
+ * @generated MessageType for protobuf message bilibili.app.playerunite.v1.PlayViewUniteReq
+ */
+export declare const PlayViewUniteReq: PlayViewUniteReq$Type;
 /**
  * @generated ServiceType for protobuf service bilibili.app.playerunite.v1.Player
  */

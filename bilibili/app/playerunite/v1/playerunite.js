@@ -6,6 +6,10 @@
 // tslint:disable
 import { ServiceType } from "@protobuf-ts/runtime-rpc";
 import { MessageType } from "@protobuf-ts/runtime";
+import { Fragment } from "../../../playershared/playershared";
+import { VideoVod } from "../../../playershared/playershared";
+import { FragmentVideo } from "../../../playershared/playershared";
+import { ViewInfo } from "../../../playershared/playershared";
 import { History } from "../../../playershared/playershared";
 import { QnTrialInfo } from "../../../playershared/playershared";
 import { PlayArc } from "../../../playershared/playershared";
@@ -14,22 +18,6 @@ import { Event } from "../../../playershared/playershared";
 import { PlayDeviceConf } from "../../../playershared/playershared";
 import { PlayArcConf } from "../../../playershared/playershared";
 import { VodInfo } from "../../../playershared/playershared";
-import { VideoVod } from "../../../playershared/playershared";
-// @generated message type with reflection information, may provide speed optimized methods
-class PlayViewUniteReq$Type extends MessageType {
-    constructor() {
-        super("bilibili.app.playerunite.v1.PlayViewUniteReq", [
-            { no: 1, name: "vod", kind: "message", T: () => VideoVod },
-            { no: 2, name: "spmid", kind: "scalar", T: 9 /*ScalarType.STRING*/ },
-            { no: 3, name: "from_spmid", kind: "scalar", T: 9 /*ScalarType.STRING*/ },
-            { no: 4, name: "extra_content", kind: "map", K: 9 /*ScalarType.STRING*/, V: { kind: "scalar", T: 9 /*ScalarType.STRING*/ } }
-        ]);
-    }
-}
-/**
- * @generated MessageType for protobuf message bilibili.app.playerunite.v1.PlayViewUniteReq
- */
-export const PlayViewUniteReq = new PlayViewUniteReq$Type();
 // @generated message type with reflection information, may provide speed optimized methods
 class PlayViewUniteReply$Type extends MessageType {
     constructor() {
@@ -41,7 +29,9 @@ class PlayViewUniteReply$Type extends MessageType {
             { no: 5, name: "supplement", kind: "message", T: () => Any },
             { no: 6, name: "play_arc", kind: "message", T: () => PlayArc },
             { no: 7, name: "qn_trial_info", kind: "message", T: () => QnTrialInfo },
-            { no: 8, name: "history", kind: "message", T: () => History }
+            { no: 8, name: "history", kind: "message", T: () => History },
+            { no: 9, name: "view_info", kind: "message", T: () => ViewInfo },
+            { no: 10, name: "fragment_video", kind: "message", T: () => FragmentVideo }
         ]);
     }
 }
@@ -49,6 +39,25 @@ class PlayViewUniteReply$Type extends MessageType {
  * @generated MessageType for protobuf message bilibili.app.playerunite.v1.PlayViewUniteReply
  */
 export const PlayViewUniteReply = new PlayViewUniteReply$Type();
+// @generated message type with reflection information, may provide speed optimized methods
+class PlayViewUniteReq$Type extends MessageType {
+    constructor() {
+        super("bilibili.app.playerunite.v1.PlayViewUniteReq", [
+            { no: 1, name: "vod", kind: "message", T: () => VideoVod },
+            { no: 2, name: "spmid", kind: "scalar", T: 9 /*ScalarType.STRING*/ },
+            { no: 3, name: "from_spmid", kind: "scalar", T: 9 /*ScalarType.STRING*/ },
+            { no: 4, name: "extra_content", kind: "map", K: 9 /*ScalarType.STRING*/, V: { kind: "scalar", T: 9 /*ScalarType.STRING*/ } },
+            { no: 5, name: "bvid", kind: "scalar", T: 9 /*ScalarType.STRING*/ },
+            { no: 6, name: "ad_extra", kind: "scalar", T: 9 /*ScalarType.STRING*/ },
+            { no: 7, name: "fragment", kind: "message", T: () => Fragment },
+            { no: 8, name: "from_scene", kind: "scalar", T: 9 /*ScalarType.STRING*/ }
+        ]);
+    }
+}
+/**
+ * @generated MessageType for protobuf message bilibili.app.playerunite.v1.PlayViewUniteReq
+ */
+export const PlayViewUniteReq = new PlayViewUniteReq$Type();
 /**
  * @generated ServiceType for protobuf service bilibili.app.playerunite.v1.Player
  */
