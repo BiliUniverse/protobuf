@@ -898,11 +898,11 @@ enum UnsupportScene {
 // 播放页信息-请求: 音视频VOD
 message VideoVod {
     // 视频aid
-    int32 aid = 1;
+    uint64 aid = 1 [jstype = JS_NUMBER];
     // 视频cid
-    int32 cid = 2;
+    uint64 cid = 2 [jstype = JS_NUMBER];
     // 清晰度
-    uint64 qn = 3;
+    uint64 qn = 3 [jstype = JS_NUMBER];
     // 视频流版本
     int32 fnver = 4;
     // 视频流格式
