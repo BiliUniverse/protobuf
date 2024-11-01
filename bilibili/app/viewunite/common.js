@@ -1491,22 +1491,22 @@ class AudioInfo$Type extends MessageType {
                 case /* string cover_url */ 2:
                     message.coverUrl = reader.string();
                     break;
-                case /* int64 song_id = 3 [jstype = JS_NUMBER];*/ 3:
+                case /* int64 song_id */ 3:
                     message.songId = reader.int64().toNumber();
                     break;
-                case /* int64 play_count = 4 [jstype = JS_NUMBER];*/ 4:
+                case /* int64 play_count */ 4:
                     message.playCount = reader.int64().toNumber();
                     break;
-                case /* int64 reply_count = 5 [jstype = JS_NUMBER];*/ 5:
+                case /* int64 reply_count */ 5:
                     message.replyCount = reader.int64().toNumber();
                     break;
-                case /* int64 upper_id = 6 [jstype = JS_NUMBER];*/ 6:
+                case /* int64 upper_id */ 6:
                     message.upperId = reader.int64().toNumber();
                     break;
                 case /* string entrance */ 7:
                     message.entrance = reader.string();
                     break;
-                case /* int64 song_attr = 8 [jstype = JS_NUMBER];*/ 8:
+                case /* int64 song_attr */ 8:
                     message.songAttr = reader.int64().toNumber();
                     break;
                 default:
@@ -1527,22 +1527,22 @@ class AudioInfo$Type extends MessageType {
         /* string cover_url = 2; */
         if (message.coverUrl !== "")
             writer.tag(2, WireType.LengthDelimited).string(message.coverUrl);
-        /* int64 song_id = 3 [jstype = JS_NUMBER]; */
+        /* int64 song_id = 3; */
         if (message.songId !== 0)
             writer.tag(3, WireType.Varint).int64(message.songId);
-        /* int64 play_count = 4 [jstype = JS_NUMBER]; */
+        /* int64 play_count = 4; */
         if (message.playCount !== 0)
             writer.tag(4, WireType.Varint).int64(message.playCount);
-        /* int64 reply_count = 5 [jstype = JS_NUMBER]; */
+        /* int64 reply_count = 5; */
         if (message.replyCount !== 0)
             writer.tag(5, WireType.Varint).int64(message.replyCount);
-        /* int64 upper_id = 6 [jstype = JS_NUMBER]; */
+        /* int64 upper_id = 6; */
         if (message.upperId !== 0)
             writer.tag(6, WireType.Varint).int64(message.upperId);
         /* string entrance = 7; */
         if (message.entrance !== "")
             writer.tag(7, WireType.LengthDelimited).string(message.entrance);
-        /* int64 song_attr = 8 [jstype = JS_NUMBER]; */
+        /* int64 song_attr = 8; */
         if (message.songAttr !== 0)
             writer.tag(8, WireType.Varint).int64(message.songAttr);
         let u = options.writeUnknownFields;
@@ -1748,7 +1748,7 @@ class BizFavParam$Type extends MessageType {
         while (reader.pos < end) {
             let [fieldNo, wireType] = reader.tag();
             switch (fieldNo) {
-                case /* int64 season_id = 1 [jstype = JS_NUMBER];*/ 1:
+                case /* int64 season_id */ 1:
                     message.seasonId = reader.int64().toNumber();
                     break;
                 default:
@@ -1763,7 +1763,7 @@ class BizFavParam$Type extends MessageType {
         return message;
     }
     internalBinaryWrite(message, writer, options) {
-        /* int64 season_id = 1 [jstype = JS_NUMBER]; */
+        /* int64 season_id = 1; */
         if (message.seasonId !== 0)
             writer.tag(1, WireType.Varint).int64(message.seasonId);
         let u = options.writeUnknownFields;
@@ -1803,7 +1803,7 @@ class BizReserveActivityParam$Type extends MessageType {
         while (reader.pos < end) {
             let [fieldNo, wireType] = reader.tag();
             switch (fieldNo) {
-                case /* int64 activity_id = 1 [jstype = JS_NUMBER];*/ 1:
+                case /* int64 activity_id */ 1:
                     message.activityId = reader.int64().toNumber();
                     break;
                 case /* string from */ 2:
@@ -1812,10 +1812,10 @@ class BizReserveActivityParam$Type extends MessageType {
                 case /* string type */ 3:
                     message.type = reader.string();
                     break;
-                case /* int64 oid = 4 [jstype = JS_NUMBER];*/ 4:
+                case /* int64 oid */ 4:
                     message.oid = reader.int64().toNumber();
                     break;
-                case /* int64 reserve_id = 5 [jstype = JS_NUMBER];*/ 5:
+                case /* int64 reserve_id */ 5:
                     message.reserveId = reader.int64().toNumber();
                     break;
                 default:
@@ -1830,7 +1830,7 @@ class BizReserveActivityParam$Type extends MessageType {
         return message;
     }
     internalBinaryWrite(message, writer, options) {
-        /* int64 activity_id = 1 [jstype = JS_NUMBER]; */
+        /* int64 activity_id = 1; */
         if (message.activityId !== 0)
             writer.tag(1, WireType.Varint).int64(message.activityId);
         /* string from = 2; */
@@ -1839,10 +1839,10 @@ class BizReserveActivityParam$Type extends MessageType {
         /* string type = 3; */
         if (message.type !== "")
             writer.tag(3, WireType.LengthDelimited).string(message.type);
-        /* int64 oid = 4 [jstype = JS_NUMBER]; */
+        /* int64 oid = 4; */
         if (message.oid !== 0)
             writer.tag(4, WireType.Varint).int64(message.oid);
-        /* int64 reserve_id = 5 [jstype = JS_NUMBER]; */
+        /* int64 reserve_id = 5; */
         if (message.reserveId !== 0)
             writer.tag(5, WireType.Varint).int64(message.reserveId);
         let u = options.writeUnknownFields;
@@ -2005,13 +2005,13 @@ class CardBasicInfo$Type extends MessageType {
                 case /* string unique_id */ 6:
                     message.uniqueId = reader.string();
                     break;
-                case /* int64 from_source_type = 7 [jstype = JS_NUMBER];*/ 7:
+                case /* int64 from_source_type */ 7:
                     message.fromSourceType = reader.int64().toNumber();
                     break;
                 case /* string from_source_id */ 8:
                     message.fromSourceId = reader.string();
                     break;
-                case /* int64 material_id = 9 [jstype = JS_NUMBER];*/ 9:
+                case /* int64 material_id */ 9:
                     message.materialId = reader.int64().toNumber();
                     break;
                 case /* string cover_gif */ 10:
@@ -2020,7 +2020,7 @@ class CardBasicInfo$Type extends MessageType {
                 case /* bilibili.app.viewunite.common.Owner author */ 11:
                     message.author = Owner.internalBinaryRead(reader, reader.uint32(), options, message.author);
                     break;
-                case /* int64 id = 12 [jstype = JS_NUMBER];*/ 12:
+                case /* int64 id */ 12:
                     message.id = reader.int64().toNumber();
                     break;
                 case /* string from */ 13:
@@ -2062,13 +2062,13 @@ class CardBasicInfo$Type extends MessageType {
         /* string unique_id = 6; */
         if (message.uniqueId !== "")
             writer.tag(6, WireType.LengthDelimited).string(message.uniqueId);
-        /* int64 from_source_type = 7 [jstype = JS_NUMBER]; */
+        /* int64 from_source_type = 7; */
         if (message.fromSourceType !== 0)
             writer.tag(7, WireType.Varint).int64(message.fromSourceType);
         /* string from_source_id = 8; */
         if (message.fromSourceId !== "")
             writer.tag(8, WireType.LengthDelimited).string(message.fromSourceId);
-        /* int64 material_id = 9 [jstype = JS_NUMBER]; */
+        /* int64 material_id = 9; */
         if (message.materialId !== 0)
             writer.tag(9, WireType.Varint).int64(message.materialId);
         /* string cover_gif = 10; */
@@ -2077,7 +2077,7 @@ class CardBasicInfo$Type extends MessageType {
         /* bilibili.app.viewunite.common.Owner author = 11; */
         if (message.author)
             Owner.internalBinaryWrite(message.author, writer.tag(11, WireType.LengthDelimited).fork(), options).join();
-        /* int64 id = 12 [jstype = JS_NUMBER]; */
+        /* int64 id = 12; */
         if (message.id !== 0)
             writer.tag(12, WireType.Varint).int64(message.id);
         /* string from = 13; */
@@ -2225,7 +2225,7 @@ class Celebrity$Type extends MessageType {
                 case /* string link */ 8:
                     message.link = reader.string();
                     break;
-                case /* int64 mid = 9 [jstype = JS_NUMBER];*/ 9:
+                case /* int64 mid */ 9:
                     message.mid = reader.int64().toNumber();
                     break;
                 case /* int32 is_follow */ 10:
@@ -2298,7 +2298,7 @@ class Celebrity$Type extends MessageType {
         /* string link = 8; */
         if (message.link !== "")
             writer.tag(8, WireType.LengthDelimited).string(message.link);
-        /* int64 mid = 9 [jstype = JS_NUMBER]; */
+        /* int64 mid = 9; */
         if (message.mid !== 0)
             writer.tag(9, WireType.Varint).int64(message.mid);
         /* int32 is_follow = 10; */
@@ -2892,7 +2892,7 @@ class DescV2$Type extends MessageType {
                 case /* string uri */ 3:
                     message.uri = reader.string();
                     break;
-                case /* int64 rid = 4 [jstype = JS_NUMBER];*/ 4:
+                case /* int64 rid */ 4:
                     message.rid = reader.int64().toNumber();
                     break;
                 default:
@@ -2916,7 +2916,7 @@ class DescV2$Type extends MessageType {
         /* string uri = 3; */
         if (message.uri !== "")
             writer.tag(3, WireType.LengthDelimited).string(message.uri);
-        /* int64 rid = 4 [jstype = JS_NUMBER]; */
+        /* int64 rid = 4; */
         if (message.rid !== 0)
             writer.tag(4, WireType.Varint).int64(message.rid);
         let u = options.writeUnknownFields;
@@ -2952,13 +2952,13 @@ class Dimension$Type extends MessageType {
         while (reader.pos < end) {
             let [fieldNo, wireType] = reader.tag();
             switch (fieldNo) {
-                case /* int64 width = 1 [jstype = JS_NUMBER];*/ 1:
+                case /* int64 width */ 1:
                     message.width = reader.int64().toNumber();
                     break;
-                case /* int64 height = 2 [jstype = JS_NUMBER];*/ 2:
+                case /* int64 height */ 2:
                     message.height = reader.int64().toNumber();
                     break;
-                case /* int64 rotate = 3 [jstype = JS_NUMBER];*/ 3:
+                case /* int64 rotate */ 3:
                     message.rotate = reader.int64().toNumber();
                     break;
                 default:
@@ -2973,13 +2973,13 @@ class Dimension$Type extends MessageType {
         return message;
     }
     internalBinaryWrite(message, writer, options) {
-        /* int64 width = 1 [jstype = JS_NUMBER]; */
+        /* int64 width = 1; */
         if (message.width !== 0)
             writer.tag(1, WireType.Varint).int64(message.width);
-        /* int64 height = 2 [jstype = JS_NUMBER]; */
+        /* int64 height = 2; */
         if (message.height !== 0)
             writer.tag(2, WireType.Varint).int64(message.height);
-        /* int64 rotate = 3 [jstype = JS_NUMBER]; */
+        /* int64 rotate = 3; */
         if (message.rotate !== 0)
             writer.tag(3, WireType.Varint).int64(message.rotate);
         let u = options.writeUnknownFields;
@@ -3019,16 +3019,16 @@ class DislikeReasons$Type extends MessageType {
         while (reader.pos < end) {
             let [fieldNo, wireType] = reader.tag();
             switch (fieldNo) {
-                case /* int64 id = 1 [jstype = JS_NUMBER];*/ 1:
+                case /* int64 id */ 1:
                     message.id = reader.int64().toNumber();
                     break;
-                case /* int64 mid = 2 [jstype = JS_NUMBER];*/ 2:
+                case /* int64 mid */ 2:
                     message.mid = reader.int64().toNumber();
                     break;
                 case /* int32 rid */ 3:
                     message.rid = reader.int32();
                     break;
-                case /* int64 tag_id = 4 [jstype = JS_NUMBER];*/ 4:
+                case /* int64 tag_id */ 4:
                     message.tagId = reader.int64().toNumber();
                     break;
                 case /* string name */ 5:
@@ -3046,16 +3046,16 @@ class DislikeReasons$Type extends MessageType {
         return message;
     }
     internalBinaryWrite(message, writer, options) {
-        /* int64 id = 1 [jstype = JS_NUMBER]; */
+        /* int64 id = 1; */
         if (message.id !== 0)
             writer.tag(1, WireType.Varint).int64(message.id);
-        /* int64 mid = 2 [jstype = JS_NUMBER]; */
+        /* int64 mid = 2; */
         if (message.mid !== 0)
             writer.tag(2, WireType.Varint).int64(message.mid);
         /* int32 rid = 3; */
         if (message.rid !== 0)
             writer.tag(3, WireType.Varint).int32(message.rid);
-        /* int64 tag_id = 4 [jstype = JS_NUMBER]; */
+        /* int64 tag_id = 4; */
         if (message.tagId !== 0)
             writer.tag(4, WireType.Varint).int64(message.tagId);
         /* string name = 5; */
@@ -3225,13 +3225,13 @@ class HistoryNode$Type extends MessageType {
         while (reader.pos < end) {
             let [fieldNo, wireType] = reader.tag();
             switch (fieldNo) {
-                case /* int64 node_id = 1 [jstype = JS_NUMBER];*/ 1:
+                case /* int64 node_id */ 1:
                     message.nodeId = reader.int64().toNumber();
                     break;
                 case /* string title */ 2:
                     message.title = reader.string();
                     break;
-                case /* int64 cid = 3 [jstype = JS_NUMBER];*/ 3:
+                case /* int64 cid */ 3:
                     message.cid = reader.int64().toNumber();
                     break;
                 default:
@@ -3246,13 +3246,13 @@ class HistoryNode$Type extends MessageType {
         return message;
     }
     internalBinaryWrite(message, writer, options) {
-        /* int64 node_id = 1 [jstype = JS_NUMBER]; */
+        /* int64 node_id = 1; */
         if (message.nodeId !== 0)
             writer.tag(1, WireType.Varint).int64(message.nodeId);
         /* string title = 2; */
         if (message.title !== "")
             writer.tag(2, WireType.LengthDelimited).string(message.title);
-        /* int64 cid = 3 [jstype = JS_NUMBER]; */
+        /* int64 cid = 3; */
         if (message.cid !== 0)
             writer.tag(3, WireType.Varint).int64(message.cid);
         let u = options.writeUnknownFields;
@@ -3505,13 +3505,13 @@ class Interaction$Type extends MessageType {
         while (reader.pos < end) {
             let [fieldNo, wireType] = reader.tag();
             switch (fieldNo) {
-                case /* int64 ep_id = 1 [jstype = JS_NUMBER];*/ 1:
+                case /* int64 ep_id */ 1:
                     message.epId = reader.int64().toNumber();
                     break;
                 case /* bilibili.app.viewunite.common.HistoryNode history_node */ 2:
                     message.historyNode = HistoryNode.internalBinaryRead(reader, reader.uint32(), options, message.historyNode);
                     break;
-                case /* int64 graph_version = 3 [jstype = JS_NUMBER];*/ 3:
+                case /* int64 graph_version */ 3:
                     message.graphVersion = reader.int64().toNumber();
                     break;
                 case /* string msg */ 4:
@@ -3532,13 +3532,13 @@ class Interaction$Type extends MessageType {
         return message;
     }
     internalBinaryWrite(message, writer, options) {
-        /* int64 ep_id = 1 [jstype = JS_NUMBER]; */
+        /* int64 ep_id = 1; */
         if (message.epId !== 0)
             writer.tag(1, WireType.Varint).int64(message.epId);
         /* bilibili.app.viewunite.common.HistoryNode history_node = 2; */
         if (message.historyNode)
             HistoryNode.internalBinaryWrite(message.historyNode, writer.tag(2, WireType.LengthDelimited).fork(), options).join();
-        /* int64 graph_version = 3 [jstype = JS_NUMBER]; */
+        /* int64 graph_version = 3; */
         if (message.graphVersion !== 0)
             writer.tag(3, WireType.Varint).int64(message.graphVersion);
         /* string msg = 4; */
@@ -3812,10 +3812,10 @@ class Label$Type extends MessageType {
                 case /* string icon_night */ 4:
                     message.iconNight = reader.string();
                     break;
-                case /* int64 icon_width = 5 [jstype = JS_NUMBER];*/ 5:
+                case /* int64 icon_width */ 5:
                     message.iconWidth = reader.int64().toNumber();
                     break;
-                case /* int64 icon_height = 6 [jstype = JS_NUMBER];*/ 6:
+                case /* int64 icon_height */ 6:
                     message.iconHeight = reader.int64().toNumber();
                     break;
                 case /* string lottie */ 7:
@@ -3848,10 +3848,10 @@ class Label$Type extends MessageType {
         /* string icon_night = 4; */
         if (message.iconNight !== "")
             writer.tag(4, WireType.LengthDelimited).string(message.iconNight);
-        /* int64 icon_width = 5 [jstype = JS_NUMBER]; */
+        /* int64 icon_width = 5; */
         if (message.iconWidth !== 0)
             writer.tag(5, WireType.Varint).int64(message.iconWidth);
-        /* int64 icon_height = 6 [jstype = JS_NUMBER]; */
+        /* int64 icon_height = 6; */
         if (message.iconHeight !== 0)
             writer.tag(6, WireType.Varint).int64(message.iconHeight);
         /* string lottie = 7; */
@@ -4091,19 +4091,19 @@ class LiveOrder$Type extends MessageType {
         while (reader.pos < end) {
             let [fieldNo, wireType] = reader.tag();
             switch (fieldNo) {
-                case /* int64 sid = 1 [jstype = JS_NUMBER];*/ 1:
+                case /* int64 sid */ 1:
                     message.sid = reader.int64().toNumber();
                     break;
                 case /* string text */ 2:
                     message.text = reader.string();
                     break;
-                case /* int64 live_plan_start_time = 3 [jstype = JS_NUMBER];*/ 3:
+                case /* int64 live_plan_start_time */ 3:
                     message.livePlanStartTime = reader.int64().toNumber();
                     break;
                 case /* bool is_follow */ 4:
                     message.isFollow = reader.bool();
                     break;
-                case /* int64 follow_count = 5 [jstype = JS_NUMBER];*/ 5:
+                case /* int64 follow_count */ 5:
                     message.followCount = reader.int64().toNumber();
                     break;
                 default:
@@ -4118,19 +4118,19 @@ class LiveOrder$Type extends MessageType {
         return message;
     }
     internalBinaryWrite(message, writer, options) {
-        /* int64 sid = 1 [jstype = JS_NUMBER]; */
+        /* int64 sid = 1; */
         if (message.sid !== 0)
             writer.tag(1, WireType.Varint).int64(message.sid);
         /* string text = 2; */
         if (message.text !== "")
             writer.tag(2, WireType.LengthDelimited).string(message.text);
-        /* int64 live_plan_start_time = 3 [jstype = JS_NUMBER]; */
+        /* int64 live_plan_start_time = 3; */
         if (message.livePlanStartTime !== 0)
             writer.tag(3, WireType.Varint).int64(message.livePlanStartTime);
         /* bool is_follow = 4; */
         if (message.isFollow !== false)
             writer.tag(4, WireType.Varint).bool(message.isFollow);
-        /* int64 follow_count = 5 [jstype = JS_NUMBER]; */
+        /* int64 follow_count = 5; */
         if (message.followCount !== 0)
             writer.tag(5, WireType.Varint).int64(message.followCount);
         let u = options.writeUnknownFields;
@@ -5204,13 +5204,13 @@ class Owner$Type extends MessageType {
                 case /* string face */ 11:
                     message.face = reader.string();
                     break;
-                case /* int64 mid = 12 [jstype = JS_NUMBER];*/ 12:
+                case /* int64 mid */ 12:
                     message.mid = reader.int64().toNumber();
                     break;
-                case /* int64 fans_num = 15 [jstype = JS_NUMBER];*/ 15:
+                case /* int64 fans_num */ 15:
                     message.fansNum = reader.int64().toNumber();
                     break;
-                case /* repeated int64 assists = 16 [jstype = JS_NUMBER];*/ 16:
+                case /* repeated int64 assists */ 16:
                     if (wireType === WireType.LengthDelimited)
                         for (let e = reader.int32() + reader.pos; reader.pos < e;)
                             message.assists.push(reader.int64().toNumber());
@@ -5256,13 +5256,13 @@ class Owner$Type extends MessageType {
         /* string face = 11; */
         if (message.face !== "")
             writer.tag(11, WireType.LengthDelimited).string(message.face);
-        /* int64 mid = 12 [jstype = JS_NUMBER]; */
+        /* int64 mid = 12; */
         if (message.mid !== 0)
             writer.tag(12, WireType.Varint).int64(message.mid);
-        /* int64 fans_num = 15 [jstype = JS_NUMBER]; */
+        /* int64 fans_num = 15; */
         if (message.fansNum !== 0)
             writer.tag(15, WireType.Varint).int64(message.fansNum);
-        /* repeated int64 assists = 16 [jstype = JS_NUMBER]; */
+        /* repeated int64 assists = 16; */
         if (message.assists.length) {
             writer.tag(16, WireType.LengthDelimited).fork();
             for (let i = 0; i < message.assists.length; i++)

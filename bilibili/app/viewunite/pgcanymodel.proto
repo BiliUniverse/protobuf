@@ -35,7 +35,7 @@ message OgvData {
     // 
     int32 media_id = 1;
     // 
-    int64 season_id = 2 [jstype = JS_NUMBER];
+    int64 season_id = 2;
     // 
     int32 season_type = 3;
     // 
@@ -45,7 +45,7 @@ message OgvData {
     // 
     //UserStatus user_status = 6;
     // 
-    int64 aid = 7 [jstype = JS_NUMBER];
+    int64 aid = 7;
     // 
     //Stat stat = 8;
     // 
