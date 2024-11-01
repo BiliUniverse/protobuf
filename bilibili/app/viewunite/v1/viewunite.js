@@ -12,6 +12,30 @@ import { MessageType } from "@protobuf-ts/runtime";
 import { Any } from "../../../../google/protobuf/any";
 import { Owner } from "../common";
 /**
+ * @generated from protobuf enum bilibili.app.viewunite.v1.ECode
+ */
+export var ECode;
+(function (ECode) {
+    /**
+     *
+     *
+     * @generated from protobuf enum value: CODE_DEFAULT = 0;
+     */
+    ECode[ECode["CODE_DEFAULT"] = 0] = "CODE_DEFAULT";
+    /**
+     *
+     *
+     * @generated from protobuf enum value: CODE_404 = 1;
+     */
+    ECode[ECode["CODE_404"] = 1] = "CODE_404";
+    /**
+     * 青少年限制
+     *
+     * @generated from protobuf enum value: CODE_TEENAGER = 78301;
+     */
+    ECode[ECode["CODE_TEENAGER"] = 78301] = "CODE_TEENAGER";
+})(ECode || (ECode = {}));
+/**
  * @generated from protobuf enum bilibili.app.viewunite.v1.TabType
  */
 export var TabType;
@@ -75,13 +99,13 @@ class Arc$Type extends MessageType {
         while (reader.pos < end) {
             let [fieldNo, wireType] = reader.tag();
             switch (fieldNo) {
-                case /* int64 aid = 1 [jstype = JS_NUMBER];*/ 1:
+                case /* int64 aid */ 1:
                     message.aid = reader.int64().toNumber();
                     break;
-                case /* int64 cid = 2 [jstype = JS_NUMBER];*/ 2:
+                case /* int64 cid */ 2:
                     message.cid = reader.int64().toNumber();
                     break;
-                case /* int64 duration = 3 [jstype = JS_NUMBER];*/ 3:
+                case /* int64 duration */ 3:
                     message.duration = reader.int64().toNumber();
                     break;
                 case /* string bvid */ 5:
@@ -96,7 +120,7 @@ class Arc$Type extends MessageType {
                 case /* string cover */ 8:
                     message.cover = reader.string();
                     break;
-                case /* int64 type_id = 9 [jstype = JS_NUMBER];*/ 9:
+                case /* int64 type_id */ 9:
                     message.typeId = reader.int64().toNumber();
                     break;
                 case /* string title */ 10:
@@ -114,13 +138,13 @@ class Arc$Type extends MessageType {
         return message;
     }
     internalBinaryWrite(message, writer, options) {
-        /* int64 aid = 1 [jstype = JS_NUMBER]; */
+        /* int64 aid = 1; */
         if (message.aid !== 0)
             writer.tag(1, WireType.Varint).int64(message.aid);
-        /* int64 cid = 2 [jstype = JS_NUMBER]; */
+        /* int64 cid = 2; */
         if (message.cid !== 0)
             writer.tag(2, WireType.Varint).int64(message.cid);
-        /* int64 duration = 3 [jstype = JS_NUMBER]; */
+        /* int64 duration = 3; */
         if (message.duration !== 0)
             writer.tag(3, WireType.Varint).int64(message.duration);
         /* string bvid = 5; */
@@ -135,7 +159,7 @@ class Arc$Type extends MessageType {
         /* string cover = 8; */
         if (message.cover !== "")
             writer.tag(8, WireType.LengthDelimited).string(message.cover);
-        /* int64 type_id = 9 [jstype = JS_NUMBER]; */
+        /* int64 type_id = 9; */
         if (message.typeId !== 0)
             writer.tag(9, WireType.Varint).int64(message.typeId);
         /* string title = 10; */
@@ -151,6 +175,53 @@ class Arc$Type extends MessageType {
  * @generated MessageType for protobuf message bilibili.app.viewunite.v1.Arc
  */
 export const Arc = new Arc$Type();
+// @generated message type with reflection information, may provide speed optimized methods
+class ECodeConfig$Type extends MessageType {
+    constructor() {
+        super("bilibili.app.viewunite.v1.ECodeConfig", [
+            { no: 1, name: "redirect_url", kind: "scalar", T: 9 /*ScalarType.STRING*/ }
+        ]);
+    }
+    create(value) {
+        const message = globalThis.Object.create((this.messagePrototype));
+        message.redirectUrl = "";
+        if (value !== undefined)
+            reflectionMergePartial(this, message, value);
+        return message;
+    }
+    internalBinaryRead(reader, length, options, target) {
+        let message = target ?? this.create(), end = reader.pos + length;
+        while (reader.pos < end) {
+            let [fieldNo, wireType] = reader.tag();
+            switch (fieldNo) {
+                case /* string redirect_url */ 1:
+                    message.redirectUrl = reader.string();
+                    break;
+                default:
+                    let u = options.readUnknownField;
+                    if (u === "throw")
+                        throw new globalThis.Error(`Unknown field ${fieldNo} (wire type ${wireType}) for ${this.typeName}`);
+                    let d = reader.skip(wireType);
+                    if (u !== false)
+                        (u === true ? UnknownFieldHandler.onRead : u)(this.typeName, message, fieldNo, wireType, d);
+            }
+        }
+        return message;
+    }
+    internalBinaryWrite(message, writer, options) {
+        /* string redirect_url = 1; */
+        if (message.redirectUrl !== "")
+            writer.tag(1, WireType.LengthDelimited).string(message.redirectUrl);
+        let u = options.writeUnknownFields;
+        if (u !== false)
+            (u == true ? UnknownFieldHandler.onWrite : u)(this.typeName, message, writer);
+        return writer;
+    }
+}
+/**
+ * @generated MessageType for protobuf message bilibili.app.viewunite.v1.ECodeConfig
+ */
+export const ECodeConfig = new ECodeConfig$Type();
 // @generated message type with reflection information, may provide speed optimized methods
 class IntroductionTab$Type extends MessageType {
     constructor() {
@@ -509,11 +580,14 @@ class ViewReply$Type extends MessageType {
             { no: 4, name: "owner", kind: "message", T: () => Owner },
             { no: 5, name: "tab", kind: "message", T: () => Tab },
             { no: 6, name: "supplement", kind: "message", T: () => Any },
+            { no: 8, name: "ecode", kind: "enum", T: () => ["bilibili.app.viewunite.v1.ECode", ECode] },
+            { no: 9, name: "ecode_config", kind: "message", T: () => ECodeConfig },
             { no: 10, name: "report", kind: "map", K: 9 /*ScalarType.STRING*/, V: { kind: "scalar", T: 9 /*ScalarType.STRING*/ } }
         ]);
     }
     create(value) {
         const message = globalThis.Object.create((this.messagePrototype));
+        message.ecode = 0;
         message.report = {};
         if (value !== undefined)
             reflectionMergePartial(this, message, value);
@@ -535,6 +609,12 @@ class ViewReply$Type extends MessageType {
                     break;
                 case /* google.protobuf.Any supplement */ 6:
                     message.supplement = Any.internalBinaryRead(reader, reader.uint32(), options, message.supplement);
+                    break;
+                case /* bilibili.app.viewunite.v1.ECode ecode */ 8:
+                    message.ecode = reader.int32();
+                    break;
+                case /* bilibili.app.viewunite.v1.ECodeConfig ecode_config */ 9:
+                    message.ecodeConfig = ECodeConfig.internalBinaryRead(reader, reader.uint32(), options, message.ecodeConfig);
                     break;
                 case /* map<string, string> report */ 10:
                     this.binaryReadMap10(message.report, reader, options);
@@ -579,6 +659,12 @@ class ViewReply$Type extends MessageType {
         /* google.protobuf.Any supplement = 6; */
         if (message.supplement)
             Any.internalBinaryWrite(message.supplement, writer.tag(6, WireType.LengthDelimited).fork(), options).join();
+        /* bilibili.app.viewunite.v1.ECode ecode = 8; */
+        if (message.ecode !== 0)
+            writer.tag(8, WireType.Varint).int32(message.ecode);
+        /* bilibili.app.viewunite.v1.ECodeConfig ecode_config = 9; */
+        if (message.ecodeConfig)
+            ECodeConfig.internalBinaryWrite(message.ecodeConfig, writer.tag(9, WireType.LengthDelimited).fork(), options).join();
         /* map<string, string> report = 10; */
         for (let k of globalThis.Object.keys(message.report))
             writer.tag(10, WireType.LengthDelimited).fork().tag(1, WireType.LengthDelimited).string(k).tag(2, WireType.LengthDelimited).string(message.report[k]).join();
@@ -596,32 +682,28 @@ export const ViewReply = new ViewReply$Type();
 class ViewReq$Type extends MessageType {
     constructor() {
         super("bilibili.app.viewunite.v1.ViewReq", [
-            { no: 1, name: "aid", kind: "scalar", T: 4 /*ScalarType.UINT64*/, L: 2 /*LongType.NUMBER*/ },
-            { no: 2, name: "bvid", kind: "scalar", T: 9 /*ScalarType.STRING*/ },
+            { no: 1, name: "aid", kind: "scalar", opt: true, T: 4 /*ScalarType.UINT64*/, L: 2 /*LongType.NUMBER*/ },
+            { no: 2, name: "bvid", kind: "scalar", opt: true, T: 9 /*ScalarType.STRING*/ },
             { no: 3, name: "from", kind: "scalar", T: 9 /*ScalarType.STRING*/ },
             { no: 4, name: "spmid", kind: "scalar", T: 9 /*ScalarType.STRING*/ },
-            { no: 5, name: "from_spmid", kind: "scalar", T: 9 /*ScalarType.STRING*/ },
+            { no: 5, name: "from_spmid", kind: "scalar", opt: true, T: 9 /*ScalarType.STRING*/ },
             { no: 6, name: "session_id", kind: "scalar", T: 9 /*ScalarType.STRING*/ },
-            { no: 8, name: "track_id", kind: "scalar", T: 9 /*ScalarType.STRING*/ },
+            { no: 8, name: "track_id", kind: "scalar", opt: true, T: 9 /*ScalarType.STRING*/ },
             { no: 9, name: "extra_content", kind: "map", K: 9 /*ScalarType.STRING*/, V: { kind: "scalar", T: 9 /*ScalarType.STRING*/ } },
-            { no: 10, name: "play_mode", kind: "scalar", T: 9 /*ScalarType.STRING*/ },
-            { no: 12, name: "biz_extra", kind: "scalar", T: 9 /*ScalarType.STRING*/ },
-            { no: 13, name: "ad_extra", kind: "scalar", T: 9 /*ScalarType.STRING*/ }
+            { no: 10, name: "play_mode", kind: "scalar", opt: true, T: 9 /*ScalarType.STRING*/ },
+            { no: 12, name: "biz_extra", kind: "scalar", opt: true, T: 9 /*ScalarType.STRING*/ },
+            { no: 13, name: "ad_extra", kind: "scalar", T: 9 /*ScalarType.STRING*/ },
+            { no: 14, name: "from_scene", kind: "scalar", T: 9 /*ScalarType.STRING*/ }
         ]);
     }
     create(value) {
         const message = globalThis.Object.create((this.messagePrototype));
-        message.aid = 0;
-        message.bvid = "";
         message.from = "";
         message.spmid = "";
-        message.fromSpmid = "";
         message.sessionId = "";
-        message.trackId = "";
         message.extraContent = {};
-        message.playMode = "";
-        message.bizExtra = "";
         message.adExtra = "";
+        message.fromScene = "";
         if (value !== undefined)
             reflectionMergePartial(this, message, value);
         return message;
@@ -631,10 +713,10 @@ class ViewReq$Type extends MessageType {
         while (reader.pos < end) {
             let [fieldNo, wireType] = reader.tag();
             switch (fieldNo) {
-                case /* uint64 aid = 1 [jstype = JS_NUMBER];*/ 1:
+                case /* optional uint64 aid */ 1:
                     message.aid = reader.uint64().toNumber();
                     break;
-                case /* string bvid */ 2:
+                case /* optional string bvid */ 2:
                     message.bvid = reader.string();
                     break;
                 case /* string from */ 3:
@@ -643,26 +725,29 @@ class ViewReq$Type extends MessageType {
                 case /* string spmid */ 4:
                     message.spmid = reader.string();
                     break;
-                case /* string from_spmid */ 5:
+                case /* optional string from_spmid */ 5:
                     message.fromSpmid = reader.string();
                     break;
                 case /* string session_id */ 6:
                     message.sessionId = reader.string();
                     break;
-                case /* string track_id */ 8:
+                case /* optional string track_id */ 8:
                     message.trackId = reader.string();
                     break;
                 case /* map<string, string> extra_content */ 9:
                     this.binaryReadMap9(message.extraContent, reader, options);
                     break;
-                case /* string play_mode */ 10:
+                case /* optional string play_mode */ 10:
                     message.playMode = reader.string();
                     break;
-                case /* string biz_extra */ 12:
+                case /* optional string biz_extra */ 12:
                     message.bizExtra = reader.string();
                     break;
                 case /* string ad_extra */ 13:
                     message.adExtra = reader.string();
+                    break;
+                case /* string from_scene */ 14:
+                    message.fromScene = reader.string();
                     break;
                 default:
                     let u = options.readUnknownField;
@@ -692,11 +777,11 @@ class ViewReq$Type extends MessageType {
         map[key ?? ""] = val ?? "";
     }
     internalBinaryWrite(message, writer, options) {
-        /* uint64 aid = 1 [jstype = JS_NUMBER]; */
-        if (message.aid !== 0)
+        /* optional uint64 aid = 1; */
+        if (message.aid !== undefined)
             writer.tag(1, WireType.Varint).uint64(message.aid);
-        /* string bvid = 2; */
-        if (message.bvid !== "")
+        /* optional string bvid = 2; */
+        if (message.bvid !== undefined)
             writer.tag(2, WireType.LengthDelimited).string(message.bvid);
         /* string from = 3; */
         if (message.from !== "")
@@ -704,27 +789,30 @@ class ViewReq$Type extends MessageType {
         /* string spmid = 4; */
         if (message.spmid !== "")
             writer.tag(4, WireType.LengthDelimited).string(message.spmid);
-        /* string from_spmid = 5; */
-        if (message.fromSpmid !== "")
+        /* optional string from_spmid = 5; */
+        if (message.fromSpmid !== undefined)
             writer.tag(5, WireType.LengthDelimited).string(message.fromSpmid);
         /* string session_id = 6; */
         if (message.sessionId !== "")
             writer.tag(6, WireType.LengthDelimited).string(message.sessionId);
-        /* string track_id = 8; */
-        if (message.trackId !== "")
+        /* optional string track_id = 8; */
+        if (message.trackId !== undefined)
             writer.tag(8, WireType.LengthDelimited).string(message.trackId);
         /* map<string, string> extra_content = 9; */
         for (let k of globalThis.Object.keys(message.extraContent))
             writer.tag(9, WireType.LengthDelimited).fork().tag(1, WireType.LengthDelimited).string(k).tag(2, WireType.LengthDelimited).string(message.extraContent[k]).join();
-        /* string play_mode = 10; */
-        if (message.playMode !== "")
+        /* optional string play_mode = 10; */
+        if (message.playMode !== undefined)
             writer.tag(10, WireType.LengthDelimited).string(message.playMode);
-        /* string biz_extra = 12; */
-        if (message.bizExtra !== "")
+        /* optional string biz_extra = 12; */
+        if (message.bizExtra !== undefined)
             writer.tag(12, WireType.LengthDelimited).string(message.bizExtra);
         /* string ad_extra = 13; */
         if (message.adExtra !== "")
             writer.tag(13, WireType.LengthDelimited).string(message.adExtra);
+        /* string from_scene = 14; */
+        if (message.fromScene !== "")
+            writer.tag(14, WireType.LengthDelimited).string(message.fromScene);
         let u = options.writeUnknownFields;
         if (u !== false)
             (u == true ? UnknownFieldHandler.onWrite : u)(this.typeName, message, writer);

@@ -22,11 +22,11 @@ service View {
 // 业务信息
 message Arc {
     // 
-    int64 aid = 1 [jstype = JS_NUMBER];
+    int64 aid = 1;
     // 
-    int64 cid = 2 [jstype = JS_NUMBER];
+    int64 cid = 2;
     // 
-    int64 duration = 3 [jstype = JS_NUMBER];
+    int64 duration = 3;
     // 
     //bilibili.app.viewunite.common.Stat stat = 4;
     // 
@@ -38,9 +38,24 @@ message Arc {
     // 
     string cover = 8;
     // 
-    int64 type_id = 9 [jstype = JS_NUMBER];
+    int64 type_id = 9;
     // 
     string title = 10;
+}
+
+enum ECode {
+    // 
+    CODE_DEFAULT = 0;
+    // 
+    CODE_404 = 1;
+    // 青少年限制
+    CODE_TEENAGER = 78301;
+}
+
+// 
+message ECodeConfig {
+    // 
+    string redirect_url = 1;
 }
 
 // 视频介绍 Tab
@@ -134,9 +149,9 @@ message ViewReply {
     // 
     //CM cm = 7;
     // 
-    //ECode ecode = 8;
+    ECode ecode = 8;
     // 
-    //ECodeConfig ecode_config = 9;
+    ECodeConfig ecode_config = 9;
     // 
     map<string, string> report = 10;
 }
@@ -144,29 +159,31 @@ message ViewReply {
 // 
 message ViewReq {
     // 
-    uint64 aid = 1 [jstype = JS_NUMBER];
+    optional uint64 aid = 1;
     // 
-    string bvid = 2;
+    optional string bvid = 2;
     // 
     string from = 3;
     // 
     string spmid = 4;
     // 
-    string from_spmid = 5;
+    optional string from_spmid = 5;
     // 
     string session_id = 6;
     // 
     //bilibili.app.archive.middleware.v1.PlayerArgs player_args = 7;
     // 
-    string track_id = 8;
+    optional string track_id = 8;
     // 
     map<string, string> extra_content = 9;
     // 
-    string play_mode = 10;
+    optional string play_mode = 10;
     // 
     //Relate relate = 11;
     // 
-    string biz_extra = 12;
+    optional string biz_extra = 12;
     // 
     string ad_extra = 13;
+    // 
+    string from_scene = 14;
 }
