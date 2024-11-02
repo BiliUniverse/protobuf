@@ -8,7 +8,8 @@
     "PgcAnyModel": "protoc --ts_out ./ --ts_opt generate_dependencies --ts_opt long_type_number --ts_opt output_javascript --proto_path ./ bilibili/app/viewunite/pgcanymodel.proto",
     "DM": "protoc --ts_out ./ --ts_opt generate_dependencies --ts_opt long_type_number --ts_opt output_javascript --proto_path ./ bilibili/community/service/dm/v1/dm.proto",
     "Teenagers": "protoc --ts_out ./ --ts_opt generate_dependencies --ts_opt long_type_number --ts_opt output_javascript --proto_path ./ bilibili/app/interface/teenagers.proto",
-    "Reply": "protoc --ts_out ./ --ts_opt generate_dependencies --ts_opt long_type_number --ts_opt output_javascript --proto_path ./ bilibili/main/community/reply/v1/reply.proto"
+    "Reply": "protoc --ts_out ./ --ts_opt generate_dependencies --ts_opt long_type_number --ts_opt output_javascript --proto_path ./ bilibili/main/community/reply/v1/reply.proto",
+    "Dynamic": "protoc --ts_out ./ --ts_opt generate_dependencies --ts_opt long_type_number --ts_opt output_javascript --proto_path ./ bilibili/app/dynamic/v2/dynamic.proto"
 	},
   "devDependencies": {
     "@protobuf-ts/plugin": "^2.9.4"
