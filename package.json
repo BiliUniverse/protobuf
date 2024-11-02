@@ -7,7 +7,8 @@
     "Search": "protoc --ts_out ./ --ts_opt generate_dependencies --ts_opt long_type_number --ts_opt output_javascript --proto_path ./ bilibili/polymer/app/search/v1/search.proto",
     "PgcAnyModel": "protoc --ts_out ./ --ts_opt generate_dependencies --ts_opt long_type_number --ts_opt output_javascript --proto_path ./ bilibili/app/viewunite/pgcanymodel.proto",
     "DM": "protoc --ts_out ./ --ts_opt generate_dependencies --ts_opt long_type_number --ts_opt output_javascript --proto_path ./ bilibili/community/service/dm/v1/dm.proto",
-    "Teenagers": "protoc --ts_out ./ --ts_opt generate_dependencies --ts_opt long_type_number --ts_opt output_javascript --proto_path ./ bilibili/app/interface/teenagers.proto"
+    "Teenagers": "protoc --ts_out ./ --ts_opt generate_dependencies --ts_opt long_type_number --ts_opt output_javascript --proto_path ./ bilibili/app/interface/teenagers.proto",
+    "Reply": "protoc --ts_out ./ --ts_opt generate_dependencies --ts_opt long_type_number --ts_opt output_javascript --proto_path ./ bilibili/main/community/reply/v1/reply.proto"
 	},
   "devDependencies": {
     "@protobuf-ts/plugin": "^2.9.4"
