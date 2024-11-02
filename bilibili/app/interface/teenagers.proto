@@ -1,0 +1,14 @@
+syntax = "proto3";
+
+message ModeStatusReply {
+    repeated Mode modes = 1;
+}
+
+message Mode {
+    string name = 2;
+    F5 f5 = 5;
+}
+
+message F5 {
+    int32 f1 = 1;
+}
