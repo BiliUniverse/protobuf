@@ -915,9 +915,9 @@ message SearchAllResponse {
     //
     optional string org_extra_word = 8;
     //
-    int64 select_bar_type = 9 [jstype = JS_NUMBER];
+    int64 select_bar_type = 9;
     //
-    int64 new_search_exp_num = 10 [jstype = JS_NUMBER];
+    int64 new_search_exp_num = 10;
     //
     bilibili.pagination.PaginationReply pagination = 11;
     //
@@ -1098,18 +1098,38 @@ message SearchBannerCard {
 
 //
 message SearchByTypeRequest {
+    enum CategorySort {
+        CATEGORY_SORT_DEFAULT = 0;
+        CATEGORY_SORT_PUBLISH_TIME = 1;
+        CATEGORY_SORT_CLICK_COUNT = 2;
+        CATEGORY_SORT_COMMENT_COUNT = 3;
+        CATEGORY_SORT_LIKE_COUNT = 4;
+    }
+    enum UserType {
+        ALL = 0;
+        UP = 1;
+        NORMAL_USER = 2;
+        AUTHENTICATED_USER = 3;
+    }
+    enum UserSort {
+        USER_SORT_DEFAULT = 0;
+        USER_SORT_FANS_DESCEND = 1;
+        USER_SORT_FANS_ASCEND = 2;
+        USER_SORT_LEVEL_DESCEND = 3;
+        USER_SORT_LEVEL_ASCEND = 4;
+    }
     // 搜索目标类型, 番剧为7
     int32 type = 1;
     // 关键词
     string keyword = 2;
     //
-    optional int32 category_sort = 3;
+    optional CategorySort category_sort = 3;
     //
-    optional int64 category_id = 4 [jstype = JS_NUMBER];
+    optional int64 category_id = 4;
     //
-    optional int32 user_type = 5;
+    optional UserType user_type = 5;
     //
-    optional int32 user_sort = 6;
+    optional UserSort user_sort = 6;
     //
     bilibili.pagination.Pagination pagination = 7;
     //

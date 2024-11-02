@@ -13,6 +13,80 @@ import { PaginationReply } from "../../../../pagination/pagination";
 import { PlayerArgs as PlayerArgs$ } from "../../../../app/archive/middleware/v1/preload";
 import { Pagination } from "../../../../pagination/pagination";
 /**
+ * @generated from protobuf enum bilibili.polymer.app.search.v1.SearchByTypeRequest.CategorySort
+ */
+export var SearchByTypeRequest_CategorySort;
+(function (SearchByTypeRequest_CategorySort) {
+    /**
+     * @generated from protobuf enum value: CATEGORY_SORT_DEFAULT = 0;
+     */
+    SearchByTypeRequest_CategorySort[SearchByTypeRequest_CategorySort["DEFAULT"] = 0] = "DEFAULT";
+    /**
+     * @generated from protobuf enum value: CATEGORY_SORT_PUBLISH_TIME = 1;
+     */
+    SearchByTypeRequest_CategorySort[SearchByTypeRequest_CategorySort["PUBLISH_TIME"] = 1] = "PUBLISH_TIME";
+    /**
+     * @generated from protobuf enum value: CATEGORY_SORT_CLICK_COUNT = 2;
+     */
+    SearchByTypeRequest_CategorySort[SearchByTypeRequest_CategorySort["CLICK_COUNT"] = 2] = "CLICK_COUNT";
+    /**
+     * @generated from protobuf enum value: CATEGORY_SORT_COMMENT_COUNT = 3;
+     */
+    SearchByTypeRequest_CategorySort[SearchByTypeRequest_CategorySort["COMMENT_COUNT"] = 3] = "COMMENT_COUNT";
+    /**
+     * @generated from protobuf enum value: CATEGORY_SORT_LIKE_COUNT = 4;
+     */
+    SearchByTypeRequest_CategorySort[SearchByTypeRequest_CategorySort["LIKE_COUNT"] = 4] = "LIKE_COUNT";
+})(SearchByTypeRequest_CategorySort || (SearchByTypeRequest_CategorySort = {}));
+/**
+ * @generated from protobuf enum bilibili.polymer.app.search.v1.SearchByTypeRequest.UserType
+ */
+export var SearchByTypeRequest_UserType;
+(function (SearchByTypeRequest_UserType) {
+    /**
+     * @generated from protobuf enum value: ALL = 0;
+     */
+    SearchByTypeRequest_UserType[SearchByTypeRequest_UserType["ALL"] = 0] = "ALL";
+    /**
+     * @generated from protobuf enum value: UP = 1;
+     */
+    SearchByTypeRequest_UserType[SearchByTypeRequest_UserType["UP"] = 1] = "UP";
+    /**
+     * @generated from protobuf enum value: NORMAL_USER = 2;
+     */
+    SearchByTypeRequest_UserType[SearchByTypeRequest_UserType["NORMAL_USER"] = 2] = "NORMAL_USER";
+    /**
+     * @generated from protobuf enum value: AUTHENTICATED_USER = 3;
+     */
+    SearchByTypeRequest_UserType[SearchByTypeRequest_UserType["AUTHENTICATED_USER"] = 3] = "AUTHENTICATED_USER";
+})(SearchByTypeRequest_UserType || (SearchByTypeRequest_UserType = {}));
+/**
+ * @generated from protobuf enum bilibili.polymer.app.search.v1.SearchByTypeRequest.UserSort
+ */
+export var SearchByTypeRequest_UserSort;
+(function (SearchByTypeRequest_UserSort) {
+    /**
+     * @generated from protobuf enum value: USER_SORT_DEFAULT = 0;
+     */
+    SearchByTypeRequest_UserSort[SearchByTypeRequest_UserSort["DEFAULT"] = 0] = "DEFAULT";
+    /**
+     * @generated from protobuf enum value: USER_SORT_FANS_DESCEND = 1;
+     */
+    SearchByTypeRequest_UserSort[SearchByTypeRequest_UserSort["FANS_DESCEND"] = 1] = "FANS_DESCEND";
+    /**
+     * @generated from protobuf enum value: USER_SORT_FANS_ASCEND = 2;
+     */
+    SearchByTypeRequest_UserSort[SearchByTypeRequest_UserSort["FANS_ASCEND"] = 2] = "FANS_ASCEND";
+    /**
+     * @generated from protobuf enum value: USER_SORT_LEVEL_DESCEND = 3;
+     */
+    SearchByTypeRequest_UserSort[SearchByTypeRequest_UserSort["LEVEL_DESCEND"] = 3] = "LEVEL_DESCEND";
+    /**
+     * @generated from protobuf enum value: USER_SORT_LEVEL_ASCEND = 4;
+     */
+    SearchByTypeRequest_UserSort[SearchByTypeRequest_UserSort["LEVEL_ASCEND"] = 4] = "LEVEL_ASCEND";
+})(SearchByTypeRequest_UserSort || (SearchByTypeRequest_UserSort = {}));
+/**
  * @generated from protobuf enum bilibili.polymer.app.search.v1.CategorySort
  */
 export var CategorySort;
@@ -4995,10 +5069,10 @@ class SearchAllResponse$Type extends MessageType {
                 case /* optional string org_extra_word */ 8:
                     message.orgExtraWord = reader.string();
                     break;
-                case /* int64 select_bar_type = 9 [jstype = JS_NUMBER];*/ 9:
+                case /* int64 select_bar_type */ 9:
                     message.selectBarType = reader.int64().toNumber();
                     break;
-                case /* int64 new_search_exp_num = 10 [jstype = JS_NUMBER];*/ 10:
+                case /* int64 new_search_exp_num */ 10:
                     message.newSearchExpNum = reader.int64().toNumber();
                     break;
                 case /* bilibili.pagination.PaginationReply pagination */ 11:
@@ -5062,10 +5136,10 @@ class SearchAllResponse$Type extends MessageType {
         /* optional string org_extra_word = 8; */
         if (message.orgExtraWord !== undefined)
             writer.tag(8, WireType.LengthDelimited).string(message.orgExtraWord);
-        /* int64 select_bar_type = 9 [jstype = JS_NUMBER]; */
+        /* int64 select_bar_type = 9; */
         if (message.selectBarType !== 0)
             writer.tag(9, WireType.Varint).int64(message.selectBarType);
-        /* int64 new_search_exp_num = 10 [jstype = JS_NUMBER]; */
+        /* int64 new_search_exp_num = 10; */
         if (message.newSearchExpNum !== 0)
             writer.tag(10, WireType.Varint).int64(message.newSearchExpNum);
         /* bilibili.pagination.PaginationReply pagination = 11; */
@@ -5852,10 +5926,10 @@ class SearchByTypeRequest$Type extends MessageType {
         super("bilibili.polymer.app.search.v1.SearchByTypeRequest", [
             { no: 1, name: "type", kind: "scalar", T: 5 /*ScalarType.INT32*/ },
             { no: 2, name: "keyword", kind: "scalar", T: 9 /*ScalarType.STRING*/ },
-            { no: 3, name: "category_sort", kind: "scalar", opt: true, T: 5 /*ScalarType.INT32*/ },
+            { no: 3, name: "category_sort", kind: "enum", opt: true, T: () => ["bilibili.polymer.app.search.v1.SearchByTypeRequest.CategorySort", SearchByTypeRequest_CategorySort, "CATEGORY_SORT_"] },
             { no: 4, name: "category_id", kind: "scalar", opt: true, T: 3 /*ScalarType.INT64*/, L: 2 /*LongType.NUMBER*/ },
-            { no: 5, name: "user_type", kind: "scalar", opt: true, T: 5 /*ScalarType.INT32*/ },
-            { no: 6, name: "user_sort", kind: "scalar", opt: true, T: 5 /*ScalarType.INT32*/ },
+            { no: 5, name: "user_type", kind: "enum", opt: true, T: () => ["bilibili.polymer.app.search.v1.SearchByTypeRequest.UserType", SearchByTypeRequest_UserType] },
+            { no: 6, name: "user_sort", kind: "enum", opt: true, T: () => ["bilibili.polymer.app.search.v1.SearchByTypeRequest.UserSort", SearchByTypeRequest_UserSort, "USER_SORT_"] },
             { no: 7, name: "pagination", kind: "message", T: () => Pagination },
             { no: 8, name: "player_args", kind: "message", T: () => PlayerArgs$ }
         ]);
@@ -5879,16 +5953,16 @@ class SearchByTypeRequest$Type extends MessageType {
                 case /* string keyword */ 2:
                     message.keyword = reader.string();
                     break;
-                case /* optional int32 category_sort */ 3:
+                case /* optional bilibili.polymer.app.search.v1.SearchByTypeRequest.CategorySort category_sort */ 3:
                     message.categorySort = reader.int32();
                     break;
-                case /* optional int64 category_id = 4 [jstype = JS_NUMBER];*/ 4:
+                case /* optional int64 category_id */ 4:
                     message.categoryId = reader.int64().toNumber();
                     break;
-                case /* optional int32 user_type */ 5:
+                case /* optional bilibili.polymer.app.search.v1.SearchByTypeRequest.UserType user_type */ 5:
                     message.userType = reader.int32();
                     break;
-                case /* optional int32 user_sort */ 6:
+                case /* optional bilibili.polymer.app.search.v1.SearchByTypeRequest.UserSort user_sort */ 6:
                     message.userSort = reader.int32();
                     break;
                 case /* bilibili.pagination.Pagination pagination */ 7:
@@ -5915,16 +5989,16 @@ class SearchByTypeRequest$Type extends MessageType {
         /* string keyword = 2; */
         if (message.keyword !== "")
             writer.tag(2, WireType.LengthDelimited).string(message.keyword);
-        /* optional int32 category_sort = 3; */
+        /* optional bilibili.polymer.app.search.v1.SearchByTypeRequest.CategorySort category_sort = 3; */
         if (message.categorySort !== undefined)
             writer.tag(3, WireType.Varint).int32(message.categorySort);
-        /* optional int64 category_id = 4 [jstype = JS_NUMBER]; */
+        /* optional int64 category_id = 4; */
         if (message.categoryId !== undefined)
             writer.tag(4, WireType.Varint).int64(message.categoryId);
-        /* optional int32 user_type = 5; */
+        /* optional bilibili.polymer.app.search.v1.SearchByTypeRequest.UserType user_type = 5; */
         if (message.userType !== undefined)
             writer.tag(5, WireType.Varint).int32(message.userType);
-        /* optional int32 user_sort = 6; */
+        /* optional bilibili.polymer.app.search.v1.SearchByTypeRequest.UserSort user_sort = 6; */
         if (message.userSort !== undefined)
             writer.tag(6, WireType.Varint).int32(message.userSort);
         /* bilibili.pagination.Pagination pagination = 7; */
