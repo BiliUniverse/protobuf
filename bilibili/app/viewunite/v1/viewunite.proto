@@ -2,7 +2,7 @@ syntax = "proto3";
 
 package bilibili.app.viewunite.v1;
 
-import "bilibili/app/archive/middleware/v1/preload.proto";
+//import "bilibili/app/archive/middleware/v1/preload.proto";
 import "bilibili/app/viewunite/common.proto";
 import "bilibili/pagination/pagination.proto";
 import "google/protobuf/any.proto";
@@ -12,7 +12,7 @@ service View {
     // 
     //rpc ArcRefresh(ArcRefreshReq) returns (ArcRefreshReply);
     // 视频详情页下方推荐
-    //rpc RelatesFeed(RelatesFeedReq) returns (RelatesFeedReply);
+    rpc RelatesFeed(RelatesFeedReq) returns (RelatesFeedReply);
     // 视频详情页
     rpc View(ViewReq) returns (ViewReply);
     // 播放进度
@@ -43,6 +43,16 @@ message Arc {
     string title = 10;
 }
 
+// 推广信息
+message CM {
+    // 
+    google.protobuf.Any cm_under_player = 1;
+    // 
+    google.protobuf.Any ads_control = 2;
+    // 
+    repeated google.protobuf.Any source_content = 3;
+}
+
 enum ECode {
     // 
     CODE_DEFAULT = 0;
@@ -63,7 +73,39 @@ message IntroductionTab {
     // 
     string title = 1;
     // 
-    //repeated bilibili.app.viewunite.common.Module modules = 2;
+    repeated bilibili.app.viewunite.common.Module modules = 2;
+}
+
+// 视频详情页下方推荐 Reply
+message RelatesFeedReply {
+    // 
+    repeated bilibili.app.viewunite.common.RelateCard relates = 1;
+    // 
+    bilibili.pagination.Pagination pagination = 2;
+}
+
+// 视频详情页下方推荐 Req
+message RelatesFeedReq {
+    // 
+    int64 aid = 1;
+    // 
+    string bvid = 2;
+    // 
+    string from = 3;
+    // 
+    string spmid = 4;
+    // 
+    string from_spmid = 5;
+    // 
+    //bilibili.app.archive.middleware.v1.PlayerArgs player_args = 6;
+    // 
+    bilibili.pagination.Pagination pagination = 7;
+    // 
+    string session_id = 8;
+    // 
+    int64 auto_play = 9;
+    // 
+    string from_track_id = 10;
 }
 
 // 
@@ -147,7 +189,7 @@ message ViewReply {
     // 
     google.protobuf.Any supplement = 6;
     // 
-    //CM cm = 7;
+    CM cm = 7;
     // 
     ECode ecode = 8;
     // 

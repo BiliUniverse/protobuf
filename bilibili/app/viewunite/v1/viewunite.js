@@ -9,8 +9,11 @@ import { WireType } from "@protobuf-ts/runtime";
 import { UnknownFieldHandler } from "@protobuf-ts/runtime";
 import { reflectionMergePartial } from "@protobuf-ts/runtime";
 import { MessageType } from "@protobuf-ts/runtime";
-import { Any } from "../../../../google/protobuf/any";
 import { Owner } from "../common";
+import { Pagination } from "../../../pagination/pagination";
+import { RelateCard } from "../common";
+import { Module } from "../common";
+import { Any } from "../../../../google/protobuf/any";
 /**
  * @generated from protobuf enum bilibili.app.viewunite.v1.ECode
  */
@@ -176,6 +179,67 @@ class Arc$Type extends MessageType {
  */
 export const Arc = new Arc$Type();
 // @generated message type with reflection information, may provide speed optimized methods
+class CM$Type extends MessageType {
+    constructor() {
+        super("bilibili.app.viewunite.v1.CM", [
+            { no: 1, name: "cm_under_player", kind: "message", T: () => Any },
+            { no: 2, name: "ads_control", kind: "message", T: () => Any },
+            { no: 3, name: "source_content", kind: "message", repeat: 1 /*RepeatType.PACKED*/, T: () => Any }
+        ]);
+    }
+    create(value) {
+        const message = globalThis.Object.create((this.messagePrototype));
+        message.sourceContent = [];
+        if (value !== undefined)
+            reflectionMergePartial(this, message, value);
+        return message;
+    }
+    internalBinaryRead(reader, length, options, target) {
+        let message = target ?? this.create(), end = reader.pos + length;
+        while (reader.pos < end) {
+            let [fieldNo, wireType] = reader.tag();
+            switch (fieldNo) {
+                case /* google.protobuf.Any cm_under_player */ 1:
+                    message.cmUnderPlayer = Any.internalBinaryRead(reader, reader.uint32(), options, message.cmUnderPlayer);
+                    break;
+                case /* google.protobuf.Any ads_control */ 2:
+                    message.adsControl = Any.internalBinaryRead(reader, reader.uint32(), options, message.adsControl);
+                    break;
+                case /* repeated google.protobuf.Any source_content */ 3:
+                    message.sourceContent.push(Any.internalBinaryRead(reader, reader.uint32(), options));
+                    break;
+                default:
+                    let u = options.readUnknownField;
+                    if (u === "throw")
+                        throw new globalThis.Error(`Unknown field ${fieldNo} (wire type ${wireType}) for ${this.typeName}`);
+                    let d = reader.skip(wireType);
+                    if (u !== false)
+                        (u === true ? UnknownFieldHandler.onRead : u)(this.typeName, message, fieldNo, wireType, d);
+            }
+        }
+        return message;
+    }
+    internalBinaryWrite(message, writer, options) {
+        /* google.protobuf.Any cm_under_player = 1; */
+        if (message.cmUnderPlayer)
+            Any.internalBinaryWrite(message.cmUnderPlayer, writer.tag(1, WireType.LengthDelimited).fork(), options).join();
+        /* google.protobuf.Any ads_control = 2; */
+        if (message.adsControl)
+            Any.internalBinaryWrite(message.adsControl, writer.tag(2, WireType.LengthDelimited).fork(), options).join();
+        /* repeated google.protobuf.Any source_content = 3; */
+        for (let i = 0; i < message.sourceContent.length; i++)
+            Any.internalBinaryWrite(message.sourceContent[i], writer.tag(3, WireType.LengthDelimited).fork(), options).join();
+        let u = options.writeUnknownFields;
+        if (u !== false)
+            (u == true ? UnknownFieldHandler.onWrite : u)(this.typeName, message, writer);
+        return writer;
+    }
+}
+/**
+ * @generated MessageType for protobuf message bilibili.app.viewunite.v1.CM
+ */
+export const CM = new CM$Type();
+// @generated message type with reflection information, may provide speed optimized methods
 class ECodeConfig$Type extends MessageType {
     constructor() {
         super("bilibili.app.viewunite.v1.ECodeConfig", [
@@ -226,12 +290,14 @@ export const ECodeConfig = new ECodeConfig$Type();
 class IntroductionTab$Type extends MessageType {
     constructor() {
         super("bilibili.app.viewunite.v1.IntroductionTab", [
-            { no: 1, name: "title", kind: "scalar", T: 9 /*ScalarType.STRING*/ }
+            { no: 1, name: "title", kind: "scalar", T: 9 /*ScalarType.STRING*/ },
+            { no: 2, name: "modules", kind: "message", repeat: 1 /*RepeatType.PACKED*/, T: () => Module }
         ]);
     }
     create(value) {
         const message = globalThis.Object.create((this.messagePrototype));
         message.title = "";
+        message.modules = [];
         if (value !== undefined)
             reflectionMergePartial(this, message, value);
         return message;
@@ -243,6 +309,9 @@ class IntroductionTab$Type extends MessageType {
             switch (fieldNo) {
                 case /* string title */ 1:
                     message.title = reader.string();
+                    break;
+                case /* repeated bilibili.app.viewunite.common.Module modules */ 2:
+                    message.modules.push(Module.internalBinaryRead(reader, reader.uint32(), options));
                     break;
                 default:
                     let u = options.readUnknownField;
@@ -259,6 +328,9 @@ class IntroductionTab$Type extends MessageType {
         /* string title = 1; */
         if (message.title !== "")
             writer.tag(1, WireType.LengthDelimited).string(message.title);
+        /* repeated bilibili.app.viewunite.common.Module modules = 2; */
+        for (let i = 0; i < message.modules.length; i++)
+            Module.internalBinaryWrite(message.modules[i], writer.tag(2, WireType.LengthDelimited).fork(), options).join();
         let u = options.writeUnknownFields;
         if (u !== false)
             (u == true ? UnknownFieldHandler.onWrite : u)(this.typeName, message, writer);
@@ -269,6 +341,170 @@ class IntroductionTab$Type extends MessageType {
  * @generated MessageType for protobuf message bilibili.app.viewunite.v1.IntroductionTab
  */
 export const IntroductionTab = new IntroductionTab$Type();
+// @generated message type with reflection information, may provide speed optimized methods
+class RelatesFeedReply$Type extends MessageType {
+    constructor() {
+        super("bilibili.app.viewunite.v1.RelatesFeedReply", [
+            { no: 1, name: "relates", kind: "message", repeat: 1 /*RepeatType.PACKED*/, T: () => RelateCard },
+            { no: 2, name: "pagination", kind: "message", T: () => Pagination }
+        ]);
+    }
+    create(value) {
+        const message = globalThis.Object.create((this.messagePrototype));
+        message.relates = [];
+        if (value !== undefined)
+            reflectionMergePartial(this, message, value);
+        return message;
+    }
+    internalBinaryRead(reader, length, options, target) {
+        let message = target ?? this.create(), end = reader.pos + length;
+        while (reader.pos < end) {
+            let [fieldNo, wireType] = reader.tag();
+            switch (fieldNo) {
+                case /* repeated bilibili.app.viewunite.common.RelateCard relates */ 1:
+                    message.relates.push(RelateCard.internalBinaryRead(reader, reader.uint32(), options));
+                    break;
+                case /* bilibili.pagination.Pagination pagination */ 2:
+                    message.pagination = Pagination.internalBinaryRead(reader, reader.uint32(), options, message.pagination);
+                    break;
+                default:
+                    let u = options.readUnknownField;
+                    if (u === "throw")
+                        throw new globalThis.Error(`Unknown field ${fieldNo} (wire type ${wireType}) for ${this.typeName}`);
+                    let d = reader.skip(wireType);
+                    if (u !== false)
+                        (u === true ? UnknownFieldHandler.onRead : u)(this.typeName, message, fieldNo, wireType, d);
+            }
+        }
+        return message;
+    }
+    internalBinaryWrite(message, writer, options) {
+        /* repeated bilibili.app.viewunite.common.RelateCard relates = 1; */
+        for (let i = 0; i < message.relates.length; i++)
+            RelateCard.internalBinaryWrite(message.relates[i], writer.tag(1, WireType.LengthDelimited).fork(), options).join();
+        /* bilibili.pagination.Pagination pagination = 2; */
+        if (message.pagination)
+            Pagination.internalBinaryWrite(message.pagination, writer.tag(2, WireType.LengthDelimited).fork(), options).join();
+        let u = options.writeUnknownFields;
+        if (u !== false)
+            (u == true ? UnknownFieldHandler.onWrite : u)(this.typeName, message, writer);
+        return writer;
+    }
+}
+/**
+ * @generated MessageType for protobuf message bilibili.app.viewunite.v1.RelatesFeedReply
+ */
+export const RelatesFeedReply = new RelatesFeedReply$Type();
+// @generated message type with reflection information, may provide speed optimized methods
+class RelatesFeedReq$Type extends MessageType {
+    constructor() {
+        super("bilibili.app.viewunite.v1.RelatesFeedReq", [
+            { no: 1, name: "aid", kind: "scalar", T: 3 /*ScalarType.INT64*/, L: 2 /*LongType.NUMBER*/ },
+            { no: 2, name: "bvid", kind: "scalar", T: 9 /*ScalarType.STRING*/ },
+            { no: 3, name: "from", kind: "scalar", T: 9 /*ScalarType.STRING*/ },
+            { no: 4, name: "spmid", kind: "scalar", T: 9 /*ScalarType.STRING*/ },
+            { no: 5, name: "from_spmid", kind: "scalar", T: 9 /*ScalarType.STRING*/ },
+            { no: 7, name: "pagination", kind: "message", T: () => Pagination },
+            { no: 8, name: "session_id", kind: "scalar", T: 9 /*ScalarType.STRING*/ },
+            { no: 9, name: "auto_play", kind: "scalar", T: 3 /*ScalarType.INT64*/, L: 2 /*LongType.NUMBER*/ },
+            { no: 10, name: "from_track_id", kind: "scalar", T: 9 /*ScalarType.STRING*/ }
+        ]);
+    }
+    create(value) {
+        const message = globalThis.Object.create((this.messagePrototype));
+        message.aid = 0;
+        message.bvid = "";
+        message.from = "";
+        message.spmid = "";
+        message.fromSpmid = "";
+        message.sessionId = "";
+        message.autoPlay = 0;
+        message.fromTrackId = "";
+        if (value !== undefined)
+            reflectionMergePartial(this, message, value);
+        return message;
+    }
+    internalBinaryRead(reader, length, options, target) {
+        let message = target ?? this.create(), end = reader.pos + length;
+        while (reader.pos < end) {
+            let [fieldNo, wireType] = reader.tag();
+            switch (fieldNo) {
+                case /* int64 aid */ 1:
+                    message.aid = reader.int64().toNumber();
+                    break;
+                case /* string bvid */ 2:
+                    message.bvid = reader.string();
+                    break;
+                case /* string from */ 3:
+                    message.from = reader.string();
+                    break;
+                case /* string spmid */ 4:
+                    message.spmid = reader.string();
+                    break;
+                case /* string from_spmid */ 5:
+                    message.fromSpmid = reader.string();
+                    break;
+                case /* bilibili.pagination.Pagination pagination */ 7:
+                    message.pagination = Pagination.internalBinaryRead(reader, reader.uint32(), options, message.pagination);
+                    break;
+                case /* string session_id */ 8:
+                    message.sessionId = reader.string();
+                    break;
+                case /* int64 auto_play */ 9:
+                    message.autoPlay = reader.int64().toNumber();
+                    break;
+                case /* string from_track_id */ 10:
+                    message.fromTrackId = reader.string();
+                    break;
+                default:
+                    let u = options.readUnknownField;
+                    if (u === "throw")
+                        throw new globalThis.Error(`Unknown field ${fieldNo} (wire type ${wireType}) for ${this.typeName}`);
+                    let d = reader.skip(wireType);
+                    if (u !== false)
+                        (u === true ? UnknownFieldHandler.onRead : u)(this.typeName, message, fieldNo, wireType, d);
+            }
+        }
+        return message;
+    }
+    internalBinaryWrite(message, writer, options) {
+        /* int64 aid = 1; */
+        if (message.aid !== 0)
+            writer.tag(1, WireType.Varint).int64(message.aid);
+        /* string bvid = 2; */
+        if (message.bvid !== "")
+            writer.tag(2, WireType.LengthDelimited).string(message.bvid);
+        /* string from = 3; */
+        if (message.from !== "")
+            writer.tag(3, WireType.LengthDelimited).string(message.from);
+        /* string spmid = 4; */
+        if (message.spmid !== "")
+            writer.tag(4, WireType.LengthDelimited).string(message.spmid);
+        /* string from_spmid = 5; */
+        if (message.fromSpmid !== "")
+            writer.tag(5, WireType.LengthDelimited).string(message.fromSpmid);
+        /* bilibili.pagination.Pagination pagination = 7; */
+        if (message.pagination)
+            Pagination.internalBinaryWrite(message.pagination, writer.tag(7, WireType.LengthDelimited).fork(), options).join();
+        /* string session_id = 8; */
+        if (message.sessionId !== "")
+            writer.tag(8, WireType.LengthDelimited).string(message.sessionId);
+        /* int64 auto_play = 9; */
+        if (message.autoPlay !== 0)
+            writer.tag(9, WireType.Varint).int64(message.autoPlay);
+        /* string from_track_id = 10; */
+        if (message.fromTrackId !== "")
+            writer.tag(10, WireType.LengthDelimited).string(message.fromTrackId);
+        let u = options.writeUnknownFields;
+        if (u !== false)
+            (u == true ? UnknownFieldHandler.onWrite : u)(this.typeName, message, writer);
+        return writer;
+    }
+}
+/**
+ * @generated MessageType for protobuf message bilibili.app.viewunite.v1.RelatesFeedReq
+ */
+export const RelatesFeedReq = new RelatesFeedReq$Type();
 // @generated message type with reflection information, may provide speed optimized methods
 class ReplyTab$Type extends MessageType {
     constructor() {
@@ -580,6 +816,7 @@ class ViewReply$Type extends MessageType {
             { no: 4, name: "owner", kind: "message", T: () => Owner },
             { no: 5, name: "tab", kind: "message", T: () => Tab },
             { no: 6, name: "supplement", kind: "message", T: () => Any },
+            { no: 7, name: "cm", kind: "message", T: () => CM },
             { no: 8, name: "ecode", kind: "enum", T: () => ["bilibili.app.viewunite.v1.ECode", ECode] },
             { no: 9, name: "ecode_config", kind: "message", T: () => ECodeConfig },
             { no: 10, name: "report", kind: "map", K: 9 /*ScalarType.STRING*/, V: { kind: "scalar", T: 9 /*ScalarType.STRING*/ } }
@@ -609,6 +846,9 @@ class ViewReply$Type extends MessageType {
                     break;
                 case /* google.protobuf.Any supplement */ 6:
                     message.supplement = Any.internalBinaryRead(reader, reader.uint32(), options, message.supplement);
+                    break;
+                case /* bilibili.app.viewunite.v1.CM cm */ 7:
+                    message.cm = CM.internalBinaryRead(reader, reader.uint32(), options, message.cm);
                     break;
                 case /* bilibili.app.viewunite.v1.ECode ecode */ 8:
                     message.ecode = reader.int32();
@@ -659,6 +899,9 @@ class ViewReply$Type extends MessageType {
         /* google.protobuf.Any supplement = 6; */
         if (message.supplement)
             Any.internalBinaryWrite(message.supplement, writer.tag(6, WireType.LengthDelimited).fork(), options).join();
+        /* bilibili.app.viewunite.v1.CM cm = 7; */
+        if (message.cm)
+            CM.internalBinaryWrite(message.cm, writer.tag(7, WireType.LengthDelimited).fork(), options).join();
         /* bilibili.app.viewunite.v1.ECode ecode = 8; */
         if (message.ecode !== 0)
             writer.tag(8, WireType.Varint).int32(message.ecode);
@@ -827,5 +1070,6 @@ export const ViewReq = new ViewReq$Type();
  * @generated ServiceType for protobuf service bilibili.app.viewunite.v1.View
  */
 export const View = new ServiceType("bilibili.app.viewunite.v1.View", [
+    { name: "RelatesFeed", options: {}, I: RelatesFeedReq, O: RelatesFeedReply },
     { name: "View", options: {}, I: ViewReq, O: ViewReply }
 ]);

@@ -5,6 +5,8 @@ import type { RpcTransport } from "@protobuf-ts/runtime-rpc";
 import type { ServiceInfo } from "@protobuf-ts/runtime-rpc";
 import type { ViewReply } from "./viewunite";
 import type { ViewReq } from "./viewunite";
+import type { RelatesFeedReply } from "./viewunite";
+import type { RelatesFeedReq } from "./viewunite";
 import type { UnaryCall } from "@protobuf-ts/runtime-rpc";
 import type { RpcOptions } from "@protobuf-ts/runtime-rpc";
 /**
@@ -17,7 +19,11 @@ export interface IViewClient {
      *
      * rpc ArcRefresh(ArcRefreshReq) returns (ArcRefreshReply);
      * 视频详情页下方推荐
-     * rpc RelatesFeed(RelatesFeedReq) returns (RelatesFeedReply);
+     *
+     * @generated from protobuf rpc: RelatesFeed(bilibili.app.viewunite.v1.RelatesFeedReq) returns (bilibili.app.viewunite.v1.RelatesFeedReply);
+     */
+    relatesFeed(input: RelatesFeedReq, options?: RpcOptions): UnaryCall<RelatesFeedReq, RelatesFeedReply>;
+    /**
      * 视频详情页
      *
      * 播放进度
@@ -42,7 +48,11 @@ export declare class ViewClient implements IViewClient, ServiceInfo {
      *
      * rpc ArcRefresh(ArcRefreshReq) returns (ArcRefreshReply);
      * 视频详情页下方推荐
-     * rpc RelatesFeed(RelatesFeedReq) returns (RelatesFeedReply);
+     *
+     * @generated from protobuf rpc: RelatesFeed(bilibili.app.viewunite.v1.RelatesFeedReq) returns (bilibili.app.viewunite.v1.RelatesFeedReply);
+     */
+    relatesFeed(input: RelatesFeedReq, options?: RpcOptions): UnaryCall<RelatesFeedReq, RelatesFeedReply>;
+    /**
      * 视频详情页
      *
      * 播放进度

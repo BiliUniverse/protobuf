@@ -19,7 +19,14 @@ export class ViewClient {
      *
      * rpc ArcRefresh(ArcRefreshReq) returns (ArcRefreshReply);
      * 视频详情页下方推荐
-     * rpc RelatesFeed(RelatesFeedReq) returns (RelatesFeedReply);
+     *
+     * @generated from protobuf rpc: RelatesFeed(bilibili.app.viewunite.v1.RelatesFeedReq) returns (bilibili.app.viewunite.v1.RelatesFeedReply);
+     */
+    relatesFeed(input, options) {
+        const method = this.methods[0], opt = this._transport.mergeOptions(options);
+        return stackIntercept("unary", this._transport, method, opt, input);
+    }
+    /**
      * 视频详情页
      *
      * 播放进度
@@ -28,7 +35,7 @@ export class ViewClient {
      * @generated from protobuf rpc: View(bilibili.app.viewunite.v1.ViewReq) returns (bilibili.app.viewunite.v1.ViewReply);
      */
     view(input, options) {
-        const method = this.methods[0], opt = this._transport.mergeOptions(options);
+        const method = this.methods[1], opt = this._transport.mergeOptions(options);
         return stackIntercept("unary", this._transport, method, opt, input);
     }
 }
