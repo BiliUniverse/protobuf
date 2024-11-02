@@ -1,0 +1,228 @@
+syntax = "proto3";
+
+package bilibili.app.view.v1;
+
+import "google/protobuf/any.proto";
+
+service View {
+    // 视频页详情页
+    rpc View (ViewReq) returns (ViewReply);
+    //
+    //rpc ViewTag(ViewTagReq) returns (ViewTagReply);
+    //
+    //rpc ViewMaterial(ViewMaterialReq) returns (ViewMaterialReply);
+    // 视频播放过程中的数据
+    //rpc ViewProgress (ViewProgressReq) returns (ViewProgressReply);
+    // 短视频下载
+    //rpc ShortFormVideoDownload (ShortFormVideoDownloadReq) returns (ShortFormVideoDownloadReply);
+    // 点击播放器卡片事件
+    //rpc ClickPlayerCard (ClickPlayerCardReq) returns (NoReply);
+    // 点击大型活动页预约
+    //rpc ClickActivitySeason (ClickActivitySeasonReq) returns (NoReply);
+    // 合集详情页
+    //rpc Season (SeasonReq) returns (SeasonReply);
+    // 播放器卡片曝光
+    //rpc ExposePlayerCard (ExposePlayerCardReq) returns (NoReply);
+    // 点击签订契约
+    //rpc AddContract (AddContractReq) returns (NoReply);
+    // 资源包
+    //rpc ChronosPkg(ChronosPkgReq) returns (Chronos);
+    //
+    rpc CacheView(CacheViewReq) returns (CacheViewReply);
+    //
+    //rpc ContinuousPlay(ContinuousPlayReq) returns (ContinuousPlayReply);
+    // 播放页推荐IFS
+    //rpc RelatesFeed(RelatesFeedReq) returns (RelatesFeedReply);
+    //
+    //rpc PremiereArchive(PremiereArchiveReq) returns (PremiereArchiveReply);
+    //
+    //rpc Reserve(ReserveReq) returns (ReserveReply);
+    //
+    //rpc PlayerRelates(PlayerRelatesReq) returns (PlayerRelatesReply);
+    //
+    //rpc SeasonActivityRecord(SeasonActivityRecordReq) returns (SeasonActivityRecordReply);
+    //
+    //rpc SeasonWidgetExpose(SeasonWidgetExposeReq) returns (SeasonWidgetExposeReply);
+    //
+    //rpc GetArcsPlayer(GetArcsPlayerReq) returns (GetArcsPlayerReply);
+    //
+    //rpc GetUser(GetUserReq) returns (GetUserReply);
+}
+
+//
+message CacheViewReply {
+    //
+    //bilibili.app.archive.v1.Arc arc = 1;
+    //
+    //repeated ViewPage pages = 2;
+    //
+    //OnwerExt owner_ext = 3;
+    //
+    //ReqUser req_user = 4;
+    //
+    //Season season = 5;
+    //
+    //ElecRank elec_rank = 6;
+    //
+    //History history = 7;
+    //
+    //Dislike dislike = 8;
+    //
+    //PlayerIcon player_icon = 9;
+    //
+    //string bvid = 10;
+    //
+    //string short_link = 11;
+    //
+    //string share_subtitle = 12;
+    //
+    TFPanelCustomized tf_panel_customized = 13;
+    //
+    //Online online = 14;
+}
+
+//
+message CacheViewReq {
+    //
+    int64 aid = 1;
+    //
+    string bvid = 2;
+    //
+    string from = 3;
+    //
+    string trackid = 4;
+    //
+    string ad_extra = 5;
+    //
+    string spmid = 6;
+    //
+    string from_spmid = 7;
+}
+
+// 广告
+message CM {
+    // 广告数据(需解包)
+    google.protobuf.Any source_content = 1;
+}
+
+// 广告配置
+message CMConfig {
+    // 广告配置数据(需要二次解包)
+    google.protobuf.Any ads_control = 1;
+}
+
+//
+message CmIpad {
+    //
+    //CM cm = 1;
+    //
+    //bilibili.app.archive.v1.Author author = 2;
+    //
+    //bilibili.app.archive.v1.Stat stat = 3;
+    //
+    //int64 duration = 4;
+    //
+    int64 aid = 5;
+}
+
+// 相关推荐项
+message Relate {
+    // 广告
+    CM cm = 28;
+}
+
+message TFInfoReply {
+
+}
+
+// 免流面板定制
+message TFPanelCustomized {
+    // 右侧按钮素材
+    //string right_btn_img = 1;
+    // 右侧按钮文案
+    string right_btn_text = 2;
+    // 右侧按钮字体颜色
+    //string right_btn_text_color = 3;
+    // 右侧按钮跳转链接
+    //string right_btn_link = 4;
+    // 中心主文案内容
+    //string main_label = 5;
+    // 运营商(cm ct cu)
+    //string operator = 6;
+    // 子面板定制化配置
+    //map<string, subTFPanel> sub_panel = 7;
+}
+
+// TAG图标信息
+message TIcon {
+    // TAG图标url
+    string icon = 1;
+}
+
+// 视频页信息-响应
+message ViewReply {
+    // TAG对应的图标
+    map<string, TIcon> t_icon = 6;
+    // 视频相关推荐列表
+    repeated Relate relates = 10;
+    // 广告
+    repeated CM cms = 30;
+    // 广告配置
+    CMConfig cm_config = 31;
+    // 免流面板定制
+    TFPanelCustomized tf_panel_customized = 34;
+    //
+    CmIpad cm_ipad = 41;
+}
+
+// 视频页详情页-请求
+message ViewReq {
+    // 稿件avid(av/bv任选其一)
+    int64 aid = 1;
+    // 稿件bvid(av/bv任选其一)
+    string bvid = 2;
+    // 来源
+    string from = 3;
+    // AI trackid
+    string trackid = 4;
+    // 广告扩展数据
+    string ad_extra = 5;
+    // 清晰度(旧版)
+    int32 qn = 6;
+    // 流版本(旧版)
+    int32 fnver = 7;
+    // 流类型(旧版)
+    int32 fnval = 8;
+    // 是否强制使用域名(旧版)
+    int32 force_host = 9;
+    // 是否允许4K(旧版)
+    int32 fourk = 10;
+    // 当前页面spm
+    string spmid = 11;
+    // 上一页面spm
+    string from_spmid = 12;
+    //
+    int32 autoplay = 13;
+    // 视频秒开参数
+    //bilibili.app.archive.middleware.v1.PlayerArgs player_args = 14;
+    //
+    string page_version = 15;
+    //
+    string biz_extra = 16;
+    //
+    int64 device_type = 17;
+    //
+    int64 relates_page = 18;
+    //
+    string session_id = 19;
+    //
+    int32 in_feed_play = 20;
+    //
+    string play_mode = 21;
+    //
+    //bilibili.pagination.Pagination pagination = 22;
+    //
+    int32 refresh = 23;
+    //
+    int32 refresh_num = 24;
+}
