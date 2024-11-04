@@ -184,7 +184,8 @@ class CM$Type extends MessageType {
         super("bilibili.app.viewunite.v1.CM", [
             { no: 1, name: "cm_under_player", kind: "message", T: () => Any },
             { no: 2, name: "ads_control", kind: "message", T: () => Any },
-            { no: 3, name: "source_content", kind: "message", repeat: 1 /*RepeatType.PACKED*/, T: () => Any }
+            { no: 3, name: "source_content", kind: "message", repeat: 1 /*RepeatType.PACKED*/, T: () => Any },
+            { no: 5, name: "content5", kind: "message", T: () => CM_Info5 }
         ]);
     }
     create(value) {
@@ -208,6 +209,9 @@ class CM$Type extends MessageType {
                 case /* repeated google.protobuf.Any source_content */ 3:
                     message.sourceContent.push(Any.internalBinaryRead(reader, reader.uint32(), options));
                     break;
+                case /* bilibili.app.viewunite.v1.CM.Info5 content5 */ 5:
+                    message.content5 = CM_Info5.internalBinaryRead(reader, reader.uint32(), options, message.content5);
+                    break;
                 default:
                     let u = options.readUnknownField;
                     if (u === "throw")
@@ -229,6 +233,9 @@ class CM$Type extends MessageType {
         /* repeated google.protobuf.Any source_content = 3; */
         for (let i = 0; i < message.sourceContent.length; i++)
             Any.internalBinaryWrite(message.sourceContent[i], writer.tag(3, WireType.LengthDelimited).fork(), options).join();
+        /* bilibili.app.viewunite.v1.CM.Info5 content5 = 5; */
+        if (message.content5)
+            CM_Info5.internalBinaryWrite(message.content5, writer.tag(5, WireType.LengthDelimited).fork(), options).join();
         let u = options.writeUnknownFields;
         if (u !== false)
             (u == true ? UnknownFieldHandler.onWrite : u)(this.typeName, message, writer);
@@ -239,6 +246,169 @@ class CM$Type extends MessageType {
  * @generated MessageType for protobuf message bilibili.app.viewunite.v1.CM
  */
 export const CM = new CM$Type();
+// @generated message type with reflection information, may provide speed optimized methods
+class CM_Info5$Type extends MessageType {
+    constructor() {
+        super("bilibili.app.viewunite.v1.CM.Info5", [
+            { no: 1, name: "content1", kind: "message", T: () => CM_Info51 }
+        ]);
+    }
+    create(value) {
+        const message = globalThis.Object.create((this.messagePrototype));
+        if (value !== undefined)
+            reflectionMergePartial(this, message, value);
+        return message;
+    }
+    internalBinaryRead(reader, length, options, target) {
+        let message = target ?? this.create(), end = reader.pos + length;
+        while (reader.pos < end) {
+            let [fieldNo, wireType] = reader.tag();
+            switch (fieldNo) {
+                case /* bilibili.app.viewunite.v1.CM.Info51 content1 */ 1:
+                    message.content1 = CM_Info51.internalBinaryRead(reader, reader.uint32(), options, message.content1);
+                    break;
+                default:
+                    let u = options.readUnknownField;
+                    if (u === "throw")
+                        throw new globalThis.Error(`Unknown field ${fieldNo} (wire type ${wireType}) for ${this.typeName}`);
+                    let d = reader.skip(wireType);
+                    if (u !== false)
+                        (u === true ? UnknownFieldHandler.onRead : u)(this.typeName, message, fieldNo, wireType, d);
+            }
+        }
+        return message;
+    }
+    internalBinaryWrite(message, writer, options) {
+        /* bilibili.app.viewunite.v1.CM.Info51 content1 = 1; */
+        if (message.content1)
+            CM_Info51.internalBinaryWrite(message.content1, writer.tag(1, WireType.LengthDelimited).fork(), options).join();
+        let u = options.writeUnknownFields;
+        if (u !== false)
+            (u == true ? UnknownFieldHandler.onWrite : u)(this.typeName, message, writer);
+        return writer;
+    }
+}
+/**
+ * @generated MessageType for protobuf message bilibili.app.viewunite.v1.CM.Info5
+ */
+export const CM_Info5 = new CM_Info5$Type();
+// @generated message type with reflection information, may provide speed optimized methods
+class CM_Info51$Type extends MessageType {
+    constructor() {
+        super("bilibili.app.viewunite.v1.CM.Info51", [
+            { no: 2, name: "content2", kind: "message", T: () => CM_Info512 }
+        ]);
+    }
+    create(value) {
+        const message = globalThis.Object.create((this.messagePrototype));
+        if (value !== undefined)
+            reflectionMergePartial(this, message, value);
+        return message;
+    }
+    internalBinaryRead(reader, length, options, target) {
+        let message = target ?? this.create(), end = reader.pos + length;
+        while (reader.pos < end) {
+            let [fieldNo, wireType] = reader.tag();
+            switch (fieldNo) {
+                case /* bilibili.app.viewunite.v1.CM.Info512 content2 */ 2:
+                    message.content2 = CM_Info512.internalBinaryRead(reader, reader.uint32(), options, message.content2);
+                    break;
+                default:
+                    let u = options.readUnknownField;
+                    if (u === "throw")
+                        throw new globalThis.Error(`Unknown field ${fieldNo} (wire type ${wireType}) for ${this.typeName}`);
+                    let d = reader.skip(wireType);
+                    if (u !== false)
+                        (u === true ? UnknownFieldHandler.onRead : u)(this.typeName, message, fieldNo, wireType, d);
+            }
+        }
+        return message;
+    }
+    internalBinaryWrite(message, writer, options) {
+        /* bilibili.app.viewunite.v1.CM.Info512 content2 = 2; */
+        if (message.content2)
+            CM_Info512.internalBinaryWrite(message.content2, writer.tag(2, WireType.LengthDelimited).fork(), options).join();
+        let u = options.writeUnknownFields;
+        if (u !== false)
+            (u == true ? UnknownFieldHandler.onWrite : u)(this.typeName, message, writer);
+        return writer;
+    }
+}
+/**
+ * @generated MessageType for protobuf message bilibili.app.viewunite.v1.CM.Info51
+ */
+export const CM_Info51 = new CM_Info51$Type();
+// @generated message type with reflection information, may provide speed optimized methods
+class CM_Info512$Type extends MessageType {
+    constructor() {
+        super("bilibili.app.viewunite.v1.CM.Info512", [
+            { no: 9, name: "content9", kind: "message", T: () => CM_Info5129 }
+        ]);
+    }
+    create(value) {
+        const message = globalThis.Object.create((this.messagePrototype));
+        if (value !== undefined)
+            reflectionMergePartial(this, message, value);
+        return message;
+    }
+    internalBinaryRead(reader, length, options, target) {
+        let message = target ?? this.create(), end = reader.pos + length;
+        while (reader.pos < end) {
+            let [fieldNo, wireType] = reader.tag();
+            switch (fieldNo) {
+                case /* bilibili.app.viewunite.v1.CM.Info5129 content9 */ 9:
+                    message.content9 = CM_Info5129.internalBinaryRead(reader, reader.uint32(), options, message.content9);
+                    break;
+                default:
+                    let u = options.readUnknownField;
+                    if (u === "throw")
+                        throw new globalThis.Error(`Unknown field ${fieldNo} (wire type ${wireType}) for ${this.typeName}`);
+                    let d = reader.skip(wireType);
+                    if (u !== false)
+                        (u === true ? UnknownFieldHandler.onRead : u)(this.typeName, message, fieldNo, wireType, d);
+            }
+        }
+        return message;
+    }
+    internalBinaryWrite(message, writer, options) {
+        /* bilibili.app.viewunite.v1.CM.Info5129 content9 = 9; */
+        if (message.content9)
+            CM_Info5129.internalBinaryWrite(message.content9, writer.tag(9, WireType.LengthDelimited).fork(), options).join();
+        let u = options.writeUnknownFields;
+        if (u !== false)
+            (u == true ? UnknownFieldHandler.onWrite : u)(this.typeName, message, writer);
+        return writer;
+    }
+}
+/**
+ * @generated MessageType for protobuf message bilibili.app.viewunite.v1.CM.Info512
+ */
+export const CM_Info512 = new CM_Info512$Type();
+// @generated message type with reflection information, may provide speed optimized methods
+class CM_Info5129$Type extends MessageType {
+    constructor() {
+        super("bilibili.app.viewunite.v1.CM.Info5129", []);
+    }
+    create(value) {
+        const message = globalThis.Object.create((this.messagePrototype));
+        if (value !== undefined)
+            reflectionMergePartial(this, message, value);
+        return message;
+    }
+    internalBinaryRead(reader, length, options, target) {
+        return target ?? this.create();
+    }
+    internalBinaryWrite(message, writer, options) {
+        let u = options.writeUnknownFields;
+        if (u !== false)
+            (u == true ? UnknownFieldHandler.onWrite : u)(this.typeName, message, writer);
+        return writer;
+    }
+}
+/**
+ * @generated MessageType for protobuf message bilibili.app.viewunite.v1.CM.Info5129
+ */
+export const CM_Info5129 = new CM_Info5129$Type();
 // @generated message type with reflection information, may provide speed optimized methods
 class ECodeConfig$Type extends MessageType {
     constructor() {

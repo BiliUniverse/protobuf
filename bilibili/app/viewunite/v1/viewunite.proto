@@ -51,6 +51,24 @@ message CM {
     google.protobuf.Any ads_control = 2;
     // 
     repeated google.protobuf.Any source_content = 3;
+    //
+    //?? ?? = 4;
+    //
+    Info5 content5 = 5;
+    
+    message Info5 {
+        Info51 content1 = 1;
+    }
+
+    message Info51 {
+        Info512 content2 = 2;
+    }
+
+    message Info512 {
+        Info5129 content9 = 9;
+    }
+
+    message Info5129 {}
 }
 
 enum ECode {
