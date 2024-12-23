@@ -99,6 +99,46 @@ export interface CM {
      * @generated from protobuf field: repeated google.protobuf.Any source_content = 3;
      */
     sourceContent: Any[];
+    /**
+     *
+     * ?? ?? = 4;
+     *
+     *
+     * @generated from protobuf field: bilibili.app.viewunite.v1.CM.Info5 content5 = 5;
+     */
+    content5?: CM_Info5;
+}
+/**
+ * @generated from protobuf message bilibili.app.viewunite.v1.CM.Info5
+ */
+export interface CM_Info5 {
+    /**
+     * @generated from protobuf field: bilibili.app.viewunite.v1.CM.Info51 content1 = 1;
+     */
+    content1?: CM_Info51;
+}
+/**
+ * @generated from protobuf message bilibili.app.viewunite.v1.CM.Info51
+ */
+export interface CM_Info51 {
+    /**
+     * @generated from protobuf field: bilibili.app.viewunite.v1.CM.Info512 content2 = 2;
+     */
+    content2?: CM_Info512;
+}
+/**
+ * @generated from protobuf message bilibili.app.viewunite.v1.CM.Info512
+ */
+export interface CM_Info512 {
+    /**
+     * @generated from protobuf field: bilibili.app.viewunite.v1.CM.Info5129 content9 = 9;
+     */
+    content9?: CM_Info5129;
+}
+/**
+ * @generated from protobuf message bilibili.app.viewunite.v1.CM.Info5129
+ */
+export interface CM_Info5129 {
 }
 /**
  *
@@ -557,6 +597,46 @@ declare class CM$Type extends MessageType<CM> {
  * @generated MessageType for protobuf message bilibili.app.viewunite.v1.CM
  */
 export declare const CM: CM$Type;
+declare class CM_Info5$Type extends MessageType<CM_Info5> {
+    constructor();
+    create(value?: PartialMessage<CM_Info5>): CM_Info5;
+    internalBinaryRead(reader: IBinaryReader, length: number, options: BinaryReadOptions, target?: CM_Info5): CM_Info5;
+    internalBinaryWrite(message: CM_Info5, writer: IBinaryWriter, options: BinaryWriteOptions): IBinaryWriter;
+}
+/**
+ * @generated MessageType for protobuf message bilibili.app.viewunite.v1.CM.Info5
+ */
+export declare const CM_Info5: CM_Info5$Type;
+declare class CM_Info51$Type extends MessageType<CM_Info51> {
+    constructor();
+    create(value?: PartialMessage<CM_Info51>): CM_Info51;
+    internalBinaryRead(reader: IBinaryReader, length: number, options: BinaryReadOptions, target?: CM_Info51): CM_Info51;
+    internalBinaryWrite(message: CM_Info51, writer: IBinaryWriter, options: BinaryWriteOptions): IBinaryWriter;
+}
+/**
+ * @generated MessageType for protobuf message bilibili.app.viewunite.v1.CM.Info51
+ */
+export declare const CM_Info51: CM_Info51$Type;
+declare class CM_Info512$Type extends MessageType<CM_Info512> {
+    constructor();
+    create(value?: PartialMessage<CM_Info512>): CM_Info512;
+    internalBinaryRead(reader: IBinaryReader, length: number, options: BinaryReadOptions, target?: CM_Info512): CM_Info512;
+    internalBinaryWrite(message: CM_Info512, writer: IBinaryWriter, options: BinaryWriteOptions): IBinaryWriter;
+}
+/**
+ * @generated MessageType for protobuf message bilibili.app.viewunite.v1.CM.Info512
+ */
+export declare const CM_Info512: CM_Info512$Type;
+declare class CM_Info5129$Type extends MessageType<CM_Info5129> {
+    constructor();
+    create(value?: PartialMessage<CM_Info5129>): CM_Info5129;
+    internalBinaryRead(reader: IBinaryReader, length: number, options: BinaryReadOptions, target?: CM_Info5129): CM_Info5129;
+    internalBinaryWrite(message: CM_Info5129, writer: IBinaryWriter, options: BinaryWriteOptions): IBinaryWriter;
+}
+/**
+ * @generated MessageType for protobuf message bilibili.app.viewunite.v1.CM.Info5129
+ */
+export declare const CM_Info5129: CM_Info5129$Type;
 declare class ECodeConfig$Type extends MessageType<ECodeConfig> {
     constructor();
     create(value?: PartialMessage<ECodeConfig>): ECodeConfig;

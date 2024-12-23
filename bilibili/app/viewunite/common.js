@@ -6348,8 +6348,7 @@ class RelateCard$Type extends MessageType {
             { no: 13, name: "bangumi_ugc", kind: "message", oneof: "card", T: () => RelateBangumiUgcCard },
             { no: 14, name: "special", kind: "message", oneof: "card", T: () => RelateSpecial },
             { no: 10, name: "three_point", kind: "message", T: () => RelateThreePoint },
-            { no: 11, name: "cm_stock", kind: "message", T: () => Any },
-            { no: 12, name: "basic_info", kind: "message", T: () => CardBasicInfo }
+            { no: 11, name: "cm_stock", kind: "message", T: () => Any }
         ]);
     }
     create(value) {
@@ -6434,9 +6433,6 @@ class RelateCard$Type extends MessageType {
                 case /* google.protobuf.Any cm_stock */ 11:
                     message.cmStock = Any.internalBinaryRead(reader, reader.uint32(), options, message.cmStock);
                     break;
-                case /* bilibili.app.viewunite.common.CardBasicInfo basic_info */ 12:
-                    message.basicInfo = CardBasicInfo.internalBinaryRead(reader, reader.uint32(), options, message.basicInfo);
-                    break;
                 default:
                     let u = options.readUnknownField;
                     if (u === "throw")
@@ -6488,9 +6484,6 @@ class RelateCard$Type extends MessageType {
         /* google.protobuf.Any cm_stock = 11; */
         if (message.cmStock)
             Any.internalBinaryWrite(message.cmStock, writer.tag(11, WireType.LengthDelimited).fork(), options).join();
-        /* bilibili.app.viewunite.common.CardBasicInfo basic_info = 12; */
-        if (message.basicInfo)
-            CardBasicInfo.internalBinaryWrite(message.basicInfo, writer.tag(12, WireType.LengthDelimited).fork(), options).join();
         let u = options.writeUnknownFields;
         if (u !== false)
             (u == true ? UnknownFieldHandler.onWrite : u)(this.typeName, message, writer);

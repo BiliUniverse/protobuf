@@ -1220,7 +1220,7 @@ message RelateCard {
     // 
     google.protobuf.Any cm_stock = 11;
     // 
-    CardBasicInfo basic_info = 12;
+    // CardBasicInfo basic_info = 12;
 }
 
 // 视频详情下方推荐卡子类型

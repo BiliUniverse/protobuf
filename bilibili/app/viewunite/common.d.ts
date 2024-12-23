@@ -2888,12 +2888,6 @@ export interface RelateCard {
      * @generated from protobuf field: google.protobuf.Any cm_stock = 11;
      */
     cmStock?: Any;
-    /**
-     *
-     *
-     * @generated from protobuf field: bilibili.app.viewunite.common.CardBasicInfo basic_info = 12;
-     */
-    basicInfo?: CardBasicInfo;
 }
 /**
  * 视频详情下方推荐卡子类型: 广告推广
