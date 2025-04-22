@@ -154,6 +154,8 @@ message Tab {
     string tab_bg = 2;
     // 
     //TabControl danmaku_entrance = 3;
+    //
+    string tab_bg_pad = 4;
 }
 
 // 评论区/弹幕 Tab 控制
@@ -178,6 +180,8 @@ message TabModule {
         ReplyTab reply = 3;
         // 
         //bilibili.app.viewunite.common.ActivityTab activity_tab = 4;
+        //
+        //bilibili.app.viewunite.common.CatalogTab catalog = 5;
     }
 }
 
@@ -190,6 +194,8 @@ enum TabType {
     TAB_REPLY = 2;
     // OGV 活动信息 Tab
     TAB_OGV_ACTIVITY = 3;
+    // 目录标签
+    TAB_CATALOG = 4;
 }
 
 // 
