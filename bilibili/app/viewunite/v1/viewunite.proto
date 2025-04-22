@@ -127,9 +127,19 @@ message RelatesFeedReq {
 }
 
 // 
+message ReplyStyle {
+    // 
+    string badge_url = 1;
+    // 
+    string badge_text = 2;
+    // 
+    int64 badge_type = 3;
+}
+
+// 
 message ReplyTab {
     // 
-    //ReplyStyle reply_style = 1;
+    ReplyStyle reply_style = 1;
     // 
     string title = 2;
     // 
@@ -153,7 +163,7 @@ message Tab {
     // 
     string tab_bg = 2;
     // 
-    //TabControl danmaku_entrance = 3;
+    TabControl danmaku_entrance = 3;
     //
     string tab_bg_pad = 4;
 }

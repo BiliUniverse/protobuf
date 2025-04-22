@@ -257,12 +257,41 @@ export interface RelatesFeedReq {
 /**
  *
  *
+ * @generated from protobuf message bilibili.app.viewunite.v1.ReplyStyle
+ */
+export interface ReplyStyle {
+    /**
+     *
+     *
+     * @generated from protobuf field: string badge_url = 1;
+     */
+    badgeUrl: string;
+    /**
+     *
+     *
+     * @generated from protobuf field: string badge_text = 2;
+     */
+    badgeText: string;
+    /**
+     *
+     *
+     * @generated from protobuf field: int64 badge_type = 3;
+     */
+    badgeType: string;
+}
+/**
+ *
+ *
  * @generated from protobuf message bilibili.app.viewunite.v1.ReplyTab
  */
 export interface ReplyTab {
     /**
      *
-     * ReplyStyle reply_style = 1;
+     *
+     * @generated from protobuf field: bilibili.app.viewunite.v1.ReplyStyle reply_style = 1;
+     */
+    replyStyle?: ReplyStyle;
+    /**
      *
      *
      * @generated from protobuf field: string title = 2;
@@ -320,9 +349,11 @@ export interface Tab {
     tabBg: string;
     /**
      *
-     * TabControl danmaku_entrance = 3;
      *
-     *
+     * @generated from protobuf field: bilibili.app.viewunite.v1.TabControl danmaku_entrance = 3;
+     */
+    danmakuEntrance?: TabControl;
+    /**
      * @generated from protobuf field: string tab_bg_pad = 4;
      */
     tabBgPad: string;
@@ -691,6 +722,16 @@ declare class RelatesFeedReq$Type extends MessageType<RelatesFeedReq> {
  * @generated MessageType for protobuf message bilibili.app.viewunite.v1.RelatesFeedReq
  */
 export declare const RelatesFeedReq: RelatesFeedReq$Type;
+declare class ReplyStyle$Type extends MessageType<ReplyStyle> {
+    constructor();
+    create(value?: PartialMessage<ReplyStyle>): ReplyStyle;
+    internalBinaryRead(reader: IBinaryReader, length: number, options: BinaryReadOptions, target?: ReplyStyle): ReplyStyle;
+    internalBinaryWrite(message: ReplyStyle, writer: IBinaryWriter, options: BinaryWriteOptions): IBinaryWriter;
+}
+/**
+ * @generated MessageType for protobuf message bilibili.app.viewunite.v1.ReplyStyle
+ */
+export declare const ReplyStyle: ReplyStyle$Type;
 declare class ReplyTab$Type extends MessageType<ReplyTab> {
     constructor();
     create(value?: PartialMessage<ReplyTab>): ReplyTab;

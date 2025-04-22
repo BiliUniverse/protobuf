@@ -695,9 +695,73 @@ class RelatesFeedReq$Type extends MessageType {
  */
 export const RelatesFeedReq = new RelatesFeedReq$Type();
 // @generated message type with reflection information, may provide speed optimized methods
+class ReplyStyle$Type extends MessageType {
+    constructor() {
+        super("bilibili.app.viewunite.v1.ReplyStyle", [
+            { no: 1, name: "badge_url", kind: "scalar", T: 9 /*ScalarType.STRING*/ },
+            { no: 2, name: "badge_text", kind: "scalar", T: 9 /*ScalarType.STRING*/ },
+            { no: 3, name: "badge_type", kind: "scalar", T: 3 /*ScalarType.INT64*/ }
+        ]);
+    }
+    create(value) {
+        const message = globalThis.Object.create((this.messagePrototype));
+        message.badgeUrl = "";
+        message.badgeText = "";
+        message.badgeType = "0";
+        if (value !== undefined)
+            reflectionMergePartial(this, message, value);
+        return message;
+    }
+    internalBinaryRead(reader, length, options, target) {
+        let message = target ?? this.create(), end = reader.pos + length;
+        while (reader.pos < end) {
+            let [fieldNo, wireType] = reader.tag();
+            switch (fieldNo) {
+                case /* string badge_url */ 1:
+                    message.badgeUrl = reader.string();
+                    break;
+                case /* string badge_text */ 2:
+                    message.badgeText = reader.string();
+                    break;
+                case /* int64 badge_type */ 3:
+                    message.badgeType = reader.int64().toString();
+                    break;
+                default:
+                    let u = options.readUnknownField;
+                    if (u === "throw")
+                        throw new globalThis.Error(`Unknown field ${fieldNo} (wire type ${wireType}) for ${this.typeName}`);
+                    let d = reader.skip(wireType);
+                    if (u !== false)
+                        (u === true ? UnknownFieldHandler.onRead : u)(this.typeName, message, fieldNo, wireType, d);
+            }
+        }
+        return message;
+    }
+    internalBinaryWrite(message, writer, options) {
+        /* string badge_url = 1; */
+        if (message.badgeUrl !== "")
+            writer.tag(1, WireType.LengthDelimited).string(message.badgeUrl);
+        /* string badge_text = 2; */
+        if (message.badgeText !== "")
+            writer.tag(2, WireType.LengthDelimited).string(message.badgeText);
+        /* int64 badge_type = 3; */
+        if (message.badgeType !== "0")
+            writer.tag(3, WireType.Varint).int64(message.badgeType);
+        let u = options.writeUnknownFields;
+        if (u !== false)
+            (u == true ? UnknownFieldHandler.onWrite : u)(this.typeName, message, writer);
+        return writer;
+    }
+}
+/**
+ * @generated MessageType for protobuf message bilibili.app.viewunite.v1.ReplyStyle
+ */
+export const ReplyStyle = new ReplyStyle$Type();
+// @generated message type with reflection information, may provide speed optimized methods
 class ReplyTab$Type extends MessageType {
     constructor() {
         super("bilibili.app.viewunite.v1.ReplyTab", [
+            { no: 1, name: "reply_style", kind: "message", T: () => ReplyStyle },
             { no: 2, name: "title", kind: "scalar", T: 9 /*ScalarType.STRING*/ },
             { no: 3, name: "control", kind: "message", T: () => TabControl }
         ]);
@@ -714,6 +778,9 @@ class ReplyTab$Type extends MessageType {
         while (reader.pos < end) {
             let [fieldNo, wireType] = reader.tag();
             switch (fieldNo) {
+                case /* bilibili.app.viewunite.v1.ReplyStyle reply_style */ 1:
+                    message.replyStyle = ReplyStyle.internalBinaryRead(reader, reader.uint32(), options, message.replyStyle);
+                    break;
                 case /* string title */ 2:
                     message.title = reader.string();
                     break;
@@ -732,6 +799,9 @@ class ReplyTab$Type extends MessageType {
         return message;
     }
     internalBinaryWrite(message, writer, options) {
+        /* bilibili.app.viewunite.v1.ReplyStyle reply_style = 1; */
+        if (message.replyStyle)
+            ReplyStyle.internalBinaryWrite(message.replyStyle, writer.tag(1, WireType.LengthDelimited).fork(), options).join();
         /* string title = 2; */
         if (message.title !== "")
             writer.tag(2, WireType.LengthDelimited).string(message.title);
@@ -817,6 +887,7 @@ class Tab$Type extends MessageType {
         super("bilibili.app.viewunite.v1.Tab", [
             { no: 1, name: "tab_module", kind: "message", repeat: 1 /*RepeatType.PACKED*/, T: () => TabModule },
             { no: 2, name: "tab_bg", kind: "scalar", T: 9 /*ScalarType.STRING*/ },
+            { no: 3, name: "danmaku_entrance", kind: "message", T: () => TabControl },
             { no: 4, name: "tab_bg_pad", kind: "scalar", T: 9 /*ScalarType.STRING*/ }
         ]);
     }
@@ -840,6 +911,9 @@ class Tab$Type extends MessageType {
                 case /* string tab_bg */ 2:
                     message.tabBg = reader.string();
                     break;
+                case /* bilibili.app.viewunite.v1.TabControl danmaku_entrance */ 3:
+                    message.danmakuEntrance = TabControl.internalBinaryRead(reader, reader.uint32(), options, message.danmakuEntrance);
+                    break;
                 case /* string tab_bg_pad */ 4:
                     message.tabBgPad = reader.string();
                     break;
@@ -861,6 +935,9 @@ class Tab$Type extends MessageType {
         /* string tab_bg = 2; */
         if (message.tabBg !== "")
             writer.tag(2, WireType.LengthDelimited).string(message.tabBg);
+        /* bilibili.app.viewunite.v1.TabControl danmaku_entrance = 3; */
+        if (message.danmakuEntrance)
+            TabControl.internalBinaryWrite(message.danmakuEntrance, writer.tag(3, WireType.LengthDelimited).fork(), options).join();
         /* string tab_bg_pad = 4; */
         if (message.tabBgPad !== "")
             writer.tag(4, WireType.LengthDelimited).string(message.tabBgPad);
