@@ -12,9 +12,9 @@
     "Dynamic": "protoc --ts_out ./ --ts_opt generate_dependencies --ts_opt long_type_number --ts_opt output_javascript --proto_path ./ bilibili/app/dynamic/v2/dynamic.proto"
 	},
   "devDependencies": {
-    "@protobuf-ts/plugin": "^2.9.4"
+    "@protobuf-ts/plugin": "^2.9.6"
   },
   "dependencies": {
-    "@protobuf-ts/runtime": "^2.9.4"
+    "@protobuf-ts/runtime": "^2.9.6"
   }
 }
