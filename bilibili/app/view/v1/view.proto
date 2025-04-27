@@ -131,8 +131,28 @@ message Relate {
     CM cm = 28;
 }
 
+// 免流广告相关
 message TFInfoReply {
+    // id
+    int64 tips_id = 1;
+    // 内容
+    TFToast tf_toast = 2;
+    // 免流面板
+    TFPanelCustomized tf_panel_customized = 3;
+    //
+    bool user_flag_new = 4;
+}
 
+// 免流广告相关
+message TFToast {
+    // 按钮文本
+    string btn_text = 1;
+    // 按钮链接
+    string btn_link = 2;
+    // 标题
+    string title = 3;
+    // 描述
+    string description = 4;
 }
 
 // 免流面板定制

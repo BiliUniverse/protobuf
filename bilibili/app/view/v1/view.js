@@ -339,10 +339,17 @@ export const Relate = new Relate$Type();
 // @generated message type with reflection information, may provide speed optimized methods
 class TFInfoReply$Type extends MessageType {
     constructor() {
-        super("bilibili.app.view.v1.TFInfoReply", []);
+        super("bilibili.app.view.v1.TFInfoReply", [
+            { no: 1, name: "tips_id", kind: "scalar", T: 3 /*ScalarType.INT64*/ },
+            { no: 2, name: "tf_toast", kind: "message", T: () => TFToast },
+            { no: 3, name: "tf_panel_customized", kind: "message", T: () => TFPanelCustomized },
+            { no: 4, name: "user_flag_new", kind: "scalar", T: 8 /*ScalarType.BOOL*/ }
+        ]);
     }
     create(value) {
         const message = globalThis.Object.create((this.messagePrototype));
+        message.tipsId = "0";
+        message.userFlagNew = false;
         if (value !== undefined)
             reflectionMergePartial(this, message, value);
         return message;
@@ -352,6 +359,18 @@ class TFInfoReply$Type extends MessageType {
         while (reader.pos < end) {
             let [fieldNo, wireType] = reader.tag();
             switch (fieldNo) {
+                case /* int64 tips_id */ 1:
+                    message.tipsId = reader.int64().toString();
+                    break;
+                case /* bilibili.app.view.v1.TFToast tf_toast */ 2:
+                    message.tfToast = TFToast.internalBinaryRead(reader, reader.uint32(), options, message.tfToast);
+                    break;
+                case /* bilibili.app.view.v1.TFPanelCustomized tf_panel_customized */ 3:
+                    message.tfPanelCustomized = TFPanelCustomized.internalBinaryRead(reader, reader.uint32(), options, message.tfPanelCustomized);
+                    break;
+                case /* bool user_flag_new */ 4:
+                    message.userFlagNew = reader.bool();
+                    break;
                 default:
                     let u = options.readUnknownField;
                     if (u === "throw")
@@ -364,6 +383,18 @@ class TFInfoReply$Type extends MessageType {
         return message;
     }
     internalBinaryWrite(message, writer, options) {
+        /* int64 tips_id = 1; */
+        if (message.tipsId !== "0")
+            writer.tag(1, WireType.Varint).int64(message.tipsId);
+        /* bilibili.app.view.v1.TFToast tf_toast = 2; */
+        if (message.tfToast)
+            TFToast.internalBinaryWrite(message.tfToast, writer.tag(2, WireType.LengthDelimited).fork(), options).join();
+        /* bilibili.app.view.v1.TFPanelCustomized tf_panel_customized = 3; */
+        if (message.tfPanelCustomized)
+            TFPanelCustomized.internalBinaryWrite(message.tfPanelCustomized, writer.tag(3, WireType.LengthDelimited).fork(), options).join();
+        /* bool user_flag_new = 4; */
+        if (message.userFlagNew !== false)
+            writer.tag(4, WireType.Varint).bool(message.userFlagNew);
         let u = options.writeUnknownFields;
         if (u !== false)
             (u == true ? UnknownFieldHandler.onWrite : u)(this.typeName, message, writer);
@@ -374,6 +405,77 @@ class TFInfoReply$Type extends MessageType {
  * @generated MessageType for protobuf message bilibili.app.view.v1.TFInfoReply
  */
 export const TFInfoReply = new TFInfoReply$Type();
+// @generated message type with reflection information, may provide speed optimized methods
+class TFToast$Type extends MessageType {
+    constructor() {
+        super("bilibili.app.view.v1.TFToast", [
+            { no: 1, name: "btn_text", kind: "scalar", T: 9 /*ScalarType.STRING*/ },
+            { no: 2, name: "btn_link", kind: "scalar", T: 9 /*ScalarType.STRING*/ },
+            { no: 3, name: "title", kind: "scalar", T: 9 /*ScalarType.STRING*/ },
+            { no: 4, name: "description", kind: "scalar", T: 9 /*ScalarType.STRING*/ }
+        ]);
+    }
+    create(value) {
+        const message = globalThis.Object.create((this.messagePrototype));
+        message.btnText = "";
+        message.btnLink = "";
+        message.title = "";
+        message.description = "";
+        if (value !== undefined)
+            reflectionMergePartial(this, message, value);
+        return message;
+    }
+    internalBinaryRead(reader, length, options, target) {
+        let message = target ?? this.create(), end = reader.pos + length;
+        while (reader.pos < end) {
+            let [fieldNo, wireType] = reader.tag();
+            switch (fieldNo) {
+                case /* string btn_text */ 1:
+                    message.btnText = reader.string();
+                    break;
+                case /* string btn_link */ 2:
+                    message.btnLink = reader.string();
+                    break;
+                case /* string title */ 3:
+                    message.title = reader.string();
+                    break;
+                case /* string description */ 4:
+                    message.description = reader.string();
+                    break;
+                default:
+                    let u = options.readUnknownField;
+                    if (u === "throw")
+                        throw new globalThis.Error(`Unknown field ${fieldNo} (wire type ${wireType}) for ${this.typeName}`);
+                    let d = reader.skip(wireType);
+                    if (u !== false)
+                        (u === true ? UnknownFieldHandler.onRead : u)(this.typeName, message, fieldNo, wireType, d);
+            }
+        }
+        return message;
+    }
+    internalBinaryWrite(message, writer, options) {
+        /* string btn_text = 1; */
+        if (message.btnText !== "")
+            writer.tag(1, WireType.LengthDelimited).string(message.btnText);
+        /* string btn_link = 2; */
+        if (message.btnLink !== "")
+            writer.tag(2, WireType.LengthDelimited).string(message.btnLink);
+        /* string title = 3; */
+        if (message.title !== "")
+            writer.tag(3, WireType.LengthDelimited).string(message.title);
+        /* string description = 4; */
+        if (message.description !== "")
+            writer.tag(4, WireType.LengthDelimited).string(message.description);
+        let u = options.writeUnknownFields;
+        if (u !== false)
+            (u == true ? UnknownFieldHandler.onWrite : u)(this.typeName, message, writer);
+        return writer;
+    }
+}
+/**
+ * @generated MessageType for protobuf message bilibili.app.view.v1.TFToast
+ */
+export const TFToast = new TFToast$Type();
 // @generated message type with reflection information, may provide speed optimized methods
 class TFPanelCustomized$Type extends MessageType {
     constructor() {
