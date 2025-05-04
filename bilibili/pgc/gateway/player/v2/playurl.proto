@@ -723,19 +723,19 @@ message PlayViewBusinessInfo {
 // 播放页信息-响应
 message PlayViewReply {
     // 视频流信息
-    VideoInfo video_info = 1;
+    // VideoInfo video_info = 1;
     // 播放控件用户自定义配置
-    PlayAbilityConf play_conf = 2;
+    // PlayAbilityConf play_conf = 2;
     // 业务需要的其他信息
-    PlayViewBusinessInfo business = 3;
+    // PlayViewBusinessInfo business = 3;
     // 事件
-    Event event = 4;
+    // Event event = 4;
     // 展示信息
     ViewInfo view_info = 5;
     // 自定义配置扩展信息
     PlayAbilityExtConf play_ext_conf = 6;
     // 播放扩展信息
-    PlayExtInfo play_ext_info = 7;
+    // PlayExtInfo play_ext_info = 7;
 }
 
 // 播放页信息-请求
@@ -1082,31 +1082,31 @@ message VideoInfo {
 // 展示信息
 message ViewInfo {
     // 弹窗
-    Dialog dialog = 1;
+    // Dialog dialog = 1;
     // Toast
-    Toast toast = 2;
+    // Toast toast = 2;
     // 优惠券信息
-    CouponInfo coupon_info = 3;
+    // CouponInfo coupon_info = 3;
     // 未支付剧集ID列表
-    repeated int64 demand_no_pay_epids = 4;
+    // repeated int64 demand_no_pay_epids = 4;
     // 结束页
-    EndPage end_page = 5;
+    // EndPage end_page = 5;
     // 扩展配置
-    map<string, bool> exp_config = 6;
+    // map<string, bool> exp_config = 6;
     // 弹窗
-    PopWin pop_win = 7;
+    // PopWin pop_win = 7;
     // 试看提示栏
     PromptBar try_watch_prompt_bar = 8;
     // 支付提示信息
-    PayTip pay_tip = 9;
+    // PayTip pay_tip = 9;
     // 高清试看提示信息
-    HighDefinitionTrialInfo high_definition_trial_info = 10;
+    // HighDefinitionTrialInfo high_definition_trial_info = 10;
     // 弹窗扩展
-    map<string, Dialog> ext_dialog = 11;
+    // map<string, Dialog> ext_dialog = 11;
     // 动画
-    Animation animation = 12;
+    // Animation animation = 12;
     // Toast扩展
-    map<string, Toast> ext_toast = 13;
+    // map<string, Toast> ext_toast = 13;
 }
 
 // 观看进度信息

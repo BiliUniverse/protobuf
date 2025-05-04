@@ -365,7 +365,7 @@ class AudioMaterialProto$Type extends MessageType {
             { no: 4, name: "person_id", kind: "scalar", T: 4 /*ScalarType.UINT64*/ },
             { no: 5, name: "person_name", kind: "scalar", T: 9 /*ScalarType.STRING*/ },
             { no: 6, name: "person_avatar", kind: "scalar", T: 9 /*ScalarType.STRING*/ },
-            { no: 7, name: "audio", kind: "message", repeat: 1 /*RepeatType.PACKED*/, T: () => DashItem }
+            { no: 7, name: "audio", kind: "message", repeat: 2 /*RepeatType.UNPACKED*/, T: () => DashItem }
         ]);
     }
     create(value) {
@@ -1564,13 +1564,13 @@ class Dialog$Type extends MessageType {
             { no: 6, name: "title", kind: "message", T: () => TextInfo },
             { no: 7, name: "subtitle", kind: "message", T: () => TextInfo },
             { no: 8, name: "image", kind: "message", T: () => ImageInfo },
-            { no: 9, name: "button", kind: "message", repeat: 1 /*RepeatType.PACKED*/, T: () => ButtonInfo },
+            { no: 9, name: "button", kind: "message", repeat: 2 /*RepeatType.UNPACKED*/, T: () => ButtonInfo },
             { no: 10, name: "bottom_desc", kind: "message", T: () => ButtonInfo },
             { no: 11, name: "report", kind: "message", T: () => Report },
             { no: 12, name: "count_down_sec", kind: "scalar", T: 5 /*ScalarType.INT32*/ },
             { no: 13, name: "right_bottom_desc", kind: "message", T: () => TextInfo },
-            { no: 14, name: "bottom_display", kind: "message", repeat: 1 /*RepeatType.PACKED*/, T: () => BottomDisplay },
-            { no: 15, name: "play_list", kind: "message", repeat: 1 /*RepeatType.PACKED*/, T: () => PlayList }
+            { no: 14, name: "bottom_display", kind: "message", repeat: 2 /*RepeatType.UNPACKED*/, T: () => BottomDisplay },
+            { no: 15, name: "play_list", kind: "message", repeat: 2 /*RepeatType.UNPACKED*/, T: () => PlayList }
         ]);
     }
     create(value) {
@@ -2922,7 +2922,7 @@ class PayTip$Type extends MessageType {
             { no: 11, name: "text_color", kind: "scalar", T: 9 /*ScalarType.STRING*/ },
             { no: 12, name: "text_night_color", kind: "scalar", T: 9 /*ScalarType.STRING*/ },
             { no: 13, name: "view_start_time", kind: "scalar", T: 3 /*ScalarType.INT64*/ },
-            { no: 14, name: "button", kind: "message", repeat: 1 /*RepeatType.PACKED*/, T: () => ButtonInfo },
+            { no: 14, name: "button", kind: "message", repeat: 2 /*RepeatType.UNPACKED*/, T: () => ButtonInfo },
             { no: 15, name: "url_open_type", kind: "scalar", T: 5 /*ScalarType.INT32*/ },
             { no: 16, name: "report", kind: "message", T: () => Report },
             { no: 17, name: "angle_style", kind: "scalar", T: 5 /*ScalarType.INT32*/ },
@@ -3488,7 +3488,7 @@ class PlayDubbingInfo$Type extends MessageType {
     constructor() {
         super("bilibili.pgc.gateway.player.v2.PlayDubbingInfo", [
             { no: 1, name: "background_audio", kind: "message", T: () => AudioMaterialProto },
-            { no: 2, name: "role_audio_list", kind: "message", repeat: 1 /*RepeatType.PACKED*/, T: () => RoleAudioProto },
+            { no: 2, name: "role_audio_list", kind: "message", repeat: 2 /*RepeatType.UNPACKED*/, T: () => RoleAudioProto },
             { no: 3, name: "guide_text", kind: "scalar", T: 9 /*ScalarType.STRING*/ }
         ]);
     }
@@ -3678,7 +3678,7 @@ class PlayViewBusinessInfo$Type extends MessageType {
             { no: 3, name: "marlin_token", kind: "scalar", T: 9 /*ScalarType.STRING*/ },
             { no: 4, name: "playback_speed_color", kind: "scalar", T: 9 /*ScalarType.STRING*/ },
             { no: 5, name: "continue_play_info", kind: "message", T: () => ContinuePlayInfo },
-            { no: 6, name: "clip_info", kind: "message", repeat: 1 /*RepeatType.PACKED*/, T: () => ClipInfo },
+            { no: 6, name: "clip_info", kind: "message", repeat: 2 /*RepeatType.UNPACKED*/, T: () => ClipInfo },
             { no: 7, name: "inline_type", kind: "enum", T: () => ["bilibili.pgc.gateway.player.v2.InlineType", InlineType] },
             { no: 8, name: "ep_whole_duration", kind: "scalar", T: 5 /*ScalarType.INT32*/ },
             { no: 9, name: "dimension", kind: "message", T: () => Dimension },
@@ -3902,13 +3902,8 @@ export const PlayViewBusinessInfo = new PlayViewBusinessInfo$Type();
 class PlayViewReply$Type extends MessageType {
     constructor() {
         super("bilibili.pgc.gateway.player.v2.PlayViewReply", [
-            { no: 1, name: "video_info", kind: "message", T: () => VideoInfo },
-            { no: 2, name: "play_conf", kind: "message", T: () => PlayAbilityConf },
-            { no: 3, name: "business", kind: "message", T: () => PlayViewBusinessInfo },
-            { no: 4, name: "event", kind: "message", T: () => Event },
             { no: 5, name: "view_info", kind: "message", T: () => ViewInfo },
-            { no: 6, name: "play_ext_conf", kind: "message", T: () => PlayAbilityExtConf },
-            { no: 7, name: "play_ext_info", kind: "message", T: () => PlayExtInfo }
+            { no: 6, name: "play_ext_conf", kind: "message", T: () => PlayAbilityExtConf }
         ]);
     }
     create(value) {
@@ -3922,26 +3917,11 @@ class PlayViewReply$Type extends MessageType {
         while (reader.pos < end) {
             let [fieldNo, wireType] = reader.tag();
             switch (fieldNo) {
-                case /* bilibili.pgc.gateway.player.v2.VideoInfo video_info */ 1:
-                    message.videoInfo = VideoInfo.internalBinaryRead(reader, reader.uint32(), options, message.videoInfo);
-                    break;
-                case /* bilibili.pgc.gateway.player.v2.PlayAbilityConf play_conf */ 2:
-                    message.playConf = PlayAbilityConf.internalBinaryRead(reader, reader.uint32(), options, message.playConf);
-                    break;
-                case /* bilibili.pgc.gateway.player.v2.PlayViewBusinessInfo business */ 3:
-                    message.business = PlayViewBusinessInfo.internalBinaryRead(reader, reader.uint32(), options, message.business);
-                    break;
-                case /* bilibili.pgc.gateway.player.v2.Event event */ 4:
-                    message.event = Event.internalBinaryRead(reader, reader.uint32(), options, message.event);
-                    break;
                 case /* bilibili.pgc.gateway.player.v2.ViewInfo view_info */ 5:
                     message.viewInfo = ViewInfo.internalBinaryRead(reader, reader.uint32(), options, message.viewInfo);
                     break;
                 case /* bilibili.pgc.gateway.player.v2.PlayAbilityExtConf play_ext_conf */ 6:
                     message.playExtConf = PlayAbilityExtConf.internalBinaryRead(reader, reader.uint32(), options, message.playExtConf);
-                    break;
-                case /* bilibili.pgc.gateway.player.v2.PlayExtInfo play_ext_info */ 7:
-                    message.playExtInfo = PlayExtInfo.internalBinaryRead(reader, reader.uint32(), options, message.playExtInfo);
                     break;
                 default:
                     let u = options.readUnknownField;
@@ -3955,27 +3935,12 @@ class PlayViewReply$Type extends MessageType {
         return message;
     }
     internalBinaryWrite(message, writer, options) {
-        /* bilibili.pgc.gateway.player.v2.VideoInfo video_info = 1; */
-        if (message.videoInfo)
-            VideoInfo.internalBinaryWrite(message.videoInfo, writer.tag(1, WireType.LengthDelimited).fork(), options).join();
-        /* bilibili.pgc.gateway.player.v2.PlayAbilityConf play_conf = 2; */
-        if (message.playConf)
-            PlayAbilityConf.internalBinaryWrite(message.playConf, writer.tag(2, WireType.LengthDelimited).fork(), options).join();
-        /* bilibili.pgc.gateway.player.v2.PlayViewBusinessInfo business = 3; */
-        if (message.business)
-            PlayViewBusinessInfo.internalBinaryWrite(message.business, writer.tag(3, WireType.LengthDelimited).fork(), options).join();
-        /* bilibili.pgc.gateway.player.v2.Event event = 4; */
-        if (message.event)
-            Event.internalBinaryWrite(message.event, writer.tag(4, WireType.LengthDelimited).fork(), options).join();
         /* bilibili.pgc.gateway.player.v2.ViewInfo view_info = 5; */
         if (message.viewInfo)
             ViewInfo.internalBinaryWrite(message.viewInfo, writer.tag(5, WireType.LengthDelimited).fork(), options).join();
         /* bilibili.pgc.gateway.player.v2.PlayAbilityExtConf play_ext_conf = 6; */
         if (message.playExtConf)
             PlayAbilityExtConf.internalBinaryWrite(message.playExtConf, writer.tag(6, WireType.LengthDelimited).fork(), options).join();
-        /* bilibili.pgc.gateway.player.v2.PlayExtInfo play_ext_info = 7; */
-        if (message.playExtInfo)
-            PlayExtInfo.internalBinaryWrite(message.playExtInfo, writer.tag(7, WireType.LengthDelimited).fork(), options).join();
         let u = options.writeUnknownFields;
         if (u !== false)
             (u == true ? UnknownFieldHandler.onWrite : u)(this.typeName, message, writer);
@@ -4181,8 +4146,8 @@ class PopWin$Type extends MessageType {
     constructor() {
         super("bilibili.pgc.gateway.player.v2.PopWin", [
             { no: 1, name: "title", kind: "scalar", T: 9 /*ScalarType.STRING*/ },
-            { no: 2, name: "coupon", kind: "message", repeat: 1 /*RepeatType.PACKED*/, T: () => Coupon },
-            { no: 3, name: "button", kind: "message", repeat: 1 /*RepeatType.PACKED*/, T: () => ButtonInfo },
+            { no: 2, name: "coupon", kind: "message", repeat: 2 /*RepeatType.UNPACKED*/, T: () => Coupon },
+            { no: 3, name: "button", kind: "message", repeat: 2 /*RepeatType.UNPACKED*/, T: () => ButtonInfo },
             { no: 4, name: "bottom_text", kind: "scalar", T: 9 /*ScalarType.STRING*/ },
             { no: 5, name: "pop_title", kind: "message", T: () => TextInfo },
             { no: 6, name: "subtitle", kind: "message", T: () => TextInfo },
@@ -4293,7 +4258,7 @@ class PromptBar$Type extends MessageType {
             { no: 3, name: "sub_title_icon", kind: "scalar", T: 9 /*ScalarType.STRING*/ },
             { no: 4, name: "bg_image", kind: "scalar", T: 9 /*ScalarType.STRING*/ },
             { no: 5, name: "bg_gradient_color", kind: "message", T: () => GradientColor },
-            { no: 6, name: "button", kind: "message", repeat: 1 /*RepeatType.PACKED*/, T: () => ButtonInfo },
+            { no: 6, name: "button", kind: "message", repeat: 2 /*RepeatType.UNPACKED*/, T: () => ButtonInfo },
             { no: 7, name: "report", kind: "message", T: () => Report },
             { no: 8, name: "full_screen_ip_icon", kind: "scalar", T: 9 /*ScalarType.STRING*/ },
             { no: 9, name: "full_screen_bg_gradient_color", kind: "message", T: () => GradientColor }
@@ -4696,7 +4661,7 @@ class RoleAudioProto$Type extends MessageType {
             { no: 1, name: "role_id", kind: "scalar", T: 3 /*ScalarType.INT64*/ },
             { no: 2, name: "role_name", kind: "scalar", T: 9 /*ScalarType.STRING*/ },
             { no: 3, name: "role_avatar", kind: "scalar", T: 9 /*ScalarType.STRING*/ },
-            { no: 4, name: "audio_material_list", kind: "message", repeat: 1 /*RepeatType.PACKED*/, T: () => AudioMaterialProto }
+            { no: 4, name: "audio_material_list", kind: "message", repeat: 2 /*RepeatType.UNPACKED*/, T: () => AudioMaterialProto }
         ]);
     }
     create(value) {
@@ -4992,7 +4957,7 @@ export const SeasonInfo = new SeasonInfo$Type();
 class SegmentVideo$Type extends MessageType {
     constructor() {
         super("bilibili.pgc.gateway.player.v2.SegmentVideo", [
-            { no: 1, name: "segment", kind: "message", repeat: 1 /*RepeatType.PACKED*/, T: () => ResponseUrl }
+            { no: 1, name: "segment", kind: "message", repeat: 2 /*RepeatType.UNPACKED*/, T: () => ResponseUrl }
         ]);
     }
     create(value) {
@@ -5688,8 +5653,8 @@ class VideoInfo$Type extends MessageType {
             { no: 2, name: "format", kind: "scalar", T: 9 /*ScalarType.STRING*/ },
             { no: 3, name: "timelength", kind: "scalar", T: 4 /*ScalarType.UINT64*/ },
             { no: 4, name: "video_codecid", kind: "scalar", T: 13 /*ScalarType.UINT32*/ },
-            { no: 5, name: "stream_list", kind: "message", repeat: 1 /*RepeatType.PACKED*/, T: () => Stream },
-            { no: 6, name: "dash_audio", kind: "message", repeat: 1 /*RepeatType.PACKED*/, T: () => DashItem },
+            { no: 5, name: "stream_list", kind: "message", repeat: 2 /*RepeatType.UNPACKED*/, T: () => Stream },
+            { no: 6, name: "dash_audio", kind: "message", repeat: 2 /*RepeatType.UNPACKED*/, T: () => DashItem },
             { no: 7, name: "dolby", kind: "message", T: () => DolbyItem }
         ]);
     }
@@ -5778,27 +5743,11 @@ export const VideoInfo = new VideoInfo$Type();
 class ViewInfo$Type extends MessageType {
     constructor() {
         super("bilibili.pgc.gateway.player.v2.ViewInfo", [
-            { no: 1, name: "dialog", kind: "message", T: () => Dialog },
-            { no: 2, name: "toast", kind: "message", T: () => Toast },
-            { no: 3, name: "coupon_info", kind: "message", T: () => CouponInfo },
-            { no: 4, name: "demand_no_pay_epids", kind: "scalar", repeat: 1 /*RepeatType.PACKED*/, T: 3 /*ScalarType.INT64*/ },
-            { no: 5, name: "end_page", kind: "message", T: () => EndPage },
-            { no: 6, name: "exp_config", kind: "map", K: 9 /*ScalarType.STRING*/, V: { kind: "scalar", T: 8 /*ScalarType.BOOL*/ } },
-            { no: 7, name: "pop_win", kind: "message", T: () => PopWin },
-            { no: 8, name: "try_watch_prompt_bar", kind: "message", T: () => PromptBar },
-            { no: 9, name: "pay_tip", kind: "message", T: () => PayTip },
-            { no: 10, name: "high_definition_trial_info", kind: "message", T: () => HighDefinitionTrialInfo },
-            { no: 11, name: "ext_dialog", kind: "map", K: 9 /*ScalarType.STRING*/, V: { kind: "message", T: () => Dialog } },
-            { no: 12, name: "animation", kind: "message", T: () => Animation },
-            { no: 13, name: "ext_toast", kind: "map", K: 9 /*ScalarType.STRING*/, V: { kind: "message", T: () => Toast } }
+            { no: 8, name: "try_watch_prompt_bar", kind: "message", T: () => PromptBar }
         ]);
     }
     create(value) {
         const message = globalThis.Object.create((this.messagePrototype));
-        message.demandNoPayEpids = [];
-        message.expConfig = {};
-        message.extDialog = {};
-        message.extToast = {};
         if (value !== undefined)
             reflectionMergePartial(this, message, value);
         return message;
@@ -5808,48 +5757,8 @@ class ViewInfo$Type extends MessageType {
         while (reader.pos < end) {
             let [fieldNo, wireType] = reader.tag();
             switch (fieldNo) {
-                case /* bilibili.pgc.gateway.player.v2.Dialog dialog */ 1:
-                    message.dialog = Dialog.internalBinaryRead(reader, reader.uint32(), options, message.dialog);
-                    break;
-                case /* bilibili.pgc.gateway.player.v2.Toast toast */ 2:
-                    message.toast = Toast.internalBinaryRead(reader, reader.uint32(), options, message.toast);
-                    break;
-                case /* bilibili.pgc.gateway.player.v2.CouponInfo coupon_info */ 3:
-                    message.couponInfo = CouponInfo.internalBinaryRead(reader, reader.uint32(), options, message.couponInfo);
-                    break;
-                case /* repeated int64 demand_no_pay_epids */ 4:
-                    if (wireType === WireType.LengthDelimited)
-                        for (let e = reader.int32() + reader.pos; reader.pos < e;)
-                            message.demandNoPayEpids.push(reader.int64().toString());
-                    else
-                        message.demandNoPayEpids.push(reader.int64().toString());
-                    break;
-                case /* bilibili.pgc.gateway.player.v2.EndPage end_page */ 5:
-                    message.endPage = EndPage.internalBinaryRead(reader, reader.uint32(), options, message.endPage);
-                    break;
-                case /* map<string, bool> exp_config */ 6:
-                    this.binaryReadMap6(message.expConfig, reader, options);
-                    break;
-                case /* bilibili.pgc.gateway.player.v2.PopWin pop_win */ 7:
-                    message.popWin = PopWin.internalBinaryRead(reader, reader.uint32(), options, message.popWin);
-                    break;
                 case /* bilibili.pgc.gateway.player.v2.PromptBar try_watch_prompt_bar */ 8:
                     message.tryWatchPromptBar = PromptBar.internalBinaryRead(reader, reader.uint32(), options, message.tryWatchPromptBar);
-                    break;
-                case /* bilibili.pgc.gateway.player.v2.PayTip pay_tip */ 9:
-                    message.payTip = PayTip.internalBinaryRead(reader, reader.uint32(), options, message.payTip);
-                    break;
-                case /* bilibili.pgc.gateway.player.v2.HighDefinitionTrialInfo high_definition_trial_info */ 10:
-                    message.highDefinitionTrialInfo = HighDefinitionTrialInfo.internalBinaryRead(reader, reader.uint32(), options, message.highDefinitionTrialInfo);
-                    break;
-                case /* map<string, bilibili.pgc.gateway.player.v2.Dialog> ext_dialog */ 11:
-                    this.binaryReadMap11(message.extDialog, reader, options);
-                    break;
-                case /* bilibili.pgc.gateway.player.v2.Animation animation */ 12:
-                    message.animation = Animation.internalBinaryRead(reader, reader.uint32(), options, message.animation);
-                    break;
-                case /* map<string, bilibili.pgc.gateway.player.v2.Toast> ext_toast */ 13:
-                    this.binaryReadMap13(message.extToast, reader, options);
                     break;
                 default:
                     let u = options.readUnknownField;
@@ -5862,106 +5771,10 @@ class ViewInfo$Type extends MessageType {
         }
         return message;
     }
-    binaryReadMap6(map, reader, options) {
-        let len = reader.uint32(), end = reader.pos + len, key, val;
-        while (reader.pos < end) {
-            let [fieldNo, wireType] = reader.tag();
-            switch (fieldNo) {
-                case 1:
-                    key = reader.string();
-                    break;
-                case 2:
-                    val = reader.bool();
-                    break;
-                default: throw new globalThis.Error("unknown map entry field for field bilibili.pgc.gateway.player.v2.ViewInfo.exp_config");
-            }
-        }
-        map[key ?? ""] = val ?? false;
-    }
-    binaryReadMap11(map, reader, options) {
-        let len = reader.uint32(), end = reader.pos + len, key, val;
-        while (reader.pos < end) {
-            let [fieldNo, wireType] = reader.tag();
-            switch (fieldNo) {
-                case 1:
-                    key = reader.string();
-                    break;
-                case 2:
-                    val = Dialog.internalBinaryRead(reader, reader.uint32(), options);
-                    break;
-                default: throw new globalThis.Error("unknown map entry field for field bilibili.pgc.gateway.player.v2.ViewInfo.ext_dialog");
-            }
-        }
-        map[key ?? ""] = val ?? Dialog.create();
-    }
-    binaryReadMap13(map, reader, options) {
-        let len = reader.uint32(), end = reader.pos + len, key, val;
-        while (reader.pos < end) {
-            let [fieldNo, wireType] = reader.tag();
-            switch (fieldNo) {
-                case 1:
-                    key = reader.string();
-                    break;
-                case 2:
-                    val = Toast.internalBinaryRead(reader, reader.uint32(), options);
-                    break;
-                default: throw new globalThis.Error("unknown map entry field for field bilibili.pgc.gateway.player.v2.ViewInfo.ext_toast");
-            }
-        }
-        map[key ?? ""] = val ?? Toast.create();
-    }
     internalBinaryWrite(message, writer, options) {
-        /* bilibili.pgc.gateway.player.v2.Dialog dialog = 1; */
-        if (message.dialog)
-            Dialog.internalBinaryWrite(message.dialog, writer.tag(1, WireType.LengthDelimited).fork(), options).join();
-        /* bilibili.pgc.gateway.player.v2.Toast toast = 2; */
-        if (message.toast)
-            Toast.internalBinaryWrite(message.toast, writer.tag(2, WireType.LengthDelimited).fork(), options).join();
-        /* bilibili.pgc.gateway.player.v2.CouponInfo coupon_info = 3; */
-        if (message.couponInfo)
-            CouponInfo.internalBinaryWrite(message.couponInfo, writer.tag(3, WireType.LengthDelimited).fork(), options).join();
-        /* repeated int64 demand_no_pay_epids = 4; */
-        if (message.demandNoPayEpids.length) {
-            writer.tag(4, WireType.LengthDelimited).fork();
-            for (let i = 0; i < message.demandNoPayEpids.length; i++)
-                writer.int64(message.demandNoPayEpids[i]);
-            writer.join();
-        }
-        /* bilibili.pgc.gateway.player.v2.EndPage end_page = 5; */
-        if (message.endPage)
-            EndPage.internalBinaryWrite(message.endPage, writer.tag(5, WireType.LengthDelimited).fork(), options).join();
-        /* map<string, bool> exp_config = 6; */
-        for (let k of globalThis.Object.keys(message.expConfig))
-            writer.tag(6, WireType.LengthDelimited).fork().tag(1, WireType.LengthDelimited).string(k).tag(2, WireType.Varint).bool(message.expConfig[k]).join();
-        /* bilibili.pgc.gateway.player.v2.PopWin pop_win = 7; */
-        if (message.popWin)
-            PopWin.internalBinaryWrite(message.popWin, writer.tag(7, WireType.LengthDelimited).fork(), options).join();
         /* bilibili.pgc.gateway.player.v2.PromptBar try_watch_prompt_bar = 8; */
         if (message.tryWatchPromptBar)
             PromptBar.internalBinaryWrite(message.tryWatchPromptBar, writer.tag(8, WireType.LengthDelimited).fork(), options).join();
-        /* bilibili.pgc.gateway.player.v2.PayTip pay_tip = 9; */
-        if (message.payTip)
-            PayTip.internalBinaryWrite(message.payTip, writer.tag(9, WireType.LengthDelimited).fork(), options).join();
-        /* bilibili.pgc.gateway.player.v2.HighDefinitionTrialInfo high_definition_trial_info = 10; */
-        if (message.highDefinitionTrialInfo)
-            HighDefinitionTrialInfo.internalBinaryWrite(message.highDefinitionTrialInfo, writer.tag(10, WireType.LengthDelimited).fork(), options).join();
-        /* map<string, bilibili.pgc.gateway.player.v2.Dialog> ext_dialog = 11; */
-        for (let k of globalThis.Object.keys(message.extDialog)) {
-            writer.tag(11, WireType.LengthDelimited).fork().tag(1, WireType.LengthDelimited).string(k);
-            writer.tag(2, WireType.LengthDelimited).fork();
-            Dialog.internalBinaryWrite(message.extDialog[k], writer, options);
-            writer.join().join();
-        }
-        /* bilibili.pgc.gateway.player.v2.Animation animation = 12; */
-        if (message.animation)
-            Animation.internalBinaryWrite(message.animation, writer.tag(12, WireType.LengthDelimited).fork(), options).join();
-        /* map<string, bilibili.pgc.gateway.player.v2.Toast> ext_toast = 13; */
-        for (let k of globalThis.Object.keys(message.extToast)) {
-            writer.tag(13, WireType.LengthDelimited).fork().tag(1, WireType.LengthDelimited).string(k);
-            writer.tag(2, WireType.LengthDelimited).fork();
-            Toast.internalBinaryWrite(message.extToast[k], writer, options);
-            writer.join().join();
-        }
         let u = options.writeUnknownFields;
         if (u !== false)
             (u == true ? UnknownFieldHandler.onWrite : u)(this.typeName, message, writer);
