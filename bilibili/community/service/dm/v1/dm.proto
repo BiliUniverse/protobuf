@@ -167,7 +167,7 @@ message CommandDm {
     // 对象视频cid
     int64 oid = 2;
     // 发送者mid
-    string mid = 3;
+    int64 mid = 3;
     // 互动弹幕指令
     string command = 4;
     // 互动弹幕正文
@@ -484,6 +484,10 @@ message DmSegSDKReq {
     int64 segment_index = 4;
 }
 
+message CommandDms {
+  repeated CommandDm data = 1; 
+}
+
 // 客户端弹幕元数据-响应
 message DmViewReply {
     // 是否已关闭弹幕
@@ -525,6 +529,8 @@ message DmViewReply {
     repeated string activity_meta = 18;
     //
     repeated PostPanelV2 post_panel2 = 19;
+    // 互动弹幕
+    repeated CommandDms commandDms = 22;
 }
 
 // 客户端弹幕元数据-请求
