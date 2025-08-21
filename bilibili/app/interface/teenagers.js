@@ -51,7 +51,7 @@ class ModeStatusReply$Type extends MessageType {
 /**
  * @generated MessageType for protobuf message ModeStatusReply
  */
-export const ModeStatusReply = new ModeStatusReply$Type();
+export const ModeStatusReply = /* #__PURE__ */ new ModeStatusReply$Type();
 // @generated message type with reflection information, may provide speed optimized methods
 class Mode$Type extends MessageType {
     constructor() {
@@ -105,7 +105,7 @@ class Mode$Type extends MessageType {
 /**
  * @generated MessageType for protobuf message Mode
  */
-export const Mode = new Mode$Type();
+export const Mode = /* #__PURE__ */ new Mode$Type();
 // @generated message type with reflection information, may provide speed optimized methods
 class F5$Type extends MessageType {
     constructor() {
@@ -152,4 +152,4 @@ class F5$Type extends MessageType {
 /**
  * @generated MessageType for protobuf message F5
  */
-export const F5 = new F5$Type();
+export const F5 = /* #__PURE__ */ new F5$Type();

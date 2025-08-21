@@ -55,7 +55,7 @@ class CacheViewReply$Type extends MessageType {
 /**
  * @generated MessageType for protobuf message bilibili.app.view.v1.CacheViewReply
  */
-export const CacheViewReply = new CacheViewReply$Type();
+export const CacheViewReply = /* #__PURE__ */ new CacheViewReply$Type();
 // @generated message type with reflection information, may provide speed optimized methods
 class CacheViewReq$Type extends MessageType {
     constructor() {
@@ -150,7 +150,7 @@ class CacheViewReq$Type extends MessageType {
 /**
  * @generated MessageType for protobuf message bilibili.app.view.v1.CacheViewReq
  */
-export const CacheViewReq = new CacheViewReq$Type();
+export const CacheViewReq = /* #__PURE__ */ new CacheViewReq$Type();
 // @generated message type with reflection information, may provide speed optimized methods
 class CM$Type extends MessageType {
     constructor() {
@@ -196,7 +196,7 @@ class CM$Type extends MessageType {
 /**
  * @generated MessageType for protobuf message bilibili.app.view.v1.CM
  */
-export const CM = new CM$Type();
+export const CM = /* #__PURE__ */ new CM$Type();
 // @generated message type with reflection information, may provide speed optimized methods
 class CMConfig$Type extends MessageType {
     constructor() {
@@ -242,7 +242,7 @@ class CMConfig$Type extends MessageType {
 /**
  * @generated MessageType for protobuf message bilibili.app.view.v1.CMConfig
  */
-export const CMConfig = new CMConfig$Type();
+export const CMConfig = /* #__PURE__ */ new CMConfig$Type();
 // @generated message type with reflection information, may provide speed optimized methods
 class CmIpad$Type extends MessageType {
     constructor() {
@@ -289,7 +289,7 @@ class CmIpad$Type extends MessageType {
 /**
  * @generated MessageType for protobuf message bilibili.app.view.v1.CmIpad
  */
-export const CmIpad = new CmIpad$Type();
+export const CmIpad = /* #__PURE__ */ new CmIpad$Type();
 // @generated message type with reflection information, may provide speed optimized methods
 class Relate$Type extends MessageType {
     constructor() {
@@ -335,7 +335,7 @@ class Relate$Type extends MessageType {
 /**
  * @generated MessageType for protobuf message bilibili.app.view.v1.Relate
  */
-export const Relate = new Relate$Type();
+export const Relate = /* #__PURE__ */ new Relate$Type();
 // @generated message type with reflection information, may provide speed optimized methods
 class TFInfoReply$Type extends MessageType {
     constructor() {
@@ -404,7 +404,7 @@ class TFInfoReply$Type extends MessageType {
 /**
  * @generated MessageType for protobuf message bilibili.app.view.v1.TFInfoReply
  */
-export const TFInfoReply = new TFInfoReply$Type();
+export const TFInfoReply = /* #__PURE__ */ new TFInfoReply$Type();
 // @generated message type with reflection information, may provide speed optimized methods
 class TFToast$Type extends MessageType {
     constructor() {
@@ -475,7 +475,7 @@ class TFToast$Type extends MessageType {
 /**
  * @generated MessageType for protobuf message bilibili.app.view.v1.TFToast
  */
-export const TFToast = new TFToast$Type();
+export const TFToast = /* #__PURE__ */ new TFToast$Type();
 // @generated message type with reflection information, may provide speed optimized methods
 class TFPanelCustomized$Type extends MessageType {
     constructor() {
@@ -522,7 +522,7 @@ class TFPanelCustomized$Type extends MessageType {
 /**
  * @generated MessageType for protobuf message bilibili.app.view.v1.TFPanelCustomized
  */
-export const TFPanelCustomized = new TFPanelCustomized$Type();
+export const TFPanelCustomized = /* #__PURE__ */ new TFPanelCustomized$Type();
 // @generated message type with reflection information, may provide speed optimized methods
 class TIcon$Type extends MessageType {
     constructor() {
@@ -569,7 +569,7 @@ class TIcon$Type extends MessageType {
 /**
  * @generated MessageType for protobuf message bilibili.app.view.v1.TIcon
  */
-export const TIcon = new TIcon$Type();
+export const TIcon = /* #__PURE__ */ new TIcon$Type();
 // @generated message type with reflection information, may provide speed optimized methods
 class ViewReply$Type extends MessageType {
     constructor() {
@@ -673,7 +673,7 @@ class ViewReply$Type extends MessageType {
 /**
  * @generated MessageType for protobuf message bilibili.app.view.v1.ViewReply
  */
-export const ViewReply = new ViewReply$Type();
+export const ViewReply = /* #__PURE__ */ new ViewReply$Type();
 // @generated message type with reflection information, may provide speed optimized methods
 class ViewReq$Type extends MessageType {
     constructor() {
@@ -888,7 +888,7 @@ class ViewReq$Type extends MessageType {
 /**
  * @generated MessageType for protobuf message bilibili.app.view.v1.ViewReq
  */
-export const ViewReq = new ViewReq$Type();
+export const ViewReq = /* #__PURE__ */ new ViewReq$Type();
 /**
  * @generated ServiceType for protobuf service bilibili.app.view.v1.View
  */

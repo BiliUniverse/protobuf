@@ -805,7 +805,7 @@ class ArcConf$Type extends MessageType {
 /**
  * @generated MessageType for protobuf message bilibili.playershared.ArcConf
  */
-export const ArcConf = new ArcConf$Type();
+export const ArcConf = /* #__PURE__ */ new ArcConf$Type();
 // @generated message type with reflection information, may provide speed optimized methods
 class BackgroundInfo$Type extends MessageType {
     constructor() {
@@ -868,7 +868,7 @@ class BackgroundInfo$Type extends MessageType {
 /**
  * @generated MessageType for protobuf message bilibili.playershared.BackgroundInfo
  */
-export const BackgroundInfo = new BackgroundInfo$Type();
+export const BackgroundInfo = /* #__PURE__ */ new BackgroundInfo$Type();
 // @generated message type with reflection information, may provide speed optimized methods
 class BadgeInfo$Type extends MessageType {
     constructor() {
@@ -954,7 +954,7 @@ class BadgeInfo$Type extends MessageType {
 /**
  * @generated MessageType for protobuf message bilibili.playershared.BadgeInfo
  */
-export const BadgeInfo = new BadgeInfo$Type();
+export const BadgeInfo = /* #__PURE__ */ new BadgeInfo$Type();
 // @generated message type with reflection information, may provide speed optimized methods
 class Banner$Type extends MessageType {
     constructor() {
@@ -1024,7 +1024,7 @@ class Banner$Type extends MessageType {
 /**
  * @generated MessageType for protobuf message bilibili.playershared.Banner
  */
-export const Banner = new Banner$Type();
+export const Banner = /* #__PURE__ */ new Banner$Type();
 // @generated message type with reflection information, may provide speed optimized methods
 class BenefitInfo$Type extends MessageType {
     constructor() {
@@ -1079,7 +1079,7 @@ class BenefitInfo$Type extends MessageType {
 /**
  * @generated MessageType for protobuf message bilibili.playershared.BenefitInfo
  */
-export const BenefitInfo = new BenefitInfo$Type();
+export const BenefitInfo = /* #__PURE__ */ new BenefitInfo$Type();
 // @generated message type with reflection information, may provide speed optimized methods
 class BottomDisplay$Type extends MessageType {
     constructor() {
@@ -1133,7 +1133,7 @@ class BottomDisplay$Type extends MessageType {
 /**
  * @generated MessageType for protobuf message bilibili.playershared.BottomDisplay
  */
-export const BottomDisplay = new BottomDisplay$Type();
+export const BottomDisplay = /* #__PURE__ */ new BottomDisplay$Type();
 // @generated message type with reflection information, may provide speed optimized methods
 class Button$Type extends MessageType {
     constructor() {
@@ -1212,7 +1212,7 @@ class Button$Type extends MessageType {
 /**
  * @generated MessageType for protobuf message bilibili.playershared.Button
  */
-export const Button = new Button$Type();
+export const Button = /* #__PURE__ */ new Button$Type();
 // @generated message type with reflection information, may provide speed optimized methods
 class ButtonInfo$Type extends MessageType {
     constructor() {
@@ -1406,7 +1406,7 @@ class ButtonInfo$Type extends MessageType {
 /**
  * @generated MessageType for protobuf message bilibili.playershared.ButtonInfo
  */
-export const ButtonInfo = new ButtonInfo$Type();
+export const ButtonInfo = /* #__PURE__ */ new ButtonInfo$Type();
 // @generated message type with reflection information, may provide speed optimized methods
 class ComprehensiveToast$Type extends MessageType {
     constructor() {
@@ -1514,7 +1514,7 @@ class ComprehensiveToast$Type extends MessageType {
 /**
  * @generated MessageType for protobuf message bilibili.playershared.ComprehensiveToast
  */
-export const ComprehensiveToast = new ComprehensiveToast$Type();
+export const ComprehensiveToast = /* #__PURE__ */ new ComprehensiveToast$Type();
 // @generated message type with reflection information, may provide speed optimized methods
 class ConfValue$Type extends MessageType {
     constructor() {
@@ -1574,7 +1574,7 @@ class ConfValue$Type extends MessageType {
 /**
  * @generated MessageType for protobuf message bilibili.playershared.ConfValue
  */
-export const ConfValue = new ConfValue$Type();
+export const ConfValue = /* #__PURE__ */ new ConfValue$Type();
 // @generated message type with reflection information, may provide speed optimized methods
 class DashItem$Type extends MessageType {
     constructor() {
@@ -1685,7 +1685,7 @@ class DashItem$Type extends MessageType {
 /**
  * @generated MessageType for protobuf message bilibili.playershared.DashItem
  */
-export const DashItem = new DashItem$Type();
+export const DashItem = /* #__PURE__ */ new DashItem$Type();
 // @generated message type with reflection information, may provide speed optimized methods
 class DashVideo$Type extends MessageType {
     constructor() {
@@ -1820,7 +1820,7 @@ class DashVideo$Type extends MessageType {
 /**
  * @generated MessageType for protobuf message bilibili.playershared.DashVideo
  */
-export const DashVideo = new DashVideo$Type();
+export const DashVideo = /* #__PURE__ */ new DashVideo$Type();
 // @generated message type with reflection information, may provide speed optimized methods
 class DeviceConf$Type extends MessageType {
     constructor() {
@@ -1866,7 +1866,7 @@ class DeviceConf$Type extends MessageType {
 /**
  * @generated MessageType for protobuf message bilibili.playershared.DeviceConf
  */
-export const DeviceConf = new DeviceConf$Type();
+export const DeviceConf = /* #__PURE__ */ new DeviceConf$Type();
 // @generated message type with reflection information, may provide speed optimized methods
 class Dialog$Type extends MessageType {
     constructor() {
@@ -2009,7 +2009,7 @@ class Dialog$Type extends MessageType {
 /**
  * @generated MessageType for protobuf message bilibili.playershared.Dialog
  */
-export const Dialog = new Dialog$Type();
+export const Dialog = /* #__PURE__ */ new Dialog$Type();
 // @generated message type with reflection information, may provide speed optimized methods
 class Dimension$Type extends MessageType {
     constructor() {
@@ -2072,7 +2072,7 @@ class Dimension$Type extends MessageType {
 /**
  * @generated MessageType for protobuf message bilibili.playershared.Dimension
  */
-export const Dimension = new Dimension$Type();
+export const Dimension = /* #__PURE__ */ new Dimension$Type();
 // @generated message type with reflection information, may provide speed optimized methods
 class DolbyItem$Type extends MessageType {
     constructor() {
@@ -2127,7 +2127,7 @@ class DolbyItem$Type extends MessageType {
 /**
  * @generated MessageType for protobuf message bilibili.playershared.DolbyItem
  */
-export const DolbyItem = new DolbyItem$Type();
+export const DolbyItem = /* #__PURE__ */ new DolbyItem$Type();
 // @generated message type with reflection information, may provide speed optimized methods
 class EpInlineVideo$Type extends MessageType {
     constructor() {
@@ -2190,7 +2190,7 @@ class EpInlineVideo$Type extends MessageType {
 /**
  * @generated MessageType for protobuf message bilibili.playershared.EpInlineVideo
  */
-export const EpInlineVideo = new EpInlineVideo$Type();
+export const EpInlineVideo = /* #__PURE__ */ new EpInlineVideo$Type();
 // @generated message type with reflection information, may provide speed optimized methods
 class EpInlineVideoInfo$Type extends MessageType {
     constructor() {
@@ -2237,7 +2237,7 @@ class EpInlineVideoInfo$Type extends MessageType {
 /**
  * @generated MessageType for protobuf message bilibili.playershared.EpInlineVideoInfo
  */
-export const EpInlineVideoInfo = new EpInlineVideoInfo$Type();
+export const EpInlineVideoInfo = /* #__PURE__ */ new EpInlineVideoInfo$Type();
 // @generated message type with reflection information, may provide speed optimized methods
 class Event$Type extends MessageType {
     constructor() {
@@ -2283,7 +2283,7 @@ class Event$Type extends MessageType {
 /**
  * @generated MessageType for protobuf message bilibili.playershared.Event
  */
-export const Event = new Event$Type();
+export const Event = /* #__PURE__ */ new Event$Type();
 // @generated message type with reflection information, may provide speed optimized methods
 class ExtData$Type extends MessageType {
     constructor() {
@@ -2341,7 +2341,7 @@ class ExtData$Type extends MessageType {
 /**
  * @generated MessageType for protobuf message bilibili.playershared.ExtData
  */
-export const ExtData = new ExtData$Type();
+export const ExtData = /* #__PURE__ */ new ExtData$Type();
 // @generated message type with reflection information, may provide speed optimized methods
 class ExtraContent$Type extends MessageType {
     constructor() {
@@ -2396,7 +2396,7 @@ class ExtraContent$Type extends MessageType {
 /**
  * @generated MessageType for protobuf message bilibili.playershared.ExtraContent
  */
-export const ExtraContent = new ExtraContent$Type();
+export const ExtraContent = /* #__PURE__ */ new ExtraContent$Type();
 // @generated message type with reflection information, may provide speed optimized methods
 class Fragment$Type extends MessageType {
     constructor() {
@@ -2443,7 +2443,7 @@ class Fragment$Type extends MessageType {
 /**
  * @generated MessageType for protobuf message bilibili.playershared.Fragment
  */
-export const Fragment = new Fragment$Type();
+export const Fragment = /* #__PURE__ */ new Fragment$Type();
 // @generated message type with reflection information, may provide speed optimized methods
 class FragmentInfo$Type extends MessageType {
     constructor() {
@@ -2537,7 +2537,7 @@ class FragmentInfo$Type extends MessageType {
 /**
  * @generated MessageType for protobuf message bilibili.playershared.FragmentInfo
  */
-export const FragmentInfo = new FragmentInfo$Type();
+export const FragmentInfo = /* #__PURE__ */ new FragmentInfo$Type();
 // @generated message type with reflection information, may provide speed optimized methods
 class FragmentVideo$Type extends MessageType {
     constructor() {
@@ -2584,7 +2584,7 @@ class FragmentVideo$Type extends MessageType {
 /**
  * @generated MessageType for protobuf message bilibili.playershared.FragmentVideo
  */
-export const FragmentVideo = new FragmentVideo$Type();
+export const FragmentVideo = /* #__PURE__ */ new FragmentVideo$Type();
 // @generated message type with reflection information, may provide speed optimized methods
 class FragmentVideoInfo$Type extends MessageType {
     constructor() {
@@ -2675,7 +2675,7 @@ class FragmentVideoInfo$Type extends MessageType {
 /**
  * @generated MessageType for protobuf message bilibili.playershared.FragmentVideoInfo
  */
-export const FragmentVideoInfo = new FragmentVideoInfo$Type();
+export const FragmentVideoInfo = /* #__PURE__ */ new FragmentVideoInfo$Type();
 // @generated message type with reflection information, may provide speed optimized methods
 class GradientColor$Type extends MessageType {
     constructor() {
@@ -2730,7 +2730,7 @@ class GradientColor$Type extends MessageType {
 /**
  * @generated MessageType for protobuf message bilibili.playershared.GradientColor
  */
-export const GradientColor = new GradientColor$Type();
+export const GradientColor = /* #__PURE__ */ new GradientColor$Type();
 // @generated message type with reflection information, may provide speed optimized methods
 class History$Type extends MessageType {
     constructor() {
@@ -2783,7 +2783,7 @@ class History$Type extends MessageType {
 /**
  * @generated MessageType for protobuf message bilibili.playershared.History
  */
-export const History = new History$Type();
+export const History = /* #__PURE__ */ new History$Type();
 // @generated message type with reflection information, may provide speed optimized methods
 class HistoryInfo$Type extends MessageType {
     constructor() {
@@ -2860,7 +2860,7 @@ class HistoryInfo$Type extends MessageType {
 /**
  * @generated MessageType for protobuf message bilibili.playershared.HistoryInfo
  */
-export const HistoryInfo = new HistoryInfo$Type();
+export const HistoryInfo = /* #__PURE__ */ new HistoryInfo$Type();
 // @generated message type with reflection information, may provide speed optimized methods
 class ImageInfo$Type extends MessageType {
     constructor() {
@@ -2907,7 +2907,7 @@ class ImageInfo$Type extends MessageType {
 /**
  * @generated MessageType for protobuf message bilibili.playershared.ImageInfo
  */
-export const ImageInfo = new ImageInfo$Type();
+export const ImageInfo = /* #__PURE__ */ new ImageInfo$Type();
 // @generated message type with reflection information, may provide speed optimized methods
 class Interaction$Type extends MessageType {
     constructor() {
@@ -2977,7 +2977,7 @@ class Interaction$Type extends MessageType {
 /**
  * @generated MessageType for protobuf message bilibili.playershared.Interaction
  */
-export const Interaction = new Interaction$Type();
+export const Interaction = /* #__PURE__ */ new Interaction$Type();
 // @generated message type with reflection information, may provide speed optimized methods
 class LossLessItem$Type extends MessageType {
     constructor() {
@@ -3039,7 +3039,7 @@ class LossLessItem$Type extends MessageType {
 /**
  * @generated MessageType for protobuf message bilibili.playershared.LossLessItem
  */
-export const LossLessItem = new LossLessItem$Type();
+export const LossLessItem = /* #__PURE__ */ new LossLessItem$Type();
 // @generated message type with reflection information, may provide speed optimized methods
 class Node$Type extends MessageType {
     constructor() {
@@ -3102,7 +3102,7 @@ class Node$Type extends MessageType {
 /**
  * @generated MessageType for protobuf message bilibili.playershared.Node
  */
-export const Node = new Node$Type();
+export const Node = /* #__PURE__ */ new Node$Type();
 // @generated message type with reflection information, may provide speed optimized methods
 class PlayArc$Type extends MessageType {
     constructor() {
@@ -3227,7 +3227,7 @@ class PlayArc$Type extends MessageType {
 /**
  * @generated MessageType for protobuf message bilibili.playershared.PlayArc
  */
-export const PlayArc = new PlayArc$Type();
+export const PlayArc = /* #__PURE__ */ new PlayArc$Type();
 // @generated message type with reflection information, may provide speed optimized methods
 class PlayArcConf$Type extends MessageType {
     constructor() {
@@ -3294,7 +3294,7 @@ class PlayArcConf$Type extends MessageType {
 /**
  * @generated MessageType for protobuf message bilibili.playershared.PlayArcConf
  */
-export const PlayArcConf = new PlayArcConf$Type();
+export const PlayArcConf = /* #__PURE__ */ new PlayArcConf$Type();
 // @generated message type with reflection information, may provide speed optimized methods
 class PlayDeviceConf$Type extends MessageType {
     constructor() {
@@ -3361,7 +3361,7 @@ class PlayDeviceConf$Type extends MessageType {
 /**
  * @generated MessageType for protobuf message bilibili.playershared.PlayDeviceConf
  */
-export const PlayDeviceConf = new PlayDeviceConf$Type();
+export const PlayDeviceConf = /* #__PURE__ */ new PlayDeviceConf$Type();
 // @generated message type with reflection information, may provide speed optimized methods
 class PlayList$Type extends MessageType {
     constructor() {
@@ -3439,7 +3439,7 @@ class PlayList$Type extends MessageType {
 /**
  * @generated MessageType for protobuf message bilibili.playershared.PlayList
  */
-export const PlayList = new PlayList$Type();
+export const PlayList = /* #__PURE__ */ new PlayList$Type();
 // @generated message type with reflection information, may provide speed optimized methods
 class PlayListInfo$Type extends MessageType {
     constructor() {
@@ -3486,7 +3486,7 @@ class PlayListInfo$Type extends MessageType {
 /**
  * @generated MessageType for protobuf message bilibili.playershared.PlayListInfo
  */
-export const PlayListInfo = new PlayListInfo$Type();
+export const PlayListInfo = /* #__PURE__ */ new PlayListInfo$Type();
 // @generated message type with reflection information, may provide speed optimized methods
 class PromptBar$Type extends MessageType {
     constructor() {
@@ -3624,7 +3624,7 @@ class PromptBar$Type extends MessageType {
 /**
  * @generated MessageType for protobuf message bilibili.playershared.PromptBar
  */
-export const PromptBar = new PromptBar$Type();
+export const PromptBar = /* #__PURE__ */ new PromptBar$Type();
 // @generated message type with reflection information, may provide speed optimized methods
 class QnTrialInfo$Type extends MessageType {
     constructor() {
@@ -3716,7 +3716,7 @@ class QnTrialInfo$Type extends MessageType {
 /**
  * @generated MessageType for protobuf message bilibili.playershared.QnTrialInfo
  */
-export const QnTrialInfo = new QnTrialInfo$Type();
+export const QnTrialInfo = /* #__PURE__ */ new QnTrialInfo$Type();
 // @generated message type with reflection information, may provide speed optimized methods
 class Report$Type extends MessageType {
     constructor() {
@@ -3779,7 +3779,7 @@ class Report$Type extends MessageType {
 /**
  * @generated MessageType for protobuf message bilibili.playershared.Report
  */
-export const Report = new Report$Type();
+export const Report = /* #__PURE__ */ new Report$Type();
 // @generated message type with reflection information, may provide speed optimized methods
 class ResponseDash$Type extends MessageType {
     constructor() {
@@ -3834,7 +3834,7 @@ class ResponseDash$Type extends MessageType {
 /**
  * @generated MessageType for protobuf message bilibili.playershared.ResponseDash
  */
-export const ResponseDash = new ResponseDash$Type();
+export const ResponseDash = /* #__PURE__ */ new ResponseDash$Type();
 // @generated message type with reflection information, may provide speed optimized methods
 class ResponseUrl$Type extends MessageType {
     constructor() {
@@ -3921,7 +3921,7 @@ class ResponseUrl$Type extends MessageType {
 /**
  * @generated MessageType for protobuf message bilibili.playershared.ResponseUrl
  */
-export const ResponseUrl = new ResponseUrl$Type();
+export const ResponseUrl = /* #__PURE__ */ new ResponseUrl$Type();
 // @generated message type with reflection information, may provide speed optimized methods
 class Scheme$Type extends MessageType {
     constructor() {
@@ -3976,7 +3976,7 @@ class Scheme$Type extends MessageType {
 /**
  * @generated MessageType for protobuf message bilibili.playershared.Scheme
  */
-export const Scheme = new Scheme$Type();
+export const Scheme = /* #__PURE__ */ new Scheme$Type();
 // @generated message type with reflection information, may provide speed optimized methods
 class SegmentVideo$Type extends MessageType {
     constructor() {
@@ -4023,7 +4023,7 @@ class SegmentVideo$Type extends MessageType {
 /**
  * @generated MessageType for protobuf message bilibili.playershared.SegmentVideo
  */
-export const SegmentVideo = new SegmentVideo$Type();
+export const SegmentVideo = /* #__PURE__ */ new SegmentVideo$Type();
 // @generated message type with reflection information, may provide speed optimized methods
 class Shake$Type extends MessageType {
     constructor() {
@@ -4070,7 +4070,7 @@ class Shake$Type extends MessageType {
 /**
  * @generated MessageType for protobuf message bilibili.playershared.Shake
  */
-export const Shake = new Shake$Type();
+export const Shake = /* #__PURE__ */ new Shake$Type();
 // @generated message type with reflection information, may provide speed optimized methods
 class Stream$Type extends MessageType {
     constructor() {
@@ -4137,7 +4137,7 @@ class Stream$Type extends MessageType {
 /**
  * @generated MessageType for protobuf message bilibili.playershared.Stream
  */
-export const Stream = new Stream$Type();
+export const Stream = /* #__PURE__ */ new Stream$Type();
 // @generated message type with reflection information, may provide speed optimized methods
 class StreamInfo$Type extends MessageType {
     constructor() {
@@ -4310,7 +4310,7 @@ class StreamInfo$Type extends MessageType {
 /**
  * @generated MessageType for protobuf message bilibili.playershared.StreamInfo
  */
-export const StreamInfo = new StreamInfo$Type();
+export const StreamInfo = /* #__PURE__ */ new StreamInfo$Type();
 // @generated message type with reflection information, may provide speed optimized methods
 class StreamLimit$Type extends MessageType {
     constructor() {
@@ -4373,7 +4373,7 @@ class StreamLimit$Type extends MessageType {
 /**
  * @generated MessageType for protobuf message bilibili.playershared.StreamLimit
  */
-export const StreamLimit = new StreamLimit$Type();
+export const StreamLimit = /* #__PURE__ */ new StreamLimit$Type();
 // @generated message type with reflection information, may provide speed optimized methods
 class TaskParam$Type extends MessageType {
     constructor() {
@@ -4436,7 +4436,7 @@ class TaskParam$Type extends MessageType {
 /**
  * @generated MessageType for protobuf message bilibili.playershared.TaskParam
  */
-export const TaskParam = new TaskParam$Type();
+export const TaskParam = /* #__PURE__ */ new TaskParam$Type();
 // @generated message type with reflection information, may provide speed optimized methods
 class TextInfo$Type extends MessageType {
     constructor() {
@@ -4499,7 +4499,7 @@ class TextInfo$Type extends MessageType {
 /**
  * @generated MessageType for protobuf message bilibili.playershared.TextInfo
  */
-export const TextInfo = new TextInfo$Type();
+export const TextInfo = /* #__PURE__ */ new TextInfo$Type();
 // @generated message type with reflection information, may provide speed optimized methods
 class Toast$Type extends MessageType {
     constructor() {
@@ -4553,7 +4553,7 @@ class Toast$Type extends MessageType {
 /**
  * @generated MessageType for protobuf message bilibili.playershared.Toast
  */
-export const Toast = new Toast$Type();
+export const Toast = /* #__PURE__ */ new Toast$Type();
 // @generated message type with reflection information, may provide speed optimized methods
 class VideoVod$Type extends MessageType {
     constructor() {
@@ -4672,7 +4672,7 @@ class VideoVod$Type extends MessageType {
 /**
  * @generated MessageType for protobuf message bilibili.playershared.VideoVod
  */
-export const VideoVod = new VideoVod$Type();
+export const VideoVod = /* #__PURE__ */ new VideoVod$Type();
 // @generated message type with reflection information, may provide speed optimized methods
 class ViewInfo$Type extends MessageType {
     constructor() {
@@ -4754,7 +4754,7 @@ class ViewInfo$Type extends MessageType {
 /**
  * @generated MessageType for protobuf message bilibili.playershared.ViewInfo
  */
-export const ViewInfo = new ViewInfo$Type();
+export const ViewInfo = /* #__PURE__ */ new ViewInfo$Type();
 // @generated message type with reflection information, may provide speed optimized methods
 class VodInfo$Type extends MessageType {
     constructor() {
@@ -4870,7 +4870,7 @@ class VodInfo$Type extends MessageType {
 /**
  * @generated MessageType for protobuf message bilibili.playershared.VodInfo
  */
-export const VodInfo = new VodInfo$Type();
+export const VodInfo = /* #__PURE__ */ new VodInfo$Type();
 // @generated message type with reflection information, may provide speed optimized methods
 class VolumeInfo$Type extends MessageType {
     constructor() {
@@ -4965,4 +4965,4 @@ class VolumeInfo$Type extends MessageType {
 /**
  * @generated MessageType for protobuf message bilibili.playershared.VolumeInfo
  */
-export const VolumeInfo = new VolumeInfo$Type();
+export const VolumeInfo = /* #__PURE__ */ new VolumeInfo$Type();

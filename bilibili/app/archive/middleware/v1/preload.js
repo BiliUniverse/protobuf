@@ -83,4 +83,4 @@ class PlayerArgs$Type extends MessageType {
 /**
  * @generated MessageType for protobuf message bilibili.app.archive.middleware.v1.PlayerArgs
  */
-export const PlayerArgs = new PlayerArgs$Type();
+export const PlayerArgs = /* #__PURE__ */ new PlayerArgs$Type();

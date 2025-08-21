@@ -52,7 +52,7 @@ class PlayViewReply$Type extends MessageType {
 /**
  * @generated MessageType for protobuf message PlayViewReply
  */
-export const PlayViewReply = new PlayViewReply$Type();
+export const PlayViewReply = /* #__PURE__ */ new PlayViewReply$Type();
 // @generated message type with reflection information, may provide speed optimized methods
 class PlayArcConf$Type extends MessageType {
     constructor() {
@@ -99,7 +99,7 @@ class PlayArcConf$Type extends MessageType {
 /**
  * @generated MessageType for protobuf message PlayArcConf
  */
-export const PlayArcConf = new PlayArcConf$Type();
+export const PlayArcConf = /* #__PURE__ */ new PlayArcConf$Type();
 // @generated message type with reflection information, may provide speed optimized methods
 class ArcConf$Type extends MessageType {
     constructor() {
@@ -160,7 +160,7 @@ class ArcConf$Type extends MessageType {
 /**
  * @generated MessageType for protobuf message ArcConf
  */
-export const ArcConf = new ArcConf$Type();
+export const ArcConf = /* #__PURE__ */ new ArcConf$Type();
 // @generated message type with reflection information, may provide speed optimized methods
 class ExtraContent$Type extends MessageType {
     constructor() {
@@ -214,4 +214,4 @@ class ExtraContent$Type extends MessageType {
 /**
  * @generated MessageType for protobuf message ExtraContent
  */
-export const ExtraContent = new ExtraContent$Type();
+export const ExtraContent = /* #__PURE__ */ new ExtraContent$Type();

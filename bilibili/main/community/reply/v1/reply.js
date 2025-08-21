@@ -352,7 +352,7 @@ class Activity$Type extends MessageType {
 /**
  * @generated MessageType for protobuf message bilibili.main.community.reply.v1.Activity
  */
-export const Activity = new Activity$Type();
+export const Activity = /* #__PURE__ */ new Activity$Type();
 // @generated message type with reflection information, may provide speed optimized methods
 class ArticleSearchItem$Type extends MessageType {
     constructor() {
@@ -415,7 +415,7 @@ class ArticleSearchItem$Type extends MessageType {
 /**
  * @generated MessageType for protobuf message bilibili.main.community.reply.v1.ArticleSearchItem
  */
-export const ArticleSearchItem = new ArticleSearchItem$Type();
+export const ArticleSearchItem = /* #__PURE__ */ new ArticleSearchItem$Type();
 // @generated message type with reflection information, may provide speed optimized methods
 class AtGroup$Type extends MessageType {
     constructor() {
@@ -478,7 +478,7 @@ class AtGroup$Type extends MessageType {
 /**
  * @generated MessageType for protobuf message bilibili.main.community.reply.v1.AtGroup
  */
-export const AtGroup = new AtGroup$Type();
+export const AtGroup = /* #__PURE__ */ new AtGroup$Type();
 // @generated message type with reflection information, may provide speed optimized methods
 class AtItem$Type extends MessageType {
     constructor() {
@@ -557,7 +557,7 @@ class AtItem$Type extends MessageType {
 /**
  * @generated MessageType for protobuf message bilibili.main.community.reply.v1.AtItem
  */
-export const AtItem = new AtItem$Type();
+export const AtItem = /* #__PURE__ */ new AtItem$Type();
 // @generated message type with reflection information, may provide speed optimized methods
 class AtSearchReply$Type extends MessageType {
     constructor() {
@@ -604,7 +604,7 @@ class AtSearchReply$Type extends MessageType {
 /**
  * @generated MessageType for protobuf message bilibili.main.community.reply.v1.AtSearchReply
  */
-export const AtSearchReply = new AtSearchReply$Type();
+export const AtSearchReply = /* #__PURE__ */ new AtSearchReply$Type();
 // @generated message type with reflection information, may provide speed optimized methods
 class AtSearchReq$Type extends MessageType {
     constructor() {
@@ -659,7 +659,7 @@ class AtSearchReq$Type extends MessageType {
 /**
  * @generated MessageType for protobuf message bilibili.main.community.reply.v1.AtSearchReq
  */
-export const AtSearchReq = new AtSearchReq$Type();
+export const AtSearchReq = /* #__PURE__ */ new AtSearchReq$Type();
 // @generated message type with reflection information, may provide speed optimized methods
 class CM$Type extends MessageType {
     constructor() {
@@ -705,7 +705,7 @@ class CM$Type extends MessageType {
 /**
  * @generated MessageType for protobuf message bilibili.main.community.reply.v1.CM
  */
-export const CM = new CM$Type();
+export const CM = /* #__PURE__ */ new CM$Type();
 // @generated message type with reflection information, may provide speed optimized methods
 class Content$Type extends MessageType {
     constructor() {
@@ -910,7 +910,7 @@ class Content$Type extends MessageType {
 /**
  * @generated MessageType for protobuf message bilibili.main.community.reply.v1.Content
  */
-export const Content = new Content$Type();
+export const Content = /* #__PURE__ */ new Content$Type();
 // @generated message type with reflection information, may provide speed optimized methods
 class Picture$Type extends MessageType {
     constructor() {
@@ -981,7 +981,7 @@ class Picture$Type extends MessageType {
 /**
  * @generated MessageType for protobuf message bilibili.main.community.reply.v1.Picture
  */
-export const Picture = new Picture$Type();
+export const Picture = /* #__PURE__ */ new Picture$Type();
 // @generated message type with reflection information, may provide speed optimized methods
 class CursorReply$Type extends MessageType {
     constructor() {
@@ -1068,7 +1068,7 @@ class CursorReply$Type extends MessageType {
 /**
  * @generated MessageType for protobuf message bilibili.main.community.reply.v1.CursorReply
  */
-export const CursorReply = new CursorReply$Type();
+export const CursorReply = /* #__PURE__ */ new CursorReply$Type();
 // @generated message type with reflection information, may provide speed optimized methods
 class CursorReq$Type extends MessageType {
     constructor() {
@@ -1131,7 +1131,7 @@ class CursorReq$Type extends MessageType {
 /**
  * @generated MessageType for protobuf message bilibili.main.community.reply.v1.CursorReq
  */
-export const CursorReq = new CursorReq$Type();
+export const CursorReq = /* #__PURE__ */ new CursorReq$Type();
 // @generated message type with reflection information, may provide speed optimized methods
 class DetailListReply$Type extends MessageType {
     constructor() {
@@ -1205,7 +1205,7 @@ class DetailListReply$Type extends MessageType {
 /**
  * @generated MessageType for protobuf message bilibili.main.community.reply.v1.DetailListReply
  */
-export const DetailListReply = new DetailListReply$Type();
+export const DetailListReply = /* #__PURE__ */ new DetailListReply$Type();
 // @generated message type with reflection information, may provide speed optimized methods
 class DetailListReq$Type extends MessageType {
     constructor() {
@@ -1291,7 +1291,7 @@ class DetailListReq$Type extends MessageType {
 /**
  * @generated MessageType for protobuf message bilibili.main.community.reply.v1.DetailListReq
  */
-export const DetailListReq = new DetailListReq$Type();
+export const DetailListReq = /* #__PURE__ */ new DetailListReq$Type();
 // @generated message type with reflection information, may provide speed optimized methods
 class DialogListReply$Type extends MessageType {
     constructor() {
@@ -1359,7 +1359,7 @@ class DialogListReply$Type extends MessageType {
 /**
  * @generated MessageType for protobuf message bilibili.main.community.reply.v1.DialogListReply
  */
-export const DialogListReply = new DialogListReply$Type();
+export const DialogListReply = /* #__PURE__ */ new DialogListReply$Type();
 // @generated message type with reflection information, may provide speed optimized methods
 class DialogListReq$Type extends MessageType {
     constructor() {
@@ -1437,7 +1437,7 @@ class DialogListReq$Type extends MessageType {
 /**
  * @generated MessageType for protobuf message bilibili.main.community.reply.v1.DialogListReq
  */
-export const DialogListReq = new DialogListReq$Type();
+export const DialogListReq = /* #__PURE__ */ new DialogListReq$Type();
 // @generated message type with reflection information, may provide speed optimized methods
 class Effects$Type extends MessageType {
     constructor() {
@@ -1484,7 +1484,7 @@ class Effects$Type extends MessageType {
 /**
  * @generated MessageType for protobuf message bilibili.main.community.reply.v1.Effects
  */
-export const Effects = new Effects$Type();
+export const Effects = /* #__PURE__ */ new Effects$Type();
 // @generated message type with reflection information, may provide speed optimized methods
 class Emote$Type extends MessageType {
     constructor() {
@@ -1587,7 +1587,7 @@ class Emote$Type extends MessageType {
 /**
  * @generated MessageType for protobuf message bilibili.main.community.reply.v1.Emote
  */
-export const Emote = new Emote$Type();
+export const Emote = /* #__PURE__ */ new Emote$Type();
 // @generated message type with reflection information, may provide speed optimized methods
 class GoodsSearchItem$Type extends MessageType {
     constructor() {
@@ -1674,7 +1674,7 @@ class GoodsSearchItem$Type extends MessageType {
 /**
  * @generated MessageType for protobuf message bilibili.main.community.reply.v1.GoodsSearchItem
  */
-export const GoodsSearchItem = new GoodsSearchItem$Type();
+export const GoodsSearchItem = /* #__PURE__ */ new GoodsSearchItem$Type();
 // @generated message type with reflection information, may provide speed optimized methods
 class LikeInfo$Type extends MessageType {
     constructor() {
@@ -1729,7 +1729,7 @@ class LikeInfo$Type extends MessageType {
 /**
  * @generated MessageType for protobuf message bilibili.main.community.reply.v1.LikeInfo
  */
-export const LikeInfo = new LikeInfo$Type();
+export const LikeInfo = /* #__PURE__ */ new LikeInfo$Type();
 // @generated message type with reflection information, may provide speed optimized methods
 class LikeInfo_Item$Type extends MessageType {
     constructor() {
@@ -1775,7 +1775,7 @@ class LikeInfo_Item$Type extends MessageType {
 /**
  * @generated MessageType for protobuf message bilibili.main.community.reply.v1.LikeInfo.Item
  */
-export const LikeInfo_Item = new LikeInfo_Item$Type();
+export const LikeInfo_Item = /* #__PURE__ */ new LikeInfo_Item$Type();
 // @generated message type with reflection information, may provide speed optimized methods
 class Lottery$Type extends MessageType {
     constructor() {
@@ -1891,7 +1891,7 @@ class Lottery$Type extends MessageType {
 /**
  * @generated MessageType for protobuf message bilibili.main.community.reply.v1.Lottery
  */
-export const Lottery = new Lottery$Type();
+export const Lottery = /* #__PURE__ */ new Lottery$Type();
 // @generated message type with reflection information, may provide speed optimized methods
 class MainListReply$Type extends MessageType {
     constructor() {
@@ -2069,7 +2069,7 @@ class MainListReply$Type extends MessageType {
 /**
  * @generated MessageType for protobuf message bilibili.main.community.reply.v1.MainListReply
  */
-export const MainListReply = new MainListReply$Type();
+export const MainListReply = /* #__PURE__ */ new MainListReply$Type();
 // @generated message type with reflection information, may provide speed optimized methods
 class SubjectTopCard$Type extends MessageType {
     constructor() {
@@ -2116,7 +2116,7 @@ class SubjectTopCard$Type extends MessageType {
 /**
  * @generated MessageType for protobuf message bilibili.main.community.reply.v1.SubjectTopCard
  */
-export const SubjectTopCard = new SubjectTopCard$Type();
+export const SubjectTopCard = /* #__PURE__ */ new SubjectTopCard$Type();
 // @generated message type with reflection information, may provide speed optimized methods
 class MainListReq$Type extends MessageType {
     constructor() {
@@ -2218,7 +2218,7 @@ class MainListReq$Type extends MessageType {
 /**
  * @generated MessageType for protobuf message bilibili.main.community.reply.v1.MainListReq
  */
-export const MainListReq = new MainListReq$Type();
+export const MainListReq = /* #__PURE__ */ new MainListReq$Type();
 // @generated message type with reflection information, may provide speed optimized methods
 class Member$Type extends MessageType {
     constructor() {
@@ -2536,7 +2536,7 @@ class Member$Type extends MessageType {
 /**
  * @generated MessageType for protobuf message bilibili.main.community.reply.v1.Member
  */
-export const Member = new Member$Type();
+export const Member = /* #__PURE__ */ new Member$Type();
 // @generated message type with reflection information, may provide speed optimized methods
 class Member_Region$Type extends MessageType {
     constructor() {
@@ -2599,7 +2599,7 @@ class Member_Region$Type extends MessageType {
 /**
  * @generated MessageType for protobuf message bilibili.main.community.reply.v1.Member.Region
  */
-export const Member_Region = new Member_Region$Type();
+export const Member_Region = /* #__PURE__ */ new Member_Region$Type();
 // @generated message type with reflection information, may provide speed optimized methods
 class Member_NftInteraction$Type extends MessageType {
     constructor() {
@@ -2669,7 +2669,7 @@ class Member_NftInteraction$Type extends MessageType {
 /**
  * @generated MessageType for protobuf message bilibili.main.community.reply.v1.Member.NftInteraction
  */
-export const Member_NftInteraction = new Member_NftInteraction$Type();
+export const Member_NftInteraction = /* #__PURE__ */ new Member_NftInteraction$Type();
 // @generated message type with reflection information, may provide speed optimized methods
 class MemberV2$Type extends MessageType {
     constructor() {
@@ -2764,7 +2764,7 @@ class MemberV2$Type extends MessageType {
 /**
  * @generated MessageType for protobuf message bilibili.main.community.reply.v1.MemberV2
  */
-export const MemberV2 = new MemberV2$Type();
+export const MemberV2 = /* #__PURE__ */ new MemberV2$Type();
 // @generated message type with reflection information, may provide speed optimized methods
 class MemberV2_Basic$Type extends MessageType {
     constructor() {
@@ -2843,7 +2843,7 @@ class MemberV2_Basic$Type extends MessageType {
 /**
  * @generated MessageType for protobuf message bilibili.main.community.reply.v1.MemberV2.Basic
  */
-export const MemberV2_Basic = new MemberV2_Basic$Type();
+export const MemberV2_Basic = /* #__PURE__ */ new MemberV2_Basic$Type();
 // @generated message type with reflection information, may provide speed optimized methods
 class MemberV2_Official$Type extends MessageType {
     constructor() {
@@ -2890,7 +2890,7 @@ class MemberV2_Official$Type extends MessageType {
 /**
  * @generated MessageType for protobuf message bilibili.main.community.reply.v1.MemberV2.Official
  */
-export const MemberV2_Official = new MemberV2_Official$Type();
+export const MemberV2_Official = /* #__PURE__ */ new MemberV2_Official$Type();
 // @generated message type with reflection information, may provide speed optimized methods
 class MemberV2_Vip$Type extends MessageType {
     constructor() {
@@ -2993,7 +2993,7 @@ class MemberV2_Vip$Type extends MessageType {
 /**
  * @generated MessageType for protobuf message bilibili.main.community.reply.v1.MemberV2.Vip
  */
-export const MemberV2_Vip = new MemberV2_Vip$Type();
+export const MemberV2_Vip = /* #__PURE__ */ new MemberV2_Vip$Type();
 // @generated message type with reflection information, may provide speed optimized methods
 class MemberV2_Garb$Type extends MessageType {
     constructor() {
@@ -3088,7 +3088,7 @@ class MemberV2_Garb$Type extends MessageType {
 /**
  * @generated MessageType for protobuf message bilibili.main.community.reply.v1.MemberV2.Garb
  */
-export const MemberV2_Garb = new MemberV2_Garb$Type();
+export const MemberV2_Garb = /* #__PURE__ */ new MemberV2_Garb$Type();
 // @generated message type with reflection information, may provide speed optimized methods
 class MemberV2_Medal$Type extends MessageType {
     constructor() {
@@ -3207,7 +3207,7 @@ class MemberV2_Medal$Type extends MessageType {
 /**
  * @generated MessageType for protobuf message bilibili.main.community.reply.v1.MemberV2.Medal
  */
-export const MemberV2_Medal = new MemberV2_Medal$Type();
+export const MemberV2_Medal = /* #__PURE__ */ new MemberV2_Medal$Type();
 // @generated message type with reflection information, may provide speed optimized methods
 class MemberV2_Region$Type extends MessageType {
     constructor() {
@@ -3270,7 +3270,7 @@ class MemberV2_Region$Type extends MessageType {
 /**
  * @generated MessageType for protobuf message bilibili.main.community.reply.v1.MemberV2.Region
  */
-export const MemberV2_Region = new MemberV2_Region$Type();
+export const MemberV2_Region = /* #__PURE__ */ new MemberV2_Region$Type();
 // @generated message type with reflection information, may provide speed optimized methods
 class MemberV2_Interaction$Type extends MessageType {
     constructor() {
@@ -3340,7 +3340,7 @@ class MemberV2_Interaction$Type extends MessageType {
 /**
  * @generated MessageType for protobuf message bilibili.main.community.reply.v1.MemberV2.Interaction
  */
-export const MemberV2_Interaction = new MemberV2_Interaction$Type();
+export const MemberV2_Interaction = /* #__PURE__ */ new MemberV2_Interaction$Type();
 // @generated message type with reflection information, may provide speed optimized methods
 class MemberV2_Nft$Type extends MessageType {
     constructor() {
@@ -3394,7 +3394,7 @@ class MemberV2_Nft$Type extends MessageType {
 /**
  * @generated MessageType for protobuf message bilibili.main.community.reply.v1.MemberV2.Nft
  */
-export const MemberV2_Nft = new MemberV2_Nft$Type();
+export const MemberV2_Nft = /* #__PURE__ */ new MemberV2_Nft$Type();
 // @generated message type with reflection information, may provide speed optimized methods
 class MemberV2_Senior$Type extends MessageType {
     constructor() {
@@ -3441,7 +3441,7 @@ class MemberV2_Senior$Type extends MessageType {
 /**
  * @generated MessageType for protobuf message bilibili.main.community.reply.v1.MemberV2.Senior
  */
-export const MemberV2_Senior = new MemberV2_Senior$Type();
+export const MemberV2_Senior = /* #__PURE__ */ new MemberV2_Senior$Type();
 // @generated message type with reflection information, may provide speed optimized methods
 class MemberV2_Contractor$Type extends MessageType {
     constructor() {
@@ -3496,7 +3496,7 @@ class MemberV2_Contractor$Type extends MessageType {
 /**
  * @generated MessageType for protobuf message bilibili.main.community.reply.v1.MemberV2.Contractor
  */
-export const MemberV2_Contractor = new MemberV2_Contractor$Type();
+export const MemberV2_Contractor = /* #__PURE__ */ new MemberV2_Contractor$Type();
 // @generated message type with reflection information, may provide speed optimized methods
 class Notice$Type extends MessageType {
     constructor() {
@@ -3559,7 +3559,7 @@ class Notice$Type extends MessageType {
 /**
  * @generated MessageType for protobuf message bilibili.main.community.reply.v1.Notice
  */
-export const Notice = new Notice$Type();
+export const Notice = /* #__PURE__ */ new Notice$Type();
 // @generated message type with reflection information, may provide speed optimized methods
 class Operation$Type extends MessageType {
     constructor() {
@@ -3652,7 +3652,7 @@ class Operation$Type extends MessageType {
 /**
  * @generated MessageType for protobuf message bilibili.main.community.reply.v1.Operation
  */
-export const Operation = new Operation$Type();
+export const Operation = /* #__PURE__ */ new Operation$Type();
 // @generated message type with reflection information, may provide speed optimized methods
 class OperationTitle$Type extends MessageType {
     constructor() {
@@ -3707,7 +3707,7 @@ class OperationTitle$Type extends MessageType {
 /**
  * @generated MessageType for protobuf message bilibili.main.community.reply.v1.OperationTitle
  */
-export const OperationTitle = new OperationTitle$Type();
+export const OperationTitle = /* #__PURE__ */ new OperationTitle$Type();
 // @generated message type with reflection information, may provide speed optimized methods
 class PGCVideoSearchItem$Type extends MessageType {
     constructor() {
@@ -3770,7 +3770,7 @@ class PGCVideoSearchItem$Type extends MessageType {
 /**
  * @generated MessageType for protobuf message bilibili.main.community.reply.v1.PGCVideoSearchItem
  */
-export const PGCVideoSearchItem = new PGCVideoSearchItem$Type();
+export const PGCVideoSearchItem = /* #__PURE__ */ new PGCVideoSearchItem$Type();
 // @generated message type with reflection information, may provide speed optimized methods
 class PreviewListReply$Type extends MessageType {
     constructor() {
@@ -3852,7 +3852,7 @@ class PreviewListReply$Type extends MessageType {
 /**
  * @generated MessageType for protobuf message bilibili.main.community.reply.v1.PreviewListReply
  */
-export const PreviewListReply = new PreviewListReply$Type();
+export const PreviewListReply = /* #__PURE__ */ new PreviewListReply$Type();
 // @generated message type with reflection information, may provide speed optimized methods
 class PreviewListReq$Type extends MessageType {
     constructor() {
@@ -3914,7 +3914,7 @@ class PreviewListReq$Type extends MessageType {
 /**
  * @generated MessageType for protobuf message bilibili.main.community.reply.v1.PreviewListReq
  */
-export const PreviewListReq = new PreviewListReq$Type();
+export const PreviewListReq = /* #__PURE__ */ new PreviewListReq$Type();
 // @generated message type with reflection information, may provide speed optimized methods
 class QoeInfo$Type extends MessageType {
     constructor() {
@@ -4009,7 +4009,7 @@ class QoeInfo$Type extends MessageType {
 /**
  * @generated MessageType for protobuf message bilibili.main.community.reply.v1.QoeInfo
  */
-export const QoeInfo = new QoeInfo$Type();
+export const QoeInfo = /* #__PURE__ */ new QoeInfo$Type();
 // @generated message type with reflection information, may provide speed optimized methods
 class QoeScoreItem$Type extends MessageType {
     constructor() {
@@ -4072,7 +4072,7 @@ class QoeScoreItem$Type extends MessageType {
 /**
  * @generated MessageType for protobuf message bilibili.main.community.reply.v1.QoeScoreItem
  */
-export const QoeScoreItem = new QoeScoreItem$Type();
+export const QoeScoreItem = /* #__PURE__ */ new QoeScoreItem$Type();
 // @generated message type with reflection information, may provide speed optimized methods
 class ReplyCardLabel$Type extends MessageType {
     constructor() {
@@ -4215,7 +4215,7 @@ class ReplyCardLabel$Type extends MessageType {
 /**
  * @generated MessageType for protobuf message bilibili.main.community.reply.v1.ReplyCardLabel
  */
-export const ReplyCardLabel = new ReplyCardLabel$Type();
+export const ReplyCardLabel = /* #__PURE__ */ new ReplyCardLabel$Type();
 // @generated message type with reflection information, may provide speed optimized methods
 class ReplyControl$Type extends MessageType {
     constructor() {
@@ -4454,7 +4454,7 @@ class ReplyControl$Type extends MessageType {
 /**
  * @generated MessageType for protobuf message bilibili.main.community.reply.v1.ReplyControl
  */
-export const ReplyControl = new ReplyControl$Type();
+export const ReplyControl = /* #__PURE__ */ new ReplyControl$Type();
 // @generated message type with reflection information, may provide speed optimized methods
 class ReplyExtra$Type extends MessageType {
     constructor() {
@@ -4525,7 +4525,7 @@ class ReplyExtra$Type extends MessageType {
 /**
  * @generated MessageType for protobuf message bilibili.main.community.reply.v1.ReplyExtra
  */
-export const ReplyExtra = new ReplyExtra$Type();
+export const ReplyExtra = /* #__PURE__ */ new ReplyExtra$Type();
 // @generated message type with reflection information, may provide speed optimized methods
 class ReplyInfo$Type extends MessageType {
     constructor() {
@@ -4680,7 +4680,7 @@ class ReplyInfo$Type extends MessageType {
 /**
  * @generated MessageType for protobuf message bilibili.main.community.reply.v1.ReplyInfo
  */
-export const ReplyInfo = new ReplyInfo$Type();
+export const ReplyInfo = /* #__PURE__ */ new ReplyInfo$Type();
 // @generated message type with reflection information, may provide speed optimized methods
 class ReplyInfoReply$Type extends MessageType {
     constructor() {
@@ -4726,7 +4726,7 @@ class ReplyInfoReply$Type extends MessageType {
 /**
  * @generated MessageType for protobuf message bilibili.main.community.reply.v1.ReplyInfoReply
  */
-export const ReplyInfoReply = new ReplyInfoReply$Type();
+export const ReplyInfoReply = /* #__PURE__ */ new ReplyInfoReply$Type();
 // @generated message type with reflection information, may provide speed optimized methods
 class ReplyInfoReq$Type extends MessageType {
     constructor() {
@@ -4781,7 +4781,7 @@ class ReplyInfoReq$Type extends MessageType {
 /**
  * @generated MessageType for protobuf message bilibili.main.community.reply.v1.ReplyInfoReq
  */
-export const ReplyInfoReq = new ReplyInfoReq$Type();
+export const ReplyInfoReq = /* #__PURE__ */ new ReplyInfoReq$Type();
 // @generated message type with reflection information, may provide speed optimized methods
 class RichText$Type extends MessageType {
     constructor() {
@@ -4831,7 +4831,7 @@ class RichText$Type extends MessageType {
 /**
  * @generated MessageType for protobuf message bilibili.main.community.reply.v1.RichText
  */
-export const RichText = new RichText$Type();
+export const RichText = /* #__PURE__ */ new RichText$Type();
 // @generated message type with reflection information, may provide speed optimized methods
 class RichTextNote$Type extends MessageType {
     constructor() {
@@ -4902,7 +4902,7 @@ class RichTextNote$Type extends MessageType {
 /**
  * @generated MessageType for protobuf message bilibili.main.community.reply.v1.RichTextNote
  */
-export const RichTextNote = new RichTextNote$Type();
+export const RichTextNote = /* #__PURE__ */ new RichTextNote$Type();
 // @generated message type with reflection information, may provide speed optimized methods
 class SearchItem$Type extends MessageType {
     constructor() {
@@ -4980,7 +4980,7 @@ class SearchItem$Type extends MessageType {
 /**
  * @generated MessageType for protobuf message bilibili.main.community.reply.v1.SearchItem
  */
-export const SearchItem = new SearchItem$Type();
+export const SearchItem = /* #__PURE__ */ new SearchItem$Type();
 // @generated message type with reflection information, may provide speed optimized methods
 class SearchItemCursorReply$Type extends MessageType {
     constructor() {
@@ -5035,7 +5035,7 @@ class SearchItemCursorReply$Type extends MessageType {
 /**
  * @generated MessageType for protobuf message bilibili.main.community.reply.v1.SearchItemCursorReply
  */
-export const SearchItemCursorReply = new SearchItemCursorReply$Type();
+export const SearchItemCursorReply = /* #__PURE__ */ new SearchItemCursorReply$Type();
 // @generated message type with reflection information, may provide speed optimized methods
 class SearchItemCursorReq$Type extends MessageType {
     constructor() {
@@ -5090,7 +5090,7 @@ class SearchItemCursorReq$Type extends MessageType {
 /**
  * @generated MessageType for protobuf message bilibili.main.community.reply.v1.SearchItemCursorReq
  */
-export const SearchItemCursorReq = new SearchItemCursorReq$Type();
+export const SearchItemCursorReq = /* #__PURE__ */ new SearchItemCursorReq$Type();
 // @generated message type with reflection information, may provide speed optimized methods
 class SearchItemPreHookReply$Type extends MessageType {
     constructor() {
@@ -5161,7 +5161,7 @@ class SearchItemPreHookReply$Type extends MessageType {
 /**
  * @generated MessageType for protobuf message bilibili.main.community.reply.v1.SearchItemPreHookReply
  */
-export const SearchItemPreHookReply = new SearchItemPreHookReply$Type();
+export const SearchItemPreHookReply = /* #__PURE__ */ new SearchItemPreHookReply$Type();
 // @generated message type with reflection information, may provide speed optimized methods
 class SearchItemPreHookReq$Type extends MessageType {
     constructor() {
@@ -5216,7 +5216,7 @@ class SearchItemPreHookReq$Type extends MessageType {
 /**
  * @generated MessageType for protobuf message bilibili.main.community.reply.v1.SearchItemPreHookReq
  */
-export const SearchItemPreHookReq = new SearchItemPreHookReq$Type();
+export const SearchItemPreHookReq = /* #__PURE__ */ new SearchItemPreHookReq$Type();
 // @generated message type with reflection information, may provide speed optimized methods
 class SearchItemReply$Type extends MessageType {
     constructor() {
@@ -5277,7 +5277,7 @@ class SearchItemReply$Type extends MessageType {
 /**
  * @generated MessageType for protobuf message bilibili.main.community.reply.v1.SearchItemReply
  */
-export const SearchItemReply = new SearchItemReply$Type();
+export const SearchItemReply = /* #__PURE__ */ new SearchItemReply$Type();
 // @generated message type with reflection information, may provide speed optimized methods
 class SearchItemReplyExtraInfo$Type extends MessageType {
     constructor() {
@@ -5324,7 +5324,7 @@ class SearchItemReplyExtraInfo$Type extends MessageType {
 /**
  * @generated MessageType for protobuf message bilibili.main.community.reply.v1.SearchItemReplyExtraInfo
  */
-export const SearchItemReplyExtraInfo = new SearchItemReplyExtraInfo$Type();
+export const SearchItemReplyExtraInfo = /* #__PURE__ */ new SearchItemReplyExtraInfo$Type();
 // @generated message type with reflection information, may provide speed optimized methods
 class SearchItemReq$Type extends MessageType {
     constructor() {
@@ -5394,7 +5394,7 @@ class SearchItemReq$Type extends MessageType {
 /**
  * @generated MessageType for protobuf message bilibili.main.community.reply.v1.SearchItemReq
  */
-export const SearchItemReq = new SearchItemReq$Type();
+export const SearchItemReq = /* #__PURE__ */ new SearchItemReq$Type();
 // @generated message type with reflection information, may provide speed optimized methods
 class ShareRepliesInfoReq$Type extends MessageType {
     constructor() {
@@ -5465,7 +5465,7 @@ class ShareRepliesInfoReq$Type extends MessageType {
 /**
  * @generated MessageType for protobuf message bilibili.main.community.reply.v1.ShareRepliesInfoReq
  */
-export const ShareRepliesInfoReq = new ShareRepliesInfoReq$Type();
+export const ShareRepliesInfoReq = /* #__PURE__ */ new ShareRepliesInfoReq$Type();
 // @generated message type with reflection information, may provide speed optimized methods
 class ShareRepliesInfoResp$Type extends MessageType {
     constructor() {
@@ -5574,7 +5574,7 @@ class ShareRepliesInfoResp$Type extends MessageType {
 /**
  * @generated MessageType for protobuf message bilibili.main.community.reply.v1.ShareRepliesInfoResp
  */
-export const ShareRepliesInfoResp = new ShareRepliesInfoResp$Type();
+export const ShareRepliesInfoResp = /* #__PURE__ */ new ShareRepliesInfoResp$Type();
 // @generated message type with reflection information, may provide speed optimized methods
 class ShareRepliesInfoResp_ShareExtra$Type extends MessageType {
     constructor() {
@@ -5621,7 +5621,7 @@ class ShareRepliesInfoResp_ShareExtra$Type extends MessageType {
 /**
  * @generated MessageType for protobuf message bilibili.main.community.reply.v1.ShareRepliesInfoResp.ShareExtra
  */
-export const ShareRepliesInfoResp_ShareExtra = new ShareRepliesInfoResp_ShareExtra$Type();
+export const ShareRepliesInfoResp_ShareExtra = /* #__PURE__ */ new ShareRepliesInfoResp_ShareExtra$Type();
 // @generated message type with reflection information, may provide speed optimized methods
 class ShareReplyInfo$Type extends MessageType {
     constructor() {
@@ -5706,7 +5706,7 @@ class ShareReplyInfo$Type extends MessageType {
 /**
  * @generated MessageType for protobuf message bilibili.main.community.reply.v1.ShareReplyInfo
  */
-export const ShareReplyInfo = new ShareReplyInfo$Type();
+export const ShareReplyInfo = /* #__PURE__ */ new ShareReplyInfo$Type();
 // @generated message type with reflection information, may provide speed optimized methods
 class ShareReplyTopic$Type extends MessageType {
     constructor() {
@@ -5760,7 +5760,7 @@ class ShareReplyTopic$Type extends MessageType {
 /**
  * @generated MessageType for protobuf message bilibili.main.community.reply.v1.ShareReplyTopic
  */
-export const ShareReplyTopic = new ShareReplyTopic$Type();
+export const ShareReplyTopic = /* #__PURE__ */ new ShareReplyTopic$Type();
 // @generated message type with reflection information, may provide speed optimized methods
 class SubjectControl$Type extends MessageType {
     constructor() {
@@ -5991,7 +5991,7 @@ class SubjectControl$Type extends MessageType {
 /**
  * @generated MessageType for protobuf message bilibili.main.community.reply.v1.SubjectControl
  */
-export const SubjectControl = new SubjectControl$Type();
+export const SubjectControl = /* #__PURE__ */ new SubjectControl$Type();
 // @generated message type with reflection information, may provide speed optimized methods
 class SubjectControl_FilterTag$Type extends MessageType {
     constructor() {
@@ -6046,7 +6046,7 @@ class SubjectControl_FilterTag$Type extends MessageType {
 /**
  * @generated MessageType for protobuf message bilibili.main.community.reply.v1.SubjectControl.FilterTag
  */
-export const SubjectControl_FilterTag = new SubjectControl_FilterTag$Type();
+export const SubjectControl_FilterTag = /* #__PURE__ */ new SubjectControl_FilterTag$Type();
 // @generated message type with reflection information, may provide speed optimized methods
 class SuggestEmotesReq$Type extends MessageType {
     constructor() {
@@ -6101,7 +6101,7 @@ class SuggestEmotesReq$Type extends MessageType {
 /**
  * @generated MessageType for protobuf message bilibili.main.community.reply.v1.SuggestEmotesReq
  */
-export const SuggestEmotesReq = new SuggestEmotesReq$Type();
+export const SuggestEmotesReq = /* #__PURE__ */ new SuggestEmotesReq$Type();
 // @generated message type with reflection information, may provide speed optimized methods
 class SuggestEmotesResp$Type extends MessageType {
     constructor() {
@@ -6148,7 +6148,7 @@ class SuggestEmotesResp$Type extends MessageType {
 /**
  * @generated MessageType for protobuf message bilibili.main.community.reply.v1.SuggestEmotesResp
  */
-export const SuggestEmotesResp = new SuggestEmotesResp$Type();
+export const SuggestEmotesResp = /* #__PURE__ */ new SuggestEmotesResp$Type();
 // @generated message type with reflection information, may provide speed optimized methods
 class Topic$Type extends MessageType {
     constructor() {
@@ -6203,7 +6203,7 @@ class Topic$Type extends MessageType {
 /**
  * @generated MessageType for protobuf message bilibili.main.community.reply.v1.Topic
  */
-export const Topic = new Topic$Type();
+export const Topic = /* #__PURE__ */ new Topic$Type();
 // @generated message type with reflection information, may provide speed optimized methods
 class UGCVideoSearchItem$Type extends MessageType {
     constructor() {
@@ -6274,7 +6274,7 @@ class UGCVideoSearchItem$Type extends MessageType {
 /**
  * @generated MessageType for protobuf message bilibili.main.community.reply.v1.UGCVideoSearchItem
  */
-export const UGCVideoSearchItem = new UGCVideoSearchItem$Type();
+export const UGCVideoSearchItem = /* #__PURE__ */ new UGCVideoSearchItem$Type();
 // @generated message type with reflection information, may provide speed optimized methods
 class UpSelection$Type extends MessageType {
     constructor() {
@@ -6329,7 +6329,7 @@ class UpSelection$Type extends MessageType {
 /**
  * @generated MessageType for protobuf message bilibili.main.community.reply.v1.UpSelection
  */
-export const UpSelection = new UpSelection$Type();
+export const UpSelection = /* #__PURE__ */ new UpSelection$Type();
 // @generated message type with reflection information, may provide speed optimized methods
 class Url$Type extends MessageType {
     constructor() {
@@ -6479,7 +6479,7 @@ class Url$Type extends MessageType {
 /**
  * @generated MessageType for protobuf message bilibili.main.community.reply.v1.Url
  */
-export const Url = new Url$Type();
+export const Url = /* #__PURE__ */ new Url$Type();
 // @generated message type with reflection information, may provide speed optimized methods
 class Url_Extra$Type extends MessageType {
     constructor() {
@@ -6558,7 +6558,7 @@ class Url_Extra$Type extends MessageType {
 /**
  * @generated MessageType for protobuf message bilibili.main.community.reply.v1.Url.Extra
  */
-export const Url_Extra = new Url_Extra$Type();
+export const Url_Extra = /* #__PURE__ */ new Url_Extra$Type();
 // @generated message type with reflection information, may provide speed optimized methods
 class UserCallbackReply$Type extends MessageType {
     constructor() {
@@ -6596,7 +6596,7 @@ class UserCallbackReply$Type extends MessageType {
 /**
  * @generated MessageType for protobuf message bilibili.main.community.reply.v1.UserCallbackReply
  */
-export const UserCallbackReply = new UserCallbackReply$Type();
+export const UserCallbackReply = /* #__PURE__ */ new UserCallbackReply$Type();
 // @generated message type with reflection information, may provide speed optimized methods
 class UserCallbackReq$Type extends MessageType {
     constructor() {
@@ -6675,7 +6675,7 @@ class UserCallbackReq$Type extends MessageType {
 /**
  * @generated MessageType for protobuf message bilibili.main.community.reply.v1.UserCallbackReq
  */
-export const UserCallbackReq = new UserCallbackReq$Type();
+export const UserCallbackReq = /* #__PURE__ */ new UserCallbackReq$Type();
 // @generated message type with reflection information, may provide speed optimized methods
 class VideoSearchItem$Type extends MessageType {
     constructor() {
@@ -6743,7 +6743,7 @@ class VideoSearchItem$Type extends MessageType {
 /**
  * @generated MessageType for protobuf message bilibili.main.community.reply.v1.VideoSearchItem
  */
-export const VideoSearchItem = new VideoSearchItem$Type();
+export const VideoSearchItem = /* #__PURE__ */ new VideoSearchItem$Type();
 // @generated message type with reflection information, may provide speed optimized methods
 class Vote$Type extends MessageType {
     constructor() {
@@ -6806,7 +6806,7 @@ class Vote$Type extends MessageType {
 /**
  * @generated MessageType for protobuf message bilibili.main.community.reply.v1.Vote
  */
-export const Vote = new Vote$Type();
+export const Vote = /* #__PURE__ */ new Vote$Type();
 /**
  * @generated ServiceType for protobuf service bilibili.main.community.reply.v1.Reply
  */

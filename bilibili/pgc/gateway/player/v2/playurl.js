@@ -354,7 +354,7 @@ class Animation$Type extends MessageType {
 /**
  * @generated MessageType for protobuf message bilibili.pgc.gateway.player.v2.Animation
  */
-export const Animation = new Animation$Type();
+export const Animation = /* #__PURE__ */ new Animation$Type();
 // @generated message type with reflection information, may provide speed optimized methods
 class AudioMaterialProto$Type extends MessageType {
     constructor() {
@@ -449,7 +449,7 @@ class AudioMaterialProto$Type extends MessageType {
 /**
  * @generated MessageType for protobuf message bilibili.pgc.gateway.player.v2.AudioMaterialProto
  */
-export const AudioMaterialProto = new AudioMaterialProto$Type();
+export const AudioMaterialProto = /* #__PURE__ */ new AudioMaterialProto$Type();
 // @generated message type with reflection information, may provide speed optimized methods
 class BadgeInfo$Type extends MessageType {
     constructor() {
@@ -535,7 +535,7 @@ class BadgeInfo$Type extends MessageType {
 /**
  * @generated MessageType for protobuf message bilibili.pgc.gateway.player.v2.BadgeInfo
  */
-export const BadgeInfo = new BadgeInfo$Type();
+export const BadgeInfo = /* #__PURE__ */ new BadgeInfo$Type();
 // @generated message type with reflection information, may provide speed optimized methods
 class BottomDisplay$Type extends MessageType {
     constructor() {
@@ -589,7 +589,7 @@ class BottomDisplay$Type extends MessageType {
 /**
  * @generated MessageType for protobuf message bilibili.pgc.gateway.player.v2.BottomDisplay
  */
-export const BottomDisplay = new BottomDisplay$Type();
+export const BottomDisplay = /* #__PURE__ */ new BottomDisplay$Type();
 // @generated message type with reflection information, may provide speed optimized methods
 class ButtonInfo$Type extends MessageType {
     constructor() {
@@ -775,7 +775,7 @@ class ButtonInfo$Type extends MessageType {
 /**
  * @generated MessageType for protobuf message bilibili.pgc.gateway.player.v2.ButtonInfo
  */
-export const ButtonInfo = new ButtonInfo$Type();
+export const ButtonInfo = /* #__PURE__ */ new ButtonInfo$Type();
 // @generated message type with reflection information, may provide speed optimized methods
 class CastTips$Type extends MessageType {
     constructor() {
@@ -830,7 +830,7 @@ class CastTips$Type extends MessageType {
 /**
  * @generated MessageType for protobuf message bilibili.pgc.gateway.player.v2.CastTips
  */
-export const CastTips = new CastTips$Type();
+export const CastTips = /* #__PURE__ */ new CastTips$Type();
 // @generated message type with reflection information, may provide speed optimized methods
 class ClipInfo$Type extends MessageType {
     constructor() {
@@ -916,7 +916,7 @@ class ClipInfo$Type extends MessageType {
 /**
  * @generated MessageType for protobuf message bilibili.pgc.gateway.player.v2.ClipInfo
  */
-export const ClipInfo = new ClipInfo$Type();
+export const ClipInfo = /* #__PURE__ */ new ClipInfo$Type();
 // @generated message type with reflection information, may provide speed optimized methods
 class ContinuePlayInfo$Type extends MessageType {
     constructor() {
@@ -963,7 +963,7 @@ class ContinuePlayInfo$Type extends MessageType {
 /**
  * @generated MessageType for protobuf message bilibili.pgc.gateway.player.v2.ContinuePlayInfo
  */
-export const ContinuePlayInfo = new ContinuePlayInfo$Type();
+export const ContinuePlayInfo = /* #__PURE__ */ new ContinuePlayInfo$Type();
 // @generated message type with reflection information, may provide speed optimized methods
 class Coupon$Type extends MessageType {
     constructor() {
@@ -1097,7 +1097,7 @@ class Coupon$Type extends MessageType {
 /**
  * @generated MessageType for protobuf message bilibili.pgc.gateway.player.v2.Coupon
  */
-export const Coupon = new Coupon$Type();
+export const Coupon = /* #__PURE__ */ new Coupon$Type();
 // @generated message type with reflection information, may provide speed optimized methods
 class CouponInfo$Type extends MessageType {
     constructor() {
@@ -1150,7 +1150,7 @@ class CouponInfo$Type extends MessageType {
 /**
  * @generated MessageType for protobuf message bilibili.pgc.gateway.player.v2.CouponInfo
  */
-export const CouponInfo = new CouponInfo$Type();
+export const CouponInfo = /* #__PURE__ */ new CouponInfo$Type();
 // @generated message type with reflection information, may provide speed optimized methods
 class CouponTextInfo$Type extends MessageType {
     constructor() {
@@ -1205,7 +1205,7 @@ class CouponTextInfo$Type extends MessageType {
 /**
  * @generated MessageType for protobuf message bilibili.pgc.gateway.player.v2.CouponTextInfo
  */
-export const CouponTextInfo = new CouponTextInfo$Type();
+export const CouponTextInfo = /* #__PURE__ */ new CouponTextInfo$Type();
 // @generated message type with reflection information, may provide speed optimized methods
 class CouponToast$Type extends MessageType {
     constructor() {
@@ -1258,7 +1258,7 @@ class CouponToast$Type extends MessageType {
 /**
  * @generated MessageType for protobuf message bilibili.pgc.gateway.player.v2.CouponToast
  */
-export const CouponToast = new CouponToast$Type();
+export const CouponToast = /* #__PURE__ */ new CouponToast$Type();
 // @generated message type with reflection information, may provide speed optimized methods
 class DashItem$Type extends MessageType {
     constructor() {
@@ -1369,7 +1369,7 @@ class DashItem$Type extends MessageType {
 /**
  * @generated MessageType for protobuf message bilibili.pgc.gateway.player.v2.DashItem
  */
-export const DashItem = new DashItem$Type();
+export const DashItem = /* #__PURE__ */ new DashItem$Type();
 // @generated message type with reflection information, may provide speed optimized methods
 class DashVideo$Type extends MessageType {
     constructor() {
@@ -1504,7 +1504,7 @@ class DashVideo$Type extends MessageType {
 /**
  * @generated MessageType for protobuf message bilibili.pgc.gateway.player.v2.DashVideo
  */
-export const DashVideo = new DashVideo$Type();
+export const DashVideo = /* #__PURE__ */ new DashVideo$Type();
 // @generated message type with reflection information, may provide speed optimized methods
 class DataControl$Type extends MessageType {
     constructor() {
@@ -1551,7 +1551,7 @@ class DataControl$Type extends MessageType {
 /**
  * @generated MessageType for protobuf message bilibili.pgc.gateway.player.v2.DataControl
  */
-export const DataControl = new DataControl$Type();
+export const DataControl = /* #__PURE__ */ new DataControl$Type();
 // @generated message type with reflection information, may provide speed optimized methods
 class Dialog$Type extends MessageType {
     constructor() {
@@ -1703,7 +1703,7 @@ class Dialog$Type extends MessageType {
 /**
  * @generated MessageType for protobuf message bilibili.pgc.gateway.player.v2.Dialog
  */
-export const Dialog = new Dialog$Type();
+export const Dialog = /* #__PURE__ */ new Dialog$Type();
 // @generated message type with reflection information, may provide speed optimized methods
 class DialogConfig$Type extends MessageType {
     constructor() {
@@ -1782,7 +1782,7 @@ class DialogConfig$Type extends MessageType {
 /**
  * @generated MessageType for protobuf message bilibili.pgc.gateway.player.v2.DialogConfig
  */
-export const DialogConfig = new DialogConfig$Type();
+export const DialogConfig = /* #__PURE__ */ new DialogConfig$Type();
 // @generated message type with reflection information, may provide speed optimized methods
 class Dimension$Type extends MessageType {
     constructor() {
@@ -1845,7 +1845,7 @@ class Dimension$Type extends MessageType {
 /**
  * @generated MessageType for protobuf message bilibili.pgc.gateway.player.v2.Dimension
  */
-export const Dimension = new Dimension$Type();
+export const Dimension = /* #__PURE__ */ new Dimension$Type();
 // @generated message type with reflection information, may provide speed optimized methods
 class DolbyItem$Type extends MessageType {
     constructor() {
@@ -1899,7 +1899,7 @@ class DolbyItem$Type extends MessageType {
 /**
  * @generated MessageType for protobuf message bilibili.pgc.gateway.player.v2.DolbyItem
  */
-export const DolbyItem = new DolbyItem$Type();
+export const DolbyItem = /* #__PURE__ */ new DolbyItem$Type();
 // @generated message type with reflection information, may provide speed optimized methods
 class EndPage$Type extends MessageType {
     constructor() {
@@ -1953,7 +1953,7 @@ class EndPage$Type extends MessageType {
 /**
  * @generated MessageType for protobuf message bilibili.pgc.gateway.player.v2.EndPage
  */
-export const EndPage = new EndPage$Type();
+export const EndPage = /* #__PURE__ */ new EndPage$Type();
 // @generated message type with reflection information, may provide speed optimized methods
 class EpInlineVideo$Type extends MessageType {
     constructor() {
@@ -2016,7 +2016,7 @@ class EpInlineVideo$Type extends MessageType {
 /**
  * @generated MessageType for protobuf message bilibili.pgc.gateway.player.v2.EpInlineVideo
  */
-export const EpInlineVideo = new EpInlineVideo$Type();
+export const EpInlineVideo = /* #__PURE__ */ new EpInlineVideo$Type();
 // @generated message type with reflection information, may provide speed optimized methods
 class EpisodeAdvertisementInfo$Type extends MessageType {
     constructor() {
@@ -2127,7 +2127,7 @@ class EpisodeAdvertisementInfo$Type extends MessageType {
 /**
  * @generated MessageType for protobuf message bilibili.pgc.gateway.player.v2.EpisodeAdvertisementInfo
  */
-export const EpisodeAdvertisementInfo = new EpisodeAdvertisementInfo$Type();
+export const EpisodeAdvertisementInfo = /* #__PURE__ */ new EpisodeAdvertisementInfo$Type();
 // @generated message type with reflection information, may provide speed optimized methods
 class EpisodeInfo$Type extends MessageType {
     constructor() {
@@ -2236,7 +2236,7 @@ class EpisodeInfo$Type extends MessageType {
 /**
  * @generated MessageType for protobuf message bilibili.pgc.gateway.player.v2.EpisodeInfo
  */
-export const EpisodeInfo = new EpisodeInfo$Type();
+export const EpisodeInfo = /* #__PURE__ */ new EpisodeInfo$Type();
 // @generated message type with reflection information, may provide speed optimized methods
 class EpPreVideo$Type extends MessageType {
     constructor() {
@@ -2291,7 +2291,7 @@ class EpPreVideo$Type extends MessageType {
 /**
  * @generated MessageType for protobuf message bilibili.pgc.gateway.player.v2.EpPreVideo
  */
-export const EpPreVideo = new EpPreVideo$Type();
+export const EpPreVideo = /* #__PURE__ */ new EpPreVideo$Type();
 // @generated message type with reflection information, may provide speed optimized methods
 class EpPublicityVideo$Type extends MessageType {
     constructor() {
@@ -2359,7 +2359,7 @@ class EpPublicityVideo$Type extends MessageType {
 /**
  * @generated MessageType for protobuf message bilibili.pgc.gateway.player.v2.EpPublicityVideo
  */
-export const EpPublicityVideo = new EpPublicityVideo$Type();
+export const EpPublicityVideo = /* #__PURE__ */ new EpPublicityVideo$Type();
 // @generated message type with reflection information, may provide speed optimized methods
 class Event$Type extends MessageType {
     constructor() {
@@ -2405,7 +2405,7 @@ class Event$Type extends MessageType {
 /**
  * @generated MessageType for protobuf message bilibili.pgc.gateway.player.v2.Event
  */
-export const Event = new Event$Type();
+export const Event = /* #__PURE__ */ new Event$Type();
 // @generated message type with reflection information, may provide speed optimized methods
 class FreyaConfig$Type extends MessageType {
     constructor() {
@@ -2492,7 +2492,7 @@ class FreyaConfig$Type extends MessageType {
 /**
  * @generated MessageType for protobuf message bilibili.pgc.gateway.player.v2.FreyaConfig
  */
-export const FreyaConfig = new FreyaConfig$Type();
+export const FreyaConfig = /* #__PURE__ */ new FreyaConfig$Type();
 // @generated message type with reflection information, may provide speed optimized methods
 class GradientColor$Type extends MessageType {
     constructor() {
@@ -2547,7 +2547,7 @@ class GradientColor$Type extends MessageType {
 /**
  * @generated MessageType for protobuf message bilibili.pgc.gateway.player.v2.GradientColor
  */
-export const GradientColor = new GradientColor$Type();
+export const GradientColor = /* #__PURE__ */ new GradientColor$Type();
 // @generated message type with reflection information, may provide speed optimized methods
 class HighDefinitionTrialInfo$Type extends MessageType {
     constructor() {
@@ -2653,7 +2653,7 @@ class HighDefinitionTrialInfo$Type extends MessageType {
 /**
  * @generated MessageType for protobuf message bilibili.pgc.gateway.player.v2.HighDefinitionTrialInfo
  */
-export const HighDefinitionTrialInfo = new HighDefinitionTrialInfo$Type();
+export const HighDefinitionTrialInfo = /* #__PURE__ */ new HighDefinitionTrialInfo$Type();
 // @generated message type with reflection information, may provide speed optimized methods
 class HistoryNode$Type extends MessageType {
     constructor() {
@@ -2716,7 +2716,7 @@ class HistoryNode$Type extends MessageType {
 /**
  * @generated MessageType for protobuf message bilibili.pgc.gateway.player.v2.HistoryNode
  */
-export const HistoryNode = new HistoryNode$Type();
+export const HistoryNode = /* #__PURE__ */ new HistoryNode$Type();
 // @generated message type with reflection information, may provide speed optimized methods
 class ImageInfo$Type extends MessageType {
     constructor() {
@@ -2763,7 +2763,7 @@ class ImageInfo$Type extends MessageType {
 /**
  * @generated MessageType for protobuf message bilibili.pgc.gateway.player.v2.ImageInfo
  */
-export const ImageInfo = new ImageInfo$Type();
+export const ImageInfo = /* #__PURE__ */ new ImageInfo$Type();
 // @generated message type with reflection information, may provide speed optimized methods
 class Interaction$Type extends MessageType {
     constructor() {
@@ -2833,7 +2833,7 @@ class Interaction$Type extends MessageType {
 /**
  * @generated MessageType for protobuf message bilibili.pgc.gateway.player.v2.Interaction
  */
-export const Interaction = new Interaction$Type();
+export const Interaction = /* #__PURE__ */ new Interaction$Type();
 // @generated message type with reflection information, may provide speed optimized methods
 class MultiView$Type extends MessageType {
     constructor() {
@@ -2904,7 +2904,7 @@ class MultiView$Type extends MessageType {
 /**
  * @generated MessageType for protobuf message bilibili.pgc.gateway.player.v2.MultiView
  */
-export const MultiView = new MultiView$Type();
+export const MultiView = /* #__PURE__ */ new MultiView$Type();
 // @generated message type with reflection information, may provide speed optimized methods
 class PayTip$Type extends MessageType {
     constructor() {
@@ -3118,7 +3118,7 @@ class PayTip$Type extends MessageType {
 /**
  * @generated MessageType for protobuf message bilibili.pgc.gateway.player.v2.PayTip
  */
-export const PayTip = new PayTip$Type();
+export const PayTip = /* #__PURE__ */ new PayTip$Type();
 // @generated message type with reflection information, may provide speed optimized methods
 class PlayAbilityConf$Type extends MessageType {
     constructor() {
@@ -3421,7 +3421,7 @@ class PlayAbilityConf$Type extends MessageType {
 /**
  * @generated MessageType for protobuf message bilibili.pgc.gateway.player.v2.PlayAbilityConf
  */
-export const PlayAbilityConf = new PlayAbilityConf$Type();
+export const PlayAbilityConf = /* #__PURE__ */ new PlayAbilityConf$Type();
 // @generated message type with reflection information, may provide speed optimized methods
 class PlayAbilityExtConf$Type extends MessageType {
     constructor() {
@@ -3482,7 +3482,7 @@ class PlayAbilityExtConf$Type extends MessageType {
 /**
  * @generated MessageType for protobuf message bilibili.pgc.gateway.player.v2.PlayAbilityExtConf
  */
-export const PlayAbilityExtConf = new PlayAbilityExtConf$Type();
+export const PlayAbilityExtConf = /* #__PURE__ */ new PlayAbilityExtConf$Type();
 // @generated message type with reflection information, may provide speed optimized methods
 class PlayDubbingInfo$Type extends MessageType {
     constructor() {
@@ -3544,7 +3544,7 @@ class PlayDubbingInfo$Type extends MessageType {
 /**
  * @generated MessageType for protobuf message bilibili.pgc.gateway.player.v2.PlayDubbingInfo
  */
-export const PlayDubbingInfo = new PlayDubbingInfo$Type();
+export const PlayDubbingInfo = /* #__PURE__ */ new PlayDubbingInfo$Type();
 // @generated message type with reflection information, may provide speed optimized methods
 class PlayExtInfo$Type extends MessageType {
     constructor() {
@@ -3590,7 +3590,7 @@ class PlayExtInfo$Type extends MessageType {
 /**
  * @generated MessageType for protobuf message bilibili.pgc.gateway.player.v2.PlayExtInfo
  */
-export const PlayExtInfo = new PlayExtInfo$Type();
+export const PlayExtInfo = /* #__PURE__ */ new PlayExtInfo$Type();
 // @generated message type with reflection information, may provide speed optimized methods
 class PlayList$Type extends MessageType {
     constructor() {
@@ -3668,7 +3668,7 @@ class PlayList$Type extends MessageType {
 /**
  * @generated MessageType for protobuf message bilibili.pgc.gateway.player.v2.PlayList
  */
-export const PlayList = new PlayList$Type();
+export const PlayList = /* #__PURE__ */ new PlayList$Type();
 // @generated message type with reflection information, may provide speed optimized methods
 class PlayViewBusinessInfo$Type extends MessageType {
     constructor() {
@@ -3897,7 +3897,7 @@ class PlayViewBusinessInfo$Type extends MessageType {
 /**
  * @generated MessageType for protobuf message bilibili.pgc.gateway.player.v2.PlayViewBusinessInfo
  */
-export const PlayViewBusinessInfo = new PlayViewBusinessInfo$Type();
+export const PlayViewBusinessInfo = /* #__PURE__ */ new PlayViewBusinessInfo$Type();
 // @generated message type with reflection information, may provide speed optimized methods
 class PlayViewReply$Type extends MessageType {
     constructor() {
@@ -3950,7 +3950,7 @@ class PlayViewReply$Type extends MessageType {
 /**
  * @generated MessageType for protobuf message bilibili.pgc.gateway.player.v2.PlayViewReply
  */
-export const PlayViewReply = new PlayViewReply$Type();
+export const PlayViewReply = /* #__PURE__ */ new PlayViewReply$Type();
 // @generated message type with reflection information, may provide speed optimized methods
 class PlayViewReq$Type extends MessageType {
     constructor() {
@@ -4140,7 +4140,7 @@ class PlayViewReq$Type extends MessageType {
 /**
  * @generated MessageType for protobuf message bilibili.pgc.gateway.player.v2.PlayViewReq
  */
-export const PlayViewReq = new PlayViewReq$Type();
+export const PlayViewReq = /* #__PURE__ */ new PlayViewReq$Type();
 // @generated message type with reflection information, may provide speed optimized methods
 class PopWin$Type extends MessageType {
     constructor() {
@@ -4248,7 +4248,7 @@ class PopWin$Type extends MessageType {
 /**
  * @generated MessageType for protobuf message bilibili.pgc.gateway.player.v2.PopWin
  */
-export const PopWin = new PopWin$Type();
+export const PopWin = /* #__PURE__ */ new PopWin$Type();
 // @generated message type with reflection information, may provide speed optimized methods
 class PromptBar$Type extends MessageType {
     constructor() {
@@ -4354,7 +4354,7 @@ class PromptBar$Type extends MessageType {
 /**
  * @generated MessageType for protobuf message bilibili.pgc.gateway.player.v2.PromptBar
  */
-export const PromptBar = new PromptBar$Type();
+export const PromptBar = /* #__PURE__ */ new PromptBar$Type();
 // @generated message type with reflection information, may provide speed optimized methods
 class QualityExtInfo$Type extends MessageType {
     constructor() {
@@ -4401,7 +4401,7 @@ class QualityExtInfo$Type extends MessageType {
 /**
  * @generated MessageType for protobuf message bilibili.pgc.gateway.player.v2.QualityExtInfo
  */
-export const QualityExtInfo = new QualityExtInfo$Type();
+export const QualityExtInfo = /* #__PURE__ */ new QualityExtInfo$Type();
 // @generated message type with reflection information, may provide speed optimized methods
 class RecordInfo$Type extends MessageType {
     constructor() {
@@ -4456,7 +4456,7 @@ class RecordInfo$Type extends MessageType {
 /**
  * @generated MessageType for protobuf message bilibili.pgc.gateway.player.v2.RecordInfo
  */
-export const RecordInfo = new RecordInfo$Type();
+export const RecordInfo = /* #__PURE__ */ new RecordInfo$Type();
 // @generated message type with reflection information, may provide speed optimized methods
 class Report$Type extends MessageType {
     constructor() {
@@ -4519,7 +4519,7 @@ class Report$Type extends MessageType {
 /**
  * @generated MessageType for protobuf message bilibili.pgc.gateway.player.v2.Report
  */
-export const Report = new Report$Type();
+export const Report = /* #__PURE__ */ new Report$Type();
 // @generated message type with reflection information, may provide speed optimized methods
 class ResponseUrl$Type extends MessageType {
     constructor() {
@@ -4606,7 +4606,7 @@ class ResponseUrl$Type extends MessageType {
 /**
  * @generated MessageType for protobuf message bilibili.pgc.gateway.player.v2.ResponseUrl
  */
-export const ResponseUrl = new ResponseUrl$Type();
+export const ResponseUrl = /* #__PURE__ */ new ResponseUrl$Type();
 // @generated message type with reflection information, may provide speed optimized methods
 class Rights$Type extends MessageType {
     constructor() {
@@ -4653,7 +4653,7 @@ class Rights$Type extends MessageType {
 /**
  * @generated MessageType for protobuf message bilibili.pgc.gateway.player.v2.Rights
  */
-export const Rights = new Rights$Type();
+export const Rights = /* #__PURE__ */ new Rights$Type();
 // @generated message type with reflection information, may provide speed optimized methods
 class RoleAudioProto$Type extends MessageType {
     constructor() {
@@ -4724,7 +4724,7 @@ class RoleAudioProto$Type extends MessageType {
 /**
  * @generated MessageType for protobuf message bilibili.pgc.gateway.player.v2.RoleAudioProto
  */
-export const RoleAudioProto = new RoleAudioProto$Type();
+export const RoleAudioProto = /* #__PURE__ */ new RoleAudioProto$Type();
 // @generated message type with reflection information, may provide speed optimized methods
 class SceneControl$Type extends MessageType {
     constructor() {
@@ -4803,7 +4803,7 @@ class SceneControl$Type extends MessageType {
 /**
  * @generated MessageType for protobuf message bilibili.pgc.gateway.player.v2.SceneControl
  */
-export const SceneControl = new SceneControl$Type();
+export const SceneControl = /* #__PURE__ */ new SceneControl$Type();
 // @generated message type with reflection information, may provide speed optimized methods
 class Scheme$Type extends MessageType {
     constructor() {
@@ -4858,7 +4858,7 @@ class Scheme$Type extends MessageType {
 /**
  * @generated MessageType for protobuf message bilibili.pgc.gateway.player.v2.Scheme
  */
-export const Scheme = new Scheme$Type();
+export const Scheme = /* #__PURE__ */ new Scheme$Type();
 // @generated message type with reflection information, may provide speed optimized methods
 class SeasonInfo$Type extends MessageType {
     constructor() {
@@ -4952,7 +4952,7 @@ class SeasonInfo$Type extends MessageType {
 /**
  * @generated MessageType for protobuf message bilibili.pgc.gateway.player.v2.SeasonInfo
  */
-export const SeasonInfo = new SeasonInfo$Type();
+export const SeasonInfo = /* #__PURE__ */ new SeasonInfo$Type();
 // @generated message type with reflection information, may provide speed optimized methods
 class SegmentVideo$Type extends MessageType {
     constructor() {
@@ -4999,7 +4999,7 @@ class SegmentVideo$Type extends MessageType {
 /**
  * @generated MessageType for protobuf message bilibili.pgc.gateway.player.v2.SegmentVideo
  */
-export const SegmentVideo = new SegmentVideo$Type();
+export const SegmentVideo = /* #__PURE__ */ new SegmentVideo$Type();
 // @generated message type with reflection information, may provide speed optimized methods
 class Shake$Type extends MessageType {
     constructor() {
@@ -5046,7 +5046,7 @@ class Shake$Type extends MessageType {
 /**
  * @generated MessageType for protobuf message bilibili.pgc.gateway.player.v2.Shake
  */
-export const Shake = new Shake$Type();
+export const Shake = /* #__PURE__ */ new Shake$Type();
 // @generated message type with reflection information, may provide speed optimized methods
 class Stream$Type extends MessageType {
     constructor() {
@@ -5113,7 +5113,7 @@ class Stream$Type extends MessageType {
 /**
  * @generated MessageType for protobuf message bilibili.pgc.gateway.player.v2.Stream
  */
-export const Stream = new Stream$Type();
+export const Stream = /* #__PURE__ */ new Stream$Type();
 // @generated message type with reflection information, may provide speed optimized methods
 class StreamInfo$Type extends MessageType {
     constructor() {
@@ -5278,7 +5278,7 @@ class StreamInfo$Type extends MessageType {
 /**
  * @generated MessageType for protobuf message bilibili.pgc.gateway.player.v2.StreamInfo
  */
-export const StreamInfo = new StreamInfo$Type();
+export const StreamInfo = /* #__PURE__ */ new StreamInfo$Type();
 // @generated message type with reflection information, may provide speed optimized methods
 class StreamLimit$Type extends MessageType {
     constructor() {
@@ -5341,7 +5341,7 @@ class StreamLimit$Type extends MessageType {
 /**
  * @generated MessageType for protobuf message bilibili.pgc.gateway.player.v2.StreamLimit
  */
-export const StreamLimit = new StreamLimit$Type();
+export const StreamLimit = /* #__PURE__ */ new StreamLimit$Type();
 // @generated message type with reflection information, may provide speed optimized methods
 class TaskParam$Type extends MessageType {
     constructor() {
@@ -5404,7 +5404,7 @@ class TaskParam$Type extends MessageType {
 /**
  * @generated MessageType for protobuf message bilibili.pgc.gateway.player.v2.TaskParam
  */
-export const TaskParam = new TaskParam$Type();
+export const TaskParam = /* #__PURE__ */ new TaskParam$Type();
 // @generated message type with reflection information, may provide speed optimized methods
 class TextInfo$Type extends MessageType {
     constructor() {
@@ -5467,7 +5467,7 @@ class TextInfo$Type extends MessageType {
 /**
  * @generated MessageType for protobuf message bilibili.pgc.gateway.player.v2.TextInfo
  */
-export const TextInfo = new TextInfo$Type();
+export const TextInfo = /* #__PURE__ */ new TextInfo$Type();
 // @generated message type with reflection information, may provide speed optimized methods
 class Toast$Type extends MessageType {
     constructor() {
@@ -5575,7 +5575,7 @@ class Toast$Type extends MessageType {
 /**
  * @generated MessageType for protobuf message bilibili.pgc.gateway.player.v2.Toast
  */
-export const Toast = new Toast$Type();
+export const Toast = /* #__PURE__ */ new Toast$Type();
 // @generated message type with reflection information, may provide speed optimized methods
 class UserStatus$Type extends MessageType {
     constructor() {
@@ -5644,7 +5644,7 @@ class UserStatus$Type extends MessageType {
 /**
  * @generated MessageType for protobuf message bilibili.pgc.gateway.player.v2.UserStatus
  */
-export const UserStatus = new UserStatus$Type();
+export const UserStatus = /* #__PURE__ */ new UserStatus$Type();
 // @generated message type with reflection information, may provide speed optimized methods
 class VideoInfo$Type extends MessageType {
     constructor() {
@@ -5738,7 +5738,7 @@ class VideoInfo$Type extends MessageType {
 /**
  * @generated MessageType for protobuf message bilibili.pgc.gateway.player.v2.VideoInfo
  */
-export const VideoInfo = new VideoInfo$Type();
+export const VideoInfo = /* #__PURE__ */ new VideoInfo$Type();
 // @generated message type with reflection information, may provide speed optimized methods
 class ViewInfo$Type extends MessageType {
     constructor() {
@@ -5784,7 +5784,7 @@ class ViewInfo$Type extends MessageType {
 /**
  * @generated MessageType for protobuf message bilibili.pgc.gateway.player.v2.ViewInfo
  */
-export const ViewInfo = new ViewInfo$Type();
+export const ViewInfo = /* #__PURE__ */ new ViewInfo$Type();
 // @generated message type with reflection information, may provide speed optimized methods
 class WatchProgress$Type extends MessageType {
     constructor() {
@@ -5877,7 +5877,7 @@ class WatchProgress$Type extends MessageType {
 /**
  * @generated MessageType for protobuf message bilibili.pgc.gateway.player.v2.WatchProgress
  */
-export const WatchProgress = new WatchProgress$Type();
+export const WatchProgress = /* #__PURE__ */ new WatchProgress$Type();
 /**
  * @generated ServiceType for protobuf service bilibili.pgc.gateway.player.v2.PlayURL
  */

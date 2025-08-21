@@ -292,7 +292,7 @@ class Args$Type extends MessageType {
 /**
  * @generated MessageType for protobuf message bilibili.polymer.app.search.v1.Args
  */
-export const Args = new Args$Type();
+export const Args = /* #__PURE__ */ new Args$Type();
 // @generated message type with reflection information, may provide speed optimized methods
 class Avatar$Type extends MessageType {
     constructor() {
@@ -394,7 +394,7 @@ class Avatar$Type extends MessageType {
 /**
  * @generated MessageType for protobuf message bilibili.polymer.app.search.v1.Avatar
  */
-export const Avatar = new Avatar$Type();
+export const Avatar = /* #__PURE__ */ new Avatar$Type();
 // @generated message type with reflection information, may provide speed optimized methods
 class AvItem$Type extends MessageType {
     constructor() {
@@ -529,7 +529,7 @@ class AvItem$Type extends MessageType {
 /**
  * @generated MessageType for protobuf message bilibili.polymer.app.search.v1.AvItem
  */
-export const AvItem = new AvItem$Type();
+export const AvItem = /* #__PURE__ */ new AvItem$Type();
 // @generated message type with reflection information, may provide speed optimized methods
 class Background$Type extends MessageType {
     constructor() {
@@ -592,7 +592,7 @@ class Background$Type extends MessageType {
 /**
  * @generated MessageType for protobuf message bilibili.polymer.app.search.v1.Background
  */
-export const Background = new Background$Type();
+export const Background = /* #__PURE__ */ new Background$Type();
 // @generated message type with reflection information, may provide speed optimized methods
 class Badge$Type extends MessageType {
     constructor() {
@@ -647,7 +647,7 @@ class Badge$Type extends MessageType {
 /**
  * @generated MessageType for protobuf message bilibili.polymer.app.search.v1.Badge
  */
-export const Badge = new Badge$Type();
+export const Badge = /* #__PURE__ */ new Badge$Type();
 // @generated message type with reflection information, may provide speed optimized methods
 class Badge2$Type extends MessageType {
     constructor() {
@@ -702,7 +702,7 @@ class Badge2$Type extends MessageType {
 /**
  * @generated MessageType for protobuf message bilibili.polymer.app.search.v1.Badge2
  */
-export const Badge2 = new Badge2$Type();
+export const Badge2 = /* #__PURE__ */ new Badge2$Type();
 // @generated message type with reflection information, may provide speed optimized methods
 class BottomButton$Type extends MessageType {
     constructor() {
@@ -757,7 +757,7 @@ class BottomButton$Type extends MessageType {
 /**
  * @generated MessageType for protobuf message bilibili.polymer.app.search.v1.BottomButton
  */
-export const BottomButton = new BottomButton$Type();
+export const BottomButton = /* #__PURE__ */ new BottomButton$Type();
 // @generated message type with reflection information, may provide speed optimized methods
 class BrandADAccount$Type extends MessageType {
     constructor() {
@@ -905,7 +905,7 @@ class BrandADAccount$Type extends MessageType {
 /**
  * @generated MessageType for protobuf message bilibili.polymer.app.search.v1.BrandADAccount
  */
-export const BrandADAccount = new BrandADAccount$Type();
+export const BrandADAccount = /* #__PURE__ */ new BrandADAccount$Type();
 // @generated message type with reflection information, may provide speed optimized methods
 class BrandADArc$Type extends MessageType {
     constructor() {
@@ -1024,7 +1024,7 @@ class BrandADArc$Type extends MessageType {
 /**
  * @generated MessageType for protobuf message bilibili.polymer.app.search.v1.BrandADArc
  */
-export const BrandADArc = new BrandADArc$Type();
+export const BrandADArc = /* #__PURE__ */ new BrandADArc$Type();
 // @generated message type with reflection information, may provide speed optimized methods
 class Button$Type extends MessageType {
     constructor() {
@@ -1126,7 +1126,7 @@ class Button$Type extends MessageType {
 /**
  * @generated MessageType for protobuf message bilibili.polymer.app.search.v1.Button
  */
-export const Button = new Button$Type();
+export const Button = /* #__PURE__ */ new Button$Type();
 // @generated message type with reflection information, may provide speed optimized methods
 class ButtonMeta$Type extends MessageType {
     constructor() {
@@ -1197,7 +1197,7 @@ class ButtonMeta$Type extends MessageType {
 /**
  * @generated MessageType for protobuf message bilibili.polymer.app.search.v1.ButtonMeta
  */
-export const ButtonMeta = new ButtonMeta$Type();
+export const ButtonMeta = /* #__PURE__ */ new ButtonMeta$Type();
 // @generated message type with reflection information, may provide speed optimized methods
 class CardBusinessBadge$Type extends MessageType {
     constructor() {
@@ -1250,7 +1250,7 @@ class CardBusinessBadge$Type extends MessageType {
 /**
  * @generated MessageType for protobuf message bilibili.polymer.app.search.v1.CardBusinessBadge
  */
-export const CardBusinessBadge = new CardBusinessBadge$Type();
+export const CardBusinessBadge = /* #__PURE__ */ new CardBusinessBadge$Type();
 // @generated message type with reflection information, may provide speed optimized methods
 class ChannelLabel$Type extends MessageType {
     constructor() {
@@ -1305,7 +1305,7 @@ class ChannelLabel$Type extends MessageType {
 /**
  * @generated MessageType for protobuf message bilibili.polymer.app.search.v1.ChannelLabel
  */
-export const ChannelLabel = new ChannelLabel$Type();
+export const ChannelLabel = /* #__PURE__ */ new ChannelLabel$Type();
 // @generated message type with reflection information, may provide speed optimized methods
 class ChannelMixedItem$Type extends MessageType {
     constructor() {
@@ -1415,7 +1415,7 @@ class ChannelMixedItem$Type extends MessageType {
 /**
  * @generated MessageType for protobuf message bilibili.polymer.app.search.v1.ChannelMixedItem
  */
-export const ChannelMixedItem = new ChannelMixedItem$Type();
+export const ChannelMixedItem = /* #__PURE__ */ new ChannelMixedItem$Type();
 // @generated message type with reflection information, may provide speed optimized methods
 class CheckMore$Type extends MessageType {
     constructor() {
@@ -1470,7 +1470,7 @@ class CheckMore$Type extends MessageType {
 /**
  * @generated MessageType for protobuf message bilibili.polymer.app.search.v1.CheckMore
  */
-export const CheckMore = new CheckMore$Type();
+export const CheckMore = /* #__PURE__ */ new CheckMore$Type();
 // @generated message type with reflection information, may provide speed optimized methods
 class CloudGameParams$Type extends MessageType {
     constructor() {
@@ -1525,7 +1525,7 @@ class CloudGameParams$Type extends MessageType {
 /**
  * @generated MessageType for protobuf message bilibili.polymer.app.search.v1.CloudGameParams
  */
-export const CloudGameParams = new CloudGameParams$Type();
+export const CloudGameParams = /* #__PURE__ */ new CloudGameParams$Type();
 // @generated message type with reflection information, may provide speed optimized methods
 class DetailsRelationItem$Type extends MessageType {
     constructor() {
@@ -1650,7 +1650,7 @@ class DetailsRelationItem$Type extends MessageType {
 /**
  * @generated MessageType for protobuf message bilibili.polymer.app.search.v1.DetailsRelationItem
  */
-export const DetailsRelationItem = new DetailsRelationItem$Type();
+export const DetailsRelationItem = /* #__PURE__ */ new DetailsRelationItem$Type();
 // @generated message type with reflection information, may provide speed optimized methods
 class DislikeReason$Type extends MessageType {
     constructor() {
@@ -1705,7 +1705,7 @@ class DislikeReason$Type extends MessageType {
 /**
  * @generated MessageType for protobuf message bilibili.polymer.app.search.v1.DislikeReason
  */
-export const DislikeReason = new DislikeReason$Type();
+export const DislikeReason = /* #__PURE__ */ new DislikeReason$Type();
 // @generated message type with reflection information, may provide speed optimized methods
 class DisplayOption$Type extends MessageType {
     constructor() {
@@ -1760,7 +1760,7 @@ class DisplayOption$Type extends MessageType {
 /**
  * @generated MessageType for protobuf message bilibili.polymer.app.search.v1.DisplayOption
  */
-export const DisplayOption = new DisplayOption$Type();
+export const DisplayOption = /* #__PURE__ */ new DisplayOption$Type();
 // @generated message type with reflection information, may provide speed optimized methods
 class DyTopic$Type extends MessageType {
     constructor() {
@@ -1815,7 +1815,7 @@ class DyTopic$Type extends MessageType {
 /**
  * @generated MessageType for protobuf message bilibili.polymer.app.search.v1.DyTopic
  */
-export const DyTopic = new DyTopic$Type();
+export const DyTopic = /* #__PURE__ */ new DyTopic$Type();
 // @generated message type with reflection information, may provide speed optimized methods
 class EasterEgg$Type extends MessageType {
     constructor() {
@@ -1950,7 +1950,7 @@ class EasterEgg$Type extends MessageType {
 /**
  * @generated MessageType for protobuf message bilibili.polymer.app.search.v1.EasterEgg
  */
-export const EasterEgg = new EasterEgg$Type();
+export const EasterEgg = /* #__PURE__ */ new EasterEgg$Type();
 // @generated message type with reflection information, may provide speed optimized methods
 class Episode$Type extends MessageType {
     constructor() {
@@ -2029,7 +2029,7 @@ class Episode$Type extends MessageType {
 /**
  * @generated MessageType for protobuf message bilibili.polymer.app.search.v1.Episode
  */
-export const Episode = new Episode$Type();
+export const Episode = /* #__PURE__ */ new Episode$Type();
 // @generated message type with reflection information, may provide speed optimized methods
 class EpisodeNew$Type extends MessageType {
     constructor() {
@@ -2140,7 +2140,7 @@ class EpisodeNew$Type extends MessageType {
 /**
  * @generated MessageType for protobuf message bilibili.polymer.app.search.v1.EpisodeNew
  */
-export const EpisodeNew = new EpisodeNew$Type();
+export const EpisodeNew = /* #__PURE__ */ new EpisodeNew$Type();
 // @generated message type with reflection information, may provide speed optimized methods
 class ExtraLink$Type extends MessageType {
     constructor() {
@@ -2195,7 +2195,7 @@ class ExtraLink$Type extends MessageType {
 /**
  * @generated MessageType for protobuf message bilibili.polymer.app.search.v1.ExtraLink
  */
-export const ExtraLink = new ExtraLink$Type();
+export const ExtraLink = /* #__PURE__ */ new ExtraLink$Type();
 // @generated message type with reflection information, may provide speed optimized methods
 class FollowButton$Type extends MessageType {
     constructor() {
@@ -2274,7 +2274,7 @@ class FollowButton$Type extends MessageType {
 /**
  * @generated MessageType for protobuf message bilibili.polymer.app.search.v1.FollowButton
  */
-export const FollowButton = new FollowButton$Type();
+export const FollowButton = /* #__PURE__ */ new FollowButton$Type();
 // @generated message type with reflection information, may provide speed optimized methods
 class FullTextResult$Type extends MessageType {
     constructor() {
@@ -2345,7 +2345,7 @@ class FullTextResult$Type extends MessageType {
 /**
  * @generated MessageType for protobuf message bilibili.polymer.app.search.v1.FullTextResult
  */
-export const FullTextResult = new FullTextResult$Type();
+export const FullTextResult = /* #__PURE__ */ new FullTextResult$Type();
 // @generated message type with reflection information, may provide speed optimized methods
 class GotoIcon$Type extends MessageType {
     constructor() {
@@ -2416,7 +2416,7 @@ class GotoIcon$Type extends MessageType {
 /**
  * @generated MessageType for protobuf message bilibili.polymer.app.search.v1.GotoIcon
  */
-export const GotoIcon = new GotoIcon$Type();
+export const GotoIcon = /* #__PURE__ */ new GotoIcon$Type();
 // @generated message type with reflection information, may provide speed optimized methods
 class InlineProgressBar$Type extends MessageType {
     constructor() {
@@ -2487,7 +2487,7 @@ class InlineProgressBar$Type extends MessageType {
 /**
  * @generated MessageType for protobuf message bilibili.polymer.app.search.v1.InlineProgressBar
  */
-export const InlineProgressBar = new InlineProgressBar$Type();
+export const InlineProgressBar = /* #__PURE__ */ new InlineProgressBar$Type();
 // @generated message type with reflection information, may provide speed optimized methods
 class InlineThreePointPanel$Type extends MessageType {
     constructor() {
@@ -2558,7 +2558,7 @@ class InlineThreePointPanel$Type extends MessageType {
 /**
  * @generated MessageType for protobuf message bilibili.polymer.app.search.v1.InlineThreePointPanel
  */
-export const InlineThreePointPanel = new InlineThreePointPanel$Type();
+export const InlineThreePointPanel = /* #__PURE__ */ new InlineThreePointPanel$Type();
 // @generated message type with reflection information, may provide speed optimized methods
 class Item$Type extends MessageType {
     constructor() {
@@ -2976,7 +2976,7 @@ class Item$Type extends MessageType {
 /**
  * @generated MessageType for protobuf message bilibili.polymer.app.search.v1.Item
  */
-export const Item = new Item$Type();
+export const Item = /* #__PURE__ */ new Item$Type();
 // @generated message type with reflection information, may provide speed optimized methods
 class LikeResource$Type extends MessageType {
     constructor() {
@@ -3031,7 +3031,7 @@ class LikeResource$Type extends MessageType {
 /**
  * @generated MessageType for protobuf message bilibili.polymer.app.search.v1.LikeResource
  */
-export const LikeResource = new LikeResource$Type();
+export const LikeResource = /* #__PURE__ */ new LikeResource$Type();
 // @generated message type with reflection information, may provide speed optimized methods
 class LiveBadgeResource$Type extends MessageType {
     constructor() {
@@ -3134,7 +3134,7 @@ class LiveBadgeResource$Type extends MessageType {
 /**
  * @generated MessageType for protobuf message bilibili.polymer.app.search.v1.LiveBadgeResource
  */
-export const LiveBadgeResource = new LiveBadgeResource$Type();
+export const LiveBadgeResource = /* #__PURE__ */ new LiveBadgeResource$Type();
 // @generated message type with reflection information, may provide speed optimized methods
 class Mask$Type extends MessageType {
     constructor() {
@@ -3187,7 +3187,7 @@ class Mask$Type extends MessageType {
 /**
  * @generated MessageType for protobuf message bilibili.polymer.app.search.v1.Mask
  */
-export const Mask = new Mask$Type();
+export const Mask = /* #__PURE__ */ new Mask$Type();
 // @generated message type with reflection information, may provide speed optimized methods
 class MatchInfoObj$Type extends MessageType {
     constructor() {
@@ -3285,7 +3285,7 @@ class MatchInfoObj$Type extends MessageType {
 /**
  * @generated MessageType for protobuf message bilibili.polymer.app.search.v1.MatchInfoObj
  */
-export const MatchInfoObj = new MatchInfoObj$Type();
+export const MatchInfoObj = /* #__PURE__ */ new MatchInfoObj$Type();
 // @generated message type with reflection information, may provide speed optimized methods
 class MatchItem$Type extends MessageType {
     constructor() {
@@ -3379,7 +3379,7 @@ class MatchItem$Type extends MessageType {
 /**
  * @generated MessageType for protobuf message bilibili.polymer.app.search.v1.MatchItem
  */
-export const MatchItem = new MatchItem$Type();
+export const MatchItem = /* #__PURE__ */ new MatchItem$Type();
 // @generated message type with reflection information, may provide speed optimized methods
 class MatchTeam$Type extends MessageType {
     constructor() {
@@ -3450,7 +3450,7 @@ class MatchTeam$Type extends MessageType {
 /**
  * @generated MessageType for protobuf message bilibili.polymer.app.search.v1.MatchTeam
  */
-export const MatchTeam = new MatchTeam$Type();
+export const MatchTeam = /* #__PURE__ */ new MatchTeam$Type();
 // @generated message type with reflection information, may provide speed optimized methods
 class Nav$Type extends MessageType {
     constructor() {
@@ -3521,7 +3521,7 @@ class Nav$Type extends MessageType {
 /**
  * @generated MessageType for protobuf message bilibili.polymer.app.search.v1.Nav
  */
-export const Nav = new Nav$Type();
+export const Nav = /* #__PURE__ */ new Nav$Type();
 // @generated message type with reflection information, may provide speed optimized methods
 class Navigation$Type extends MessageType {
     constructor() {
@@ -3607,7 +3607,7 @@ class Navigation$Type extends MessageType {
 /**
  * @generated MessageType for protobuf message bilibili.polymer.app.search.v1.Navigation
  */
-export const Navigation = new Navigation$Type();
+export const Navigation = /* #__PURE__ */ new Navigation$Type();
 // @generated message type with reflection information, may provide speed optimized methods
 class NavigationButton$Type extends MessageType {
     constructor() {
@@ -3670,7 +3670,7 @@ class NavigationButton$Type extends MessageType {
 /**
  * @generated MessageType for protobuf message bilibili.polymer.app.search.v1.NavigationButton
  */
-export const NavigationButton = new NavigationButton$Type();
+export const NavigationButton = /* #__PURE__ */ new NavigationButton$Type();
 // @generated message type with reflection information, may provide speed optimized methods
 class NftFaceIcon$Type extends MessageType {
     constructor() {
@@ -3733,7 +3733,7 @@ class NftFaceIcon$Type extends MessageType {
 /**
  * @generated MessageType for protobuf message bilibili.polymer.app.search.v1.NftFaceIcon
  */
-export const NftFaceIcon = new NftFaceIcon$Type();
+export const NftFaceIcon = /* #__PURE__ */ new NftFaceIcon$Type();
 // @generated message type with reflection information, may provide speed optimized methods
 class Notice$Type extends MessageType {
     constructor() {
@@ -3860,7 +3860,7 @@ class Notice$Type extends MessageType {
 /**
  * @generated MessageType for protobuf message bilibili.polymer.app.search.v1.Notice
  */
-export const Notice = new Notice$Type();
+export const Notice = /* #__PURE__ */ new Notice$Type();
 // @generated message type with reflection information, may provide speed optimized methods
 class OfficialVerify$Type extends MessageType {
     constructor() {
@@ -3915,7 +3915,7 @@ class OfficialVerify$Type extends MessageType {
 /**
  * @generated MessageType for protobuf message bilibili.polymer.app.search.v1.OfficialVerify
  */
-export const OfficialVerify = new OfficialVerify$Type();
+export const OfficialVerify = /* #__PURE__ */ new OfficialVerify$Type();
 // @generated message type with reflection information, may provide speed optimized methods
 class OgvCardUI$Type extends MessageType {
     constructor() {
@@ -3978,7 +3978,7 @@ class OgvCardUI$Type extends MessageType {
 /**
  * @generated MessageType for protobuf message bilibili.polymer.app.search.v1.OgvCardUI
  */
-export const OgvCardUI = new OgvCardUI$Type();
+export const OgvCardUI = /* #__PURE__ */ new OgvCardUI$Type();
 // @generated message type with reflection information, may provide speed optimized methods
 class OgvClipInfo$Type extends MessageType {
     constructor() {
@@ -4033,7 +4033,7 @@ class OgvClipInfo$Type extends MessageType {
 /**
  * @generated MessageType for protobuf message bilibili.polymer.app.search.v1.OgvClipInfo
  */
-export const OgvClipInfo = new OgvClipInfo$Type();
+export const OgvClipInfo = /* #__PURE__ */ new OgvClipInfo$Type();
 // @generated message type with reflection information, may provide speed optimized methods
 class OgvRecommendWord$Type extends MessageType {
     constructor() {
@@ -4104,7 +4104,7 @@ class OgvRecommendWord$Type extends MessageType {
 /**
  * @generated MessageType for protobuf message bilibili.polymer.app.search.v1.OgvRecommendWord
  */
-export const OgvRecommendWord = new OgvRecommendWord$Type();
+export const OgvRecommendWord = /* #__PURE__ */ new OgvRecommendWord$Type();
 // @generated message type with reflection information, may provide speed optimized methods
 class PediaCover$Type extends MessageType {
     constructor() {
@@ -4183,7 +4183,7 @@ class PediaCover$Type extends MessageType {
 /**
  * @generated MessageType for protobuf message bilibili.polymer.app.search.v1.PediaCover
  */
-export const PediaCover = new PediaCover$Type();
+export const PediaCover = /* #__PURE__ */ new PediaCover$Type();
 // @generated message type with reflection information, may provide speed optimized methods
 class PlayerArgs$Type extends MessageType {
     constructor() {
@@ -4350,7 +4350,7 @@ class PlayerArgs$Type extends MessageType {
 /**
  * @generated MessageType for protobuf message bilibili.polymer.app.search.v1.PlayerArgs
  */
-export const PlayerArgs = new PlayerArgs$Type();
+export const PlayerArgs = /* #__PURE__ */ new PlayerArgs$Type();
 // @generated message type with reflection information, may provide speed optimized methods
 class PlayerWidget$Type extends MessageType {
     constructor() {
@@ -4405,7 +4405,7 @@ class PlayerWidget$Type extends MessageType {
 /**
  * @generated MessageType for protobuf message bilibili.polymer.app.search.v1.PlayerWidget
  */
-export const PlayerWidget = new PlayerWidget$Type();
+export const PlayerWidget = /* #__PURE__ */ new PlayerWidget$Type();
 // @generated message type with reflection information, may provide speed optimized methods
 class RankInfo$Type extends MessageType {
     constructor() {
@@ -4508,7 +4508,7 @@ class RankInfo$Type extends MessageType {
 /**
  * @generated MessageType for protobuf message bilibili.polymer.app.search.v1.RankInfo
  */
-export const RankInfo = new RankInfo$Type();
+export const RankInfo = /* #__PURE__ */ new RankInfo$Type();
 // @generated message type with reflection information, may provide speed optimized methods
 class RcmdReason$Type extends MessageType {
     constructor() {
@@ -4555,7 +4555,7 @@ class RcmdReason$Type extends MessageType {
 /**
  * @generated MessageType for protobuf message bilibili.polymer.app.search.v1.RcmdReason
  */
-export const RcmdReason = new RcmdReason$Type();
+export const RcmdReason = /* #__PURE__ */ new RcmdReason$Type();
 // @generated message type with reflection information, may provide speed optimized methods
 class ReasonStyle$Type extends MessageType {
     constructor() {
@@ -4658,7 +4658,7 @@ class ReasonStyle$Type extends MessageType {
 /**
  * @generated MessageType for protobuf message bilibili.polymer.app.search.v1.ReasonStyle
  */
-export const ReasonStyle = new ReasonStyle$Type();
+export const ReasonStyle = /* #__PURE__ */ new ReasonStyle$Type();
 // @generated message type with reflection information, may provide speed optimized methods
 class RecommendWord$Type extends MessageType {
     constructor() {
@@ -4729,7 +4729,7 @@ class RecommendWord$Type extends MessageType {
 /**
  * @generated MessageType for protobuf message bilibili.polymer.app.search.v1.RecommendWord
  */
-export const RecommendWord = new RecommendWord$Type();
+export const RecommendWord = /* #__PURE__ */ new RecommendWord$Type();
 // @generated message type with reflection information, may provide speed optimized methods
 class Relation$Type extends MessageType {
     constructor() {
@@ -4776,7 +4776,7 @@ class Relation$Type extends MessageType {
 /**
  * @generated MessageType for protobuf message bilibili.polymer.app.search.v1.Relation
  */
-export const Relation = new Relation$Type();
+export const Relation = /* #__PURE__ */ new Relation$Type();
 // @generated message type with reflection information, may provide speed optimized methods
 class RightTopLiveBadge$Type extends MessageType {
     constructor() {
@@ -4838,7 +4838,7 @@ class RightTopLiveBadge$Type extends MessageType {
 /**
  * @generated MessageType for protobuf message bilibili.polymer.app.search.v1.RightTopLiveBadge
  */
-export const RightTopLiveBadge = new RightTopLiveBadge$Type();
+export const RightTopLiveBadge = /* #__PURE__ */ new RightTopLiveBadge$Type();
 // @generated message type with reflection information, may provide speed optimized methods
 class SearchAdCard$Type extends MessageType {
     constructor() {
@@ -4885,7 +4885,7 @@ class SearchAdCard$Type extends MessageType {
 /**
  * @generated MessageType for protobuf message bilibili.polymer.app.search.v1.SearchAdCard
  */
-export const SearchAdCard = new SearchAdCard$Type();
+export const SearchAdCard = /* #__PURE__ */ new SearchAdCard$Type();
 // @generated message type with reflection information, may provide speed optimized methods
 class SearchAllRequest$Type extends MessageType {
     constructor() {
@@ -5005,7 +5005,7 @@ class SearchAllRequest$Type extends MessageType {
 /**
  * @generated MessageType for protobuf message bilibili.polymer.app.search.v1.SearchAllRequest
  */
-export const SearchAllRequest = new SearchAllRequest$Type();
+export const SearchAllRequest = /* #__PURE__ */ new SearchAllRequest$Type();
 // @generated message type with reflection information, may provide speed optimized methods
 class SearchAllResponse$Type extends MessageType {
     constructor() {
@@ -5160,7 +5160,7 @@ class SearchAllResponse$Type extends MessageType {
 /**
  * @generated MessageType for protobuf message bilibili.polymer.app.search.v1.SearchAllResponse
  */
-export const SearchAllResponse = new SearchAllResponse$Type();
+export const SearchAllResponse = /* #__PURE__ */ new SearchAllResponse$Type();
 // @generated message type with reflection information, may provide speed optimized methods
 class SearchArticleCard$Type extends MessageType {
     constructor() {
@@ -5303,7 +5303,7 @@ class SearchArticleCard$Type extends MessageType {
 /**
  * @generated MessageType for protobuf message bilibili.polymer.app.search.v1.SearchArticleCard
  */
-export const SearchArticleCard = new SearchArticleCard$Type();
+export const SearchArticleCard = /* #__PURE__ */ new SearchArticleCard$Type();
 // @generated message type with reflection information, may provide speed optimized methods
 class SearchAuthorNewCard$Type extends MessageType {
     constructor() {
@@ -5565,7 +5565,7 @@ class SearchAuthorNewCard$Type extends MessageType {
 /**
  * @generated MessageType for protobuf message bilibili.polymer.app.search.v1.SearchAuthorNewCard
  */
-export const SearchAuthorNewCard = new SearchAuthorNewCard$Type();
+export const SearchAuthorNewCard = /* #__PURE__ */ new SearchAuthorNewCard$Type();
 // @generated message type with reflection information, may provide speed optimized methods
 class SearchBangumiCard$Type extends MessageType {
     constructor() {
@@ -5864,7 +5864,7 @@ class SearchBangumiCard$Type extends MessageType {
 /**
  * @generated MessageType for protobuf message bilibili.polymer.app.search.v1.SearchBangumiCard
  */
-export const SearchBangumiCard = new SearchBangumiCard$Type();
+export const SearchBangumiCard = /* #__PURE__ */ new SearchBangumiCard$Type();
 // @generated message type with reflection information, may provide speed optimized methods
 class SearchBannerCard$Type extends MessageType {
     constructor() {
@@ -5919,7 +5919,7 @@ class SearchBannerCard$Type extends MessageType {
 /**
  * @generated MessageType for protobuf message bilibili.polymer.app.search.v1.SearchBannerCard
  */
-export const SearchBannerCard = new SearchBannerCard$Type();
+export const SearchBannerCard = /* #__PURE__ */ new SearchBannerCard$Type();
 // @generated message type with reflection information, may provide speed optimized methods
 class SearchByTypeRequest$Type extends MessageType {
     constructor() {
@@ -6016,7 +6016,7 @@ class SearchByTypeRequest$Type extends MessageType {
 /**
  * @generated MessageType for protobuf message bilibili.polymer.app.search.v1.SearchByTypeRequest
  */
-export const SearchByTypeRequest = new SearchByTypeRequest$Type();
+export const SearchByTypeRequest = /* #__PURE__ */ new SearchByTypeRequest$Type();
 // @generated message type with reflection information, may provide speed optimized methods
 class SearchByTypeResponse$Type extends MessageType {
     constructor() {
@@ -6134,7 +6134,7 @@ class SearchByTypeResponse$Type extends MessageType {
 /**
  * @generated MessageType for protobuf message bilibili.polymer.app.search.v1.SearchByTypeResponse
  */
-export const SearchByTypeResponse = new SearchByTypeResponse$Type();
+export const SearchByTypeResponse = /* #__PURE__ */ new SearchByTypeResponse$Type();
 // @generated message type with reflection information, may provide speed optimized methods
 class SearchCollectionCard$Type extends MessageType {
     constructor() {
@@ -6236,7 +6236,7 @@ class SearchCollectionCard$Type extends MessageType {
 /**
  * @generated MessageType for protobuf message bilibili.polymer.app.search.v1.SearchCollectionCard
  */
-export const SearchCollectionCard = new SearchCollectionCard$Type();
+export const SearchCollectionCard = /* #__PURE__ */ new SearchCollectionCard$Type();
 // @generated message type with reflection information, may provide speed optimized methods
 class SearchComicCard$Type extends MessageType {
     constructor() {
@@ -6323,7 +6323,7 @@ class SearchComicCard$Type extends MessageType {
 /**
  * @generated MessageType for protobuf message bilibili.polymer.app.search.v1.SearchComicCard
  */
-export const SearchComicCard = new SearchComicCard$Type();
+export const SearchComicCard = /* #__PURE__ */ new SearchComicCard$Type();
 // @generated message type with reflection information, may provide speed optimized methods
 class SearchComicInfo$Type extends MessageType {
     constructor() {
@@ -6385,7 +6385,7 @@ class SearchComicInfo$Type extends MessageType {
 /**
  * @generated MessageType for protobuf message bilibili.polymer.app.search.v1.SearchComicInfo
  */
-export const SearchComicInfo = new SearchComicInfo$Type();
+export const SearchComicInfo = /* #__PURE__ */ new SearchComicInfo$Type();
 // @generated message type with reflection information, may provide speed optimized methods
 class SearchComicRequest$Type extends MessageType {
     constructor() {
@@ -6432,7 +6432,7 @@ class SearchComicRequest$Type extends MessageType {
 /**
  * @generated MessageType for protobuf message bilibili.polymer.app.search.v1.SearchComicRequest
  */
-export const SearchComicRequest = new SearchComicRequest$Type();
+export const SearchComicRequest = /* #__PURE__ */ new SearchComicRequest$Type();
 // @generated message type with reflection information, may provide speed optimized methods
 class SearchComicResponse$Type extends MessageType {
     constructor() {
@@ -6479,7 +6479,7 @@ class SearchComicResponse$Type extends MessageType {
 /**
  * @generated MessageType for protobuf message bilibili.polymer.app.search.v1.SearchComicResponse
  */
-export const SearchComicResponse = new SearchComicResponse$Type();
+export const SearchComicResponse = /* #__PURE__ */ new SearchComicResponse$Type();
 // @generated message type with reflection information, may provide speed optimized methods
 class SearchDynamicCard$Type extends MessageType {
     constructor() {
@@ -6572,7 +6572,7 @@ class SearchDynamicCard$Type extends MessageType {
 /**
  * @generated MessageType for protobuf message bilibili.polymer.app.search.v1.SearchDynamicCard
  */
-export const SearchDynamicCard = new SearchDynamicCard$Type();
+export const SearchDynamicCard = /* #__PURE__ */ new SearchDynamicCard$Type();
 // @generated message type with reflection information, may provide speed optimized methods
 class SearchGameCard$Type extends MessageType {
     constructor() {
@@ -6721,7 +6721,7 @@ class SearchGameCard$Type extends MessageType {
 /**
  * @generated MessageType for protobuf message bilibili.polymer.app.search.v1.SearchGameCard
  */
-export const SearchGameCard = new SearchGameCard$Type();
+export const SearchGameCard = /* #__PURE__ */ new SearchGameCard$Type();
 // @generated message type with reflection information, may provide speed optimized methods
 class SearchInlineData$Type extends MessageType {
     constructor() {
@@ -7056,7 +7056,7 @@ class SearchInlineData$Type extends MessageType {
 /**
  * @generated MessageType for protobuf message bilibili.polymer.app.search.v1.SearchInlineData
  */
-export const SearchInlineData = new SearchInlineData$Type();
+export const SearchInlineData = /* #__PURE__ */ new SearchInlineData$Type();
 // @generated message type with reflection information, may provide speed optimized methods
 class SearchLikeButtonItem$Type extends MessageType {
     constructor() {
@@ -7155,7 +7155,7 @@ class SearchLikeButtonItem$Type extends MessageType {
 /**
  * @generated MessageType for protobuf message bilibili.polymer.app.search.v1.SearchLikeButtonItem
  */
-export const SearchLikeButtonItem = new SearchLikeButtonItem$Type();
+export const SearchLikeButtonItem = /* #__PURE__ */ new SearchLikeButtonItem$Type();
 // @generated message type with reflection information, may provide speed optimized methods
 class SearchLiveCard$Type extends MessageType {
     constructor() {
@@ -7280,7 +7280,7 @@ class SearchLiveCard$Type extends MessageType {
 /**
  * @generated MessageType for protobuf message bilibili.polymer.app.search.v1.SearchLiveCard
  */
-export const SearchLiveCard = new SearchLiveCard$Type();
+export const SearchLiveCard = /* #__PURE__ */ new SearchLiveCard$Type();
 // @generated message type with reflection information, may provide speed optimized methods
 class SearchLiveInlineCard$Type extends MessageType {
     constructor() {
@@ -7381,7 +7381,7 @@ class SearchLiveInlineCard$Type extends MessageType {
 /**
  * @generated MessageType for protobuf message bilibili.polymer.app.search.v1.SearchLiveInlineCard
  */
-export const SearchLiveInlineCard = new SearchLiveInlineCard$Type();
+export const SearchLiveInlineCard = /* #__PURE__ */ new SearchLiveInlineCard$Type();
 // @generated message type with reflection information, may provide speed optimized methods
 class SearchNewChannelCard$Type extends MessageType {
     constructor() {
@@ -7489,7 +7489,7 @@ class SearchNewChannelCard$Type extends MessageType {
 /**
  * @generated MessageType for protobuf message bilibili.polymer.app.search.v1.SearchNewChannelCard
  */
-export const SearchNewChannelCard = new SearchNewChannelCard$Type();
+export const SearchNewChannelCard = /* #__PURE__ */ new SearchNewChannelCard$Type();
 // @generated message type with reflection information, may provide speed optimized methods
 class SearchNoResultSuggestWordCard$Type extends MessageType {
     constructor() {
@@ -7552,7 +7552,7 @@ class SearchNoResultSuggestWordCard$Type extends MessageType {
 /**
  * @generated MessageType for protobuf message bilibili.polymer.app.search.v1.SearchNoResultSuggestWordCard
  */
-export const SearchNoResultSuggestWordCard = new SearchNoResultSuggestWordCard$Type();
+export const SearchNoResultSuggestWordCard = /* #__PURE__ */ new SearchNoResultSuggestWordCard$Type();
 // @generated message type with reflection information, may provide speed optimized methods
 class SearchOgvCard$Type extends MessageType {
     constructor() {
@@ -7647,7 +7647,7 @@ class SearchOgvCard$Type extends MessageType {
 /**
  * @generated MessageType for protobuf message bilibili.polymer.app.search.v1.SearchOgvCard
  */
-export const SearchOgvCard = new SearchOgvCard$Type();
+export const SearchOgvCard = /* #__PURE__ */ new SearchOgvCard$Type();
 // @generated message type with reflection information, may provide speed optimized methods
 class SearchOgvChannelCard$Type extends MessageType {
     constructor() {
@@ -7781,7 +7781,7 @@ class SearchOgvChannelCard$Type extends MessageType {
 /**
  * @generated MessageType for protobuf message bilibili.polymer.app.search.v1.SearchOgvChannelCard
  */
-export const SearchOgvChannelCard = new SearchOgvChannelCard$Type();
+export const SearchOgvChannelCard = /* #__PURE__ */ new SearchOgvChannelCard$Type();
 // @generated message type with reflection information, may provide speed optimized methods
 class SearchOgvInlineCard$Type extends MessageType {
     constructor() {
@@ -7937,7 +7937,7 @@ class SearchOgvInlineCard$Type extends MessageType {
 /**
  * @generated MessageType for protobuf message bilibili.polymer.app.search.v1.SearchOgvInlineCard
  */
-export const SearchOgvInlineCard = new SearchOgvInlineCard$Type();
+export const SearchOgvInlineCard = /* #__PURE__ */ new SearchOgvInlineCard$Type();
 // @generated message type with reflection information, may provide speed optimized methods
 class SearchOgvRecommendCard$Type extends MessageType {
     constructor() {
@@ -8008,7 +8008,7 @@ class SearchOgvRecommendCard$Type extends MessageType {
 /**
  * @generated MessageType for protobuf message bilibili.polymer.app.search.v1.SearchOgvRecommendCard
  */
-export const SearchOgvRecommendCard = new SearchOgvRecommendCard$Type();
+export const SearchOgvRecommendCard = /* #__PURE__ */ new SearchOgvRecommendCard$Type();
 // @generated message type with reflection information, may provide speed optimized methods
 class SearchOgvRelationCard$Type extends MessageType {
     constructor() {
@@ -8110,7 +8110,7 @@ class SearchOgvRelationCard$Type extends MessageType {
 /**
  * @generated MessageType for protobuf message bilibili.polymer.app.search.v1.SearchOgvRelationCard
  */
-export const SearchOgvRelationCard = new SearchOgvRelationCard$Type();
+export const SearchOgvRelationCard = /* #__PURE__ */ new SearchOgvRelationCard$Type();
 // @generated message type with reflection information, may provide speed optimized methods
 class SearchOlympicGameCard$Type extends MessageType {
     constructor() {
@@ -8224,7 +8224,7 @@ class SearchOlympicGameCard$Type extends MessageType {
 /**
  * @generated MessageType for protobuf message bilibili.polymer.app.search.v1.SearchOlympicGameCard
  */
-export const SearchOlympicGameCard = new SearchOlympicGameCard$Type();
+export const SearchOlympicGameCard = /* #__PURE__ */ new SearchOlympicGameCard$Type();
 // @generated message type with reflection information, may provide speed optimized methods
 class SearchOlympicWikiCard$Type extends MessageType {
     constructor() {
@@ -8330,7 +8330,7 @@ class SearchOlympicWikiCard$Type extends MessageType {
 /**
  * @generated MessageType for protobuf message bilibili.polymer.app.search.v1.SearchOlympicWikiCard
  */
-export const SearchOlympicWikiCard = new SearchOlympicWikiCard$Type();
+export const SearchOlympicWikiCard = /* #__PURE__ */ new SearchOlympicWikiCard$Type();
 // @generated message type with reflection information, may provide speed optimized methods
 class SearchPediaCard$Type extends MessageType {
     constructor() {
@@ -8422,7 +8422,7 @@ class SearchPediaCard$Type extends MessageType {
 /**
  * @generated MessageType for protobuf message bilibili.polymer.app.search.v1.SearchPediaCard
  */
-export const SearchPediaCard = new SearchPediaCard$Type();
+export const SearchPediaCard = /* #__PURE__ */ new SearchPediaCard$Type();
 // @generated message type with reflection information, may provide speed optimized methods
 class SearchPurchaseCard$Type extends MessageType {
     constructor() {
@@ -8557,7 +8557,7 @@ class SearchPurchaseCard$Type extends MessageType {
 /**
  * @generated MessageType for protobuf message bilibili.polymer.app.search.v1.SearchPurchaseCard
  */
-export const SearchPurchaseCard = new SearchPurchaseCard$Type();
+export const SearchPurchaseCard = /* #__PURE__ */ new SearchPurchaseCard$Type();
 // @generated message type with reflection information, may provide speed optimized methods
 class SearchRecommendTipCard$Type extends MessageType {
     constructor() {
@@ -8612,7 +8612,7 @@ class SearchRecommendTipCard$Type extends MessageType {
 /**
  * @generated MessageType for protobuf message bilibili.polymer.app.search.v1.SearchRecommendTipCard
  */
-export const SearchRecommendTipCard = new SearchRecommendTipCard$Type();
+export const SearchRecommendTipCard = /* #__PURE__ */ new SearchRecommendTipCard$Type();
 // @generated message type with reflection information, may provide speed optimized methods
 class SearchRecommendWordCard$Type extends MessageType {
     constructor() {
@@ -8675,7 +8675,7 @@ class SearchRecommendWordCard$Type extends MessageType {
 /**
  * @generated MessageType for protobuf message bilibili.polymer.app.search.v1.SearchRecommendWordCard
  */
-export const SearchRecommendWordCard = new SearchRecommendWordCard$Type();
+export const SearchRecommendWordCard = /* #__PURE__ */ new SearchRecommendWordCard$Type();
 // @generated message type with reflection information, may provide speed optimized methods
 class SearchSpecialCard$Type extends MessageType {
     constructor() {
@@ -8769,7 +8769,7 @@ class SearchSpecialCard$Type extends MessageType {
 /**
  * @generated MessageType for protobuf message bilibili.polymer.app.search.v1.SearchSpecialCard
  */
-export const SearchSpecialCard = new SearchSpecialCard$Type();
+export const SearchSpecialCard = /* #__PURE__ */ new SearchSpecialCard$Type();
 // @generated message type with reflection information, may provide speed optimized methods
 class SearchSpecialGuideCard$Type extends MessageType {
     constructor() {
@@ -8840,7 +8840,7 @@ class SearchSpecialGuideCard$Type extends MessageType {
 /**
  * @generated MessageType for protobuf message bilibili.polymer.app.search.v1.SearchSpecialGuideCard
  */
-export const SearchSpecialGuideCard = new SearchSpecialGuideCard$Type();
+export const SearchSpecialGuideCard = /* #__PURE__ */ new SearchSpecialGuideCard$Type();
 // @generated message type with reflection information, may provide speed optimized methods
 class SearchSportCard$Type extends MessageType {
     constructor() {
@@ -8941,7 +8941,7 @@ class SearchSportCard$Type extends MessageType {
 /**
  * @generated MessageType for protobuf message bilibili.polymer.app.search.v1.SearchSportCard
  */
-export const SearchSportCard = new SearchSportCard$Type();
+export const SearchSportCard = /* #__PURE__ */ new SearchSportCard$Type();
 // @generated message type with reflection information, may provide speed optimized methods
 class SearchSportInlineCard$Type extends MessageType {
     constructor() {
@@ -9057,7 +9057,7 @@ class SearchSportInlineCard$Type extends MessageType {
 /**
  * @generated MessageType for protobuf message bilibili.polymer.app.search.v1.SearchSportInlineCard
  */
-export const SearchSportInlineCard = new SearchSportInlineCard$Type();
+export const SearchSportInlineCard = /* #__PURE__ */ new SearchSportInlineCard$Type();
 // @generated message type with reflection information, may provide speed optimized methods
 class SearchTipsCard$Type extends MessageType {
     constructor() {
@@ -9128,7 +9128,7 @@ class SearchTipsCard$Type extends MessageType {
 /**
  * @generated MessageType for protobuf message bilibili.polymer.app.search.v1.SearchTipsCard
  */
-export const SearchTipsCard = new SearchTipsCard$Type();
+export const SearchTipsCard = /* #__PURE__ */ new SearchTipsCard$Type();
 // @generated message type with reflection information, may provide speed optimized methods
 class SearchTopGameCard$Type extends MessageType {
     constructor() {
@@ -9316,7 +9316,7 @@ class SearchTopGameCard$Type extends MessageType {
 /**
  * @generated MessageType for protobuf message bilibili.polymer.app.search.v1.SearchTopGameCard
  */
-export const SearchTopGameCard = new SearchTopGameCard$Type();
+export const SearchTopGameCard = /* #__PURE__ */ new SearchTopGameCard$Type();
 // @generated message type with reflection information, may provide speed optimized methods
 class SearchUgcInlineCard$Type extends MessageType {
     constructor() {
@@ -9433,7 +9433,7 @@ class SearchUgcInlineCard$Type extends MessageType {
 /**
  * @generated MessageType for protobuf message bilibili.polymer.app.search.v1.SearchUgcInlineCard
  */
-export const SearchUgcInlineCard = new SearchUgcInlineCard$Type();
+export const SearchUgcInlineCard = /* #__PURE__ */ new SearchUgcInlineCard$Type();
 // @generated message type with reflection information, may provide speed optimized methods
 class SearchUpperCard$Type extends MessageType {
     constructor() {
@@ -9619,7 +9619,7 @@ class SearchUpperCard$Type extends MessageType {
 /**
  * @generated MessageType for protobuf message bilibili.polymer.app.search.v1.SearchUpperCard
  */
-export const SearchUpperCard = new SearchUpperCard$Type();
+export const SearchUpperCard = /* #__PURE__ */ new SearchUpperCard$Type();
 // @generated message type with reflection information, may provide speed optimized methods
 class SearchVideoCard$Type extends MessageType {
     constructor() {
@@ -9806,7 +9806,7 @@ class SearchVideoCard$Type extends MessageType {
 /**
  * @generated MessageType for protobuf message bilibili.polymer.app.search.v1.SearchVideoCard
  */
-export const SearchVideoCard = new SearchVideoCard$Type();
+export const SearchVideoCard = /* #__PURE__ */ new SearchVideoCard$Type();
 // @generated message type with reflection information, may provide speed optimized methods
 class Share$Type extends MessageType {
     constructor() {
@@ -9860,7 +9860,7 @@ class Share$Type extends MessageType {
 /**
  * @generated MessageType for protobuf message bilibili.polymer.app.search.v1.Share
  */
-export const Share = new Share$Type();
+export const Share = /* #__PURE__ */ new Share$Type();
 // @generated message type with reflection information, may provide speed optimized methods
 class ShareButtonItem$Type extends MessageType {
     constructor() {
@@ -9915,7 +9915,7 @@ class ShareButtonItem$Type extends MessageType {
 /**
  * @generated MessageType for protobuf message bilibili.polymer.app.search.v1.ShareButtonItem
  */
-export const ShareButtonItem = new ShareButtonItem$Type();
+export const ShareButtonItem = /* #__PURE__ */ new ShareButtonItem$Type();
 // @generated message type with reflection information, may provide speed optimized methods
 class SharePlane$Type extends MessageType {
     constructor() {
@@ -10105,7 +10105,7 @@ class SharePlane$Type extends MessageType {
 /**
  * @generated MessageType for protobuf message bilibili.polymer.app.search.v1.SharePlane
  */
-export const SharePlane = new SharePlane$Type();
+export const SharePlane = /* #__PURE__ */ new SharePlane$Type();
 // @generated message type with reflection information, may provide speed optimized methods
 class ShareTo$Type extends MessageType {
     constructor() {
@@ -10256,7 +10256,7 @@ class ShareTo$Type extends MessageType {
 /**
  * @generated MessageType for protobuf message bilibili.polymer.app.search.v1.ShareTo
  */
-export const ShareTo = new ShareTo$Type();
+export const ShareTo = /* #__PURE__ */ new ShareTo$Type();
 // @generated message type with reflection information, may provide speed optimized methods
 class Space$Type extends MessageType {
     constructor() {
@@ -10335,7 +10335,7 @@ class Space$Type extends MessageType {
 /**
  * @generated MessageType for protobuf message bilibili.polymer.app.search.v1.Space
  */
-export const Space = new Space$Type();
+export const Space = /* #__PURE__ */ new Space$Type();
 // @generated message type with reflection information, may provide speed optimized methods
 class SportsMatchItem$Type extends MessageType {
     constructor() {
@@ -10438,7 +10438,7 @@ class SportsMatchItem$Type extends MessageType {
 /**
  * @generated MessageType for protobuf message bilibili.polymer.app.search.v1.SportsMatchItem
  */
-export const SportsMatchItem = new SportsMatchItem$Type();
+export const SportsMatchItem = /* #__PURE__ */ new SportsMatchItem$Type();
 // @generated message type with reflection information, may provide speed optimized methods
 class Stat$Type extends MessageType {
     constructor() {
@@ -10501,7 +10501,7 @@ class Stat$Type extends MessageType {
 /**
  * @generated MessageType for protobuf message bilibili.polymer.app.search.v1.Stat
  */
-export const Stat = new Stat$Type();
+export const Stat = /* #__PURE__ */ new Stat$Type();
 // @generated message type with reflection information, may provide speed optimized methods
 class TabInfo$Type extends MessageType {
     constructor() {
@@ -10564,7 +10564,7 @@ class TabInfo$Type extends MessageType {
 /**
  * @generated MessageType for protobuf message bilibili.polymer.app.search.v1.TabInfo
  */
-export const TabInfo = new TabInfo$Type();
+export const TabInfo = /* #__PURE__ */ new TabInfo$Type();
 // @generated message type with reflection information, may provide speed optimized methods
 class TextButton$Type extends MessageType {
     constructor() {
@@ -10619,7 +10619,7 @@ class TextButton$Type extends MessageType {
 /**
  * @generated MessageType for protobuf message bilibili.polymer.app.search.v1.TextButton
  */
-export const TextButton = new TextButton$Type();
+export const TextButton = /* #__PURE__ */ new TextButton$Type();
 // @generated message type with reflection information, may provide speed optimized methods
 class TextLabel$Type extends MessageType {
     constructor() {
@@ -10674,7 +10674,7 @@ class TextLabel$Type extends MessageType {
 /**
  * @generated MessageType for protobuf message bilibili.polymer.app.search.v1.TextLabel
  */
-export const TextLabel = new TextLabel$Type();
+export const TextLabel = /* #__PURE__ */ new TextLabel$Type();
 // @generated message type with reflection information, may provide speed optimized methods
 class Texts$Type extends MessageType {
     constructor() {
@@ -10729,7 +10729,7 @@ class Texts$Type extends MessageType {
 /**
  * @generated MessageType for protobuf message bilibili.polymer.app.search.v1.Texts
  */
-export const Texts = new Texts$Type();
+export const Texts = /* #__PURE__ */ new Texts$Type();
 // @generated message type with reflection information, may provide speed optimized methods
 class ThreePoint$Type extends MessageType {
     constructor() {
@@ -10792,7 +10792,7 @@ class ThreePoint$Type extends MessageType {
 /**
  * @generated MessageType for protobuf message bilibili.polymer.app.search.v1.ThreePoint
  */
-export const ThreePoint = new ThreePoint$Type();
+export const ThreePoint = /* #__PURE__ */ new ThreePoint$Type();
 // @generated message type with reflection information, may provide speed optimized methods
 class ThreePoint2$Type extends MessageType {
     constructor() {
@@ -10855,7 +10855,7 @@ class ThreePoint2$Type extends MessageType {
 /**
  * @generated MessageType for protobuf message bilibili.polymer.app.search.v1.ThreePoint2
  */
-export const ThreePoint2 = new ThreePoint2$Type();
+export const ThreePoint2 = /* #__PURE__ */ new ThreePoint2$Type();
 // @generated message type with reflection information, may provide speed optimized methods
 class ThreePointV2$Type extends MessageType {
     constructor() {
@@ -10934,7 +10934,7 @@ class ThreePointV2$Type extends MessageType {
 /**
  * @generated MessageType for protobuf message bilibili.polymer.app.search.v1.ThreePointV2
  */
-export const ThreePointV2 = new ThreePointV2$Type();
+export const ThreePointV2 = /* #__PURE__ */ new ThreePointV2$Type();
 // @generated message type with reflection information, may provide speed optimized methods
 class ThreePointV3$Type extends MessageType {
     constructor() {
@@ -11061,7 +11061,7 @@ class ThreePointV3$Type extends MessageType {
 /**
  * @generated MessageType for protobuf message bilibili.polymer.app.search.v1.ThreePointV3
  */
-export const ThreePointV3 = new ThreePointV3$Type();
+export const ThreePointV3 = /* #__PURE__ */ new ThreePointV3$Type();
 // @generated message type with reflection information, may provide speed optimized methods
 class ThreePointV4$Type extends MessageType {
     constructor() {
@@ -11114,7 +11114,7 @@ class ThreePointV4$Type extends MessageType {
 /**
  * @generated MessageType for protobuf message bilibili.polymer.app.search.v1.ThreePointV4
  */
-export const ThreePointV4 = new ThreePointV4$Type();
+export const ThreePointV4 = /* #__PURE__ */ new ThreePointV4$Type();
 // @generated message type with reflection information, may provide speed optimized methods
 class TopGameUI$Type extends MessageType {
     constructor() {
@@ -11201,7 +11201,7 @@ class TopGameUI$Type extends MessageType {
 /**
  * @generated MessageType for protobuf message bilibili.polymer.app.search.v1.TopGameUI
  */
-export const TopGameUI = new TopGameUI$Type();
+export const TopGameUI = /* #__PURE__ */ new TopGameUI$Type();
 // @generated message type with reflection information, may provide speed optimized methods
 class TrafficConfig$Type extends MessageType {
     constructor() {
@@ -11264,7 +11264,7 @@ class TrafficConfig$Type extends MessageType {
 /**
  * @generated MessageType for protobuf message bilibili.polymer.app.search.v1.TrafficConfig
  */
-export const TrafficConfig = new TrafficConfig$Type();
+export const TrafficConfig = /* #__PURE__ */ new TrafficConfig$Type();
 // @generated message type with reflection information, may provide speed optimized methods
 class TrafficConfigOption$Type extends MessageType {
     constructor() {
@@ -11319,7 +11319,7 @@ class TrafficConfigOption$Type extends MessageType {
 /**
  * @generated MessageType for protobuf message bilibili.polymer.app.search.v1.TrafficConfigOption
  */
-export const TrafficConfigOption = new TrafficConfigOption$Type();
+export const TrafficConfigOption = /* #__PURE__ */ new TrafficConfigOption$Type();
 // @generated message type with reflection information, may provide speed optimized methods
 class UpArgs$Type extends MessageType {
     constructor() {
@@ -11390,7 +11390,7 @@ class UpArgs$Type extends MessageType {
 /**
  * @generated MessageType for protobuf message bilibili.polymer.app.search.v1.UpArgs
  */
-export const UpArgs = new UpArgs$Type();
+export const UpArgs = /* #__PURE__ */ new UpArgs$Type();
 // @generated message type with reflection information, may provide speed optimized methods
 class Upper$Type extends MessageType {
     constructor() {
@@ -11461,7 +11461,7 @@ class Upper$Type extends MessageType {
 /**
  * @generated MessageType for protobuf message bilibili.polymer.app.search.v1.Upper
  */
-export const Upper = new Upper$Type();
+export const Upper = /* #__PURE__ */ new Upper$Type();
 // @generated message type with reflection information, may provide speed optimized methods
 class Video$Type extends MessageType {
     constructor() {
@@ -11556,7 +11556,7 @@ class Video$Type extends MessageType {
 /**
  * @generated MessageType for protobuf message bilibili.polymer.app.search.v1.Video
  */
-export const Video = new Video$Type();
+export const Video = /* #__PURE__ */ new Video$Type();
 // @generated message type with reflection information, may provide speed optimized methods
 class VipInfo$Type extends MessageType {
     constructor() {
@@ -11690,7 +11690,7 @@ class VipInfo$Type extends MessageType {
 /**
  * @generated MessageType for protobuf message bilibili.polymer.app.search.v1.VipInfo
  */
-export const VipInfo = new VipInfo$Type();
+export const VipInfo = /* #__PURE__ */ new VipInfo$Type();
 // @generated message type with reflection information, may provide speed optimized methods
 class VipLabel$Type extends MessageType {
     constructor() {
@@ -11825,7 +11825,7 @@ class VipLabel$Type extends MessageType {
 /**
  * @generated MessageType for protobuf message bilibili.polymer.app.search.v1.VipLabel
  */
-export const VipLabel = new VipLabel$Type();
+export const VipLabel = /* #__PURE__ */ new VipLabel$Type();
 // @generated message type with reflection information, may provide speed optimized methods
 class WatchButton$Type extends MessageType {
     constructor() {
@@ -11880,7 +11880,7 @@ class WatchButton$Type extends MessageType {
 /**
  * @generated MessageType for protobuf message bilibili.polymer.app.search.v1.WatchButton
  */
-export const WatchButton = new WatchButton$Type();
+export const WatchButton = /* #__PURE__ */ new WatchButton$Type();
 // @generated message type with reflection information, may provide speed optimized methods
 class WatchedShow$Type extends MessageType {
     constructor() {
@@ -11975,7 +11975,7 @@ class WatchedShow$Type extends MessageType {
 /**
  * @generated MessageType for protobuf message bilibili.polymer.app.search.v1.WatchedShow
  */
-export const WatchedShow = new WatchedShow$Type();
+export const WatchedShow = /* #__PURE__ */ new WatchedShow$Type();
 // @generated message type with reflection information, may provide speed optimized methods
 class WatchLater$Type extends MessageType {
     constructor() {
@@ -12030,7 +12030,7 @@ class WatchLater$Type extends MessageType {
 /**
  * @generated MessageType for protobuf message bilibili.polymer.app.search.v1.WatchLater
  */
-export const WatchLater = new WatchLater$Type();
+export const WatchLater = /* #__PURE__ */ new WatchLater$Type();
 /**
  * @generated ServiceType for protobuf service bilibili.polymer.app.search.v1.Search
  */

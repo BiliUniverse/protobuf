@@ -82,7 +82,7 @@ class DynAllReply$Type extends MessageType {
 /**
  * @generated MessageType for protobuf message DynAllReply
  */
-export const DynAllReply = new DynAllReply$Type();
+export const DynAllReply = /* #__PURE__ */ new DynAllReply$Type();
 // @generated message type with reflection information, may provide speed optimized methods
 class DynVideoReply$Type extends MessageType {
     constructor() {
@@ -128,7 +128,7 @@ class DynVideoReply$Type extends MessageType {
 /**
  * @generated MessageType for protobuf message DynVideoReply
  */
-export const DynVideoReply = new DynVideoReply$Type();
+export const DynVideoReply = /* #__PURE__ */ new DynVideoReply$Type();
 // @generated message type with reflection information, may provide speed optimized methods
 class DynamicList$Type extends MessageType {
     constructor() {
@@ -175,7 +175,7 @@ class DynamicList$Type extends MessageType {
 /**
  * @generated MessageType for protobuf message DynamicList
  */
-export const DynamicList = new DynamicList$Type();
+export const DynamicList = /* #__PURE__ */ new DynamicList$Type();
 // @generated message type with reflection information, may provide speed optimized methods
 class CardVideoUpList$Type extends MessageType {
     constructor() {
@@ -222,7 +222,7 @@ class CardVideoUpList$Type extends MessageType {
 /**
  * @generated MessageType for protobuf message CardVideoUpList
  */
-export const CardVideoUpList = new CardVideoUpList$Type();
+export const CardVideoUpList = /* #__PURE__ */ new CardVideoUpList$Type();
 // @generated message type with reflection information, may provide speed optimized methods
 class TopicList$Type extends MessageType {
     constructor() {
@@ -269,7 +269,7 @@ class TopicList$Type extends MessageType {
 /**
  * @generated MessageType for protobuf message TopicList
  */
-export const TopicList = new TopicList$Type();
+export const TopicList = /* #__PURE__ */ new TopicList$Type();
 // @generated message type with reflection information, may provide speed optimized methods
 class DynamicItem$Type extends MessageType {
     constructor() {
@@ -316,4 +316,4 @@ class DynamicItem$Type extends MessageType {
 /**
  * @generated MessageType for protobuf message DynamicItem
  */
-export const DynamicItem = new DynamicItem$Type();
+export const DynamicItem = /* #__PURE__ */ new DynamicItem$Type();

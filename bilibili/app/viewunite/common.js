@@ -785,7 +785,7 @@ class Activity$Type extends MessageType {
 /**
  * @generated MessageType for protobuf message bilibili.app.viewunite.common.Activity
  */
-export const Activity = new Activity$Type();
+export const Activity = /* #__PURE__ */ new Activity$Type();
 // @generated message type with reflection information, may provide speed optimized methods
 class ActivityEntrance$Type extends MessageType {
     constructor() {
@@ -920,7 +920,7 @@ class ActivityEntrance$Type extends MessageType {
 /**
  * @generated MessageType for protobuf message bilibili.app.viewunite.common.ActivityEntrance
  */
-export const ActivityEntrance = new ActivityEntrance$Type();
+export const ActivityEntrance = /* #__PURE__ */ new ActivityEntrance$Type();
 // @generated message type with reflection information, may provide speed optimized methods
 class ActivityEntranceModule$Type extends MessageType {
     constructor() {
@@ -967,7 +967,7 @@ class ActivityEntranceModule$Type extends MessageType {
 /**
  * @generated MessageType for protobuf message bilibili.app.viewunite.common.ActivityEntranceModule
  */
-export const ActivityEntranceModule = new ActivityEntranceModule$Type();
+export const ActivityEntranceModule = /* #__PURE__ */ new ActivityEntranceModule$Type();
 // @generated message type with reflection information, may provide speed optimized methods
 class ActivityReserve$Type extends MessageType {
     constructor() {
@@ -1035,7 +1035,7 @@ class ActivityReserve$Type extends MessageType {
 /**
  * @generated MessageType for protobuf message bilibili.app.viewunite.common.ActivityReserve
  */
-export const ActivityReserve = new ActivityReserve$Type();
+export const ActivityReserve = /* #__PURE__ */ new ActivityReserve$Type();
 // @generated message type with reflection information, may provide speed optimized methods
 class ActivityResource$Type extends MessageType {
     constructor() {
@@ -1090,7 +1090,7 @@ class ActivityResource$Type extends MessageType {
 /**
  * @generated MessageType for protobuf message bilibili.app.viewunite.common.ActivityResource
  */
-export const ActivityResource = new ActivityResource$Type();
+export const ActivityResource = /* #__PURE__ */ new ActivityResource$Type();
 // @generated message type with reflection information, may provide speed optimized methods
 class ActivityTab$Type extends MessageType {
     constructor() {
@@ -1249,7 +1249,7 @@ class ActivityTab$Type extends MessageType {
 /**
  * @generated MessageType for protobuf message bilibili.app.viewunite.common.ActivityTab
  */
-export const ActivityTab = new ActivityTab$Type();
+export const ActivityTab = /* #__PURE__ */ new ActivityTab$Type();
 // @generated message type with reflection information, may provide speed optimized methods
 class AggEpCard$Type extends MessageType {
     constructor() {
@@ -1328,7 +1328,7 @@ class AggEpCard$Type extends MessageType {
 /**
  * @generated MessageType for protobuf message bilibili.app.viewunite.common.AggEpCard
  */
-export const AggEpCard = new AggEpCard$Type();
+export const AggEpCard = /* #__PURE__ */ new AggEpCard$Type();
 // @generated message type with reflection information, may provide speed optimized methods
 class AggEps$Type extends MessageType {
     constructor() {
@@ -1383,7 +1383,7 @@ class AggEps$Type extends MessageType {
 /**
  * @generated MessageType for protobuf message bilibili.app.viewunite.common.AggEps
  */
-export const AggEps = new AggEps$Type();
+export const AggEps = /* #__PURE__ */ new AggEps$Type();
 // @generated message type with reflection information, may provide speed optimized methods
 class AttentionRecommend$Type extends MessageType {
     constructor() {
@@ -1421,7 +1421,7 @@ class AttentionRecommend$Type extends MessageType {
 /**
  * @generated MessageType for protobuf message bilibili.app.viewunite.common.AttentionRecommend
  */
-export const AttentionRecommend = new AttentionRecommend$Type();
+export const AttentionRecommend = /* #__PURE__ */ new AttentionRecommend$Type();
 // @generated message type with reflection information, may provide speed optimized methods
 class Audio$Type extends MessageType {
     constructor() {
@@ -1488,7 +1488,7 @@ class Audio$Type extends MessageType {
 /**
  * @generated MessageType for protobuf message bilibili.app.viewunite.common.Audio
  */
-export const Audio = new Audio$Type();
+export const Audio = /* #__PURE__ */ new Audio$Type();
 // @generated message type with reflection information, may provide speed optimized methods
 class AudioInfo$Type extends MessageType {
     constructor() {
@@ -1591,7 +1591,7 @@ class AudioInfo$Type extends MessageType {
 /**
  * @generated MessageType for protobuf message bilibili.app.viewunite.common.AudioInfo
  */
-export const AudioInfo = new AudioInfo$Type();
+export const AudioInfo = /* #__PURE__ */ new AudioInfo$Type();
 // @generated message type with reflection information, may provide speed optimized methods
 class BadgeInfo$Type extends MessageType {
     constructor() {
@@ -1710,7 +1710,7 @@ class BadgeInfo$Type extends MessageType {
 /**
  * @generated MessageType for protobuf message bilibili.app.viewunite.common.BadgeInfo
  */
-export const BadgeInfo = new BadgeInfo$Type();
+export const BadgeInfo = /* #__PURE__ */ new BadgeInfo$Type();
 // @generated message type with reflection information, may provide speed optimized methods
 class Banner$Type extends MessageType {
     constructor() {
@@ -1765,7 +1765,7 @@ class Banner$Type extends MessageType {
 /**
  * @generated MessageType for protobuf message bilibili.app.viewunite.common.Banner
  */
-export const Banner = new Banner$Type();
+export const Banner = /* #__PURE__ */ new Banner$Type();
 // @generated message type with reflection information, may provide speed optimized methods
 class BizFavParam$Type extends MessageType {
     constructor() {
@@ -1812,7 +1812,7 @@ class BizFavParam$Type extends MessageType {
 /**
  * @generated MessageType for protobuf message bilibili.app.viewunite.common.BizFavParam
  */
-export const BizFavParam = new BizFavParam$Type();
+export const BizFavParam = /* #__PURE__ */ new BizFavParam$Type();
 // @generated message type with reflection information, may provide speed optimized methods
 class BizReserveActivityParam$Type extends MessageType {
     constructor() {
@@ -1891,7 +1891,7 @@ class BizReserveActivityParam$Type extends MessageType {
 /**
  * @generated MessageType for protobuf message bilibili.app.viewunite.common.BizReserveActivityParam
  */
-export const BizReserveActivityParam = new BizReserveActivityParam$Type();
+export const BizReserveActivityParam = /* #__PURE__ */ new BizReserveActivityParam$Type();
 // @generated message type with reflection information, may provide speed optimized methods
 class Button$Type extends MessageType {
     constructor() {
@@ -1977,7 +1977,7 @@ class Button$Type extends MessageType {
 /**
  * @generated MessageType for protobuf message bilibili.app.viewunite.common.Button
  */
-export const Button = new Button$Type();
+export const Button = /* #__PURE__ */ new Button$Type();
 // @generated message type with reflection information, may provide speed optimized methods
 class CardBasicInfo$Type extends MessageType {
     constructor() {
@@ -2135,7 +2135,7 @@ class CardBasicInfo$Type extends MessageType {
 /**
  * @generated MessageType for protobuf message bilibili.app.viewunite.common.CardBasicInfo
  */
-export const CardBasicInfo = new CardBasicInfo$Type();
+export const CardBasicInfo = /* #__PURE__ */ new CardBasicInfo$Type();
 // @generated message type with reflection information, may provide speed optimized methods
 class CardStyle$Type extends MessageType {
     constructor() {
@@ -2190,7 +2190,7 @@ class CardStyle$Type extends MessageType {
 /**
  * @generated MessageType for protobuf message bilibili.app.viewunite.common.CardStyle
  */
-export const CardStyle = new CardStyle$Type();
+export const CardStyle = /* #__PURE__ */ new CardStyle$Type();
 // @generated message type with reflection information, may provide speed optimized methods
 class Celebrity$Type extends MessageType {
     constructor() {
@@ -2365,7 +2365,7 @@ class Celebrity$Type extends MessageType {
 /**
  * @generated MessageType for protobuf message bilibili.app.viewunite.common.Celebrity
  */
-export const Celebrity = new Celebrity$Type();
+export const Celebrity = /* #__PURE__ */ new Celebrity$Type();
 // @generated message type with reflection information, may provide speed optimized methods
 class CharacterGroup$Type extends MessageType {
     constructor() {
@@ -2420,7 +2420,7 @@ class CharacterGroup$Type extends MessageType {
 /**
  * @generated MessageType for protobuf message bilibili.app.viewunite.common.CharacterGroup
  */
-export const CharacterGroup = new CharacterGroup$Type();
+export const CharacterGroup = /* #__PURE__ */ new CharacterGroup$Type();
 // @generated message type with reflection information, may provide speed optimized methods
 class Characters$Type extends MessageType {
     constructor() {
@@ -2467,7 +2467,7 @@ class Characters$Type extends MessageType {
 /**
  * @generated MessageType for protobuf message bilibili.app.viewunite.common.Characters
  */
-export const Characters = new Characters$Type();
+export const Characters = /* #__PURE__ */ new Characters$Type();
 // @generated message type with reflection information, may provide speed optimized methods
 class CoinExtend$Type extends MessageType {
     constructor() {
@@ -2546,7 +2546,7 @@ class CoinExtend$Type extends MessageType {
 /**
  * @generated MessageType for protobuf message bilibili.app.viewunite.common.CoinExtend
  */
-export const CoinExtend = new CoinExtend$Type();
+export const CoinExtend = /* #__PURE__ */ new CoinExtend$Type();
 // @generated message type with reflection information, may provide speed optimized methods
 class CombinationEp$Type extends MessageType {
     constructor() {
@@ -2679,7 +2679,7 @@ class CombinationEp$Type extends MessageType {
 /**
  * @generated MessageType for protobuf message bilibili.app.viewunite.common.CombinationEp
  */
-export const CombinationEp = new CombinationEp$Type();
+export const CombinationEp = /* #__PURE__ */ new CombinationEp$Type();
 // @generated message type with reflection information, may provide speed optimized methods
 class Covenanter$Type extends MessageType {
     constructor() {
@@ -2717,7 +2717,7 @@ class Covenanter$Type extends MessageType {
 /**
  * @generated MessageType for protobuf message bilibili.app.viewunite.common.Covenanter
  */
-export const Covenanter = new Covenanter$Type();
+export const Covenanter = /* #__PURE__ */ new Covenanter$Type();
 // @generated message type with reflection information, may provide speed optimized methods
 class SpecialTag$Type extends MessageType {
     constructor() {
@@ -2764,7 +2764,7 @@ class SpecialTag$Type extends MessageType {
 /**
  * @generated MessageType for protobuf message bilibili.app.viewunite.common.SpecialTag
  */
-export const SpecialTag = new SpecialTag$Type();
+export const SpecialTag = /* #__PURE__ */ new SpecialTag$Type();
 // @generated message type with reflection information, may provide speed optimized methods
 class UpDataModule$Type extends MessageType {
     constructor() {
@@ -2819,7 +2819,7 @@ class UpDataModule$Type extends MessageType {
 /**
  * @generated MessageType for protobuf message bilibili.app.viewunite.common.UpDataModule
  */
-export const UpDataModule = new UpDataModule$Type();
+export const UpDataModule = /* #__PURE__ */ new UpDataModule$Type();
 // @generated message type with reflection information, may provide speed optimized methods
 class ProfessionApproval$Type extends MessageType {
     constructor() {
@@ -2866,7 +2866,7 @@ class ProfessionApproval$Type extends MessageType {
 /**
  * @generated MessageType for protobuf message bilibili.app.viewunite.common.ProfessionApproval
  */
-export const ProfessionApproval = new ProfessionApproval$Type();
+export const ProfessionApproval = /* #__PURE__ */ new ProfessionApproval$Type();
 // @generated message type with reflection information, may provide speed optimized methods
 class DeliveryData$Type extends MessageType {
     constructor() {
@@ -3001,7 +3001,7 @@ class DeliveryData$Type extends MessageType {
 /**
  * @generated MessageType for protobuf message bilibili.app.viewunite.common.DeliveryData
  */
-export const DeliveryData = new DeliveryData$Type();
+export const DeliveryData = /* #__PURE__ */ new DeliveryData$Type();
 // @generated message type with reflection information, may provide speed optimized methods
 class Desc$Type extends MessageType {
     constructor() {
@@ -3056,7 +3056,7 @@ class Desc$Type extends MessageType {
 /**
  * @generated MessageType for protobuf message bilibili.app.viewunite.common.Desc
  */
-export const Desc = new Desc$Type();
+export const Desc = /* #__PURE__ */ new Desc$Type();
 // @generated message type with reflection information, may provide speed optimized methods
 class DescV2$Type extends MessageType {
     constructor() {
@@ -3127,7 +3127,7 @@ class DescV2$Type extends MessageType {
 /**
  * @generated MessageType for protobuf message bilibili.app.viewunite.common.DescV2
  */
-export const DescV2 = new DescV2$Type();
+export const DescV2 = /* #__PURE__ */ new DescV2$Type();
 // @generated message type with reflection information, may provide speed optimized methods
 class Dimension$Type extends MessageType {
     constructor() {
@@ -3190,7 +3190,7 @@ class Dimension$Type extends MessageType {
 /**
  * @generated MessageType for protobuf message bilibili.app.viewunite.common.Dimension
  */
-export const Dimension = new Dimension$Type();
+export const Dimension = /* #__PURE__ */ new Dimension$Type();
 // @generated message type with reflection information, may provide speed optimized methods
 class DislikeReasons$Type extends MessageType {
     constructor() {
@@ -3269,7 +3269,7 @@ class DislikeReasons$Type extends MessageType {
 /**
  * @generated MessageType for protobuf message bilibili.app.viewunite.common.DislikeReasons
  */
-export const DislikeReasons = new DislikeReasons$Type();
+export const DislikeReasons = /* #__PURE__ */ new DislikeReasons$Type();
 // @generated message type with reflection information, may provide speed optimized methods
 class FollowLayer$Type extends MessageType {
     constructor() {
@@ -3346,7 +3346,7 @@ class FollowLayer$Type extends MessageType {
 /**
  * @generated MessageType for protobuf message bilibili.app.viewunite.common.FollowLayer
  */
-export const FollowLayer = new FollowLayer$Type();
+export const FollowLayer = /* #__PURE__ */ new FollowLayer$Type();
 // @generated message type with reflection information, may provide speed optimized methods
 class Headline$Type extends MessageType {
     constructor() {
@@ -3400,7 +3400,7 @@ class Headline$Type extends MessageType {
 /**
  * @generated MessageType for protobuf message bilibili.app.viewunite.common.Headline
  */
-export const Headline = new Headline$Type();
+export const Headline = /* #__PURE__ */ new Headline$Type();
 // @generated message type with reflection information, may provide speed optimized methods
 class HistoryNode$Type extends MessageType {
     constructor() {
@@ -3463,7 +3463,7 @@ class HistoryNode$Type extends MessageType {
 /**
  * @generated MessageType for protobuf message bilibili.app.viewunite.common.HistoryNode
  */
-export const HistoryNode = new HistoryNode$Type();
+export const HistoryNode = /* #__PURE__ */ new HistoryNode$Type();
 // @generated message type with reflection information, may provide speed optimized methods
 class Honor$Type extends MessageType {
     constructor() {
@@ -3622,7 +3622,7 @@ class Honor$Type extends MessageType {
 /**
  * @generated MessageType for protobuf message bilibili.app.viewunite.common.Honor
  */
-export const Honor = new Honor$Type();
+export const Honor = /* #__PURE__ */ new Honor$Type();
 // @generated message type with reflection information, may provide speed optimized methods
 class IconFont$Type extends MessageType {
     constructor() {
@@ -3677,7 +3677,7 @@ class IconFont$Type extends MessageType {
 /**
  * @generated MessageType for protobuf message bilibili.app.viewunite.common.IconFont
  */
-export const IconFont = new IconFont$Type();
+export const IconFont = /* #__PURE__ */ new IconFont$Type();
 // @generated message type with reflection information, may provide speed optimized methods
 class Interaction$Type extends MessageType {
     constructor() {
@@ -3755,7 +3755,7 @@ class Interaction$Type extends MessageType {
 /**
  * @generated MessageType for protobuf message bilibili.app.viewunite.common.Interaction
  */
-export const Interaction = new Interaction$Type();
+export const Interaction = /* #__PURE__ */ new Interaction$Type();
 // @generated message type with reflection information, may provide speed optimized methods
 class Item$Type extends MessageType {
     constructor() {
@@ -3810,7 +3810,7 @@ class Item$Type extends MessageType {
 /**
  * @generated MessageType for protobuf message bilibili.app.viewunite.common.Item
  */
-export const Item = new Item$Type();
+export const Item = /* #__PURE__ */ new Item$Type();
 // @generated message type with reflection information, may provide speed optimized methods
 class KingPos$Type extends MessageType {
     constructor() {
@@ -3910,7 +3910,7 @@ class KingPos$Type extends MessageType {
 /**
  * @generated MessageType for protobuf message bilibili.app.viewunite.common.KingPos
  */
-export const KingPos = new KingPos$Type();
+export const KingPos = /* #__PURE__ */ new KingPos$Type();
 // @generated message type with reflection information, may provide speed optimized methods
 class KingPosition$Type extends MessageType {
     constructor() {
@@ -3965,7 +3965,7 @@ class KingPosition$Type extends MessageType {
 /**
  * @generated MessageType for protobuf message bilibili.app.viewunite.common.KingPosition
  */
-export const KingPosition = new KingPosition$Type();
+export const KingPosition = /* #__PURE__ */ new KingPosition$Type();
 // @generated message type with reflection information, may provide speed optimized methods
 class Label$Type extends MessageType {
     constructor() {
@@ -4068,7 +4068,7 @@ class Label$Type extends MessageType {
 /**
  * @generated MessageType for protobuf message bilibili.app.viewunite.common.Label
  */
-export const Label = new Label$Type();
+export const Label = /* #__PURE__ */ new Label$Type();
 // @generated message type with reflection information, may provide speed optimized methods
 class LikeComment$Type extends MessageType {
     constructor() {
@@ -4123,7 +4123,7 @@ class LikeComment$Type extends MessageType {
 /**
  * @generated MessageType for protobuf message bilibili.app.viewunite.common.LikeComment
  */
-export const LikeComment = new LikeComment$Type();
+export const LikeComment = /* #__PURE__ */ new LikeComment$Type();
 // @generated message type with reflection information, may provide speed optimized methods
 class LikeExtend$Type extends MessageType {
     constructor() {
@@ -4191,7 +4191,7 @@ class LikeExtend$Type extends MessageType {
 /**
  * @generated MessageType for protobuf message bilibili.app.viewunite.common.LikeExtend
  */
-export const LikeExtend = new LikeExtend$Type();
+export const LikeExtend = /* #__PURE__ */ new LikeExtend$Type();
 // @generated message type with reflection information, may provide speed optimized methods
 class Live$Type extends MessageType {
     constructor() {
@@ -4262,7 +4262,7 @@ class Live$Type extends MessageType {
 /**
  * @generated MessageType for protobuf message bilibili.app.viewunite.common.Live
  */
-export const Live = new Live$Type();
+export const Live = /* #__PURE__ */ new Live$Type();
 // @generated message type with reflection information, may provide speed optimized methods
 class LiveOrder$Type extends MessageType {
     constructor() {
@@ -4341,7 +4341,7 @@ class LiveOrder$Type extends MessageType {
 /**
  * @generated MessageType for protobuf message bilibili.app.viewunite.common.LiveOrder
  */
-export const LiveOrder = new LiveOrder$Type();
+export const LiveOrder = /* #__PURE__ */ new LiveOrder$Type();
 // @generated message type with reflection information, may provide speed optimized methods
 class Mine$Type extends MessageType {
     constructor() {
@@ -4404,7 +4404,7 @@ class Mine$Type extends MessageType {
 /**
  * @generated MessageType for protobuf message bilibili.app.viewunite.common.Mine
  */
-export const Mine = new Mine$Type();
+export const Mine = /* #__PURE__ */ new Mine$Type();
 // @generated message type with reflection information, may provide speed optimized methods
 class Module$Type extends MessageType {
     constructor() {
@@ -4742,7 +4742,7 @@ class Module$Type extends MessageType {
 /**
  * @generated MessageType for protobuf message bilibili.app.viewunite.common.Module
  */
-export const Module = new Module$Type();
+export const Module = /* #__PURE__ */ new Module$Type();
 // @generated message type with reflection information, may provide speed optimized methods
 class MultiViewEp$Type extends MessageType {
     constructor() {
@@ -4789,7 +4789,7 @@ class MultiViewEp$Type extends MessageType {
 /**
  * @generated MessageType for protobuf message bilibili.app.viewunite.common.MultiViewEp
  */
-export const MultiViewEp = new MultiViewEp$Type();
+export const MultiViewEp = /* #__PURE__ */ new MultiViewEp$Type();
 // @generated message type with reflection information, may provide speed optimized methods
 class NewEp$Type extends MessageType {
     constructor() {
@@ -4884,7 +4884,7 @@ class NewEp$Type extends MessageType {
 /**
  * @generated MessageType for protobuf message bilibili.app.viewunite.common.NewEp
  */
-export const NewEp = new NewEp$Type();
+export const NewEp = /* #__PURE__ */ new NewEp$Type();
 // @generated message type with reflection information, may provide speed optimized methods
 class OfficialVerify$Type extends MessageType {
     constructor() {
@@ -4939,7 +4939,7 @@ class OfficialVerify$Type extends MessageType {
 /**
  * @generated MessageType for protobuf message bilibili.app.viewunite.common.OfficialVerify
  */
-export const OfficialVerify = new OfficialVerify$Type();
+export const OfficialVerify = /* #__PURE__ */ new OfficialVerify$Type();
 // @generated message type with reflection information, may provide speed optimized methods
 class OgvIntroduction$Type extends MessageType {
     constructor() {
@@ -5001,7 +5001,7 @@ class OgvIntroduction$Type extends MessageType {
 /**
  * @generated MessageType for protobuf message bilibili.app.viewunite.common.OgvIntroduction
  */
-export const OgvIntroduction = new OgvIntroduction$Type();
+export const OgvIntroduction = /* #__PURE__ */ new OgvIntroduction$Type();
 // @generated message type with reflection information, may provide speed optimized methods
 class OgvLiveReserve$Type extends MessageType {
     constructor() {
@@ -5216,7 +5216,7 @@ class OgvLiveReserve$Type extends MessageType {
 /**
  * @generated MessageType for protobuf message bilibili.app.viewunite.common.OgvLiveReserve
  */
-export const OgvLiveReserve = new OgvLiveReserve$Type();
+export const OgvLiveReserve = /* #__PURE__ */ new OgvLiveReserve$Type();
 // @generated message type with reflection information, may provide speed optimized methods
 class OgvSeasons$Type extends MessageType {
     constructor() {
@@ -5279,7 +5279,7 @@ class OgvSeasons$Type extends MessageType {
 /**
  * @generated MessageType for protobuf message bilibili.app.viewunite.common.OgvSeasons
  */
-export const OgvSeasons = new OgvSeasons$Type();
+export const OgvSeasons = /* #__PURE__ */ new OgvSeasons$Type();
 // @generated message type with reflection information, may provide speed optimized methods
 class OgvTitle$Type extends MessageType {
     constructor() {
@@ -5364,7 +5364,7 @@ class OgvTitle$Type extends MessageType {
 /**
  * @generated MessageType for protobuf message bilibili.app.viewunite.common.OgvTitle
  */
-export const OgvTitle = new OgvTitle$Type();
+export const OgvTitle = /* #__PURE__ */ new OgvTitle$Type();
 // @generated message type with reflection information, may provide speed optimized methods
 class Owner$Type extends MessageType {
     constructor() {
@@ -5507,7 +5507,7 @@ class Owner$Type extends MessageType {
 /**
  * @generated MessageType for protobuf message bilibili.app.viewunite.common.Owner
  */
-export const Owner = new Owner$Type();
+export const Owner = /* #__PURE__ */ new Owner$Type();
 // @generated message type with reflection information, may provide speed optimized methods
 class Page$Type extends MessageType {
     constructor() {
@@ -5601,7 +5601,7 @@ class Page$Type extends MessageType {
 /**
  * @generated MessageType for protobuf message bilibili.app.viewunite.common.Page
  */
-export const Page = new Page$Type();
+export const Page = /* #__PURE__ */ new Page$Type();
 // @generated message type with reflection information, may provide speed optimized methods
 class Pendant$Type extends MessageType {
     constructor() {
@@ -5664,7 +5664,7 @@ class Pendant$Type extends MessageType {
 /**
  * @generated MessageType for protobuf message bilibili.app.viewunite.common.Pendant
  */
-export const Pendant = new Pendant$Type();
+export const Pendant = /* #__PURE__ */ new Pendant$Type();
 // @generated message type with reflection information, may provide speed optimized methods
 class PlayerAnimation$Type extends MessageType {
     constructor() {
@@ -5719,7 +5719,7 @@ class PlayerAnimation$Type extends MessageType {
 /**
  * @generated MessageType for protobuf message bilibili.app.viewunite.common.PlayerAnimation
  */
-export const PlayerAnimation = new PlayerAnimation$Type();
+export const PlayerAnimation = /* #__PURE__ */ new PlayerAnimation$Type();
 // @generated message type with reflection information, may provide speed optimized methods
 class PointActivity$Type extends MessageType {
     constructor() {
@@ -5782,7 +5782,7 @@ class PointActivity$Type extends MessageType {
 /**
  * @generated MessageType for protobuf message bilibili.app.viewunite.common.PointActivity
  */
-export const PointActivity = new PointActivity$Type();
+export const PointActivity = /* #__PURE__ */ new PointActivity$Type();
 // @generated message type with reflection information, may provide speed optimized methods
 class PowerIconStyle$Type extends MessageType {
     constructor() {
@@ -5853,7 +5853,7 @@ class PowerIconStyle$Type extends MessageType {
 /**
  * @generated MessageType for protobuf message bilibili.app.viewunite.common.PowerIconStyle
  */
-export const PowerIconStyle = new PowerIconStyle$Type();
+export const PowerIconStyle = /* #__PURE__ */ new PowerIconStyle$Type();
 // @generated message type with reflection information, may provide speed optimized methods
 class Rank$Type extends MessageType {
     constructor() {
@@ -5916,7 +5916,7 @@ class Rank$Type extends MessageType {
 /**
  * @generated MessageType for protobuf message bilibili.app.viewunite.common.Rank
  */
-export const Rank = new Rank$Type();
+export const Rank = /* #__PURE__ */ new Rank$Type();
 // @generated message type with reflection information, may provide speed optimized methods
 class RankInfo$Type extends MessageType {
     constructor() {
@@ -6019,7 +6019,7 @@ class RankInfo$Type extends MessageType {
 /**
  * @generated MessageType for protobuf message bilibili.app.viewunite.common.RankInfo
  */
-export const RankInfo = new RankInfo$Type();
+export const RankInfo = /* #__PURE__ */ new RankInfo$Type();
 // @generated message type with reflection information, may provide speed optimized methods
 class Rating$Type extends MessageType {
     constructor() {
@@ -6074,7 +6074,7 @@ class Rating$Type extends MessageType {
 /**
  * @generated MessageType for protobuf message bilibili.app.viewunite.common.Rating
  */
-export const Rating = new Rating$Type();
+export const Rating = /* #__PURE__ */ new Rating$Type();
 // @generated message type with reflection information, may provide speed optimized methods
 class RelateAVCard$Type extends MessageType {
     constructor() {
@@ -6166,7 +6166,7 @@ class RelateAVCard$Type extends MessageType {
 /**
  * @generated MessageType for protobuf message bilibili.app.viewunite.common.RelateAVCard
  */
-export const RelateAVCard = new RelateAVCard$Type();
+export const RelateAVCard = /* #__PURE__ */ new RelateAVCard$Type();
 // @generated message type with reflection information, may provide speed optimized methods
 class RelateBangumiAvCard$Type extends MessageType {
     constructor() {
@@ -6226,7 +6226,7 @@ class RelateBangumiAvCard$Type extends MessageType {
 /**
  * @generated MessageType for protobuf message bilibili.app.viewunite.common.RelateBangumiAvCard
  */
-export const RelateBangumiAvCard = new RelateBangumiAvCard$Type();
+export const RelateBangumiAvCard = /* #__PURE__ */ new RelateBangumiAvCard$Type();
 // @generated message type with reflection information, may provide speed optimized methods
 class RelateBangumiCard$Type extends MessageType {
     constructor() {
@@ -6349,7 +6349,7 @@ class RelateBangumiCard$Type extends MessageType {
 /**
  * @generated MessageType for protobuf message bilibili.app.viewunite.common.RelateBangumiCard
  */
-export const RelateBangumiCard = new RelateBangumiCard$Type();
+export const RelateBangumiCard = /* #__PURE__ */ new RelateBangumiCard$Type();
 // @generated message type with reflection information, may provide speed optimized methods
 class RelateBangumiResourceCard$Type extends MessageType {
     constructor() {
@@ -6500,7 +6500,7 @@ class RelateBangumiResourceCard$Type extends MessageType {
 /**
  * @generated MessageType for protobuf message bilibili.app.viewunite.common.RelateBangumiResourceCard
  */
-export const RelateBangumiResourceCard = new RelateBangumiResourceCard$Type();
+export const RelateBangumiResourceCard = /* #__PURE__ */ new RelateBangumiResourceCard$Type();
 // @generated message type with reflection information, may provide speed optimized methods
 class RelateBangumiUgcCard$Type extends MessageType {
     constructor() {
@@ -6560,7 +6560,7 @@ class RelateBangumiUgcCard$Type extends MessageType {
 /**
  * @generated MessageType for protobuf message bilibili.app.viewunite.common.RelateBangumiUgcCard
  */
-export const RelateBangumiUgcCard = new RelateBangumiUgcCard$Type();
+export const RelateBangumiUgcCard = /* #__PURE__ */ new RelateBangumiUgcCard$Type();
 // @generated message type with reflection information, may provide speed optimized methods
 class RelateCard$Type extends MessageType {
     constructor() {
@@ -6729,7 +6729,7 @@ class RelateCard$Type extends MessageType {
 /**
  * @generated MessageType for protobuf message bilibili.app.viewunite.common.RelateCard
  */
-export const RelateCard = new RelateCard$Type();
+export const RelateCard = /* #__PURE__ */ new RelateCard$Type();
 // @generated message type with reflection information, may provide speed optimized methods
 class RelateCMCard$Type extends MessageType {
     constructor() {
@@ -6798,7 +6798,7 @@ class RelateCMCard$Type extends MessageType {
 /**
  * @generated MessageType for protobuf message bilibili.app.viewunite.common.RelateCMCard
  */
-export const RelateCMCard = new RelateCMCard$Type();
+export const RelateCMCard = /* #__PURE__ */ new RelateCMCard$Type();
 // @generated message type with reflection information, may provide speed optimized methods
 class RelateConfig$Type extends MessageType {
     constructor() {
@@ -6868,7 +6868,7 @@ class RelateConfig$Type extends MessageType {
 /**
  * @generated MessageType for protobuf message bilibili.app.viewunite.common.RelateConfig
  */
-export const RelateConfig = new RelateConfig$Type();
+export const RelateConfig = /* #__PURE__ */ new RelateConfig$Type();
 // @generated message type with reflection information, may provide speed optimized methods
 class RelatedAICard$Type extends MessageType {
     constructor() {
@@ -6969,7 +6969,7 @@ class RelatedAICard$Type extends MessageType {
 /**
  * @generated MessageType for protobuf message bilibili.app.viewunite.common.RelatedAICard
  */
-export const RelatedAICard = new RelatedAICard$Type();
+export const RelatedAICard = /* #__PURE__ */ new RelatedAICard$Type();
 // @generated message type with reflection information, may provide speed optimized methods
 class RelateDislike$Type extends MessageType {
     constructor() {
@@ -7072,7 +7072,7 @@ class RelateDislike$Type extends MessageType {
 /**
  * @generated MessageType for protobuf message bilibili.app.viewunite.common.RelateDislike
  */
-export const RelateDislike = new RelateDislike$Type();
+export const RelateDislike = /* #__PURE__ */ new RelateDislike$Type();
 // @generated message type with reflection information, may provide speed optimized methods
 class RelateGameCard$Type extends MessageType {
     constructor() {
@@ -7201,7 +7201,7 @@ class RelateGameCard$Type extends MessageType {
 /**
  * @generated MessageType for protobuf message bilibili.app.viewunite.common.RelateGameCard
  */
-export const RelateGameCard = new RelateGameCard$Type();
+export const RelateGameCard = /* #__PURE__ */ new RelateGameCard$Type();
 // @generated message type with reflection information, may provide speed optimized methods
 class RelateItem$Type extends MessageType {
     constructor() {
@@ -7264,7 +7264,7 @@ class RelateItem$Type extends MessageType {
 /**
  * @generated MessageType for protobuf message bilibili.app.viewunite.common.RelateItem
  */
-export const RelateItem = new RelateItem$Type();
+export const RelateItem = /* #__PURE__ */ new RelateItem$Type();
 // @generated message type with reflection information, may provide speed optimized methods
 class RelateLiveCard$Type extends MessageType {
     constructor() {
@@ -7335,7 +7335,7 @@ class RelateLiveCard$Type extends MessageType {
 /**
  * @generated MessageType for protobuf message bilibili.app.viewunite.common.RelateLiveCard
  */
-export const RelateLiveCard = new RelateLiveCard$Type();
+export const RelateLiveCard = /* #__PURE__ */ new RelateLiveCard$Type();
 // @generated message type with reflection information, may provide speed optimized methods
 class Relates$Type extends MessageType {
     constructor() {
@@ -7389,7 +7389,7 @@ class Relates$Type extends MessageType {
 /**
  * @generated MessageType for protobuf message bilibili.app.viewunite.common.Relates
  */
-export const Relates = new Relates$Type();
+export const Relates = /* #__PURE__ */ new Relates$Type();
 // @generated message type with reflection information, may provide speed optimized methods
 class RelateSpecial$Type extends MessageType {
     constructor() {
@@ -7442,7 +7442,7 @@ class RelateSpecial$Type extends MessageType {
 /**
  * @generated MessageType for protobuf message bilibili.app.viewunite.common.RelateSpecial
  */
-export const RelateSpecial = new RelateSpecial$Type();
+export const RelateSpecial = /* #__PURE__ */ new RelateSpecial$Type();
 // @generated message type with reflection information, may provide speed optimized methods
 class RelateThreePoint$Type extends MessageType {
     constructor() {
@@ -7511,7 +7511,7 @@ class RelateThreePoint$Type extends MessageType {
 /**
  * @generated MessageType for protobuf message bilibili.app.viewunite.common.RelateThreePoint
  */
-export const RelateThreePoint = new RelateThreePoint$Type();
+export const RelateThreePoint = /* #__PURE__ */ new RelateThreePoint$Type();
 // @generated message type with reflection information, may provide speed optimized methods
 class ReserveButton$Type extends MessageType {
     constructor() {
@@ -7603,7 +7603,7 @@ class ReserveButton$Type extends MessageType {
 /**
  * @generated MessageType for protobuf message bilibili.app.viewunite.common.ReserveButton
  */
-export const ReserveButton = new ReserveButton$Type();
+export const ReserveButton = /* #__PURE__ */ new ReserveButton$Type();
 // @generated message type with reflection information, may provide speed optimized methods
 class Rights$Type extends MessageType {
     constructor() {
@@ -7698,7 +7698,7 @@ class Rights$Type extends MessageType {
 /**
  * @generated MessageType for protobuf message bilibili.app.viewunite.common.Rights
  */
-export const Rights = new Rights$Type();
+export const Rights = /* #__PURE__ */ new Rights$Type();
 // @generated message type with reflection information, may provide speed optimized methods
 class SeasonHead$Type extends MessageType {
     constructor() {
@@ -7767,7 +7767,7 @@ class SeasonHead$Type extends MessageType {
 /**
  * @generated MessageType for protobuf message bilibili.app.viewunite.common.SeasonHead
  */
-export const SeasonHead = new SeasonHead$Type();
+export const SeasonHead = /* #__PURE__ */ new SeasonHead$Type();
 // @generated message type with reflection information, may provide speed optimized methods
 class SeasonShow$Type extends MessageType {
     constructor() {
@@ -7846,7 +7846,7 @@ class SeasonShow$Type extends MessageType {
 /**
  * @generated MessageType for protobuf message bilibili.app.viewunite.common.SeasonShow
  */
-export const SeasonShow = new SeasonShow$Type();
+export const SeasonShow = /* #__PURE__ */ new SeasonShow$Type();
 // @generated message type with reflection information, may provide speed optimized methods
 class SectionData$Type extends MessageType {
     constructor() {
@@ -8019,7 +8019,7 @@ class SectionData$Type extends MessageType {
 /**
  * @generated MessageType for protobuf message bilibili.app.viewunite.common.SectionData
  */
-export const SectionData = new SectionData$Type();
+export const SectionData = /* #__PURE__ */ new SectionData$Type();
 // @generated message type with reflection information, may provide speed optimized methods
 class SerialSeason$Type extends MessageType {
     constructor() {
@@ -8144,7 +8144,7 @@ class SerialSeason$Type extends MessageType {
 /**
  * @generated MessageType for protobuf message bilibili.app.viewunite.common.SerialSeason
  */
-export const SerialSeason = new SerialSeason$Type();
+export const SerialSeason = /* #__PURE__ */ new SerialSeason$Type();
 // @generated message type with reflection information, may provide speed optimized methods
 class SkipRange$Type extends MessageType {
     constructor() {
@@ -8199,7 +8199,7 @@ class SkipRange$Type extends MessageType {
 /**
  * @generated MessageType for protobuf message bilibili.app.viewunite.common.SkipRange
  */
-export const SkipRange = new SkipRange$Type();
+export const SkipRange = /* #__PURE__ */ new SkipRange$Type();
 // @generated message type with reflection information, may provide speed optimized methods
 class Sponsor$Type extends MessageType {
     constructor() {
@@ -8292,7 +8292,7 @@ class Sponsor$Type extends MessageType {
 /**
  * @generated MessageType for protobuf message bilibili.app.viewunite.common.Sponsor
  */
-export const Sponsor = new Sponsor$Type();
+export const Sponsor = /* #__PURE__ */ new Sponsor$Type();
 // @generated message type with reflection information, may provide speed optimized methods
 class SponsorRank$Type extends MessageType {
     constructor() {
@@ -8370,7 +8370,7 @@ class SponsorRank$Type extends MessageType {
 /**
  * @generated MessageType for protobuf message bilibili.app.viewunite.common.SponsorRank
  */
-export const SponsorRank = new SponsorRank$Type();
+export const SponsorRank = /* #__PURE__ */ new SponsorRank$Type();
 // @generated message type with reflection information, may provide speed optimized methods
 class Staff$Type extends MessageType {
     constructor() {
@@ -8479,7 +8479,7 @@ class Staff$Type extends MessageType {
 /**
  * @generated MessageType for protobuf message bilibili.app.viewunite.common.Staff
  */
-export const Staff = new Staff$Type();
+export const Staff = /* #__PURE__ */ new Staff$Type();
 // @generated message type with reflection information, may provide speed optimized methods
 class Staffs$Type extends MessageType {
     constructor() {
@@ -8534,7 +8534,7 @@ class Staffs$Type extends MessageType {
 /**
  * @generated MessageType for protobuf message bilibili.app.viewunite.common.Staffs
  */
-export const Staffs = new Staffs$Type();
+export const Staffs = /* #__PURE__ */ new Staffs$Type();
 // @generated message type with reflection information, may provide speed optimized methods
 class Stat$Type extends MessageType {
     constructor() {
@@ -8635,7 +8635,7 @@ class Stat$Type extends MessageType {
 /**
  * @generated MessageType for protobuf message bilibili.app.viewunite.common.Stat
  */
-export const Stat = new Stat$Type();
+export const Stat = /* #__PURE__ */ new Stat$Type();
 // @generated message type with reflection information, may provide speed optimized methods
 class StatInfo$Type extends MessageType {
     constructor() {
@@ -8706,7 +8706,7 @@ class StatInfo$Type extends MessageType {
 /**
  * @generated MessageType for protobuf message bilibili.app.viewunite.common.StatInfo
  */
-export const StatInfo = new StatInfo$Type();
+export const StatInfo = /* #__PURE__ */ new StatInfo$Type();
 // @generated message type with reflection information, may provide speed optimized methods
 class Style$Type extends MessageType {
     constructor() {
@@ -8769,7 +8769,7 @@ class Style$Type extends MessageType {
 /**
  * @generated MessageType for protobuf message bilibili.app.viewunite.common.Style
  */
-export const Style = new Style$Type();
+export const Style = /* #__PURE__ */ new Style$Type();
 // @generated message type with reflection information, may provide speed optimized methods
 class Tag$Type extends MessageType {
     constructor() {
@@ -8840,7 +8840,7 @@ class Tag$Type extends MessageType {
 /**
  * @generated MessageType for protobuf message bilibili.app.viewunite.common.Tag
  */
-export const Tag = new Tag$Type();
+export const Tag = /* #__PURE__ */ new Tag$Type();
 // @generated message type with reflection information, may provide speed optimized methods
 class TheatreHotTopic$Type extends MessageType {
     constructor() {
@@ -8983,7 +8983,7 @@ class TheatreHotTopic$Type extends MessageType {
 /**
  * @generated MessageType for protobuf message bilibili.app.viewunite.common.TheatreHotTopic
  */
-export const TheatreHotTopic = new TheatreHotTopic$Type();
+export const TheatreHotTopic = /* #__PURE__ */ new TheatreHotTopic$Type();
 // @generated message type with reflection information, may provide speed optimized methods
 class Threshold$Type extends MessageType {
     constructor() {
@@ -9046,7 +9046,7 @@ class Threshold$Type extends MessageType {
 /**
  * @generated MessageType for protobuf message bilibili.app.viewunite.common.Threshold
  */
-export const Threshold = new Threshold$Type();
+export const Threshold = /* #__PURE__ */ new Threshold$Type();
 // @generated message type with reflection information, may provide speed optimized methods
 class TitleDeliveryButton$Type extends MessageType {
     constructor() {
@@ -9133,7 +9133,7 @@ class TitleDeliveryButton$Type extends MessageType {
 /**
  * @generated MessageType for protobuf message bilibili.app.viewunite.common.TitleDeliveryButton
  */
-export const TitleDeliveryButton = new TitleDeliveryButton$Type();
+export const TitleDeliveryButton = /* #__PURE__ */ new TitleDeliveryButton$Type();
 // @generated message type with reflection information, may provide speed optimized methods
 class UgcEpisode$Type extends MessageType {
     constructor() {
@@ -9241,7 +9241,7 @@ class UgcEpisode$Type extends MessageType {
 /**
  * @generated MessageType for protobuf message bilibili.app.viewunite.common.UgcEpisode
  */
-export const UgcEpisode = new UgcEpisode$Type();
+export const UgcEpisode = /* #__PURE__ */ new UgcEpisode$Type();
 // @generated message type with reflection information, may provide speed optimized methods
 class UgcIntroduction$Type extends MessageType {
     constructor() {
@@ -9342,7 +9342,7 @@ class UgcIntroduction$Type extends MessageType {
 /**
  * @generated MessageType for protobuf message bilibili.app.viewunite.common.UgcIntroduction
  */
-export const UgcIntroduction = new UgcIntroduction$Type();
+export const UgcIntroduction = /* #__PURE__ */ new UgcIntroduction$Type();
 // @generated message type with reflection information, may provide speed optimized methods
 class UgcSeasonActivity$Type extends MessageType {
     constructor() {
@@ -9483,7 +9483,7 @@ class UgcSeasonActivity$Type extends MessageType {
 /**
  * @generated MessageType for protobuf message bilibili.app.viewunite.common.UgcSeasonActivity
  */
-export const UgcSeasonActivity = new UgcSeasonActivity$Type();
+export const UgcSeasonActivity = /* #__PURE__ */ new UgcSeasonActivity$Type();
 // @generated message type with reflection information, may provide speed optimized methods
 class UgcSeasons$Type extends MessageType {
     constructor() {
@@ -9616,7 +9616,7 @@ class UgcSeasons$Type extends MessageType {
 /**
  * @generated MessageType for protobuf message bilibili.app.viewunite.common.UgcSeasons
  */
-export const UgcSeasons = new UgcSeasons$Type();
+export const UgcSeasons = /* #__PURE__ */ new UgcSeasons$Type();
 // @generated message type with reflection information, may provide speed optimized methods
 class UgcSection$Type extends MessageType {
     constructor() {
@@ -9687,7 +9687,7 @@ class UgcSection$Type extends MessageType {
 /**
  * @generated MessageType for protobuf message bilibili.app.viewunite.common.UgcSection
  */
-export const UgcSection = new UgcSection$Type();
+export const UgcSection = /* #__PURE__ */ new UgcSection$Type();
 // @generated message type with reflection information, may provide speed optimized methods
 class UpLikeImg$Type extends MessageType {
     constructor() {
@@ -9758,7 +9758,7 @@ class UpLikeImg$Type extends MessageType {
 /**
  * @generated MessageType for protobuf message bilibili.app.viewunite.common.UpLikeImg
  */
-export const UpLikeImg = new UpLikeImg$Type();
+export const UpLikeImg = /* #__PURE__ */ new UpLikeImg$Type();
 // @generated message type with reflection information, may provide speed optimized methods
 class User$Type extends MessageType {
     constructor() {
@@ -9829,7 +9829,7 @@ class User$Type extends MessageType {
 /**
  * @generated MessageType for protobuf message bilibili.app.viewunite.common.User
  */
-export const User = new User$Type();
+export const User = /* #__PURE__ */ new User$Type();
 // @generated message type with reflection information, may provide speed optimized methods
 class UserActivity$Type extends MessageType {
     constructor() {
@@ -9916,7 +9916,7 @@ class UserActivity$Type extends MessageType {
 /**
  * @generated MessageType for protobuf message bilibili.app.viewunite.common.UserActivity
  */
-export const UserActivity = new UserActivity$Type();
+export const UserActivity = /* #__PURE__ */ new UserActivity$Type();
 // @generated message type with reflection information, may provide speed optimized methods
 class UserList$Type extends MessageType {
     constructor() {
@@ -9971,7 +9971,7 @@ class UserList$Type extends MessageType {
 /**
  * @generated MessageType for protobuf message bilibili.app.viewunite.common.UserList
  */
-export const UserList = new UserList$Type();
+export const UserList = /* #__PURE__ */ new UserList$Type();
 // @generated message type with reflection information, may provide speed optimized methods
 class UserStatus$Type extends MessageType {
     constructor() {
@@ -10026,7 +10026,7 @@ class UserStatus$Type extends MessageType {
 /**
  * @generated MessageType for protobuf message bilibili.app.viewunite.common.UserStatus
  */
-export const UserStatus = new UserStatus$Type();
+export const UserStatus = /* #__PURE__ */ new UserStatus$Type();
 // @generated message type with reflection information, may provide speed optimized methods
 class ViewEpisode$Type extends MessageType {
     constructor() {
@@ -10411,7 +10411,7 @@ class ViewEpisode$Type extends MessageType {
 /**
  * @generated MessageType for protobuf message bilibili.app.viewunite.common.ViewEpisode
  */
-export const ViewEpisode = new ViewEpisode$Type();
+export const ViewEpisode = /* #__PURE__ */ new ViewEpisode$Type();
 // @generated message type with reflection information, may provide speed optimized methods
 class ViewMaterial$Type extends MessageType {
     constructor() {
@@ -10490,7 +10490,7 @@ class ViewMaterial$Type extends MessageType {
 /**
  * @generated MessageType for protobuf message bilibili.app.viewunite.common.ViewMaterial
  */
-export const ViewMaterial = new ViewMaterial$Type();
+export const ViewMaterial = /* #__PURE__ */ new ViewMaterial$Type();
 // @generated message type with reflection information, may provide speed optimized methods
 class Vip$Type extends MessageType {
     constructor() {
@@ -10568,7 +10568,7 @@ class Vip$Type extends MessageType {
 /**
  * @generated MessageType for protobuf message bilibili.app.viewunite.common.Vip
  */
-export const Vip = new Vip$Type();
+export const Vip = /* #__PURE__ */ new Vip$Type();
 // @generated message type with reflection information, may provide speed optimized methods
 class VipLabel$Type extends MessageType {
     constructor() {
@@ -10631,7 +10631,7 @@ class VipLabel$Type extends MessageType {
 /**
  * @generated MessageType for protobuf message bilibili.app.viewunite.common.VipLabel
  */
-export const VipLabel = new VipLabel$Type();
+export const VipLabel = /* #__PURE__ */ new VipLabel$Type();
 // @generated message type with reflection information, may provide speed optimized methods
 class WikiInfo$Type extends MessageType {
     constructor() {
@@ -10686,4 +10686,4 @@ class WikiInfo$Type extends MessageType {
 /**
  * @generated MessageType for protobuf message bilibili.app.viewunite.common.WikiInfo
  */
-export const WikiInfo = new WikiInfo$Type();
+export const WikiInfo = /* #__PURE__ */ new WikiInfo$Type();

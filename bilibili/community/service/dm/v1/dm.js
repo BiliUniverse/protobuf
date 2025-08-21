@@ -305,7 +305,7 @@ class Avatar$Type extends MessageType {
 /**
  * @generated MessageType for protobuf message bilibili.community.service.dm.v1.Avatar
  */
-export const Avatar = new Avatar$Type();
+export const Avatar = /* #__PURE__ */ new Avatar$Type();
 // @generated message type with reflection information, may provide speed optimized methods
 class Bubble$Type extends MessageType {
     constructor() {
@@ -360,7 +360,7 @@ class Bubble$Type extends MessageType {
 /**
  * @generated MessageType for protobuf message bilibili.community.service.dm.v1.Bubble
  */
-export const Bubble = new Bubble$Type();
+export const Bubble = /* #__PURE__ */ new Bubble$Type();
 // @generated message type with reflection information, may provide speed optimized methods
 class BubbleV2$Type extends MessageType {
     constructor() {
@@ -439,7 +439,7 @@ class BubbleV2$Type extends MessageType {
 /**
  * @generated MessageType for protobuf message bilibili.community.service.dm.v1.BubbleV2
  */
-export const BubbleV2 = new BubbleV2$Type();
+export const BubbleV2 = /* #__PURE__ */ new BubbleV2$Type();
 // @generated message type with reflection information, may provide speed optimized methods
 class Button$Type extends MessageType {
     constructor() {
@@ -494,7 +494,7 @@ class Button$Type extends MessageType {
 /**
  * @generated MessageType for protobuf message bilibili.community.service.dm.v1.Button
  */
-export const Button = new Button$Type();
+export const Button = /* #__PURE__ */ new Button$Type();
 // @generated message type with reflection information, may provide speed optimized methods
 class BuzzwordConfig$Type extends MessageType {
     constructor() {
@@ -541,7 +541,7 @@ class BuzzwordConfig$Type extends MessageType {
 /**
  * @generated MessageType for protobuf message bilibili.community.service.dm.v1.BuzzwordConfig
  */
-export const BuzzwordConfig = new BuzzwordConfig$Type();
+export const BuzzwordConfig = /* #__PURE__ */ new BuzzwordConfig$Type();
 // @generated message type with reflection information, may provide speed optimized methods
 class BuzzwordShowConfig$Type extends MessageType {
     constructor() {
@@ -628,7 +628,7 @@ class BuzzwordShowConfig$Type extends MessageType {
 /**
  * @generated MessageType for protobuf message bilibili.community.service.dm.v1.BuzzwordShowConfig
  */
-export const BuzzwordShowConfig = new BuzzwordShowConfig$Type();
+export const BuzzwordShowConfig = /* #__PURE__ */ new BuzzwordShowConfig$Type();
 // @generated message type with reflection information, may provide speed optimized methods
 class CheckBox$Type extends MessageType {
     constructor() {
@@ -699,7 +699,7 @@ class CheckBox$Type extends MessageType {
 /**
  * @generated MessageType for protobuf message bilibili.community.service.dm.v1.CheckBox
  */
-export const CheckBox = new CheckBox$Type();
+export const CheckBox = /* #__PURE__ */ new CheckBox$Type();
 // @generated message type with reflection information, may provide speed optimized methods
 class CheckBoxV2$Type extends MessageType {
     constructor() {
@@ -762,7 +762,7 @@ class CheckBoxV2$Type extends MessageType {
 /**
  * @generated MessageType for protobuf message bilibili.community.service.dm.v1.CheckBoxV2
  */
-export const CheckBoxV2 = new CheckBoxV2$Type();
+export const CheckBoxV2 = /* #__PURE__ */ new CheckBoxV2$Type();
 // @generated message type with reflection information, may provide speed optimized methods
 class ClickButton$Type extends MessageType {
     constructor() {
@@ -856,7 +856,7 @@ class ClickButton$Type extends MessageType {
 /**
  * @generated MessageType for protobuf message bilibili.community.service.dm.v1.ClickButton
  */
-export const ClickButton = new ClickButton$Type();
+export const ClickButton = /* #__PURE__ */ new ClickButton$Type();
 // @generated message type with reflection information, may provide speed optimized methods
 class ClickButtonV2$Type extends MessageType {
     constructor() {
@@ -959,7 +959,7 @@ class ClickButtonV2$Type extends MessageType {
 /**
  * @generated MessageType for protobuf message bilibili.community.service.dm.v1.ClickButtonV2
  */
-export const ClickButtonV2 = new ClickButtonV2$Type();
+export const ClickButtonV2 = /* #__PURE__ */ new ClickButtonV2$Type();
 // @generated message type with reflection information, may provide speed optimized methods
 class CommandDm$Type extends MessageType {
     constructor() {
@@ -1078,7 +1078,7 @@ class CommandDm$Type extends MessageType {
 /**
  * @generated MessageType for protobuf message bilibili.community.service.dm.v1.CommandDm
  */
-export const CommandDm = new CommandDm$Type();
+export const CommandDm = /* #__PURE__ */ new CommandDm$Type();
 // @generated message type with reflection information, may provide speed optimized methods
 class DanmakuAIFlag$Type extends MessageType {
     constructor() {
@@ -1125,7 +1125,7 @@ class DanmakuAIFlag$Type extends MessageType {
 /**
  * @generated MessageType for protobuf message bilibili.community.service.dm.v1.DanmakuAIFlag
  */
-export const DanmakuAIFlag = new DanmakuAIFlag$Type();
+export const DanmakuAIFlag = /* #__PURE__ */ new DanmakuAIFlag$Type();
 // @generated message type with reflection information, may provide speed optimized methods
 class DanmakuElem$Type extends MessageType {
     constructor() {
@@ -1284,7 +1284,7 @@ class DanmakuElem$Type extends MessageType {
 /**
  * @generated MessageType for protobuf message bilibili.community.service.dm.v1.DanmakuElem
  */
-export const DanmakuElem = new DanmakuElem$Type();
+export const DanmakuElem = /* #__PURE__ */ new DanmakuElem$Type();
 // @generated message type with reflection information, may provide speed optimized methods
 class DanmakuFlag$Type extends MessageType {
     constructor() {
@@ -1339,7 +1339,7 @@ class DanmakuFlag$Type extends MessageType {
 /**
  * @generated MessageType for protobuf message bilibili.community.service.dm.v1.DanmakuFlag
  */
-export const DanmakuFlag = new DanmakuFlag$Type();
+export const DanmakuFlag = /* #__PURE__ */ new DanmakuFlag$Type();
 // @generated message type with reflection information, may provide speed optimized methods
 class DanmakuFlagConfig$Type extends MessageType {
     constructor() {
@@ -1402,7 +1402,7 @@ class DanmakuFlagConfig$Type extends MessageType {
 /**
  * @generated MessageType for protobuf message bilibili.community.service.dm.v1.DanmakuFlagConfig
  */
-export const DanmakuFlagConfig = new DanmakuFlagConfig$Type();
+export const DanmakuFlagConfig = /* #__PURE__ */ new DanmakuFlagConfig$Type();
 // @generated message type with reflection information, may provide speed optimized methods
 class DanmuDefaultPlayerConfig$Type extends MessageType {
     constructor() {
@@ -1593,7 +1593,7 @@ class DanmuDefaultPlayerConfig$Type extends MessageType {
 /**
  * @generated MessageType for protobuf message bilibili.community.service.dm.v1.DanmuDefaultPlayerConfig
  */
-export const DanmuDefaultPlayerConfig = new DanmuDefaultPlayerConfig$Type();
+export const DanmuDefaultPlayerConfig = /* #__PURE__ */ new DanmuDefaultPlayerConfig$Type();
 // @generated message type with reflection information, may provide speed optimized methods
 class DanmuPlayerConfig$Type extends MessageType {
     constructor() {
@@ -1824,7 +1824,7 @@ class DanmuPlayerConfig$Type extends MessageType {
 /**
  * @generated MessageType for protobuf message bilibili.community.service.dm.v1.DanmuPlayerConfig
  */
-export const DanmuPlayerConfig = new DanmuPlayerConfig$Type();
+export const DanmuPlayerConfig = /* #__PURE__ */ new DanmuPlayerConfig$Type();
 // @generated message type with reflection information, may provide speed optimized methods
 class DanmuPlayerConfigPanel$Type extends MessageType {
     constructor() {
@@ -1871,7 +1871,7 @@ class DanmuPlayerConfigPanel$Type extends MessageType {
 /**
  * @generated MessageType for protobuf message bilibili.community.service.dm.v1.DanmuPlayerConfigPanel
  */
-export const DanmuPlayerConfigPanel = new DanmuPlayerConfigPanel$Type();
+export const DanmuPlayerConfigPanel = /* #__PURE__ */ new DanmuPlayerConfigPanel$Type();
 // @generated message type with reflection information, may provide speed optimized methods
 class DanmuPlayerDynamicConfig$Type extends MessageType {
     constructor() {
@@ -1926,7 +1926,7 @@ class DanmuPlayerDynamicConfig$Type extends MessageType {
 /**
  * @generated MessageType for protobuf message bilibili.community.service.dm.v1.DanmuPlayerDynamicConfig
  */
-export const DanmuPlayerDynamicConfig = new DanmuPlayerDynamicConfig$Type();
+export const DanmuPlayerDynamicConfig = /* #__PURE__ */ new DanmuPlayerDynamicConfig$Type();
 // @generated message type with reflection information, may provide speed optimized methods
 class DanmuPlayerViewConfig$Type extends MessageType {
     constructor() {
@@ -1994,7 +1994,7 @@ class DanmuPlayerViewConfig$Type extends MessageType {
 /**
  * @generated MessageType for protobuf message bilibili.community.service.dm.v1.DanmuPlayerViewConfig
  */
-export const DanmuPlayerViewConfig = new DanmuPlayerViewConfig$Type();
+export const DanmuPlayerViewConfig = /* #__PURE__ */ new DanmuPlayerViewConfig$Type();
 // @generated message type with reflection information, may provide speed optimized methods
 class DanmuWebPlayerConfig$Type extends MessageType {
     constructor() {
@@ -2233,7 +2233,7 @@ class DanmuWebPlayerConfig$Type extends MessageType {
 /**
  * @generated MessageType for protobuf message bilibili.community.service.dm.v1.DanmuWebPlayerConfig
  */
-export const DanmuWebPlayerConfig = new DanmuWebPlayerConfig$Type();
+export const DanmuWebPlayerConfig = /* #__PURE__ */ new DanmuWebPlayerConfig$Type();
 // @generated message type with reflection information, may provide speed optimized methods
 class DmColorful$Type extends MessageType {
     constructor() {
@@ -2288,7 +2288,7 @@ class DmColorful$Type extends MessageType {
 /**
  * @generated MessageType for protobuf message bilibili.community.service.dm.v1.DmColorful
  */
-export const DmColorful = new DmColorful$Type();
+export const DmColorful = /* #__PURE__ */ new DmColorful$Type();
 // @generated message type with reflection information, may provide speed optimized methods
 class DmExpoReportReq$Type extends MessageType {
     constructor() {
@@ -2351,7 +2351,7 @@ class DmExpoReportReq$Type extends MessageType {
 /**
  * @generated MessageType for protobuf message bilibili.community.service.dm.v1.DmExpoReportReq
  */
-export const DmExpoReportReq = new DmExpoReportReq$Type();
+export const DmExpoReportReq = /* #__PURE__ */ new DmExpoReportReq$Type();
 // @generated message type with reflection information, may provide speed optimized methods
 class DmExpoReportRes$Type extends MessageType {
     constructor() {
@@ -2389,7 +2389,7 @@ class DmExpoReportRes$Type extends MessageType {
 /**
  * @generated MessageType for protobuf message bilibili.community.service.dm.v1.DmExpoReportRes
  */
-export const DmExpoReportRes = new DmExpoReportRes$Type();
+export const DmExpoReportRes = /* #__PURE__ */ new DmExpoReportRes$Type();
 // @generated message type with reflection information, may provide speed optimized methods
 class DmPlayerConfigReq$Type extends MessageType {
     constructor() {
@@ -2569,7 +2569,7 @@ class DmPlayerConfigReq$Type extends MessageType {
 /**
  * @generated MessageType for protobuf message bilibili.community.service.dm.v1.DmPlayerConfigReq
  */
-export const DmPlayerConfigReq = new DmPlayerConfigReq$Type();
+export const DmPlayerConfigReq = /* #__PURE__ */ new DmPlayerConfigReq$Type();
 // @generated message type with reflection information, may provide speed optimized methods
 class DmSegConfig$Type extends MessageType {
     constructor() {
@@ -2624,7 +2624,7 @@ class DmSegConfig$Type extends MessageType {
 /**
  * @generated MessageType for protobuf message bilibili.community.service.dm.v1.DmSegConfig
  */
-export const DmSegConfig = new DmSegConfig$Type();
+export const DmSegConfig = /* #__PURE__ */ new DmSegConfig$Type();
 // @generated message type with reflection information, may provide speed optimized methods
 class DmSegMobileReply$Type extends MessageType {
     constructor() {
@@ -2694,7 +2694,7 @@ class DmSegMobileReply$Type extends MessageType {
 /**
  * @generated MessageType for protobuf message bilibili.community.service.dm.v1.DmSegMobileReply
  */
-export const DmSegMobileReply = new DmSegMobileReply$Type();
+export const DmSegMobileReply = /* #__PURE__ */ new DmSegMobileReply$Type();
 // @generated message type with reflection information, may provide speed optimized methods
 class DmSegMobileReq$Type extends MessageType {
     constructor() {
@@ -2805,7 +2805,7 @@ class DmSegMobileReq$Type extends MessageType {
 /**
  * @generated MessageType for protobuf message bilibili.community.service.dm.v1.DmSegMobileReq
  */
-export const DmSegMobileReq = new DmSegMobileReq$Type();
+export const DmSegMobileReq = /* #__PURE__ */ new DmSegMobileReq$Type();
 // @generated message type with reflection information, may provide speed optimized methods
 class DmSegOttReply$Type extends MessageType {
     constructor() {
@@ -2860,7 +2860,7 @@ class DmSegOttReply$Type extends MessageType {
 /**
  * @generated MessageType for protobuf message bilibili.community.service.dm.v1.DmSegOttReply
  */
-export const DmSegOttReply = new DmSegOttReply$Type();
+export const DmSegOttReply = /* #__PURE__ */ new DmSegOttReply$Type();
 // @generated message type with reflection information, may provide speed optimized methods
 class DmSegOttReq$Type extends MessageType {
     constructor() {
@@ -2931,7 +2931,7 @@ class DmSegOttReq$Type extends MessageType {
 /**
  * @generated MessageType for protobuf message bilibili.community.service.dm.v1.DmSegOttReq
  */
-export const DmSegOttReq = new DmSegOttReq$Type();
+export const DmSegOttReq = /* #__PURE__ */ new DmSegOttReq$Type();
 // @generated message type with reflection information, may provide speed optimized methods
 class DmSegSDKReply$Type extends MessageType {
     constructor() {
@@ -2986,7 +2986,7 @@ class DmSegSDKReply$Type extends MessageType {
 /**
  * @generated MessageType for protobuf message bilibili.community.service.dm.v1.DmSegSDKReply
  */
-export const DmSegSDKReply = new DmSegSDKReply$Type();
+export const DmSegSDKReply = /* #__PURE__ */ new DmSegSDKReply$Type();
 // @generated message type with reflection information, may provide speed optimized methods
 class DmSegSDKReq$Type extends MessageType {
     constructor() {
@@ -3057,7 +3057,7 @@ class DmSegSDKReq$Type extends MessageType {
 /**
  * @generated MessageType for protobuf message bilibili.community.service.dm.v1.DmSegSDKReq
  */
-export const DmSegSDKReq = new DmSegSDKReq$Type();
+export const DmSegSDKReq = /* #__PURE__ */ new DmSegSDKReq$Type();
 // @generated message type with reflection information, may provide speed optimized methods
 class CommandDms$Type extends MessageType {
     constructor() {
@@ -3104,7 +3104,7 @@ class CommandDms$Type extends MessageType {
 /**
  * @generated MessageType for protobuf message bilibili.community.service.dm.v1.CommandDms
  */
-export const CommandDms = new CommandDms$Type();
+export const CommandDms = /* #__PURE__ */ new CommandDms$Type();
 // @generated message type with reflection information, may provide speed optimized methods
 class DmViewReply$Type extends MessageType {
     constructor() {
@@ -3297,7 +3297,7 @@ class DmViewReply$Type extends MessageType {
 /**
  * @generated MessageType for protobuf message bilibili.community.service.dm.v1.DmViewReply
  */
-export const DmViewReply = new DmViewReply$Type();
+export const DmViewReply = /* #__PURE__ */ new DmViewReply$Type();
 // @generated message type with reflection information, may provide speed optimized methods
 class DmViewReq$Type extends MessageType {
     constructor() {
@@ -3376,7 +3376,7 @@ class DmViewReq$Type extends MessageType {
 /**
  * @generated MessageType for protobuf message bilibili.community.service.dm.v1.DmViewReq
  */
-export const DmViewReq = new DmViewReq$Type();
+export const DmViewReq = /* #__PURE__ */ new DmViewReq$Type();
 // @generated message type with reflection information, may provide speed optimized methods
 class DmWebViewReply$Type extends MessageType {
     constructor() {
@@ -3524,7 +3524,7 @@ class DmWebViewReply$Type extends MessageType {
 /**
  * @generated MessageType for protobuf message bilibili.community.service.dm.v1.DmWebViewReply
  */
-export const DmWebViewReply = new DmWebViewReply$Type();
+export const DmWebViewReply = /* #__PURE__ */ new DmWebViewReply$Type();
 // @generated message type with reflection information, may provide speed optimized methods
 class ExpoReport$Type extends MessageType {
     constructor() {
@@ -3571,7 +3571,7 @@ class ExpoReport$Type extends MessageType {
 /**
  * @generated MessageType for protobuf message bilibili.community.service.dm.v1.ExpoReport
  */
-export const ExpoReport = new ExpoReport$Type();
+export const ExpoReport = /* #__PURE__ */ new ExpoReport$Type();
 // @generated message type with reflection information, may provide speed optimized methods
 class Expression$Type extends MessageType {
     constructor() {
@@ -3634,7 +3634,7 @@ class Expression$Type extends MessageType {
 /**
  * @generated MessageType for protobuf message bilibili.community.service.dm.v1.Expression
  */
-export const Expression = new Expression$Type();
+export const Expression = /* #__PURE__ */ new Expression$Type();
 // @generated message type with reflection information, may provide speed optimized methods
 class Expressions$Type extends MessageType {
     constructor() {
@@ -3681,7 +3681,7 @@ class Expressions$Type extends MessageType {
 /**
  * @generated MessageType for protobuf message bilibili.community.service.dm.v1.Expressions
  */
-export const Expressions = new Expressions$Type();
+export const Expressions = /* #__PURE__ */ new Expressions$Type();
 // @generated message type with reflection information, may provide speed optimized methods
 class InlinePlayerDanmakuSwitch$Type extends MessageType {
     constructor() {
@@ -3728,7 +3728,7 @@ class InlinePlayerDanmakuSwitch$Type extends MessageType {
 /**
  * @generated MessageType for protobuf message bilibili.community.service.dm.v1.InlinePlayerDanmakuSwitch
  */
-export const InlinePlayerDanmakuSwitch = new InlinePlayerDanmakuSwitch$Type();
+export const InlinePlayerDanmakuSwitch = /* #__PURE__ */ new InlinePlayerDanmakuSwitch$Type();
 // @generated message type with reflection information, may provide speed optimized methods
 class Label$Type extends MessageType {
     constructor() {
@@ -3783,7 +3783,7 @@ class Label$Type extends MessageType {
 /**
  * @generated MessageType for protobuf message bilibili.community.service.dm.v1.Label
  */
-export const Label = new Label$Type();
+export const Label = /* #__PURE__ */ new Label$Type();
 // @generated message type with reflection information, may provide speed optimized methods
 class LabelV2$Type extends MessageType {
     constructor() {
@@ -3854,7 +3854,7 @@ class LabelV2$Type extends MessageType {
 /**
  * @generated MessageType for protobuf message bilibili.community.service.dm.v1.LabelV2
  */
-export const LabelV2 = new LabelV2$Type();
+export const LabelV2 = /* #__PURE__ */ new LabelV2$Type();
 // @generated message type with reflection information, may provide speed optimized methods
 class Period$Type extends MessageType {
     constructor() {
@@ -3909,7 +3909,7 @@ class Period$Type extends MessageType {
 /**
  * @generated MessageType for protobuf message bilibili.community.service.dm.v1.Period
  */
-export const Period = new Period$Type();
+export const Period = /* #__PURE__ */ new Period$Type();
 // @generated message type with reflection information, may provide speed optimized methods
 class PlayerDanmakuAiRecommendedLevel$Type extends MessageType {
     constructor() {
@@ -3956,7 +3956,7 @@ class PlayerDanmakuAiRecommendedLevel$Type extends MessageType {
 /**
  * @generated MessageType for protobuf message bilibili.community.service.dm.v1.PlayerDanmakuAiRecommendedLevel
  */
-export const PlayerDanmakuAiRecommendedLevel = new PlayerDanmakuAiRecommendedLevel$Type();
+export const PlayerDanmakuAiRecommendedLevel = /* #__PURE__ */ new PlayerDanmakuAiRecommendedLevel$Type();
 // @generated message type with reflection information, may provide speed optimized methods
 class PlayerDanmakuAiRecommendedLevelV2$Type extends MessageType {
     constructor() {
@@ -4003,7 +4003,7 @@ class PlayerDanmakuAiRecommendedLevelV2$Type extends MessageType {
 /**
  * @generated MessageType for protobuf message bilibili.community.service.dm.v1.PlayerDanmakuAiRecommendedLevelV2
  */
-export const PlayerDanmakuAiRecommendedLevelV2 = new PlayerDanmakuAiRecommendedLevelV2$Type();
+export const PlayerDanmakuAiRecommendedLevelV2 = /* #__PURE__ */ new PlayerDanmakuAiRecommendedLevelV2$Type();
 // @generated message type with reflection information, may provide speed optimized methods
 class PlayerDanmakuAiRecommendedSwitch$Type extends MessageType {
     constructor() {
@@ -4050,7 +4050,7 @@ class PlayerDanmakuAiRecommendedSwitch$Type extends MessageType {
 /**
  * @generated MessageType for protobuf message bilibili.community.service.dm.v1.PlayerDanmakuAiRecommendedSwitch
  */
-export const PlayerDanmakuAiRecommendedSwitch = new PlayerDanmakuAiRecommendedSwitch$Type();
+export const PlayerDanmakuAiRecommendedSwitch = /* #__PURE__ */ new PlayerDanmakuAiRecommendedSwitch$Type();
 // @generated message type with reflection information, may provide speed optimized methods
 class PlayerDanmakuBlockbottom$Type extends MessageType {
     constructor() {
@@ -4097,7 +4097,7 @@ class PlayerDanmakuBlockbottom$Type extends MessageType {
 /**
  * @generated MessageType for protobuf message bilibili.community.service.dm.v1.PlayerDanmakuBlockbottom
  */
-export const PlayerDanmakuBlockbottom = new PlayerDanmakuBlockbottom$Type();
+export const PlayerDanmakuBlockbottom = /* #__PURE__ */ new PlayerDanmakuBlockbottom$Type();
 // @generated message type with reflection information, may provide speed optimized methods
 class PlayerDanmakuBlockcolorful$Type extends MessageType {
     constructor() {
@@ -4144,7 +4144,7 @@ class PlayerDanmakuBlockcolorful$Type extends MessageType {
 /**
  * @generated MessageType for protobuf message bilibili.community.service.dm.v1.PlayerDanmakuBlockcolorful
  */
-export const PlayerDanmakuBlockcolorful = new PlayerDanmakuBlockcolorful$Type();
+export const PlayerDanmakuBlockcolorful = /* #__PURE__ */ new PlayerDanmakuBlockcolorful$Type();
 // @generated message type with reflection information, may provide speed optimized methods
 class PlayerDanmakuBlockrepeat$Type extends MessageType {
     constructor() {
@@ -4191,7 +4191,7 @@ class PlayerDanmakuBlockrepeat$Type extends MessageType {
 /**
  * @generated MessageType for protobuf message bilibili.community.service.dm.v1.PlayerDanmakuBlockrepeat
  */
-export const PlayerDanmakuBlockrepeat = new PlayerDanmakuBlockrepeat$Type();
+export const PlayerDanmakuBlockrepeat = /* #__PURE__ */ new PlayerDanmakuBlockrepeat$Type();
 // @generated message type with reflection information, may provide speed optimized methods
 class PlayerDanmakuBlockscroll$Type extends MessageType {
     constructor() {
@@ -4238,7 +4238,7 @@ class PlayerDanmakuBlockscroll$Type extends MessageType {
 /**
  * @generated MessageType for protobuf message bilibili.community.service.dm.v1.PlayerDanmakuBlockscroll
  */
-export const PlayerDanmakuBlockscroll = new PlayerDanmakuBlockscroll$Type();
+export const PlayerDanmakuBlockscroll = /* #__PURE__ */ new PlayerDanmakuBlockscroll$Type();
 // @generated message type with reflection information, may provide speed optimized methods
 class PlayerDanmakuBlockspecial$Type extends MessageType {
     constructor() {
@@ -4285,7 +4285,7 @@ class PlayerDanmakuBlockspecial$Type extends MessageType {
 /**
  * @generated MessageType for protobuf message bilibili.community.service.dm.v1.PlayerDanmakuBlockspecial
  */
-export const PlayerDanmakuBlockspecial = new PlayerDanmakuBlockspecial$Type();
+export const PlayerDanmakuBlockspecial = /* #__PURE__ */ new PlayerDanmakuBlockspecial$Type();
 // @generated message type with reflection information, may provide speed optimized methods
 class PlayerDanmakuBlocktop$Type extends MessageType {
     constructor() {
@@ -4332,7 +4332,7 @@ class PlayerDanmakuBlocktop$Type extends MessageType {
 /**
  * @generated MessageType for protobuf message bilibili.community.service.dm.v1.PlayerDanmakuBlocktop
  */
-export const PlayerDanmakuBlocktop = new PlayerDanmakuBlocktop$Type();
+export const PlayerDanmakuBlocktop = /* #__PURE__ */ new PlayerDanmakuBlocktop$Type();
 // @generated message type with reflection information, may provide speed optimized methods
 class PlayerDanmakuDomain$Type extends MessageType {
     constructor() {
@@ -4379,7 +4379,7 @@ class PlayerDanmakuDomain$Type extends MessageType {
 /**
  * @generated MessageType for protobuf message bilibili.community.service.dm.v1.PlayerDanmakuDomain
  */
-export const PlayerDanmakuDomain = new PlayerDanmakuDomain$Type();
+export const PlayerDanmakuDomain = /* #__PURE__ */ new PlayerDanmakuDomain$Type();
 // @generated message type with reflection information, may provide speed optimized methods
 class PlayerDanmakuEnableblocklist$Type extends MessageType {
     constructor() {
@@ -4426,7 +4426,7 @@ class PlayerDanmakuEnableblocklist$Type extends MessageType {
 /**
  * @generated MessageType for protobuf message bilibili.community.service.dm.v1.PlayerDanmakuEnableblocklist
  */
-export const PlayerDanmakuEnableblocklist = new PlayerDanmakuEnableblocklist$Type();
+export const PlayerDanmakuEnableblocklist = /* #__PURE__ */ new PlayerDanmakuEnableblocklist$Type();
 // @generated message type with reflection information, may provide speed optimized methods
 class PlayerDanmakuOpacity$Type extends MessageType {
     constructor() {
@@ -4473,7 +4473,7 @@ class PlayerDanmakuOpacity$Type extends MessageType {
 /**
  * @generated MessageType for protobuf message bilibili.community.service.dm.v1.PlayerDanmakuOpacity
  */
-export const PlayerDanmakuOpacity = new PlayerDanmakuOpacity$Type();
+export const PlayerDanmakuOpacity = /* #__PURE__ */ new PlayerDanmakuOpacity$Type();
 // @generated message type with reflection information, may provide speed optimized methods
 class PlayerDanmakuScalingfactor$Type extends MessageType {
     constructor() {
@@ -4520,7 +4520,7 @@ class PlayerDanmakuScalingfactor$Type extends MessageType {
 /**
  * @generated MessageType for protobuf message bilibili.community.service.dm.v1.PlayerDanmakuScalingfactor
  */
-export const PlayerDanmakuScalingfactor = new PlayerDanmakuScalingfactor$Type();
+export const PlayerDanmakuScalingfactor = /* #__PURE__ */ new PlayerDanmakuScalingfactor$Type();
 // @generated message type with reflection information, may provide speed optimized methods
 class PlayerDanmakuSeniorModeSwitch$Type extends MessageType {
     constructor() {
@@ -4567,7 +4567,7 @@ class PlayerDanmakuSeniorModeSwitch$Type extends MessageType {
 /**
  * @generated MessageType for protobuf message bilibili.community.service.dm.v1.PlayerDanmakuSeniorModeSwitch
  */
-export const PlayerDanmakuSeniorModeSwitch = new PlayerDanmakuSeniorModeSwitch$Type();
+export const PlayerDanmakuSeniorModeSwitch = /* #__PURE__ */ new PlayerDanmakuSeniorModeSwitch$Type();
 // @generated message type with reflection information, may provide speed optimized methods
 class PlayerDanmakuSpeed$Type extends MessageType {
     constructor() {
@@ -4614,7 +4614,7 @@ class PlayerDanmakuSpeed$Type extends MessageType {
 /**
  * @generated MessageType for protobuf message bilibili.community.service.dm.v1.PlayerDanmakuSpeed
  */
-export const PlayerDanmakuSpeed = new PlayerDanmakuSpeed$Type();
+export const PlayerDanmakuSpeed = /* #__PURE__ */ new PlayerDanmakuSpeed$Type();
 // @generated message type with reflection information, may provide speed optimized methods
 class PlayerDanmakuSwitch$Type extends MessageType {
     constructor() {
@@ -4669,7 +4669,7 @@ class PlayerDanmakuSwitch$Type extends MessageType {
 /**
  * @generated MessageType for protobuf message bilibili.community.service.dm.v1.PlayerDanmakuSwitch
  */
-export const PlayerDanmakuSwitch = new PlayerDanmakuSwitch$Type();
+export const PlayerDanmakuSwitch = /* #__PURE__ */ new PlayerDanmakuSwitch$Type();
 // @generated message type with reflection information, may provide speed optimized methods
 class PlayerDanmakuSwitchSave$Type extends MessageType {
     constructor() {
@@ -4716,7 +4716,7 @@ class PlayerDanmakuSwitchSave$Type extends MessageType {
 /**
  * @generated MessageType for protobuf message bilibili.community.service.dm.v1.PlayerDanmakuSwitchSave
  */
-export const PlayerDanmakuSwitchSave = new PlayerDanmakuSwitchSave$Type();
+export const PlayerDanmakuSwitchSave = /* #__PURE__ */ new PlayerDanmakuSwitchSave$Type();
 // @generated message type with reflection information, may provide speed optimized methods
 class PlayerDanmakuUseDefaultConfig$Type extends MessageType {
     constructor() {
@@ -4763,7 +4763,7 @@ class PlayerDanmakuUseDefaultConfig$Type extends MessageType {
 /**
  * @generated MessageType for protobuf message bilibili.community.service.dm.v1.PlayerDanmakuUseDefaultConfig
  */
-export const PlayerDanmakuUseDefaultConfig = new PlayerDanmakuUseDefaultConfig$Type();
+export const PlayerDanmakuUseDefaultConfig = /* #__PURE__ */ new PlayerDanmakuUseDefaultConfig$Type();
 // @generated message type with reflection information, may provide speed optimized methods
 class PostPanel$Type extends MessageType {
     constructor() {
@@ -4870,7 +4870,7 @@ class PostPanel$Type extends MessageType {
 /**
  * @generated MessageType for protobuf message bilibili.community.service.dm.v1.PostPanel
  */
-export const PostPanel = new PostPanel$Type();
+export const PostPanel = /* #__PURE__ */ new PostPanel$Type();
 // @generated message type with reflection information, may provide speed optimized methods
 class PostPanelV2$Type extends MessageType {
     constructor() {
@@ -4983,7 +4983,7 @@ class PostPanelV2$Type extends MessageType {
 /**
  * @generated MessageType for protobuf message bilibili.community.service.dm.v1.PostPanelV2
  */
-export const PostPanelV2 = new PostPanelV2$Type();
+export const PostPanelV2 = /* #__PURE__ */ new PostPanelV2$Type();
 // @generated message type with reflection information, may provide speed optimized methods
 class Response$Type extends MessageType {
     constructor() {
@@ -5038,7 +5038,7 @@ class Response$Type extends MessageType {
 /**
  * @generated MessageType for protobuf message bilibili.community.service.dm.v1.Response
  */
-export const Response = new Response$Type();
+export const Response = /* #__PURE__ */ new Response$Type();
 // @generated message type with reflection information, may provide speed optimized methods
 class SubtitleItem$Type extends MessageType {
     constructor() {
@@ -5156,7 +5156,7 @@ class SubtitleItem$Type extends MessageType {
 /**
  * @generated MessageType for protobuf message bilibili.community.service.dm.v1.SubtitleItem
  */
-export const SubtitleItem = new SubtitleItem$Type();
+export const SubtitleItem = /* #__PURE__ */ new SubtitleItem$Type();
 // @generated message type with reflection information, may provide speed optimized methods
 class TextInput$Type extends MessageType {
     constructor() {
@@ -5258,7 +5258,7 @@ class TextInput$Type extends MessageType {
 /**
  * @generated MessageType for protobuf message bilibili.community.service.dm.v1.TextInput
  */
-export const TextInput = new TextInput$Type();
+export const TextInput = /* #__PURE__ */ new TextInput$Type();
 // @generated message type with reflection information, may provide speed optimized methods
 class TextInputV2$Type extends MessageType {
     constructor() {
@@ -5345,7 +5345,7 @@ class TextInputV2$Type extends MessageType {
 /**
  * @generated MessageType for protobuf message bilibili.community.service.dm.v1.TextInputV2
  */
-export const TextInputV2 = new TextInputV2$Type();
+export const TextInputV2 = /* #__PURE__ */ new TextInputV2$Type();
 // @generated message type with reflection information, may provide speed optimized methods
 class Toast$Type extends MessageType {
     constructor() {
@@ -5415,7 +5415,7 @@ class Toast$Type extends MessageType {
 /**
  * @generated MessageType for protobuf message bilibili.community.service.dm.v1.Toast
  */
-export const Toast = new Toast$Type();
+export const Toast = /* #__PURE__ */ new Toast$Type();
 // @generated message type with reflection information, may provide speed optimized methods
 class ToastButtonV2$Type extends MessageType {
     constructor() {
@@ -5470,7 +5470,7 @@ class ToastButtonV2$Type extends MessageType {
 /**
  * @generated MessageType for protobuf message bilibili.community.service.dm.v1.ToastButtonV2
  */
-export const ToastButtonV2 = new ToastButtonV2$Type();
+export const ToastButtonV2 = /* #__PURE__ */ new ToastButtonV2$Type();
 // @generated message type with reflection information, may provide speed optimized methods
 class ToastV2$Type extends MessageType {
     constructor() {
@@ -5532,7 +5532,7 @@ class ToastV2$Type extends MessageType {
 /**
  * @generated MessageType for protobuf message bilibili.community.service.dm.v1.ToastV2
  */
-export const ToastV2 = new ToastV2$Type();
+export const ToastV2 = /* #__PURE__ */ new ToastV2$Type();
 // @generated message type with reflection information, may provide speed optimized methods
 class UserInfo$Type extends MessageType {
     constructor() {
@@ -5619,7 +5619,7 @@ class UserInfo$Type extends MessageType {
 /**
  * @generated MessageType for protobuf message bilibili.community.service.dm.v1.UserInfo
  */
-export const UserInfo = new UserInfo$Type();
+export const UserInfo = /* #__PURE__ */ new UserInfo$Type();
 // @generated message type with reflection information, may provide speed optimized methods
 class VideoMask$Type extends MessageType {
     constructor() {
@@ -5698,7 +5698,7 @@ class VideoMask$Type extends MessageType {
 /**
  * @generated MessageType for protobuf message bilibili.community.service.dm.v1.VideoMask
  */
-export const VideoMask = new VideoMask$Type();
+export const VideoMask = /* #__PURE__ */ new VideoMask$Type();
 // @generated message type with reflection information, may provide speed optimized methods
 class VideoSubtitle$Type extends MessageType {
     constructor() {
@@ -5761,7 +5761,7 @@ class VideoSubtitle$Type extends MessageType {
 /**
  * @generated MessageType for protobuf message bilibili.community.service.dm.v1.VideoSubtitle
  */
-export const VideoSubtitle = new VideoSubtitle$Type();
+export const VideoSubtitle = /* #__PURE__ */ new VideoSubtitle$Type();
 /**
  * @generated ServiceType for protobuf service bilibili.community.service.dm.v1.DM
  */

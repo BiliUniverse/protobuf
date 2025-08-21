@@ -87,7 +87,7 @@ class BasicRenderSpec$Type extends MessageType {
 /**
  * @generated MessageType for protobuf message bilibili.dagw.component.avatar.common.BasicRenderSpec
  */
-export const BasicRenderSpec = new BasicRenderSpec$Type();
+export const BasicRenderSpec = /* #__PURE__ */ new BasicRenderSpec$Type();
 // @generated message type with reflection information, may provide speed optimized methods
 class ColorConfig$Type extends MessageType {
     constructor() {
@@ -148,7 +148,7 @@ class ColorConfig$Type extends MessageType {
 /**
  * @generated MessageType for protobuf message bilibili.dagw.component.avatar.common.ColorConfig
  */
-export const ColorConfig = new ColorConfig$Type();
+export const ColorConfig = /* #__PURE__ */ new ColorConfig$Type();
 // @generated message type with reflection information, may provide speed optimized methods
 class ColorSpec$Type extends MessageType {
     constructor() {
@@ -195,7 +195,7 @@ class ColorSpec$Type extends MessageType {
 /**
  * @generated MessageType for protobuf message bilibili.dagw.component.avatar.common.ColorSpec
  */
-export const ColorSpec = new ColorSpec$Type();
+export const ColorSpec = /* #__PURE__ */ new ColorSpec$Type();
 // @generated message type with reflection information, may provide speed optimized methods
 class LayerGeneralSpec$Type extends MessageType {
     constructor() {
@@ -255,7 +255,7 @@ class LayerGeneralSpec$Type extends MessageType {
 /**
  * @generated MessageType for protobuf message bilibili.dagw.component.avatar.common.LayerGeneralSpec
  */
-export const LayerGeneralSpec = new LayerGeneralSpec$Type();
+export const LayerGeneralSpec = /* #__PURE__ */ new LayerGeneralSpec$Type();
 // @generated message type with reflection information, may provide speed optimized methods
 class MaskProperty$Type extends MessageType {
     constructor() {
@@ -308,7 +308,7 @@ class MaskProperty$Type extends MessageType {
 /**
  * @generated MessageType for protobuf message bilibili.dagw.component.avatar.common.MaskProperty
  */
-export const MaskProperty = new MaskProperty$Type();
+export const MaskProperty = /* #__PURE__ */ new MaskProperty$Type();
 // @generated message type with reflection information, may provide speed optimized methods
 class NativeDrawRes$Type extends MessageType {
     constructor() {
@@ -378,7 +378,7 @@ class NativeDrawRes$Type extends MessageType {
 /**
  * @generated MessageType for protobuf message bilibili.dagw.component.avatar.common.NativeDrawRes
  */
-export const NativeDrawRes = new NativeDrawRes$Type();
+export const NativeDrawRes = /* #__PURE__ */ new NativeDrawRes$Type();
 // @generated message type with reflection information, may provide speed optimized methods
 class PositionSpec$Type extends MessageType {
     constructor() {
@@ -441,7 +441,7 @@ class PositionSpec$Type extends MessageType {
 /**
  * @generated MessageType for protobuf message bilibili.dagw.component.avatar.common.PositionSpec
  */
-export const PositionSpec = new PositionSpec$Type();
+export const PositionSpec = /* #__PURE__ */ new PositionSpec$Type();
 // @generated message type with reflection information, may provide speed optimized methods
 class RemoteRes$Type extends MessageType {
     constructor() {
@@ -496,7 +496,7 @@ class RemoteRes$Type extends MessageType {
 /**
  * @generated MessageType for protobuf message bilibili.dagw.component.avatar.common.RemoteRes
  */
-export const RemoteRes = new RemoteRes$Type();
+export const RemoteRes = /* #__PURE__ */ new RemoteRes$Type();
 // @generated message type with reflection information, may provide speed optimized methods
 class ResourceSource$Type extends MessageType {
     constructor() {
@@ -582,7 +582,7 @@ class ResourceSource$Type extends MessageType {
 /**
  * @generated MessageType for protobuf message bilibili.dagw.component.avatar.common.ResourceSource
  */
-export const ResourceSource = new ResourceSource$Type();
+export const ResourceSource = /* #__PURE__ */ new ResourceSource$Type();
 // @generated message type with reflection information, may provide speed optimized methods
 class SizeSpec$Type extends MessageType {
     constructor() {
@@ -637,4 +637,4 @@ class SizeSpec$Type extends MessageType {
 /**
  * @generated MessageType for protobuf message bilibili.dagw.component.avatar.common.SizeSpec
  */
-export const SizeSpec = new SizeSpec$Type();
+export const SizeSpec = /* #__PURE__ */ new SizeSpec$Type();

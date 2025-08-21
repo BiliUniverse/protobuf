@@ -129,7 +129,7 @@ class PlayViewUniteReply$Type extends MessageType {
 /**
  * @generated MessageType for protobuf message bilibili.app.playerunite.v1.PlayViewUniteReply
  */
-export const PlayViewUniteReply = new PlayViewUniteReply$Type();
+export const PlayViewUniteReply = /* #__PURE__ */ new PlayViewUniteReply$Type();
 // @generated message type with reflection information, may provide speed optimized methods
 class PlayViewUniteReq$Type extends MessageType {
     constructor() {
@@ -246,7 +246,7 @@ class PlayViewUniteReq$Type extends MessageType {
 /**
  * @generated MessageType for protobuf message bilibili.app.playerunite.v1.PlayViewUniteReq
  */
-export const PlayViewUniteReq = new PlayViewUniteReq$Type();
+export const PlayViewUniteReq = /* #__PURE__ */ new PlayViewUniteReq$Type();
 /**
  * @generated ServiceType for protobuf service bilibili.app.playerunite.v1.Player
  */
