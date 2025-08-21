@@ -883,6 +883,8 @@ enum ModuleType {
     UPDATA = 38;
     // 
     PROFESSION_APPROVAL = 39;
+    //
+    MERCHANDISE = 55;
 }
 
 // 
