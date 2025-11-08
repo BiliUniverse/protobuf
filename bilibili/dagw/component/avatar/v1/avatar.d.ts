@@ -15,66 +15,46 @@ import { MaskProperty } from "../common/common";
 import { LayerGeneralSpec } from "../common/common";
 import { SizeSpec } from "../common/common";
 /**
- *
- *
  * @generated from protobuf message bilibili.dagw.component.avatar.v1.AvatarItem
  */
 export interface AvatarItem {
     /**
-     *
-     *
      * @generated from protobuf field: bilibili.dagw.component.avatar.common.SizeSpec container_size = 1
      */
     containerSize?: SizeSpec;
     /**
-     *
-     *
      * @generated from protobuf field: repeated bilibili.dagw.component.avatar.v1.LayerGroup layers = 2
      */
     layers: LayerGroup[];
     /**
-     *
-     *
      * @generated from protobuf field: bilibili.dagw.component.avatar.v1.LayerGroup fallback_layers = 3
      */
     fallbackLayers?: LayerGroup;
     /**
-     *
-     *
      * @generated from protobuf field: int64 mid = 4
      */
     mid: string;
 }
 /**
- *
- *
  * @generated from protobuf message bilibili.dagw.component.avatar.v1.BasicLayerResource
  */
 export interface BasicLayerResource {
     /**
-     *
-     *
      * @generated from protobuf field: int32 res_type = 1
      */
     resType: number;
     /**
-     *
-     *
      * @generated from protobuf oneof: payload
      */
     payload: {
         oneofKind: "resImage";
         /**
-         *
-         *
          * @generated from protobuf field: bilibili.dagw.component.avatar.v1.ResImage res_image = 2
          */
         resImage: ResImage;
     } | {
         oneofKind: "resAnimation";
         /**
-         *
-         *
          * @generated from protobuf field: bilibili.dagw.component.avatar.v1.ResAnimation res_animation = 3
          */
         resAnimation: ResAnimation;
@@ -91,14 +71,10 @@ export interface BasicLayerResource {
     };
 }
 /**
- *
- *
  * @generated from protobuf message bilibili.dagw.component.avatar.v1.GeneralConfig
  */
 export interface GeneralConfig {
     /**
-     *
-     *
      * @generated from protobuf field: map<string, string> web_css_style = 1
      */
     webCssStyle: {
@@ -106,152 +82,106 @@ export interface GeneralConfig {
     };
 }
 /**
- *
- *
  * @generated from protobuf message bilibili.dagw.component.avatar.v1.Layer
  */
 export interface Layer {
     /**
-     *
-     *
      * @generated from protobuf field: string layer_id = 1
      */
     layerId: string;
     /**
-     *
-     *
      * @generated from protobuf field: bool visible = 2
      */
     visible: boolean;
     /**
-     *
-     *
      * @generated from protobuf field: bilibili.dagw.component.avatar.common.LayerGeneralSpec general_spec = 3
      */
     generalSpec?: LayerGeneralSpec;
     /**
-     *
-     *
      * @generated from protobuf field: bilibili.dagw.component.avatar.v1.LayerConfig layer_config = 4
      */
     layerConfig?: LayerConfig;
     /**
-     *
-     *
      * @generated from protobuf field: bilibili.dagw.component.avatar.v1.BasicLayerResource resource = 5
      */
     resource?: BasicLayerResource;
 }
 /**
- *
- *
  * @generated from protobuf message bilibili.dagw.component.avatar.v1.LayerConfig
  */
 export interface LayerConfig {
     /**
-     *
-     *
      * @generated from protobuf field: map<string, bilibili.dagw.component.avatar.v1.LayerTagConfig> tags = 1
      */
     tags: {
         [key: string]: LayerTagConfig;
     };
     /**
-     *
-     *
      * @generated from protobuf field: bool is_critical = 2
      */
     isCritical: boolean;
     /**
-     *
-     *
      * @generated from protobuf field: bool allow_over_paint = 3
      */
     allowOverPaint: boolean;
     /**
-     *
-     *
      * @generated from protobuf field: bilibili.dagw.component.avatar.common.MaskProperty layer_mask = 4
      */
     layerMask?: MaskProperty;
 }
 /**
- *
- *
  * @generated from protobuf message bilibili.dagw.component.avatar.v1.LayerGroup
  */
 export interface LayerGroup {
     /**
-     *
-     *
      * @generated from protobuf field: string group_id = 1
      */
     groupId: string;
     /**
-     *
-     *
      * @generated from protobuf field: repeated bilibili.dagw.component.avatar.v1.Layer layers = 2
      */
     layers: Layer[];
     /**
-     *
-     *
      * @generated from protobuf field: bilibili.dagw.component.avatar.common.MaskProperty group_mask = 3
      */
     groupMask?: MaskProperty;
     /**
-     *
-     *
      * @generated from protobuf field: bool is_critical_group = 4
      */
     isCriticalGroup: boolean;
 }
 /**
- *
- *
  * @generated from protobuf message bilibili.dagw.component.avatar.v1.LayerTagConfig
  */
 export interface LayerTagConfig {
     /**
-     *
-     *
      * @generated from protobuf field: int32 config_type = 1
      */
     configType: number;
     /**
-     *
-     *
      * @generated from protobuf oneof: config
      */
     config: {
         oneofKind: "generalConfig";
         /**
-         *
-         *
          * @generated from protobuf field: bilibili.dagw.component.avatar.v1.GeneralConfig general_config = 2
          */
         generalConfig: GeneralConfig;
     } | {
         oneofKind: "gyroConfig";
         /**
-         *
-         *
          * @generated from protobuf field: bilibili.dagw.component.avatar.v1.plugin.GyroConfig gyro_config = 3
          */
         gyroConfig: GyroConfig;
     } | {
         oneofKind: "commentDoubleClickConfig";
         /**
-         *
-         *
          * @generated from protobuf field: bilibili.dagw.component.avatar.v1.plugin.CommentDoubleClickConfig comment_doubleClick_config = 4
          */
         commentDoubleClickConfig: CommentDoubleClickConfig;
     } | {
         oneofKind: "liveAnimeConfig";
         /**
-         *
-         *
          * @generated from protobuf field: bilibili.dagw.component.avatar.v1.plugin.LiveAnimeConfig live_anime_config = 5
          */
         liveAnimeConfig: LiveAnimeConfig;
@@ -260,40 +190,28 @@ export interface LayerTagConfig {
     };
 }
 /**
- *
- *
  * @generated from protobuf message bilibili.dagw.component.avatar.v1.ResAnimation
  */
 export interface ResAnimation {
     /**
-     *
-     *
      * @generated from protobuf field: bilibili.dagw.component.avatar.common.ResourceSource webp_src = 1
      */
     webpSrc?: ResourceSource;
 }
 /**
- *
- *
  * @generated from protobuf message bilibili.dagw.component.avatar.v1.ResImage
  */
 export interface ResImage {
     /**
-     *
-     *
      * @generated from protobuf field: bilibili.dagw.component.avatar.common.ResourceSource image_src = 1
      */
     imageSrc?: ResourceSource;
 }
 /**
- *
- *
  * @generated from protobuf message bilibili.dagw.component.avatar.v1.ResNativeDraw
  */
 export interface ResNativeDraw {
     /**
-     *
-     *
      * @generated from protobuf field: bilibili.dagw.component.avatar.common.ResourceSource draw_src = 1
      */
     drawSrc?: ResourceSource;

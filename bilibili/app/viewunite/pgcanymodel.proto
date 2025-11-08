@@ -63,7 +63,7 @@ message OgvData {
     // 
     //bilibili.app.viewunite.common.NewEp new_ep = 15;
     // 
-    //Reserve reserve = 16;
+    Reserve reserve = 16;
     // 
     int32 status = 17;
     // 

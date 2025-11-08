@@ -80,7 +80,7 @@ class AvatarItem$Type extends MessageType {
 /**
  * @generated MessageType for protobuf message bilibili.dagw.component.avatar.v1.AvatarItem
  */
-export const AvatarItem = /* #__PURE__ */ new AvatarItem$Type();
+export const AvatarItem = new AvatarItem$Type();
 // @generated message type with reflection information, may provide speed optimized methods
 class BasicLayerResource$Type extends MessageType {
     constructor() {
@@ -158,7 +158,7 @@ class BasicLayerResource$Type extends MessageType {
 /**
  * @generated MessageType for protobuf message bilibili.dagw.component.avatar.v1.BasicLayerResource
  */
-export const BasicLayerResource = /* #__PURE__ */ new BasicLayerResource$Type();
+export const BasicLayerResource = new BasicLayerResource$Type();
 // @generated message type with reflection information, may provide speed optimized methods
 class GeneralConfig$Type extends MessageType {
     constructor() {
@@ -221,7 +221,7 @@ class GeneralConfig$Type extends MessageType {
 /**
  * @generated MessageType for protobuf message bilibili.dagw.component.avatar.v1.GeneralConfig
  */
-export const GeneralConfig = /* #__PURE__ */ new GeneralConfig$Type();
+export const GeneralConfig = new GeneralConfig$Type();
 // @generated message type with reflection information, may provide speed optimized methods
 class Layer$Type extends MessageType {
     constructor() {
@@ -297,7 +297,7 @@ class Layer$Type extends MessageType {
 /**
  * @generated MessageType for protobuf message bilibili.dagw.component.avatar.v1.Layer
  */
-export const Layer = /* #__PURE__ */ new Layer$Type();
+export const Layer = new Layer$Type();
 // @generated message type with reflection information, may provide speed optimized methods
 class LayerConfig$Type extends MessageType {
     constructor() {
@@ -387,7 +387,7 @@ class LayerConfig$Type extends MessageType {
 /**
  * @generated MessageType for protobuf message bilibili.dagw.component.avatar.v1.LayerConfig
  */
-export const LayerConfig = /* #__PURE__ */ new LayerConfig$Type();
+export const LayerConfig = new LayerConfig$Type();
 // @generated message type with reflection information, may provide speed optimized methods
 class LayerGroup$Type extends MessageType {
     constructor() {
@@ -457,7 +457,7 @@ class LayerGroup$Type extends MessageType {
 /**
  * @generated MessageType for protobuf message bilibili.dagw.component.avatar.v1.LayerGroup
  */
-export const LayerGroup = /* #__PURE__ */ new LayerGroup$Type();
+export const LayerGroup = new LayerGroup$Type();
 // @generated message type with reflection information, may provide speed optimized methods
 class LayerTagConfig$Type extends MessageType {
     constructor() {
@@ -545,7 +545,7 @@ class LayerTagConfig$Type extends MessageType {
 /**
  * @generated MessageType for protobuf message bilibili.dagw.component.avatar.v1.LayerTagConfig
  */
-export const LayerTagConfig = /* #__PURE__ */ new LayerTagConfig$Type();
+export const LayerTagConfig = new LayerTagConfig$Type();
 // @generated message type with reflection information, may provide speed optimized methods
 class ResAnimation$Type extends MessageType {
     constructor() {
@@ -591,7 +591,7 @@ class ResAnimation$Type extends MessageType {
 /**
  * @generated MessageType for protobuf message bilibili.dagw.component.avatar.v1.ResAnimation
  */
-export const ResAnimation = /* #__PURE__ */ new ResAnimation$Type();
+export const ResAnimation = new ResAnimation$Type();
 // @generated message type with reflection information, may provide speed optimized methods
 class ResImage$Type extends MessageType {
     constructor() {
@@ -637,7 +637,7 @@ class ResImage$Type extends MessageType {
 /**
  * @generated MessageType for protobuf message bilibili.dagw.component.avatar.v1.ResImage
  */
-export const ResImage = /* #__PURE__ */ new ResImage$Type();
+export const ResImage = new ResImage$Type();
 // @generated message type with reflection information, may provide speed optimized methods
 class ResNativeDraw$Type extends MessageType {
     constructor() {
@@ -683,4 +683,4 @@ class ResNativeDraw$Type extends MessageType {
 /**
  * @generated MessageType for protobuf message bilibili.dagw.component.avatar.v1.ResNativeDraw
  */
-export const ResNativeDraw = /* #__PURE__ */ new ResNativeDraw$Type();
+export const ResNativeDraw = new ResNativeDraw$Type();

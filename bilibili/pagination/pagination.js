@@ -67,7 +67,7 @@ class FeedPagination$Type extends MessageType {
 /**
  * @generated MessageType for protobuf message bilibili.pagination.FeedPagination
  */
-export const FeedPagination = /* #__PURE__ */ new FeedPagination$Type();
+export const FeedPagination = new FeedPagination$Type();
 // @generated message type with reflection information, may provide speed optimized methods
 class FeedPaginationReply$Type extends MessageType {
     constructor() {
@@ -130,7 +130,7 @@ class FeedPaginationReply$Type extends MessageType {
 /**
  * @generated MessageType for protobuf message bilibili.pagination.FeedPaginationReply
  */
-export const FeedPaginationReply = /* #__PURE__ */ new FeedPaginationReply$Type();
+export const FeedPaginationReply = new FeedPaginationReply$Type();
 // @generated message type with reflection information, may provide speed optimized methods
 class Pagination$Type extends MessageType {
     constructor() {
@@ -185,7 +185,7 @@ class Pagination$Type extends MessageType {
 /**
  * @generated MessageType for protobuf message bilibili.pagination.Pagination
  */
-export const Pagination = /* #__PURE__ */ new Pagination$Type();
+export const Pagination = new Pagination$Type();
 // @generated message type with reflection information, may provide speed optimized methods
 class PaginationReply$Type extends MessageType {
     constructor() {
@@ -240,4 +240,4 @@ class PaginationReply$Type extends MessageType {
 /**
  * @generated MessageType for protobuf message bilibili.pagination.PaginationReply
  */
-export const PaginationReply = /* #__PURE__ */ new PaginationReply$Type();
+export const PaginationReply = new PaginationReply$Type();

@@ -59,7 +59,7 @@ class CommentDoubleClickConfig$Type extends MessageType {
 /**
  * @generated MessageType for protobuf message bilibili.dagw.component.avatar.v1.plugin.CommentDoubleClickConfig
  */
-export const CommentDoubleClickConfig = /* #__PURE__ */ new CommentDoubleClickConfig$Type();
+export const CommentDoubleClickConfig = new CommentDoubleClickConfig$Type();
 // @generated message type with reflection information, may provide speed optimized methods
 class GyroConfig$Type extends MessageType {
     constructor() {
@@ -105,7 +105,7 @@ class GyroConfig$Type extends MessageType {
 /**
  * @generated MessageType for protobuf message bilibili.dagw.component.avatar.v1.plugin.GyroConfig
  */
-export const GyroConfig = /* #__PURE__ */ new GyroConfig$Type();
+export const GyroConfig = new GyroConfig$Type();
 // @generated message type with reflection information, may provide speed optimized methods
 class GyroscopeContentV2$Type extends MessageType {
     constructor() {
@@ -168,7 +168,7 @@ class GyroscopeContentV2$Type extends MessageType {
 /**
  * @generated MessageType for protobuf message bilibili.dagw.component.avatar.v1.plugin.GyroscopeContentV2
  */
-export const GyroscopeContentV2 = /* #__PURE__ */ new GyroscopeContentV2$Type();
+export const GyroscopeContentV2 = new GyroscopeContentV2$Type();
 // @generated message type with reflection information, may provide speed optimized methods
 class GyroscopeEntityV2$Type extends MessageType {
     constructor() {
@@ -223,7 +223,7 @@ class GyroscopeEntityV2$Type extends MessageType {
 /**
  * @generated MessageType for protobuf message bilibili.dagw.component.avatar.v1.plugin.GyroscopeEntityV2
  */
-export const GyroscopeEntityV2 = /* #__PURE__ */ new GyroscopeEntityV2$Type();
+export const GyroscopeEntityV2 = new GyroscopeEntityV2$Type();
 // @generated message type with reflection information, may provide speed optimized methods
 class Interaction$Type extends MessageType {
     constructor() {
@@ -294,7 +294,7 @@ class Interaction$Type extends MessageType {
 /**
  * @generated MessageType for protobuf message bilibili.dagw.component.avatar.v1.plugin.Interaction
  */
-export const Interaction = /* #__PURE__ */ new Interaction$Type();
+export const Interaction = new Interaction$Type();
 // @generated message type with reflection information, may provide speed optimized methods
 class LiveAnimeConfig$Type extends MessageType {
     constructor() {
@@ -341,7 +341,7 @@ class LiveAnimeConfig$Type extends MessageType {
 /**
  * @generated MessageType for protobuf message bilibili.dagw.component.avatar.v1.plugin.LiveAnimeConfig
  */
-export const LiveAnimeConfig = /* #__PURE__ */ new LiveAnimeConfig$Type();
+export const LiveAnimeConfig = new LiveAnimeConfig$Type();
 // @generated message type with reflection information, may provide speed optimized methods
 class LiveAnimeItem$Type extends MessageType {
     constructor() {
@@ -427,7 +427,7 @@ class LiveAnimeItem$Type extends MessageType {
 /**
  * @generated MessageType for protobuf message bilibili.dagw.component.avatar.v1.plugin.LiveAnimeItem
  */
-export const LiveAnimeItem = /* #__PURE__ */ new LiveAnimeItem$Type();
+export const LiveAnimeItem = new LiveAnimeItem$Type();
 // @generated message type with reflection information, may provide speed optimized methods
 class NFTImageV2$Type extends MessageType {
     constructor() {
@@ -474,7 +474,7 @@ class NFTImageV2$Type extends MessageType {
 /**
  * @generated MessageType for protobuf message bilibili.dagw.component.avatar.v1.plugin.NFTImageV2
  */
-export const NFTImageV2 = /* #__PURE__ */ new NFTImageV2$Type();
+export const NFTImageV2 = new NFTImageV2$Type();
 // @generated message type with reflection information, may provide speed optimized methods
 class PhysicalOrientationAnimation$Type extends MessageType {
     constructor() {
@@ -529,7 +529,7 @@ class PhysicalOrientationAnimation$Type extends MessageType {
 /**
  * @generated MessageType for protobuf message bilibili.dagw.component.avatar.v1.plugin.PhysicalOrientationAnimation
  */
-export const PhysicalOrientationAnimation = /* #__PURE__ */ new PhysicalOrientationAnimation$Type();
+export const PhysicalOrientationAnimation = new PhysicalOrientationAnimation$Type();
 // @generated message type with reflection information, may provide speed optimized methods
 class PhysicalOrientationV2$Type extends MessageType {
     constructor() {
@@ -584,4 +584,4 @@ class PhysicalOrientationV2$Type extends MessageType {
 /**
  * @generated MessageType for protobuf message bilibili.dagw.component.avatar.v1.plugin.PhysicalOrientationV2
  */
-export const PhysicalOrientationV2 = /* #__PURE__ */ new PhysicalOrientationV2$Type();
+export const PhysicalOrientationV2 = new PhysicalOrientationV2$Type();
