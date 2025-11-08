@@ -9,6 +9,7 @@ import { WireType } from "@protobuf-ts/runtime";
 import { UnknownFieldHandler } from "@protobuf-ts/runtime";
 import { reflectionMergePartial } from "@protobuf-ts/runtime";
 import { MessageType } from "@protobuf-ts/runtime";
+import { PlayerArgs } from "../../archive/middleware/v1/preload";
 import { Owner } from "../common";
 import { Pagination } from "../../../pagination/pagination";
 import { RelateCard } from "../common";
@@ -1365,6 +1366,7 @@ class ViewReq$Type extends MessageType {
             { no: 4, name: "spmid", kind: "scalar", T: 9 /*ScalarType.STRING*/ },
             { no: 5, name: "from_spmid", kind: "scalar", opt: true, T: 9 /*ScalarType.STRING*/ },
             { no: 6, name: "session_id", kind: "scalar", T: 9 /*ScalarType.STRING*/ },
+            { no: 7, name: "player_args", kind: "message", T: () => PlayerArgs },
             { no: 8, name: "track_id", kind: "scalar", opt: true, T: 9 /*ScalarType.STRING*/ },
             { no: 9, name: "extra_content", kind: "map", K: 9 /*ScalarType.STRING*/, V: { kind: "scalar", T: 9 /*ScalarType.STRING*/ } },
             { no: 10, name: "play_mode", kind: "scalar", opt: true, T: 9 /*ScalarType.STRING*/ },
@@ -1407,6 +1409,9 @@ class ViewReq$Type extends MessageType {
                     break;
                 case /* string session_id */ 6:
                     message.sessionId = reader.string();
+                    break;
+                case /* bilibili.app.archive.middleware.v1.PlayerArgs player_args */ 7:
+                    message.playerArgs = PlayerArgs.internalBinaryRead(reader, reader.uint32(), options, message.playerArgs);
                     break;
                 case /* optional string track_id */ 8:
                     message.trackId = reader.string();
@@ -1472,6 +1477,9 @@ class ViewReq$Type extends MessageType {
         /* string session_id = 6; */
         if (message.sessionId !== "")
             writer.tag(6, WireType.LengthDelimited).string(message.sessionId);
+        /* bilibili.app.archive.middleware.v1.PlayerArgs player_args = 7; */
+        if (message.playerArgs)
+            PlayerArgs.internalBinaryWrite(message.playerArgs, writer.tag(7, WireType.LengthDelimited).fork(), options).join();
         /* optional string track_id = 8; */
         if (message.trackId !== undefined)
             writer.tag(8, WireType.LengthDelimited).string(message.trackId);

@@ -2,7 +2,7 @@ syntax = "proto3";
 
 package bilibili.app.viewunite.v1;
 
-//import "bilibili/app/archive/middleware/v1/preload.proto";
+import "bilibili/app/archive/middleware/v1/preload.proto";
 import "bilibili/app/viewunite/common.proto";
 import "bilibili/pagination/pagination.proto";
 import "google/protobuf/any.proto";
@@ -275,7 +275,7 @@ message ViewReq {
     // 
     string session_id = 6;
     // 
-    //bilibili.app.archive.middleware.v1.PlayerArgs player_args = 7;
+    bilibili.app.archive.middleware.v1.PlayerArgs player_args = 7;
     // 
     optional string track_id = 8;
     // 

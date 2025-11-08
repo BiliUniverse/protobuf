@@ -7,6 +7,7 @@ import type { BinaryReadOptions } from "@protobuf-ts/runtime";
 import type { IBinaryReader } from "@protobuf-ts/runtime";
 import type { PartialMessage } from "@protobuf-ts/runtime";
 import { MessageType } from "@protobuf-ts/runtime";
+import { PlayerArgs } from "../../archive/middleware/v1/preload";
 import { Owner } from "../common";
 import { Pagination } from "../../../pagination/pagination";
 import { RelateCard } from "../common";
@@ -578,7 +579,11 @@ export interface ViewReq {
     sessionId: string;
     /**
      *
-     * bilibili.app.archive.middleware.v1.PlayerArgs player_args = 7;
+     *
+     * @generated from protobuf field: bilibili.app.archive.middleware.v1.PlayerArgs player_args = 7
+     */
+    playerArgs?: PlayerArgs;
+    /**
      *
      *
      * @generated from protobuf field: optional string track_id = 8
