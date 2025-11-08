@@ -141,6 +141,19 @@ export interface CM_Info512 {
 export interface CM_Info5129 {
 }
 /**
+ * 控制
+ *
+ * @generated from protobuf message bilibili.app.viewunite.v1.Control
+ */
+export interface Control {
+    /**
+     * 限制
+     *
+     * @generated from protobuf field: bool limit = 1
+     */
+    limit: boolean;
+}
+/**
  *
  *
  * @generated from protobuf message bilibili.app.viewunite.v1.ECodeConfig
@@ -171,6 +184,25 @@ export interface IntroductionTab {
      * @generated from protobuf field: repeated bilibili.app.viewunite.common.Module modules = 2
      */
     modules: Module[];
+}
+/**
+ * 页面控制
+ *
+ * @generated from protobuf message bilibili.app.viewunite.v1.PageControl
+ */
+export interface PageControl {
+    /**
+     * @generated from protobuf field: bilibili.app.viewunite.v1.Control toast_show = 1
+     */
+    toastShow?: Control;
+    /**
+     * @generated from protobuf field: bilibili.app.viewunite.v1.Control material_show = 2
+     */
+    materialShow?: Control;
+    /**
+     * @generated from protobuf field: bilibili.app.viewunite.v1.Control up_show = 3
+     */
+    upShow?: Control;
 }
 /**
  * 视频详情页下方推荐 Reply
@@ -423,12 +455,33 @@ export interface TabModule {
 /**
  *
  *
+ * @generated from protobuf message bilibili.app.viewunite.v1.ViewBase
+ */
+export interface ViewBase {
+    /**
+     *
+     * BizType biz_type = 1;
+     *
+     * PageType page_type = 2;
+     *
+     *
+     * @generated from protobuf field: bilibili.app.viewunite.v1.PageControl control = 3
+     */
+    control?: PageControl;
+}
+/**
+ *
+ *
  * @generated from protobuf message bilibili.app.viewunite.v1.ViewReply
  */
 export interface ViewReply {
     /**
      *
-     * ViewBase view_base = 1;
+     *
+     * @generated from protobuf field: bilibili.app.viewunite.v1.ViewBase view_base = 1
+     */
+    viewBase?: ViewBase;
+    /**
      *
      *
      * @generated from protobuf field: bilibili.app.viewunite.v1.Arc arc = 2
@@ -684,6 +737,16 @@ declare class CM_Info5129$Type extends MessageType<CM_Info5129> {
  * @generated MessageType for protobuf message bilibili.app.viewunite.v1.CM.Info5129
  */
 export declare const CM_Info5129: CM_Info5129$Type;
+declare class Control$Type extends MessageType<Control> {
+    constructor();
+    create(value?: PartialMessage<Control>): Control;
+    internalBinaryRead(reader: IBinaryReader, length: number, options: BinaryReadOptions, target?: Control): Control;
+    internalBinaryWrite(message: Control, writer: IBinaryWriter, options: BinaryWriteOptions): IBinaryWriter;
+}
+/**
+ * @generated MessageType for protobuf message bilibili.app.viewunite.v1.Control
+ */
+export declare const Control: Control$Type;
 declare class ECodeConfig$Type extends MessageType<ECodeConfig> {
     constructor();
     create(value?: PartialMessage<ECodeConfig>): ECodeConfig;
@@ -704,6 +767,16 @@ declare class IntroductionTab$Type extends MessageType<IntroductionTab> {
  * @generated MessageType for protobuf message bilibili.app.viewunite.v1.IntroductionTab
  */
 export declare const IntroductionTab: IntroductionTab$Type;
+declare class PageControl$Type extends MessageType<PageControl> {
+    constructor();
+    create(value?: PartialMessage<PageControl>): PageControl;
+    internalBinaryRead(reader: IBinaryReader, length: number, options: BinaryReadOptions, target?: PageControl): PageControl;
+    internalBinaryWrite(message: PageControl, writer: IBinaryWriter, options: BinaryWriteOptions): IBinaryWriter;
+}
+/**
+ * @generated MessageType for protobuf message bilibili.app.viewunite.v1.PageControl
+ */
+export declare const PageControl: PageControl$Type;
 declare class RelatesFeedReply$Type extends MessageType<RelatesFeedReply> {
     constructor();
     create(value?: PartialMessage<RelatesFeedReply>): RelatesFeedReply;
@@ -784,6 +857,16 @@ declare class TabModule$Type extends MessageType<TabModule> {
  * @generated MessageType for protobuf message bilibili.app.viewunite.v1.TabModule
  */
 export declare const TabModule: TabModule$Type;
+declare class ViewBase$Type extends MessageType<ViewBase> {
+    constructor();
+    create(value?: PartialMessage<ViewBase>): ViewBase;
+    internalBinaryRead(reader: IBinaryReader, length: number, options: BinaryReadOptions, target?: ViewBase): ViewBase;
+    internalBinaryWrite(message: ViewBase, writer: IBinaryWriter, options: BinaryWriteOptions): IBinaryWriter;
+}
+/**
+ * @generated MessageType for protobuf message bilibili.app.viewunite.v1.ViewBase
+ */
+export declare const ViewBase: ViewBase$Type;
 declare class ViewReply$Type extends MessageType<ViewReply> {
     constructor();
     create(value?: PartialMessage<ViewReply>): ViewReply;

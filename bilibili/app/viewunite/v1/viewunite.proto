@@ -71,6 +71,12 @@ message CM {
     message Info5129 {}
 }
 
+// 控制
+message Control {
+    // 限制
+    bool limit = 1;
+}
+
 enum ECode {
     // 
     CODE_DEFAULT = 0;
@@ -92,6 +98,14 @@ message IntroductionTab {
     string title = 1;
     // 
     repeated bilibili.app.viewunite.common.Module modules = 2;
+}
+
+
+// 页面控制
+message PageControl {
+    Control toast_show = 1;
+    Control material_show = 2;
+    Control up_show = 3;
 }
 
 // 视频详情页下方推荐 Reply
@@ -209,9 +223,23 @@ enum TabType {
 }
 
 // 
+message ViewBase {
+    // 
+    //BizType biz_type = 1;
+    // 
+    //PageType page_type = 2;
+    // 
+    PageControl control = 3;
+    // 
+    //ActivityResource activity_resource = 4;
+    // 
+    //Config config = 5;
+}
+
+// 
 message ViewReply {
     // 
-    //ViewBase view_base = 1;
+    ViewBase view_base = 1;
     // 
     Arc arc = 2;
     // 
